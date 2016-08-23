@@ -1,0 +1,59 @@
+\chapter{Introduction}\label{chapter:introduction}
+According to the oxford English dictionary, provenance can be defined as the place of origin or earliest known history of something. An example of provenance can be seen with a college transcript. A transcript can be defined as the provenance of a college degree because it outlines all of the courses satisfied in order to attain the degree.
+
+\par In the field of computing, Data provenance also known as data lineage is the history of transformations on a data object from the beginning of time to its current state. An example of provenance for software systems is...Provenance denotes the who, where and why of data.Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities.Provenance ensures trust and integrity of data. The information in which provenance offers can be used in preventing malicious attacks. The internet of things(IoT) can be defined as a network of heterogeneous devices communicating together. With the recent data explosion,information is disseminated at every communication level that exists. From mobile devices to desktop computers and servers.Making IoT systems provenance aware is of the essence because it ensures trust and  integrity of systems. Enabling IoT device provenance aware allows devices to be able to capture information such as the who, where and how transformations occur on a data object enabling us to be able to trace back in the vent of a malicious attack.
+\section{Motivation}
+According to a report released by Cisco [4], it is estimated that a total of 50 million devices will be
+connected to the internet by 2020. With these heterogeneous devices connected,
+security and privacy risks increase. Rapid7 [5] discovered that vulnerabilities exist in
+baby monitors that allowed attackers unauthorized remote access to these devices
+whereby an attacker can remotely view live video feeds. Having a provenance aware
+system will be beneficial in this situation since we have a record of input and output
+operations performed on the device, we can be able to look back on operations
+performed on the device to determine who, where, and how a malicious activity
+occurred. Devices (things) connected in an IoT network are embedded systems, which
+require lightweight and efficient solutions compared with general purpose
+systems.
+This requirement is attributed to the constrained memory and computing of such
+devices. A major issue arises in ensuring that data is properly secured and
+disseminated across the IoT network. The vast amount of data generated from IoT
+devices requires stronger levels of trust which can be achieved through data
+provenance. Provenance has immense benefits in the IoT. Data provenance ensures
+authenticity, integrity and transparency between information disseminated across an
+IoT network. Security applications such as anomaly detection, digital forensics, and
+access control can be further enhanced by incorporating data provenance in IoT
+devices. The goal of data provenance is to determine causality and effect of actions or
+operations performed on data. Provenance ensures transparency between things
+connected in IoT systems. By creating data transparency, we can trace information to
+determine where, if and when a malicious attack occurs. To achieve transparency, we
+propose a secure provenance aware system that provides a detailed record of all data
+transactions performed on devices connected in an IoT network.
+
+\section{Research Questions}
+collecting provenance data in IoT devices raises some research questions. Some of these questions are outlined below:
+
+\begin{itemize}
+
+\item Memory constraints, 
+
+\item what approach to use. access control with IoT. 
+
+\item Collecting system level provenance in embedded systems. 
+
+\item Do we use the OPM approach or something else. Querying provenance data.
+\end{itemize}
+
+\section{Research Contribution}
+
+This dissertation proposes the following contributions:
+
+\begin{itemize}
+  \item A provenance collection framework which denotes causality and dependencies between entities in an IoT system.This system creates groundwork for capturing and storing provenance data.
+  \item A novel framework for Data pruning.This addresses the memory overflow of the memory constrained IoT devices.
+   \item A framework for providing anomaly detection using provenance data in an IoT system.
+\end{itemize}
+
+\section{Organization of Dissertation proposal}
+
+The remaining portion of the dissertation proposal is organized as follows.  Chapter 2 talks about background information on data provenance, some of the techniques of collecting system level provenance, Data pruning techniques and also provenance based access control, Provenance data model. chapter 3 discusses our proposed provenance collection system  and focuses specifically on preliminary work done in creating a provenance aware system. Chapter 5 concludes the proposal and discusses the proposed framework and projected timeline for completion.
+
