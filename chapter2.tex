@@ -34,6 +34,13 @@ Recprov uses PTRACE\_PEEKDATA from PTRACE to access the derefrenced address of t
 \subsection{StoryBook}
 Spillance et al developed a user space provenance collection system, Storybook \cite{Rabinovich1995}  that allows the collection of provenance data from the user space thereby reducing performance oververhead from kernel space provenance collection. This system is modular.It allows the use of application specific extensions allowing additions such as database provenance, system provenance, and web and email servers. It achieves provenance capture by using FUSE for system level provenance and MYSQL for database level provenance capture. Story Book allows developers to implememtn provenance inspectors. these are custom provenance models which captures the provenance of applications which are often modified by different application(e.g web servers, databases). When an operation is performed on a data object, the appropriate provenance model is triggered and provenance data for that data object is captured. Sotrybook stores provenance information such as open, close, read or write, application specific provenance, causality relationship between entities contained in the provenance system(?). Provrenance is stored in key value pairs and It uses Fable as the storage backend. Storybook allows for provenance query.It achieves this by looking up inode in the file, ino hashtable.
 
+\subsection{Trustworthy whole system provenance for Linux kernel}
+
+\subsection{Towards Automated Collection of Application-Level Data Provenance}
+
+\subsection{user space provenance with Sandboxing}
+\
+
 \subsection{Provenance for Sensors}
 Lim et al. [3] developed a
 model for calculating the trust of nodes contained in a sensor network by using data
@@ -112,11 +119,46 @@ OPM denotes all previous and current actions that have been performed on an enti
 
 \subsection{Provenance Data Model(ProvDM)}
 
-PROV-DM is an extension of OPM. It was created in an effort to standardize OPM.Prov-DM is a model that is used for depicting entities, activities and , and agents digital or physical.  It contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
+PROV-DM is an extension of OPM. It was created in an effort to standardize OPM.Prov-DM is a model that is used for depicting entities, activities and , and agents digital or physical.  It contains two major components: types and relations. Creates a common model that allows for interchange of provenance information between heterogeneous devices. 
+
+\begin{itemize}
+
+\item entity: An entity is a physical or digital object. An example of an entity is a file system, a process, or an motor vehicle.
+
+\item Activity: An activity represents some form of action that occurs over a time frame.Actions are acted upon by an entity. an example of an activity is a process opening a file directory, Accessing a remote server.
+
+\item Agent: An agent is a thing that takes ownership of an entity, or performs an activity. An example of an agent is a person, a software product, a process.
+\end{itemize}
+
+PROV-DM relations represents causal dependencies which denotes relationship between the core types(entity, activity, agent).The names of relations make use of past tense to denote past occurrence of provenance information. provenance does not keep track/estimate of future events. PROV relations are outlined below:
+
+Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
+
+\begin{itemize}
+\item wasGeneratedBy: This relation signifies the creation of an entity by an activity. 
+
+\item used: This relation denotes that the functionalities of an entity has been adopted by an activity.
+
+\item wasInformedBy: This relation denotes an causality that follows the exchange of two activities.
+
+\item wasDerievedFrom This relation represents a copy of information from an entity. 
+
+\item wasAttributedTo: This denotes relational dependency to an agent. It is used to denote relationship between entity and agent when the activity that created the agent is unknown.
+
+\item wasAssociatedWith:This relation denotes a direct association to an agent for an activity that occurs.This indicates that an agent plays a role in the creation or modification of the activity.
+
+\item ActedOnBehalfOf
+
+\item
+
+\end{itemize}
 
 \begin{itemize}
 
 \item the main components Artifact, process and agent in the OPM model are changed to Entity, Action, and agent. 
+
+
+
 
 \item additional causal dependencies such as wasAttributedTo and actedOnBelafOf are included to represent direct and indirect causal dependencies respectively between agents and entity.
 
