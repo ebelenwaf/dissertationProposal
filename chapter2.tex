@@ -119,7 +119,7 @@ OPM denotes all previous and current actions that have been performed on an enti
 
 \subsection{Provenance Data Model(ProvDM)}
 
-PROV-DM is an extension of OPM. It was created in an effort to standardize OPM.Prov-DM is a model that is used for depicting entities, activities and , and agents digital or physical.  It contains two major components: types and relations. Creates a common model that allows for interchange of provenance information between heterogeneous devices. 
+PROV-DM is a W3C standardized extension of OPM. Prov-DM is a model that is used for depict causal relationship between entities, activities and , and agents(digital or physical).  It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. Figure below shows an example of a causal relationship between an entity, agent, and activity in a PROV-DM
 
 \begin{itemize}
 
@@ -132,7 +132,6 @@ PROV-DM is an extension of OPM. It was created in an effort to standardize OPM.P
 
 PROV-DM relations represents causal dependencies which denotes relationship between the core types(entity, activity, agent).The names of relations make use of past tense to denote past occurrence of provenance information. provenance does not keep track/estimate of future events. PROV relations are outlined below:
 
-Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
 
 \begin{itemize}
 \item wasGeneratedBy: This relation signifies the creation of an entity by an activity. 
@@ -149,124 +148,36 @@ Prov-DM contains similar yet subtle differences between OPM.Some of the differen
 
 \item ActedOnBehalfOf: This denotes assigning authority to perform a particular responsibility to an agent. This could be by itself or to another agent.
 
-\item
+
 
 \end{itemize}
+
+Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
 
 \begin{itemize}
 
 \item the main components Artifact, process and agent in the OPM model are changed to Entity, Action, and agent. 
-
-
-
 
 \item additional causal dependencies such as wasAttributedTo and actedOnBelafOf are included to represent direct and indirect causal dependencies respectively between agents and entity.
 
 \end{itemize}
 
 
-
-Since PROV-DM is built on OPM and contains easy to understand constructs of enities, It we choose to use this instead of OPM. 
+Entities, activities and agent are represented by oval, rectangle and hexagonal shape respectively.
+Since PROV-DM is built on OPM and contains easy to understand constructs of enities, we choose to use this instead of OPM. 
 
 
 \section{Overview of Data pruning techniques}
 
-One important notion about the class NP is the existence of {\em complete\/}
-problems. Crudely speaking, complete problems for a class are the hardest
-problems in the class.  Thus, NP-complete problems are the hardest problems
-in the class NP.  Also of importance is the notion of NP-hardness.
-Informally, NP-hard problems are problems that are at least as hard as
-NP-complete problems. Cook (see \cite{Cook1971}) proved that the problem of
-satisfiability of Boolean formulas (known as SAT) is an NP-complete problem,
-and Karp (see \cite{Karp1972}) showed that many other important problems
-are also NP-complete by use of {\em reductions\/} (generically denoted
-as $\leq_r$).  Completeness is formally defined in terms of reductions.
-We will now define two types of reductions, both dealing with the notion of
-polynomial time.  The {\em time\/} that an algorithm (e.g., a reduction)
-requires in order to solve a problem is defined to be the number of steps as
-a function of the size of the input. The size here, of course, depends on the
-encoding scheme chosen. Recall that polynomial time means that the number of
-steps is bounded by some polynomial of the input size. As an example, if we
-say that an $n^3$ algorithm $\cal U$ exists for solving a problem $\Pi$ of
-size $n$, we mean that $\cal U$ will take no more than $n^3$ steps in order
-to solve $\Pi$.  Therefore, we say that $\cal U$ is a polynomial-time
-algorithm.  Though not explicitly stated as being algorithms, the following
-two definitions refer to polynomial-time algorithms.
+\subsection{Graph Compression}
 
-\begin{definition}
-{\rm A {\em polynomial-time many-one reduction\/} $\leq^p_m$ (or
-{\em polynomial transformation\/}) from a language $L_1\subseteq\Sigma^*_1$
-to a language $L_2\subseteq\Sigma^*_2$ (denoted $L_1\leq^p_m L_2$) is a
-polynomial-time computable function $f:\Sigma^*_1\rightarrow\Sigma^*_2$ such
-that
-$$
-  \forall x\in\Sigma^*_1\ (x\in L_1 \Longleftrightarrow f(x)\in L_2).
-$$}
-\end{definition}
+\subsection{Dictionary Encoding}
 
-\begin{definition}
-{\rm A {\em polynomial-time Turing reduction\/} $\leq^p_T$ from a language
-$L_1\subseteq\Sigma^*_1$ to a language $L_2\subseteq\Sigma^*_2$ (denoted
-$L_1\leq^p_T L_2$) is a polynomial-time oracle Turing machine that accepts
-$L_1$ using $L_2$ as its oracle.}
-\end{definition}
+\subsection{Arithmetic encoding}
 
-We now are ready to formally define NP-hardness and NP-completeness.  In the
-following, $\leq^p_r$ stands for either many-one or Turing polynomial-time
-reductions.
 
-\begin{definition}
-{\rm A language $L$ is NP-{\em hard under $\leq^p_r$ reductions\/}
-(alternatively, \mbox{$\leq^p_r$-{\em hard}} {\em for\/} NP) if
-$$
-  \forall L^\prime\in {\rm NP}\ (L^\prime\leq^p_r L).
-$$}
-\end{definition}
+\section{Intrusion Detection for IoT}
 
-\begin{definition}
-{\rm A language $L$ is NP-{\em complete under $\leq^p_r$ reductions\/}
-(alternatively, \mbox{$\leq^p_r$-{\em complete for\/}} NP) if $L\in$ NP and
-$L$ is NP-hard under $\leq^p_r$ reductions.}
-\end{definition}
-
-The following theorem says that unless P=NP, no one will ever be able to 
-find a polynomial-time algorithm to solve any NP-hard problem.
-
-\begin{theorem}
-If a language $L$ is\/ {\rm NP}-hard under Turing reductions and $L\in$
-{\rm P}, then\/ {\rm P=NP}.\\[1pc]
-{\rm\bf Corollary} If a language $L$ is\/ {\rm NP}-hard under many-one
-reductions and $L\in$ {\rm P}, then\/ {\rm P=NP}.
-\end{theorem}
-
-Thus, if someone some day finds a polynomial-time algorithm
-for any NP-hard problem, then this algorithm could be used to solve any
-NP-complete problem in polynomial time, which would solve many important
-open problems (and would also be very useful).  However, the current
-wisdom is that this will never be possible.  This means that proving that a
-problem is NP-hard is strong evidence that no polynomial-time algorithm
-exists for that problem.  For this reason, NP-hard problems are said to be
-{\em computationally intractable}.
-
-Once we have a collection of problems that are proven to be NP-hard,
-these problems can be used to prove other problems are NP-hard as well via
-reductions.  This is the method most used to prove NP-hardness, and it is
-precisely how we prove our main result.
-This method is formalized by the following theorem:
-
-\begin{theorem}
-If $L$ is\/ {\rm NP}-hard under $\leq^p_r$ reductions and
-$L \leq^p_r L^\prime$ then $L^\prime$ is\/ {\rm NP}-hard under
-$\leq^p_r$ reductions.
-\end{theorem}
-
-It should be noted that NP-completeness is usually defined using many-one
-reductions, but philosophically, it may make more sense to define
-NP-completeness using Turing reductions.  This distinction is important
-because definitions based on different reductions are believed not to be
-identical; however, since many-one reductions are a special case of Turing
-reductions, proving that a language is many-one-hard for NP implies that it
-is Turing-hard for NP.
 
 
 %%% Local Variables: 
