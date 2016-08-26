@@ -67,10 +67,10 @@ Open provenance model was a specification derived as a result of a meeting at th
 When muliple process has been used by an artifact, roles(denopted by R) should be defined.
 
 \begin{itemize}
-\item wasGeneratedBy: Shows relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple enities so it is important to define the role of the  
+\item wasGeneratedBy: Shows relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple enities so it is important to define the role. 
 \item wasControlledBy: This showsa the relationship in which an entity caused the creation of another entity.
 \item used(Role): denotes an enity requires the services of another enity in order to execute.
-\item wasTriggeredBy: 
+\item wasTriggeredBy: This represents a process that was triggered by another process
 \item wasDerrivedFrom:
 \end{itemize}
 
@@ -95,7 +95,7 @@ OPM denotes all previous and current actions that have been performed on an enti
 \includegraphics{opm_convention.PNG}
 \end{center}
 \caption{Edges and entities in OPM}
-\label{autom}
+\label{OPM provenance Graph}
 \end{figure}
 
 %\begin {center}
@@ -152,6 +152,13 @@ PROV-DM relations represents causal dependencies which denotes relationship betw
 
 \end{itemize}
 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[height=10in]{prov_dm.PNG}
+
+\caption{Source code file structure}
+\end{center}
+\end{figure}
 Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
 
 \begin{itemize}

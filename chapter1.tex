@@ -1,7 +1,16 @@
 \chapter{Introduction}\label{chapter:introduction}
 According to the oxford English dictionary, provenance can be defined as the place of origin or earliest known history of something. An example of provenance can be seen with a college transcript. A transcript can be defined as the provenance of a college degree because it outlines all of the courses satisfied in order to attain the degree.
 
-\par In the field of computing, Data provenance also known as data lineage is the history of transformations on a data object from the beginning of time to its current state. An example of provenance for software systems is...Provenance denotes the who, where and why of data.Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities.Provenance ensures trust and integrity of data. The information in which provenance offers can be used in preventing malicious attacks. The internet of things(IoT) can be defined as a network of heterogeneous devices communicating together. With the recent data explosion,information is disseminated at every communication level that exists. From mobile devices to desktop computers and servers.Making IoT systems provenance aware is of the essence because it ensures trust and  integrity of systems. Enabling IoT device provenance aware allows devices to be able to capture information such as the who, where and how transformations occur on a data object enabling us to be able to trace back in the vent of a malicious attack.
+\par In the field of computing, Data provenance also known as data lineage is the history of transformations performed on a data object from the beginning of time to its current state. An example of provenance for software systems is a web server's log file. This file contains metadata for various request and response time and ip addresses. Provenance denotes the who, where and why of data.Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities.Provenance ensures trust and integrity of data. The information in which provenance offers can be used in digital forensics to investigate the cause of a malicious attack and also in intrusion detection system to further enhance the security of computing devices. 
+
+ 
+\textcolor{red}{TODO: Create transition...}
+
+
+The internet of things(IoT) can be defined as a network of heterogeneous devices communicating together. With the recent data explosion,information is disseminated at every communication level that exists. From mobile devices to desktop computers and servers.Making IoT systems provenance aware is of the essence because it ensures trust and  integrity of systems. Enabling IoT device provenance aware allows devices to be able to capture information such as the who, where and how transformations occur on a data object enabling us to be able to trace back in the vent of a malicious attack.
+
+
+
 \section{Motivation}
 According to a report released by Cisco [4], it is estimated that a total of 50 million devices will be
 connected to the internet by 2020. With these heterogeneous devices connected,
@@ -29,8 +38,15 @@ determine where, if and when a malicious attack occurs. To achieve transparency,
 propose a secure provenance aware system that provides a detailed record of all data
 transactions performed on devices connected in an IoT network.
 
+\section{Provenance-Aware IoT Device Use Case}
+
+Consider a smart home which contains interconnected devices such as a thermostat connected to the internet that sets the temperature remotely and also learns the temperature based on previous temperature settings. A malicous intruder tries to gain access to the connected devices remotely. Provenance can be used to track the events that have happened to pin point where the malicious attack originates it can also be used as a safeguard to alert of a possible remote hijack thereby protecting us from future occurrence.
+
+
+
+
 \section{Research Questions}
-collecting provenance data in IoT devices raises some research questions. Some of these questions are outlined below:
+collecting provenance data in IoT devices raises some key research questions. Some of these questions are outlined below:
 
 \begin{itemize}
 
