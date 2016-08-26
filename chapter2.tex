@@ -2,16 +2,15 @@
 
 \chapter{Background and Related Work}\label{background}
 
-This section outlines some of the work done in the area of data provenance for file systems and also data compression techniques for data provenance, and providing access control for using data provenance.
+This section outlines some of the state of the art in the area of data provenance for file systems, data compression techniques for data provenance, and intrusion detection using data provenance.
 
 \section{Overview of Provenance Aware systems}
 
-There have been a considerable amount of work done on collecting provenance data. Some of which has been focused on databases, sensore networks and system level provenance but so far little attention has been given to provenance in the IoT. Some the previous work done on data provenance collection are outlined below:
+There has been a considerable amount of work done on collecting provenance data. Some of which has been focused on databases, sensor networks and system level provenance but so far little attention has been given to provenance in IoT devices. Some the previous work done on data provenance collection are outlined below:
 
 \subsection{Provenance Aware Storage System(PASS)}
-
-This was developed at Harvard by MuniswamyReddy
-et al. There are two versions PASS v1 and PASS v2. v1 allows... while version 2...Provenance information
+MuniswamyReddy
+et al developed a proveenance aware system that tracks provenance of the linux file system. There are two versions PASS v1 and PASS v2. v1 allows... while version 2...Provenance information
 is stored in the same location as the file system for easy accessibility, backup,
 restoration, and data management. Provenance information is collected and stored in
 the kernel space. The system also provides provenance query capabilities and cycle
@@ -67,10 +66,10 @@ Open provenance model was a specification derived as a result of a meeting at th
 When muliple process has been used by an artifact, roles(denopted by R) should be defined.
 
 \begin{itemize}
-\item wasGeneratedBy: Shows relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple enities so it is important to define the role. 
+\item wasGeneratedBy: Shows relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple enities so it is important to define the role of the  
 \item wasControlledBy: This showsa the relationship in which an entity caused the creation of another entity.
 \item used(Role): denotes an enity requires the services of another enity in order to execute.
-\item wasTriggeredBy: This represents a process that was triggered by another process
+\item wasTriggeredBy: 
 \item wasDerrivedFrom:
 \end{itemize}
 
@@ -95,7 +94,7 @@ OPM denotes all previous and current actions that have been performed on an enti
 \includegraphics{opm_convention.PNG}
 \end{center}
 \caption{Edges and entities in OPM}
-\label{OPM provenance Graph}
+\label{autom}
 \end{figure}
 
 %\begin {center}
@@ -152,13 +151,6 @@ PROV-DM relations represents causal dependencies which denotes relationship betw
 
 \end{itemize}
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[height=10in]{prov_dm.PNG}
-
-\caption{Source code file structure}
-\end{center}
-\end{figure}
 Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
 
 \begin{itemize}
@@ -180,7 +172,7 @@ Since PROV-DM is built on OPM and contains easy to understand constructs of enit
 
 \subsection{Dictionary Encoding}
 
-\subsection{Arithmetic encoding}
+\subsection{Arithmetic Encoding}
 
 
 \section{Intrusion Detection for IoT}
