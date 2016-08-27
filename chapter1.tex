@@ -13,7 +13,7 @@ The internet of things(IoT) can be defined as a network of heterogeneous devices
 
 \section{Motivation}
 According to a report released by Cisco, it is estimated that a total of 50 million devices will be
-connected to the internet by 2020. With the vast amounts of heterogeneous devices connected,
+connected to the internet by the year 2020. With the vast amounts of heterogeneous devices connected,
 security and privacy risks are inceased. Rapid7, an  IT security and analytics organization, discovered that vulnerabilities exist in
 baby monitors that allowed attackers unauthorized remote access to these devices
 whereby an attacker can remotely view live video feeds. Having a provenance aware
@@ -36,7 +36,7 @@ operations performed on a data object. Provenance ensures transparency between t
 connected in IoT systems. By creating data transparency, we can trace information to
 determine where, if and when a malicious attack occurs. To achieve transparency, we
 propose a secure provenance aware system that provides a detailed record of all data
-transactions performed on devices connected in an IoT network and also investigate its applications of provenance data in providing intrusion detection to IoT devices.
+transactions performed on devices connected in an IoT network and also investigate its applications of provenance data in providing intrusion detection to IoT devices.  \textcolor{red}{Data is generated in at a fast rate in real-time by sensors and actuators. The provenance of this data tends to be larger than the data itself.}
 
 \section{Provenance-Aware IoT Device Use Case}
 
@@ -67,20 +67,20 @@ collecting provenance data in IoT devices raises some key research issues. Some 
 
 \item Provenance Versioning: Provenance version creates cycles. When a file is read or edited do we create a new instance of the file? Tracking all transformations that occurs on a data object in memeory constrained devices might lead to running out of storage space. A new instance of the provenance of that file should be created and included in the provenance data.
 
-\item Securing Provenance: Due to the sensitivity of provenance data, we need to ensure the confidentiality and integrity of provenance data stored on IoT devices while at rest or in transit. Proper encryption and authentication techniques need to be employed to ensure confidentiality, integirty, and availability of provenance data.
+\item Securing Provenance: Due to the great level of sensitivity that  provenance data contains, we need to ensure the confidentiality and integrity of provenance data stored on IoT devices while at rest or in transit. Proper encryption and authentication techniques need to be employed to ensure confidentiality, integirty, and availability of provenance data.
 \end{itemize}
 
 \section{Research Contribution}
 
-This dissertation proposes the following contributions:
+In this dissertation, we proposes the following key contributions:
 
 \begin{itemize}
-  \item A provenance collection framework which denotes causality and dependencies between entities in an IoT system.This system creates groundwork for capturing and storing provenance data.
-  \item A novel framework for Data pruning.This addresses the memory overflow of the memory constrained IoT devices.
-   \item A framework for providing anomaly detection using provenance data in an IoT system.
+  \item A provenance collection framework which denotes causality and dependencies between entities contained in an IoT system.This system creates the groundwork for capturing and storing provenance data  on IoT devices.
+  \item A novel framework for Data storage on embedded systems.This addresses the storage issues of the memory constrained IoT devices.
+   \item A framework for providing intrusion detection using provenance data in an IoT system.
 \end{itemize}
 
 \section{Organization of Dissertation proposal}
 
-The remaining portion of the dissertation proposal is organized as follows.  Chapter 2 talks about background information on data provenance, some of the techniques of collecting system level provenance, Data pruning techniques and also provenance based access control, Provenance data model. chapter 3 discusses our proposed provenance collection system  and focuses specifically on preliminary work done in creating a provenance aware system. Chapter 5 concludes the proposal and discusses the proposed framework and projected timeline for completion.
+The remaining portion of the dissertation proposal is organized as follows.  Chapter 2 talks about background information on data provenance, some of the techniques of collecting system level provenance, Data pruning techniques and also applications of data provenance with provenance based intrusion detection system. chapter 3 discusses our proposed provenance collection system  and focuses specifically on preliminary work done in creating a provenance aware system. Chapter 4 concludes the proposal and discusses the proposed framework and projected timeline for completion.
 

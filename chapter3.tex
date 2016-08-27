@@ -4,11 +4,15 @@
 
 In this chapter we define all of the components of our proposed model. From the provenance-aware system which deals with the collection, storage and querying of provenance data from IoT devices to the  IDS system which deals with detecting malicious attacks on IoT Devices.
 
+\section{Provenance\-Collection Model}
+
+\textcolor{red}{TODO: Talks about how we use PROV\-DM and what kinds of provenance we are looking to store}
+
 \section{Provenance-Collection System}
 
 In this section, we outline the components of our system and describe how provenance information is collected across the IoT system. Figure 1 displays the system architecture of our approach. Sensor and actuator readings in the form of I/O are recorded by the tracer component. This component intercepts system level I/O and produces trace information in the Common Trace Format (CTF). CTF represents binary trace information containing multiple streams of binary events such as I/O activity. Trace information is converted into the Open Provenance Model (OPM), which represents the relationship between provenance entities contained in the system. Our system relies heavily on data pruning to reduce and remove unimportant provenance in order to conserve memory. The key research challenge is in creating an efficient data pruning technique that ranks I/O operations based on importance. Pruned provenance information is later securely transmitted and stored in a private cloud backend.
 
-\begin{figure}[h!]
+\begin{figure}[h]
 \begin{center}
 
 \includegraphics{architecture.PNG}    

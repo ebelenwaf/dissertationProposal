@@ -1,8 +1,8 @@
 \hfill {\bf Page}
 \contentsline {chapter}{Acknowledgements}{iv}
 \contentsline {chapter}{Abstract}{v}
-\contentsline {chapter}{Table of Contents}{vi}
-\contentsline {chapter}{List of Figures}{viii}
+\contentsline {chapter}{Table of Contents}{vii}
+\contentsline {chapter}{List of Figures}{ix}
 \noindent {\bf Chapter}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{2}
@@ -22,18 +22,20 @@
 \contentsline {subsection}{\numberline {2.1.8}Provenance for Sensors}{9}
 \contentsline {section}{\numberline {2.2}Model for representing provenance for IoT}{10}
 \contentsline {subsection}{\numberline {2.2.1}Open Provenance Model(OPM)}{10}
-\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(ProvDM)}{11}
-\contentsline {section}{\numberline {2.3}Overview of Data pruning techniques}{14}
-\contentsline {subsection}{\numberline {2.3.1}Graph Compression}{14}
-\contentsline {subsection}{\numberline {2.3.2}Dictionary Encoding}{14}
-\contentsline {subsection}{\numberline {2.3.3}Arithmetic Encoding}{14}
-\contentsline {section}{\numberline {2.4}Intrusion Detection for IoT}{14}
-\contentsline {chapter}{\numberline {3}Proposed Model}{15}
-\contentsline {section}{\numberline {3.1}Provenance-Collection System}{15}
-\contentsline {section}{\numberline {3.2}PAIST: Provenance Aware IDS System for IoT }{17}
-\contentsline {chapter}{\numberline {4}Concluding Remarks}{18}
-\contentsline {section}{\numberline {4.1}Significance of the Result}{18}
-\contentsline {section}{\numberline {4.2}Future Work}{18}
-\contentsline {chapter}{References}{19}
-\contentsline {chapter}{References}{19}
-\noindent {\bf Appendix}
+\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(Prov\discretionary {-}{}{}DM)}{11}
+\contentsline {subsection}{\numberline {2.2.3}PROV-JSON}{13}
+\contentsline {section}{\numberline {2.3}Overview of Data pruning techniques}{15}
+\contentsline {subsection}{\numberline {2.3.1}Graph Compression}{15}
+\contentsline {subsection}{\numberline {2.3.2}Dictionary Encoding}{15}
+\contentsline {subsection}{\numberline {2.3.3}Arithmetic Encoding}{15}
+\contentsline {section}{\numberline {2.4}Intrusion Detection for IoT}{15}
+\contentsline {chapter}{\numberline {3}Proposed Model}{16}
+\contentsline {section}{\numberline {3.1}Provenance\discretionary {-}{}{}Collection Model}{16}
+\contentsline {section}{\numberline {3.2}Provenance-Collection System}{16}
+\contentsline {section}{\numberline {3.3}PAIST: Provenance Aware IDS System for IoT }{18}
+\contentsline {chapter}{\numberline {4}Concluding Remarks}{19}
+\contentsline {section}{\numberline {4.1}Significance of the Result}{19}
+\contentsline {section}{\numberline {4.2}Future Work}{19}
+\contentsline {chapter}{References}{20}
+\contentsline {chapter}{References}{20}
+\contentsline {chapter}{Curriculum Vitae}{22}

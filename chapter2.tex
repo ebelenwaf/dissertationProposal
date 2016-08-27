@@ -116,9 +116,9 @@ OPM denotes all previous and current actions that have been performed on an enti
 %\end{tikzpicture}
 %\end{center}
 
-\subsection{Provenance Data Model(ProvDM)}
+\subsection{Provenance Data Model(Prov\-DM)}
 
-PROV-DM is a W3C standardized extension of OPM. Prov-DM is a model that is used for depict causal relationship between entities, activities and , and agents(digital or physical).  It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. Figure below shows an example of a causal relationship between an entity, agent, and activity in a PROV-DM
+PROV\-DM is a W3C standardized extension of OPM. Prov\-DM is a model that is used for depict causal relationship between entities, activities and , and agents(digital or physical).  It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. Figure below shows an example of a causal relationship between an entity, agent, and activity in a PROV\-DM
 
 \begin{itemize}
 
@@ -151,7 +151,7 @@ PROV-DM relations represents causal dependencies which denotes relationship betw
 
 \end{itemize}
 
-Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
+Prov\-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV\-DM are outlined below:
 
 \begin{itemize}
 
@@ -163,8 +163,20 @@ Prov-DM contains similar yet subtle differences between OPM.Some of the differen
 
 
 Entities, activities and agent are represented by oval, rectangle and hexagonal shape respectively.
-Since PROV-DM is built on OPM and contains easy to understand constructs of enities, we choose to use this instead of OPM. 
+Since PROV\-DM is built on OPM and contains easy to understand constructs of enities, we choose to use this instead of OPM. 
 
+\subsection{PROV-JSON}
+
+PROV-JSON is a W3C standard for representing PROV-DM in json format. It contains all of the components and relationships contained in PROV-DM. It ensures interoperability between applications using PROV-DM. It also allows for easy serialization and deserialization of PROV-DM mappings.JSON format is lightwight, easy to parse, and allows a standardized way of manipulating data programmatically. An example of PROV-JSON format is described below.  An example of PROV-JSON is shown below:
+
+\begin{figure}[h]
+\begin{center}
+
+\includegraphics[height=5in]{prov_json.png}
+\end{center}
+\caption{PROV-JSON MODEL}
+
+\end{figure}
 
 \section{Overview of Data pruning techniques}
 
