@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 AUG 2016 01:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 AUG 2016 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -533,29 +533,29 @@ Chapter 2.
 
 
 
-] [7] [8] [9] [10] <opm_convention.PNG, id=70, 302.3295pt x 252.34274pt>
+] [7] [8] [9] [10] [11]
+<opm_convention.PNG, id=73, 302.3295pt x 252.34274pt>
 File: opm_convention.PNG Graphic file (type png)
-
-<use opm_convention.PNG>
-Package pdftex.def Info: opm_convention.PNG used on input line 94.
+ <use opm_convention.PNG>
+Package pdftex.def Info: opm_convention.PNG used on input line 101.
 (pdftex.def)             Requested size: 302.32875pt x 252.34212pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (18.55217pt too wide) in paragraph at lines 127--128
+[12 <./opm_convention.PNG>]
+Overfull \hbox (18.55217pt too wide) in paragraph at lines 143--144
 []\OT1/cmr/m/n/12 Activity: An ac-tiv-ity rep-re-sents some form of ac-tion tha
 t oc-curs over a time frame.Actions
  []
 
-[11] [12 <./opm_convention.PNG>] [13]
-<prov_json.png, id=82, 426.59375pt x 513.92pt>
+[13] <prov_json.png, id=82, 426.59375pt x 513.92pt>
 File: prov_json.png Graphic file (type png)
  <use prov_json.png>
-Package pdftex.def Info: prov_json.png used on input line 175.
+Package pdftex.def Info: prov_json.png used on input line 191.
 (pdftex.def)             Requested size: 299.9545pt x 361.34999pt.
-) [14 <./prov_json.png>] [15]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [14] [15 <./prov_json.png>]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
@@ -623,7 +623,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  11576 strings out of 493014
  236165 string characters out of 6133351
- 275239 words of memory out of 5000000
+ 275240 words of memory out of 5000000
  14838 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -632,7 +632,7 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (31 pages, 524991 bytes).
+Output written on thesis.pdf (31 pages, 526533 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream

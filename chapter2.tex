@@ -10,14 +10,16 @@ There has been a considerable amount of work done on collecting provenance data.
 
 \subsection{Provenance Aware Storage System(PASS)}
 MuniswamyReddy
-et al developed a proveenance aware system that tracks provenance of the linux file system. There are two versions PASS v1 and PASS v2. v1 allows... while version 2...Provenance information
+et al developed a provenance aware system that tracks provenance of the linux file system. There are two versions PASS v1 and PASS v2. v1 allows... while version 2...Provenance information
 is stored in the same location as the file system for easy accessibility, backup,
 restoration, and data management. Provenance information is collected and stored in
 the kernel space. The system also provides provenance query capabilities and cycle
 detection. PASS systems recognizes data pruning for efficient storage, which is in line
 with our research goal but data pruning was not fully explored in PASS.
 
-The collector keeps track of system level provenance. It intercepts system calls which are translated into provenance data and is stored in an in kernel database. This database maps key value pairs for provenance data for fast index look up. It also provides functionalities for querying provenance data in the database. PASS detects and eliminates cycles that might occur in provenance dependencies as a result of version avoidance.cycles violates the dependency relationships between entities. For example, a child node could depend on a parent node and also be an ancestor of a parent node. It achieves this by merging processes that might have led to the cycles.
+The collector keeps track of system level provenance. It intercepts system calls which are translated into provenance data and initially stored in memory. This provenance data is then stored in a file system in an kernel database, BerkleyDB. This database maps key value pairs for provenance data for fast index look up. It also provides functionalities for querying provenance data in the database. The query tool is built ontop of Berkley DB. For querying, users can process queries using the provenance explorer. Query is done using commands such as MAKEFILE  GENERATION which creates the sequence of events that led to the final state of a file or process. DUMP ALL, gets the provenance of the requested file.PASS detects and eliminates cycles that might occur in provenance dependencies as a result of version avoidance.cycles violates the dependency relationships between entities. For example, a child node could depend on a parent node and also be an ancestor of a parent node. It achieves this by merging processes that might have led to the cycles. PASS provides the query of provenance data contained in the berkley database.
+
+PASS stores a refrence to the executable that created the provenance data, input files, A description og hardware in which provenance data is produced, OS information, process environment, process parameters, and other/ data such as random number generator seed.
 
 \subsection{HiFi}
 Bates et al. [2] developed system level provenance information for the Linux kernel using a Linux Provenance Modules, which tracks whole system provenance including interprocess communication, networking, and kernel activities. This is achieved by mediating access to kernel objects. Linuex Security Model is a framework that was designed for providing custom access control into the Linux kernel.It consists of a set of hooks which is executed before access decision is made.
@@ -34,6 +36,11 @@ Recprov uses PTRACE\_PEEKDATA from PTRACE to access the derefrenced address of t
 Spillance et al developed a user space provenance collection system, Storybook \cite{Rabinovich1995}  that allows the collection of provenance data from the user space thereby reducing performance oververhead from kernel space provenance collection. This system is modular.It allows the use of application specific extensions allowing additions such as database provenance, system provenance, and web and email servers. It achieves provenance capture by using FUSE for system level provenance and MYSQL for database level provenance capture. Story Book allows developers to implememtn provenance inspectors. these are custom provenance models which captures the provenance of applications which are often modified by different application(e.g web servers, databases). When an operation is performed on a data object, the appropriate provenance model is triggered and provenance data for that data object is captured. Sotrybook stores provenance information such as open, close, read or write, application specific provenance, causality relationship between entities contained in the provenance system(?). Provrenance is stored in key value pairs and It uses Fable as the storage backend. Storybook allows for provenance query.It achieves this by looking up inode in the file, ino hashtable.
 
 \subsection{Trustworthy whole system provenance for Linux kernel}
+
+Bates el tal provide security for provenance collected in the linux kernel. They achieve this by creating a Linux Provenance Model. This model serves as the security layer that provides security. It is involved in the attestation disclosure of the application layer, authentication channel for the network layer.
+The goal of the LPM is to proveide the end to end system provenance of data stored in the provenance-aware system. The system must be stable and be able to detect and avoid malicous forgery of provenance data. The system must be trusted in which users can verify the authenticity of the data that originates from the system.
+
+The LPM tracks system level provenance which is transmitted to the Provenance module via the relay buffer collected . Provenance module registers This module contains hooks which record system call events. These events are sent to a provenance recorder in a user space. The provenance recorder ensures that the provenance data is sored in the appropriate backend of choice. LPM is a parallel framework to the Linux Security Model(LSM). Proveance recorders offer storage for Gzip, PostGreSQL, Neo4j and SNAP.
 
 \subsection{Towards Automated Collection of Application-Level Data Provenance}
 
@@ -69,7 +76,7 @@ When muliple process has been used by an artifact, roles(denopted by R) should b
 \item wasGeneratedBy: Shows relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple enities so it is important to define the role of the  
 \item wasControlledBy: This showsa the relationship in which an entity caused the creation of another entity.
 \item used(Role): denotes an enity requires the services of another enity in order to execute.
-\item wasTriggeredBy: 
+\item wasTriggeredBy: This represents a process that was triggered by another process
 \item wasDerrivedFrom:
 \end{itemize}
 
@@ -88,7 +95,7 @@ Agent: These are actors that facilitate the execution of a process.An agent is r
 
 OPM denotes all previous and current actions that have been performed on an entity and  the relationship between each entities contained in the graph. Figure 2 represents an example of an OPM acyclic graph with all of its causal dependencies. The goal of OPM is to be able to model the state of how things both digital or physical are at a given state.   
 
-\begin{figure}[h!]
+\begin{figure}[h]
 \begin{center}
 
 \includegraphics{opm_convention.PNG}
@@ -120,6 +127,15 @@ OPM denotes all previous and current actions that have been performed on an enti
 
 PROV\-DM is a W3C standardized extension of OPM. Prov\-DM is a model that is used for depict causal relationship between entities, activities and , and agents(digital or physical).  It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. Figure below shows an example of a causal relationship between an entity, agent, and activity in a PROV\-DM
 
+%\begin{figure}[h]
+%\begin{center}
+%
+%\includegraphics[height=7in]{prov_dm.PNG}
+%\end{center}
+%\caption{Prov DM}
+%\label{autom}
+%\end{figure}
+%
 \begin{itemize}
 
 \item entity: An entity is a physical or digital object. An example of an entity is a file system, a process, or an motor vehicle.
@@ -167,7 +183,7 @@ Since PROV\-DM is built on OPM and contains easy to understand constructs of eni
 
 \subsection{PROV-JSON}
 
-PROV-JSON is a W3C standard for representing PROV-DM in json format. It contains all of the components and relationships contained in PROV-DM. It ensures interoperability between applications using PROV-DM. It also allows for easy serialization and deserialization of PROV-DM mappings.JSON format is lightwight, easy to parse, and allows a standardized way of manipulating data programmatically. An example of PROV-JSON format is described below.  An example of PROV-JSON is shown below:
+PROV\-JSON is a W3C standard for representing PROV\-DM in json format. It contains all of the components and relationships contained in PROV\-DM. It ensures interoperability between applications using PROV\-DM. It also allows for easy serialization and deserialization of PROV\-DM mappings.JSON format is lightwight, easy to parse, and allows a standardized way of manipulating data programmatically. An example of PROV\-JSON format is described below.  An example of PROV\-JSON is shown below:
 
 \begin{figure}[h]
 \begin{center}

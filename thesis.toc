@@ -17,13 +17,13 @@
 \contentsline {subsection}{\numberline {2.1.3}RecProv}{8}
 \contentsline {subsection}{\numberline {2.1.4}StoryBook}{8}
 \contentsline {subsection}{\numberline {2.1.5}Trustworthy whole system provenance for Linux kernel}{9}
-\contentsline {subsection}{\numberline {2.1.6}Towards Automated Collection of Application-Level Data Provenance}{9}
-\contentsline {subsection}{\numberline {2.1.7}user space provenance with Sandboxing}{9}
-\contentsline {subsection}{\numberline {2.1.8}Provenance for Sensors}{9}
+\contentsline {subsection}{\numberline {2.1.6}Towards Automated Collection of Application-Level Data Provenance}{10}
+\contentsline {subsection}{\numberline {2.1.7}user space provenance with Sandboxing}{10}
+\contentsline {subsection}{\numberline {2.1.8}Provenance for Sensors}{10}
 \contentsline {section}{\numberline {2.2}Model for representing provenance for IoT}{10}
 \contentsline {subsection}{\numberline {2.2.1}Open Provenance Model(OPM)}{10}
-\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(Prov\discretionary {-}{}{}DM)}{11}
-\contentsline {subsection}{\numberline {2.2.3}PROV-JSON}{13}
+\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(Prov\discretionary {-}{}{}DM)}{12}
+\contentsline {subsection}{\numberline {2.2.3}PROV-JSON}{14}
 \contentsline {section}{\numberline {2.3}Overview of Data pruning techniques}{15}
 \contentsline {subsection}{\numberline {2.3.1}Graph Compression}{15}
 \contentsline {subsection}{\numberline {2.3.2}Dictionary Encoding}{15}
