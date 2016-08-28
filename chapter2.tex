@@ -37,12 +37,45 @@ Spillance et al developed a user space provenance collection system, Storybook \
 
 \subsection{Trustworthy whole system provenance for Linux kernel}
 
-Bates el tal provide security for provenance collected in the linux kernel. They achieve this by creating a Linux Provenance Model. This model serves as the security layer that provides security. It is involved in the attestation disclosure of the application layer, authentication channel for the network layer.
-The goal of the LPM is to proveide the end to end system provenance of data stored in the provenance-aware system. The system must be stable and be able to detect and avoid malicous forgery of provenance data. The system must be trusted in which users can verify the authenticity of the data that originates from the system.
+Bates et al provide a security model ensures the secure provenance collection in the linux kernel. This is achieved by creating a Linux Provenance Model(LPM). LPM serves as a security layer that provides security abstraction for provenance data. It is involved in the attestation disclosure of the application layer, authentication channel for the network layer.The goal of LPM is to provide an end to end provenance collection system. 
 
-The LPM tracks system level provenance which is transmitted to the Provenance module via the relay buffer collected . Provenance module registers This module contains hooks which record system call events. These events are sent to a provenance recorder in a user space. The provenance recorder ensures that the provenance data is sored in the appropriate backend of choice. LPM is a parallel framework to the Linux Security Model(LSM). Proveance recorders offer storage for Gzip, PostGreSQL, Neo4j and SNAP.
+LPM ensures the following security guarantees: for LPM,the system must be stable and be able to detect and avoid malicous forgery of provenance data. The system must be trusted in which users can verify the authenticity of the data that originates from the system. 
+
+\par When an application invokes a system call, the LPM tracks system level provenance which is transmitted to the Provenance module via the relay buffer . The provenance module registers contains hooks which record system call events. These events are sent to a provenance recorder in a user space. The provenance recorder ensures that the provenance data is sored in the appropriate backend of choice. Proveance recorders offer storage for Gzip, PostGreSQL, Neo4j and SNAP.
+
+
 
 \subsection{Towards Automated Collection of Application-Level Data Provenance}
+Tariq et all creates a provenance collection system which automatically collects the provenance of application source code at run time. It takes a different approach from system level provenance capture. It achieves provenance capture by using LLVM compiler framework and SPADE provenance. LLVM is a framework that allows dynamic compilation techniques of applications written in C, C++, Objective-C, and Java.Provenance is inserted during compilation.LLVM contains an LLVM Reporter. This is a java class that parses the output file collected from the LLVM Tracer and forwards the provenance data collected to the SPADE Tracer.The output is an Open Provenance Model. To minimize provenance record, users are allowed to specify what functions they would like to collect provenance information at run time. This does not provide a whole system provenance of all activities that occurs on the system.
+
+LLVM is used to investigate dynamic compillation techniques of applications wt
+
+A workflow of Collecting provenance is as follows:
+
+\begin{itemize}
+\item The application is compiled and converted into bitcode using the LLVM C compiler, clang.
+
+\item The LLVM Tracer module is compiled with the bitcode.
+
+\item Provenance instrumentation is added to the bitcode via the LLVM Trace module.
+
+\item instrumentation bitcode is converted into assembly code bia the compiler llc
+
+\item LLVM Tacer and Reporter is compiled into assembly code.
+
+\item  The instrumented application and assembly code is compiled into an executable binary and sent to the SPADE kernel.
+\end{itemize}
+
+
+One major limitation to this approach is that a user is required to have source code of the specific application in which it wants to collect provenance. provenance collection is limited to function's exit and entry points
+
+
+
+
+
+
+
+
 
 \subsection{user space provenance with Sandboxing}
 \
@@ -125,7 +158,7 @@ OPM denotes all previous and current actions that have been performed on an enti
 
 \subsection{Provenance Data Model(Prov\-DM)}
 
-PROV\-DM is a W3C standardized extension of OPM. Prov\-DM is a model that is used for depict causal relationship between entities, activities and , and agents(digital or physical).  It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. Figure below shows an example of a causal relationship between an entity, agent, and activity in a PROV\-DM
+PROV-DM is a W3C standardized extension of OPM. Prov-DM is a model that is used for depict causal relationship between entities, activities and , and agents(digital or physical).  It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. Figure below shows an example of a causal relationship between an entity, agent, and activity in a PROV-DM
 
 %\begin{figure}[h]
 %\begin{center}

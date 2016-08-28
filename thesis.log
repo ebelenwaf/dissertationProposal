@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 AUG 2016 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 AUG 2016 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -357,7 +357,7 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 
 LaTeX Warning: Label `autom' multiply defined.
 
-) (./chapter6.aux) (./ref.aux) (./vitae.aux))
+) (./chapter6.aux) (./ref.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -533,29 +533,29 @@ Chapter 2.
 
 
 
-] [7] [8] [9] [10] [11]
-<opm_convention.PNG, id=73, 302.3295pt x 252.34274pt>
+] [7] [8] [9] [10] [11] [12]
+<opm_convention.PNG, id=76, 302.3295pt x 252.34274pt>
 File: opm_convention.PNG Graphic file (type png)
  <use opm_convention.PNG>
-Package pdftex.def Info: opm_convention.PNG used on input line 101.
+Package pdftex.def Info: opm_convention.PNG used on input line 130.
 (pdftex.def)             Requested size: 302.32875pt x 252.34212pt.
 
-[12 <./opm_convention.PNG>]
-Overfull \hbox (18.55217pt too wide) in paragraph at lines 143--144
+[13 <./opm_convention.PNG>]
+Overfull \hbox (18.55217pt too wide) in paragraph at lines 172--173
 []\OT1/cmr/m/n/12 Activity: An ac-tiv-ity rep-re-sents some form of ac-tion tha
 t oc-curs over a time frame.Actions
  []
 
-[13] <prov_json.png, id=82, 426.59375pt x 513.92pt>
+[14] <prov_json.png, id=85, 426.59375pt x 513.92pt>
 File: prov_json.png Graphic file (type png)
  <use prov_json.png>
-Package pdftex.def Info: prov_json.png used on input line 191.
+Package pdftex.def Info: prov_json.png used on input line 220.
 (pdftex.def)             Requested size: 299.9545pt x 361.34999pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [14] [15 <./prov_json.png>]
+) [15] [16 <./prov_json.png>]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
@@ -566,7 +566,7 @@ Overfull \hbox (0.20468pt too wide) in paragraph at lines 5--6
 posed model. From the provenance-
  []
 
-<architecture.PNG, id=90, 492.84125pt x 279.0425pt>
+<architecture.PNG, id=94, 492.84125pt x 279.0425pt>
 File: architecture.PNG Graphic file (type png)
  <use architecture.PNG>
 Package pdftex.def Info: architecture.PNG used on input line 18.
@@ -576,7 +576,7 @@ Overfull \hbox (30.31247pt too wide) in paragraph at lines 18--19
  [] 
  []
 
-[16
+[17
 
 
 
@@ -589,12 +589,12 @@ Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
- [17 <./architecture.PNG>]) [18]
+ [18 <./architecture.PNG>]) [19]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 4.
-) [19
+) [20
 
 
 
@@ -602,29 +602,22 @@ Chapter 4.
 No file thesis.bbl.
 \openout2 = `ref.aux'.
 
-(./ref.tex [20
+(./ref.tex [21
 
 
 
-]) [21]
-\openout2 = `vitae.aux'.
-
- (./vitae.tex) [22
-
-
-
-] (./thesis.aux (./acknowl.aux)
-(./abstract.aux) (./null.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux
-) (./chapter6.aux) (./ref.aux) (./vitae.aux))
+]) [22] (./thesis.aux (./acknowl.aux) (./abstract.aux)
+(./null.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter6.aux
+) (./ref.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11576 strings out of 493014
- 236165 string characters out of 6133351
- 275240 words of memory out of 5000000
- 14838 multiletter control sequences out of 15000+600000
+ 11567 strings out of 493014
+ 236084 string characters out of 6133351
+ 274941 words of memory out of 5000000
+ 14836 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,6n,54p,1758b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -632,7 +625,7 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (31 pages, 526533 bytes).
+Output written on thesis.pdf (31 pages, 526524 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
