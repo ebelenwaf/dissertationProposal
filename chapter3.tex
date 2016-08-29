@@ -2,7 +2,7 @@
 
 \chapter{Proposed Model}
 
-In this chapter we define all of the components of our proposed model. From the provenance-aware system which deals with the collection, storage and querying of provenance data from IoT devices to the  IDS system which deals with detecting malicious attacks on IoT Devices.
+In this chapter we define all of the components of our proposed model. From the provenance-aware system which deals with the collection, storage and querying of provenance data to the  Intrusion Detection System which deals with detecting malicious attacks on IoT Devices.
 
 \section{Provenance\-Collection Model}
 
@@ -10,7 +10,7 @@ In this chapter we define all of the components of our proposed model. From the 
 
 \section{Provenance-Collection System}
 
-In this section, we outline the components of our system and describe how provenance information is collected across the IoT system. Figure 1 displays the system architecture of our approach. Sensor and actuator readings in the form of I/O are recorded by the tracer component. This component intercepts system level I/O and produces trace information in the Common Trace Format (CTF). CTF represents binary trace information containing multiple streams of binary events such as I/O activity. Trace information is converted into the Open Provenance Model (OPM), which represents the relationship between provenance entities contained in the system. Our system relies heavily on data pruning to reduce and remove unimportant provenance in order to conserve memory. The key research challenge is in creating an efficient data pruning technique that ranks I/O operations based on importance. Pruned provenance information is later securely transmitted and stored in a private cloud backend.
+In this section, we outline the components of our system and describe how provenance information is collected across the IoT ecosystem. Figure 1 displays the system architecture of our approach. Sensor and actuator readings in the form of I/O are recorded by the tracer component. This component intercepts system level I/O and produces trace information in the Common Trace Format (CTF). CTF represents binary trace information containing multiple streams of binary events such as I/O activity. Trace information is converted into the Open Provenance Model (OPM), which represents the relationship between provenance entities contained in the system. Our system relies heavily on data pruning to reduce and remove unimportant provenance in order to conserve memory. The key research challenge is in creating an efficient data pruning technique that ranks I/O operations based on importance. Pruned provenance information is later securely transmitted and stored in a private cloud backend.
 
 \begin{figure}[h]
 \begin{center}
@@ -21,7 +21,7 @@ In this section, we outline the components of our system and describe how proven
 \label{autom}
 \end{figure}
 
-The goal of our research is to create a provenance aware system that records I/O operations on data for devices connected in an IoT system. For our implementation, several tools and hardware components are utilized in the development of our prototype, some of the tools utilized are outlined below:
+The goal is to create a provenance aware system that records I/O operations on data for devices connected in an IoT system. For our implementation, several tools and hardware components are utilized in the development of our prototype, some of the tools utilized are outlined below:
 
 \begin{itemize}
 \item Xilinx Zynq ZedBoard and TI TM4C129E. These devices are microcontrollers used to evaluate our approach. We choose the Xilinx Zynq ZedBoard because it is a representation of what can be found on an IoT gateway device and it has the capability to include custom hardware in programmable logic. Also, TM4C is a low­cost, simple IoT demonstrator that was chosen for its high­performance, on­board emulation, and IoT gateway projects can be programmed without additional need for hardware tools.
@@ -31,6 +31,6 @@ The goal of our research is to create a provenance aware system that records I/O
 \end{itemize}
 
 
-\section{PAIST: Provenance Aware IDS System for IoT }
+\section{Provenance Aware IDS System for IoT }
 
 This section outlines the core functionalities of our model PAIST. 
