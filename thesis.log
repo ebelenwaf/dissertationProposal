@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  29 AUG 2016 01:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 SEP 2016 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,40 +352,53 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (./thesis.aux (./acknowl.aux)
-(./abstract.aux) (./null.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box37
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen151
+\ttl@minus=\dimen152
+\ttl@toksa=\toks27
+\titlewidth=\dimen153
+\titlewidthlast=\dimen154
+\titlewidthfirst=\dimen155
+)
+(./thesis.aux (./acknowl.aux) (./abstract.aux) (./null.aux) (./chapter1.aux)
+(./chapter2.aux) (./chapter3.aux
 
 LaTeX Warning: Label `autom' multiply defined.
 
-) (./chapter6.aux))
+) (./chapter4.aux) (./chapter6.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
-\scratchdimen=\dimen151
-\scratchbox=\box37
+\scratchdimen=\dimen156
+\scratchbox=\box38
 \nofMPsegments=\count112
 \nofMParguments=\count113
-\everyMPshowfont=\toks27
+\everyMPshowfont=\toks28
 \MPscratchCnt=\count114
-\MPscratchDim=\dimen152
+\MPscratchDim=\dimen157
 \MPnumerator=\count115
 \makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks28
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -434,46 +447,46 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 54.
+(Font)              <12> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 54.
+(Font)              <8> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 54.
+(Font)              <6> on input line 56.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
  [2] [3]
 \openout2 = `acknowl.aux'.
 
@@ -538,42 +551,40 @@ Chapter 2.
 
 ] [7]
 
-LaTeX Warning: Citation `Rabinovich1995' on page 8 undefined on input line 29.
+LaTeX Warning: Citation `Rabinovich1995' on page 8 undefined on input line 31.
 
-[8] [9] [10] [11] [12] <opm_convention.PNG, id=76, 302.3295pt x 252.34274pt>
+[8] [9] [10] [11] [12] [13] [14]
+<opm_convention.PNG, id=82, 302.3295pt x 252.34274pt>
 File: opm_convention.PNG Graphic file (type png)
-
-<use opm_convention.PNG>
-Package pdftex.def Info: opm_convention.PNG used on input line 128.
+ <use opm_convention.PNG>
+Package pdftex.def Info: opm_convention.PNG used on input line 150.
 (pdftex.def)             Requested size: 302.32875pt x 252.34212pt.
- [13 <./opm_convention.PNG>]
-Overfull \hbox (18.55217pt too wide) in paragraph at lines 170--171
+
+[15 <./opm_convention.PNG>]
+Overfull \hbox (18.55217pt too wide) in paragraph at lines 192--193
 []\OT1/cmr/m/n/12 Activity: An ac-tiv-ity rep-re-sents some form of ac-tion tha
 t oc-curs over a time frame.Actions
  []
 
-[14] <prov_json.png, id=85, 426.59375pt x 513.92pt>
+[16] <prov_json.png, id=92, 426.59375pt x 513.92pt>
 File: prov_json.png Graphic file (type png)
  <use prov_json.png>
-Package pdftex.def Info: prov_json.png used on input line 216.
+Package pdftex.def Info: prov_json.png used on input line 238.
 (pdftex.def)             Requested size: 299.9545pt x 361.34999pt.
 
-[15]) [16 <./prov_json.png>] [17]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17] [18 <./prov_json.png>] [19]) [20]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 3.
-
-Overfull \hbox (0.20468pt too wide) in paragraph at lines 5--6
-\OT1/cmr/m/n/12 In this chap-ter we de-fine all of the com-po-nents of our pro-
-posed model. From the provenance-
- []
-
-[18
+[21
 
 
 
-] <architecture.PNG, id=100, 492.84125pt x 279.0425pt>
+] <architecture.PNG, id=109, 492.84125pt x 279.0425pt>
 File: architecture.PNG Graphic file (type png)
 
 <use architecture.PNG>
@@ -590,19 +601,34 @@ Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
+[22 <./architecture.PNG>]
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
-[19 <./architecture.PNG>]) [20]
+) [23]
+\openout2 = `chapter4.aux'.
+
+ (./chapter4.tex
+Chapter 4.
+[24
+
+
+
+]
+
+LaTeX Warning: Citation `Lakeyev1995' on page 25 undefined on input line 96.
+
+[25]) [26]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
-Chapter 4.
-) [21
+Chapter 5.
+) [27
 
 
 
 ] (./thesis.aux (./acknowl.aux) (./abstract.aux) (./null.aux)
-(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter6.aux))
+(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux)
+(./chapter6.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -611,20 +637,28 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11544 strings out of 493014
- 235837 string characters out of 6133351
- 274596 words of memory out of 5000000
- 14821 multiletter control sequences out of 15000+600000
- 8500 words of font info for 30 fonts, out of 8000000 for 9000
+ 11837 strings out of 493014
+ 239622 string characters out of 6133351
+ 280131 words of memory out of 5000000
+ 15100 multiletter control sequences out of 15000+600000
+ 9468 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,54p,1874b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,54p,1874b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (30 pages, 507430 bytes).
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (36 pages, 592380 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 175 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

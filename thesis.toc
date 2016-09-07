@@ -18,21 +18,30 @@
 \contentsline {subsection}{\numberline {2.1.4}StoryBook}{8}
 \contentsline {subsection}{\numberline {2.1.5}Trustworthy whole system provenance for Linux kernel}{9}
 \contentsline {subsection}{\numberline {2.1.6}Towards Automated Collection of Application-Level Data Provenance}{10}
-\contentsline {subsection}{\numberline {2.1.7}user space provenance with Sandboxing}{11}
-\contentsline {subsection}{\numberline {2.1.8}Provenance for Sensors}{11}
-\contentsline {section}{\numberline {2.2}Model for representing provenance for IoT}{11}
-\contentsline {subsection}{\numberline {2.2.1}Open Provenance Model(OPM)}{12}
-\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(Prov-DM)}{14}
-\contentsline {subsection}{\numberline {2.2.3}PROV-JSON}{15}
-\contentsline {section}{\numberline {2.3}Overview of Data pruning techniques}{17}
-\contentsline {subsection}{\numberline {2.3.1}Graph Compression}{17}
-\contentsline {subsection}{\numberline {2.3.2}Dictionary Encoding}{17}
-\contentsline {subsection}{\numberline {2.3.3}Arithmetic Encoding}{17}
-\contentsline {section}{\numberline {2.4}Intrusion Detection for IoT}{17}
-\contentsline {chapter}{\numberline {3}Proposed Model}{18}
-\contentsline {section}{\numberline {3.1}Provenance\discretionary {-}{}{}Collection Model}{18}
-\contentsline {section}{\numberline {3.2}Provenance-Collection System}{18}
-\contentsline {section}{\numberline {3.3}Provenance Aware IDS System for IoT }{20}
-\contentsline {chapter}{\numberline {4}Concluding Remarks}{21}
-\contentsline {section}{\numberline {4.1}Significance of the Result}{21}
-\contentsline {section}{\numberline {4.2}Future Work}{21}
+\contentsline {subsection}{\numberline {2.1.7}Provenance from Log Files: a BigData Problem}{11}
+\contentsline {subsection}{\numberline {2.1.8}Towards a Universal Data Provenance Framework using Dynamic Instrumentnation}{12}
+\contentsline {subsection}{\numberline {2.1.9}user space provenance with Sandboxing}{13}
+\contentsline {subsection}{\numberline {2.1.10}Provenance for Sensors}{13}
+\contentsline {subsection}{\numberline {2.1.11}Provenance Recording for Services}{13}
+\contentsline {section}{\numberline {2.2}Model for representing provenance for IoT}{13}
+\contentsline {subsection}{\numberline {2.2.1}Open Provenance Model(OPM)}{13}
+\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(Prov-DM)}{15}
+\contentsline {subsection}{\numberline {2.2.3}PROV-JSON}{17}
+\contentsline {section}{\numberline {2.3}Overview of Relevant Compresion techniques}{18}
+\contentsline {subsection}{\numberline {2.3.1}Graph Compression}{18}
+\contentsline {subsection}{\numberline {2.3.2}Lossy Compresion}{18}
+\contentsline {subsection}{\numberline {2.3.3}Lossless Compresion}{19}
+\contentsline {subsubsection}{Arithmetic Coding}{19}
+\contentsline {subsubsection}{Dictionary Coding}{19}
+\contentsline {subsubsection}{Pruning Technique}{19}
+\contentsline {chapter}{\numberline {3}Sensor Data Provenance Collection Framework for the Internet of Things}{21}
+\contentsline {section}{\numberline {3.1}Provenance\discretionary {-}{}{}Collection Model}{21}
+\contentsline {section}{\numberline {3.2}Provenance-Collection System}{21}
+\contentsline {section}{\numberline {3.3}Provenance Aware IDS System for IoT }{23}
+\contentsline {chapter}{\numberline {4}Storage Optimization Framework for Provenance data storage in IoT devices}{24}
+\contentsline {section}{\numberline {4.1}Definitions}{24}
+\contentsline {section}{\numberline {4.2}Theorem}{26}
+\contentsline {section}{\numberline {4.3}Open Problem}{26}
+\contentsline {chapter}{\numberline {5}Concluding Remarks}{27}
+\contentsline {section}{\numberline {5.1}Significance of the Result}{27}
+\contentsline {section}{\numberline {5.2}Future Work}{27}
