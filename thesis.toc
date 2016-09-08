@@ -6,42 +6,44 @@
 \noindent {\bf Chapter}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{2}
-\contentsline {section}{\numberline {1.2}Provenance-Aware IoT Device Use Case}{3}
-\contentsline {section}{\numberline {1.3}Research Questions}{3}
-\contentsline {section}{\numberline {1.4}Research Contribution}{5}
-\contentsline {section}{\numberline {1.5}Organization of Dissertation proposal}{5}
-\contentsline {chapter}{\numberline {2}Background and Related Work}{6}
-\contentsline {section}{\numberline {2.1}Overview of Provenance Aware systems}{6}
-\contentsline {subsection}{\numberline {2.1.1}Provenance Aware Storage System(PASS)}{6}
-\contentsline {subsection}{\numberline {2.1.2}HiFi}{7}
-\contentsline {subsection}{\numberline {2.1.3}RecProv}{8}
-\contentsline {subsection}{\numberline {2.1.4}StoryBook}{8}
-\contentsline {subsection}{\numberline {2.1.5}Trustworthy whole system provenance for Linux kernel}{9}
-\contentsline {subsection}{\numberline {2.1.6}Towards Automated Collection of Application-Level Data Provenance}{10}
-\contentsline {subsection}{\numberline {2.1.7}Provenance from Log Files: a BigData Problem}{11}
-\contentsline {subsection}{\numberline {2.1.8}Towards a Universal Data Provenance Framework using Dynamic Instrumentnation}{12}
-\contentsline {subsection}{\numberline {2.1.9}user space provenance with Sandboxing}{13}
-\contentsline {subsection}{\numberline {2.1.10}Provenance for Sensors}{13}
-\contentsline {subsection}{\numberline {2.1.11}Provenance Recording for Services}{13}
-\contentsline {section}{\numberline {2.2}Model for representing provenance for IoT}{13}
-\contentsline {subsection}{\numberline {2.2.1}Open Provenance Model(OPM)}{13}
-\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(Prov-DM)}{15}
-\contentsline {subsection}{\numberline {2.2.3}PROV-JSON}{17}
-\contentsline {section}{\numberline {2.3}Overview of Relevant Compresion techniques}{18}
-\contentsline {subsection}{\numberline {2.3.1}Graph Compression}{18}
-\contentsline {subsection}{\numberline {2.3.2}Lossy Compresion}{18}
-\contentsline {subsection}{\numberline {2.3.3}Lossless Compresion}{19}
-\contentsline {subsubsection}{Arithmetic Coding}{19}
-\contentsline {subsubsection}{Dictionary Coding}{19}
-\contentsline {subsubsection}{Pruning Technique}{19}
-\contentsline {chapter}{\numberline {3}Sensor Data Provenance Collection Framework for the Internet of Things}{21}
-\contentsline {section}{\numberline {3.1}Provenance\discretionary {-}{}{}Collection Model}{21}
-\contentsline {section}{\numberline {3.2}Provenance-Collection System}{21}
-\contentsline {section}{\numberline {3.3}Provenance Aware IDS System for IoT }{23}
-\contentsline {chapter}{\numberline {4}Storage Optimization Framework for Provenance data storage in IoT devices}{24}
-\contentsline {section}{\numberline {4.1}Definitions}{24}
-\contentsline {section}{\numberline {4.2}Theorem}{26}
-\contentsline {section}{\numberline {4.3}Open Problem}{26}
-\contentsline {chapter}{\numberline {5}Concluding Remarks}{27}
-\contentsline {section}{\numberline {5.1}Significance of the Result}{27}
-\contentsline {section}{\numberline {5.2}Future Work}{27}
+\contentsline {subsection}{\numberline {1.1.1}Provenance and Metadata}{3}
+\contentsline {subsection}{\numberline {1.1.2}Provenance and Log data}{4}
+\contentsline {section}{\numberline {1.2}Provenance-Aware IoT Device Use Case}{4}
+\contentsline {section}{\numberline {1.3}Research Questions}{4}
+\contentsline {section}{\numberline {1.4}Research Contribution}{6}
+\contentsline {section}{\numberline {1.5}Organization of Dissertation proposal}{6}
+\contentsline {chapter}{\numberline {2}Background and Related Work}{7}
+\contentsline {section}{\numberline {2.1}Overview of Provenance Aware systems}{7}
+\contentsline {subsection}{\numberline {2.1.1}Provenance Aware Storage System(PASS)}{7}
+\contentsline {subsection}{\numberline {2.1.2}HiFi}{8}
+\contentsline {subsection}{\numberline {2.1.3}RecProv}{9}
+\contentsline {subsection}{\numberline {2.1.4}StoryBook}{9}
+\contentsline {subsection}{\numberline {2.1.5}Trustworthy whole system provenance for Linux kernel}{10}
+\contentsline {subsection}{\numberline {2.1.6}Towards Automated Collection of Application-Level Data Provenance}{11}
+\contentsline {subsection}{\numberline {2.1.7}Provenance from Log Files: a BigData Problem}{12}
+\contentsline {subsection}{\numberline {2.1.8}Towards a Universal Data Provenance Framework using Dynamic Instrumentnation}{13}
+\contentsline {subsection}{\numberline {2.1.9}user space provenance with Sandboxing}{14}
+\contentsline {subsection}{\numberline {2.1.10}Provenance for Sensors}{14}
+\contentsline {subsection}{\numberline {2.1.11}Provenance Recording for Services}{14}
+\contentsline {section}{\numberline {2.2}Model for representing provenance for IoT}{14}
+\contentsline {subsection}{\numberline {2.2.1}Open Provenance Model(OPM)}{14}
+\contentsline {subsection}{\numberline {2.2.2}Provenance Data Model(Prov-DM)}{16}
+\contentsline {subsection}{\numberline {2.2.3}PROV-JSON}{18}
+\contentsline {section}{\numberline {2.3}Overview of Relevant Compresion techniques}{19}
+\contentsline {subsection}{\numberline {2.3.1}Graph Compression}{19}
+\contentsline {subsection}{\numberline {2.3.2}Lossy Compresion}{19}
+\contentsline {subsection}{\numberline {2.3.3}Lossless Compresion}{20}
+\contentsline {subsubsection}{Arithmetic Coding}{20}
+\contentsline {subsubsection}{Dictionary Coding}{20}
+\contentsline {subsubsection}{Pruning Technique}{20}
+\contentsline {chapter}{\numberline {3}Sensor Data Provenance Collection Framework for the Internet of Things}{22}
+\contentsline {section}{\numberline {3.1}Provenance\discretionary {-}{}{}Collection Model}{22}
+\contentsline {section}{\numberline {3.2}Provenance-Collection System}{22}
+\contentsline {section}{\numberline {3.3}Provenance Aware IDS System for IoT }{24}
+\contentsline {chapter}{\numberline {4}Storage Optimization Framework for Provenance data storage in IoT devices}{25}
+\contentsline {section}{\numberline {4.1}Definitions}{25}
+\contentsline {section}{\numberline {4.2}Theorem}{27}
+\contentsline {section}{\numberline {4.3}Open Problem}{27}
+\contentsline {chapter}{\numberline {5}Concluding Remarks}{28}
+\contentsline {section}{\numberline {5.1}Significance of the Result}{28}
+\contentsline {section}{\numberline {5.2}Future Work}{28}

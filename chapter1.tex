@@ -37,11 +37,24 @@ determine where, if and when a malicious attack occurs. To achieve transparency,
 propose a secure provenance aware system that provides a detailed record of all data
 transactions performed on devices connected in an IoT network and also investigate its applications in providing intrusion detection to IoT devices.  \textcolor{red}{Data is generated in at a fast rate in real-time by sensors and actuators. The provenance of this data tends to be larger than the data itself.}
 
+Metada
+
+\subsection{Provenance and Metadata}
+Metadata and provenance are often related but yet have subtle differences. Metadata contains descriptive information about data objects. Metadata can be considered as provenance when there exists relationship between objects and explains how objects are . For example a web server can have metadata information such as the host and destination IP addresses which might not be considered as provenance information for a specific application.It could also contain time stamps with loction of IP addresses which are considered as provenance information. In summary metadata and provennace are not the same, metadata contains valuable  provenance information but not all provenance information is metadata. 
+
+
+\textcolor{red}{Metadata is used to represent properties of objects. Many of those properties have to do with provenance, so the two are often equated. How does metadata relate to provenance?
+Descriptive metadata only becomes part of provenance when one also specifies its relationship to deriving an object. For example, a file can have a metadata property that states its size, which is not considered provenance information since it does not relate to how it was created. The same file can have metadata regarding creation date, which would be considered provenance-relevant metadata. So even though a lot of metadata has to do with provenance, both terms are not equivalent. In summary, provenance is often represented as metadata, but not all metadata is necessarily provenance.}
+
+
+\subsection{Provenance and Log data}
+Log data contains information about that activity of an object in a operating system or process.Provenance is a specialized form of Log data. It contains information specific to an application domain. Log files might contain unrealted information such as error messages, warnings which might not be considered as provenance data. Logging is limited, lacking information that shows the internal state of an object. Provenance allows for a holistic collection of information that relates to the change the internal state of an object.
+
 \section{Provenance-Aware IoT Device Use Case}
 
-Consider a smart home which contains interconnected devices such as a thermostat connected to the internet. This device automatically detects and regulates the temperature of a room based on prior information of a user's temperature settings, a smart lock system that can be controlled remotely and informs a user via text when has been a breach, a home security camera motoring system, A smart fridge which sends a reminder when food produce are low. A malicous intruder tries to gain access to the smart lock system and security camea remotely. Provenance can be used to track the series  of events to determine where and how a malicious attack originated.It can also be used as a safeguard to alert of a possible remote or insider compromise thereby protecting us from future or current malicious attacks.
+Consider a smart home which contains interconnected devices such as a thermostat connected a wireless network. This device automatically detects and regulates the temperature of a room based on prior information of a user's temperature settings, a smart lock system that can be controlled remotely and informs a user via text when has been a breach, a home security camera motoring system, A smart fridge which sends a reminder when food produce are low. A malicous intruder tries to gain access to the smart lock system and security camea remotely. Provenance can be used to track the series  of events to determine where and how a malicious attack originated.It can also be used as a safeguard to alert of a possible remote or insider compromise thereby protecting us from future or current malicious attacks.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
 
 \includegraphics[height=3in]{smarthome-diagram.png}
@@ -49,6 +62,8 @@ Consider a smart home which contains interconnected devices such as a thermostat
 \caption{Place holder for use case Diagram}
 
 \end{figure}
+
+
 
 
 
