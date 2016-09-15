@@ -4,11 +4,34 @@
 
 \chapter{Background and Related Work}\label{background}
 
-This section outlines some of the state of the art in the area of data provenance for file systems, data compression techniques for data provenance, and provenance-aware intrusion detection systems.
+This section outlines some of the state of the art in the area of data provenance collection systems, data compression techniques for data provenance, and models for representing provenance.
 
-\section{Overview of Provenance Aware systems}
+\section{IoT Architecture}
 
-There has been a considerable amount of work done on data provenance collection. Some of this work has been focused on databases, sensor networks and system level provenance but so far little attention has been given to provenance in IoT devices. Some the previous work done on data provenance collection systems are outlined below:
+IoT architecture consists of four distinct layers, sensor layer, device layer, gateway layer and cloud layer. The base of the architectural stack consist of sensors and actuators which gathers information from the IoT devices and interacts with the device layer. The device layer consists of devices such as (e.g mobile phones, laptops, smart devices) which are responsible for aggregating data from sensors and actuators. These device in turn forwards the aggregated data to the gateway layer.The gateway layer is concerned with the routing and forwarding of data collected. It could also serve as a medium of temporal storage. This layer serves as the intermediary between the device and the cloud layer. The cloud layer is involved with the storage and processing of data collected from the gateway layer. This information can be further processed with advanced analytics to derive insights from the data received.  Figure 2 displays the IoT architectural stack and the interactions between the respective  layers.
+
+
+
+
+
+
+\textcolor{red}{TODO: Discuss IoT architecture}
+
+
+
+\section{Provenance and Metadata}
+Metadata and provenance are often considered related but yet subtle differences exist between them. Metadata contains descriptive information about data. Metadata can be considered as provenance when there exists relationship between objects and explains how objects are . For example a web server can have metadata information such as the host and destination IP addresses which might not be considered as provenance information for a specific application.It could also contain time stamps with location of IP addresses which are considered as provenance information. In summary metadata and provennace are not the same, metadata contains valuable  provenance information but not all provenance information is metadata. 
+
+
+\textcolor{red}{Metadata is used to represent properties of objects. Many of those properties have to do with provenance, so the two are often equated. How does metadata relate to provenance?
+Descriptive metadata only becomes part of provenance when one also specifies its relationship to deriving an object. For example, a file can have a metadata property that states its size, which is not considered provenance information since it does not relate to how it was created. The same file can have metadata regarding creation date, which would be considered provenance-relevant metadata. So even though a lot of metadata has to do with provenance, both terms are not equivalent. In summary, provenance is often represented as metadata, but not all metadata is necessarily provenance.}
+
+
+\section{Provenance and Log data}
+Log data contains information about that activity of an object in a operating system or process.Provenance is a specialized form of Log data. It contains information specific to an application domain. Log files might contain unrealted information such as error messages, warnings which might not be considered as provenance data. Logging is limited, lacking information that shows the internal state of an object. Provenance allows for a holistic collection of information that relates to the change the internal state of an object.
+\section{Related Work on Provenance Collection Systems}
+
+There has been a considerable amount of work done on data provenance collection. Some of this work has been focused on databases, sensor networks, scientific workflow systems and file system provenance but so far little attention has been given to provenance in IoT devices. Some the prior work done on data provenance collection are outlined below:
 
 \subsection{Provenance Aware Storage System(PASS)}
 MuniswamyReddy
@@ -79,7 +102,7 @@ The framework consists of three major components. The Rule engine which contains
 Gessiou et al propose a dyamic unstrumentation framework for data provenance collection that is universal and does not incure the overhead of kernel or source code modifications. This is achieved by using DTrace, a dynamic instumentation utility that allows for the instrumentation of user-level and kernel-level code and with no overhead cost when disabled. It allows to be included at every point in time in a rsystem  runtime without overhead issues from diabled probes.
 
 The goal is to provide an easy extension to add provenance collection to any application regardless of its size or complexity. They implement the provenance collection scheme on file system using PASS, on a database(SQLite) and a web browser(Safari). 
-The logging component monitors all system calls for all processes involved. It contains information such as system-call arguments, return value, user id, process name, process if and timestamp. The loggging components include functionalities to collect library and fucntional calls.They argue that applying data provenance to different layers of the software stack and not just the system level can provide varying levels of information.  Provenance needs to be captured at the layer in which it is closest to the information that is needed to be captured. They collect provenance information that pertains to complex systems activities such as a web browser or a database. The information is collected from a process system-call and functional-call based on valid entry points contained in the process. It allows information from multiple entry points. DTrace dynamic instrumentation helps in discovering interesting paths in a system in which data propagates. This helps users use this information to collect a more accurate provenance data.
+The logging component monitors all system calls for all processes involved. It contains information such as system-call arguments, return value, user id, process name, process if and timestamp. The logging components include functionalities to collect library and functional calls.They argue that applying data provenance to different layers of the software stack and not just the system level can provide varying levels of information.  Provenance needs to be captured at the layer in which it is closest to the information that is needed to be captured. They collect provenance information that pertains to complex systems activities such as a web browser or a database. The information is collected from a process system-call and functional-call based on valid entry points contained in the process. It allows information from multiple entry points. DTrace dynamic instrumentation helps in discovering interesting paths in a system in which data propagates. This helps users use this information to collect a more accurate provenance data.
 
 
 
@@ -100,6 +123,25 @@ provenance aware system for I/O operations which is used to ensure trust of
 connected devices.
 
 \subsection{Provenance Recording for Services}
+Grouth et al developed a provenance collection system, PReServ that allows software developers to integrate provenance recording into their applications mainly focused on scientific applications. They introduce P-assertion Recording protocol as a way of monitoring process  documentation for Service Oriented Architecture(SOA) the standard for grid systems. PreServ is the implementation of PreP. PreP specifies how provenance can be recorded.  PreServ contains a provenance store web service for recording and querying of p-assertions. P-assertions are provenance data generated by actors about the execution. It contains information about the messages sent and recieved as well as state of the message. PreServ is composed of three layers, the Message Translator which is involved with converting all messages receive via HTTP request to XML format for the provenance store layer. It also determine which plug-in handle to route incoming request, the  Plug-Ins layer receives messages from the Message translator. It implements functionality that the Provenance Store component provides. This component allows third party developers to add new functionality to store provenance data without going through details of the code implementation. The backend component which stores the P-assertions. Various backend implementations could be attached to the system by the plug-in component
+
+
+
+\section{Related Works on Data Compression}
+
+\subsection{Secure Data Provenance Compression Using Arithmetic Coding in Wireless Sensor Networks}
+
+The authors encode the provenance of the path in which a sensor provenance travels using arithmetic coding, a data compression algorithm. The WSN contains a base station and a newtork of nodes. The base station is incharge of verifying the integrity of the packets sent. It is also where the arithmetic coding is decoded.The provenance is encoded at the respective nodes and forwarded to the next node in the graph and it is decoded in the base station. 
+
+The BS recovers the characters the same way they were encoded. It also receives the encoded interval which it uses to decode by using the probability values saved in its storage.
+
+
+
+For their application,provenance are refered to as the path in which data travels. Provenance refers to where a packet is originated and how it is delivered to the base station. Each node in the WSN is represented as a string of characters and are encoded using arithmetic coding. The base station receives the code and decodes.
+
+Contains two kinds of provenance-Simple provenance in which data are generated from the leaf nodes and are forwarded to surrounding nodes towards the Base Station. In the other form of provenance, data is aggregated at an aggregation node and forwarded to a BS.
+
+Arithmetic coding assigns intervals to a string based  probabilities for the cumulative occurrence of characters contained in the string. It assign probabilities by monitoring the activities of the WSN, this is known as the training phase. In this phase the number of times a node appears in a packet is counted.  Each node in the WSN is regarded as a symbol. This is used as input to the arithmetic coding algorithm which generates a variable interval for the combination of symbols.
 
 
 
@@ -108,7 +150,7 @@ connected devices.
 
 \section{Model for representing provenance for IoT}
 
-In order to generate provenance, we need to satisfy the who, where, how, and what of data transformations.Provenance data is represented using a provenance model which is serialized as a JSON output. This model contains information such as sensor readings, device name, and device information. This information is mapped into an appropriate provenance data model  to allow for interoperability and visualization.
+In order to generate provenance, we need to satisfy the who, where, how, and what of data transformations.Provenance data is represented using a provenance model which is serialized as a JSON output. This model contains information such as sensor readings, device name, and device information. This information is mapped into an appropriate provenance data model  to allow for interoperability and visualization. Provenance is represents causal dependencies between data objects. There are two models for representing provenance. These models have been applied in various literature and is considered a standard for representing provenance. Some of the models for representing provenance data are outlined below:
 
 \subsection{Open Provenance Model(OPM)}
 
@@ -124,7 +166,7 @@ OPM is represented as a directed acyclic graph which denotes causal dependency b
 \begin{itemize}
 \item wasGeneratedBy: Shows relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple enities so it is important to define the role.  
 \item wasControlledBy: This denotes a relationship in which an entity caused the creation of another entity.
-\item used(Role): Denotes an enity requires the services of another enity in order to execute.
+\item used(Role): Denotes an entity requires the services of another entity in order to execute.
 \item wasTriggeredBy: This relationship represents a process that was triggered by another process
 \item wasDerrivedFrom: This relationship indicates that the source needs to have been generated before the destination is generated.
 \end{itemize}
@@ -200,7 +242,7 @@ PROV-DM relations represents causal dependencies which denotes relationship betw
 \begin{itemize}
 \item wasGeneratedBy: This relation signifies the creation of an entity by an activity. 
 
-\item used: This relation denotes that the functionalities of an entity has been adopted by an activity.
+\item used: This relation denotes that the functionality of an entity has been adopted by an activity.
 
 \item wasInformedBy: This relation denotes an causality that follows the exchange of two activities.
 
@@ -216,7 +258,7 @@ PROV-DM relations represents causal dependencies which denotes relationship betw
 
 \end{itemize}
 
-Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are outlined below:
+Prov-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are described below:
 
 \begin{itemize}
 
@@ -226,11 +268,11 @@ Prov-DM contains similar yet subtle differences between OPM.Some of the differen
 
 \end{itemize}
 
-Since PROV-DM is built on OPM and contains easy to understand constructs of enities, we choose to use this instead of OPM. 
+Since PROV-DM is built on OPM and contains easy to understand constructs of entities, we choose to use this instead of OPM. 
 
 \subsection{PROV-JSON}
 
-PROV-JSON is a W3C standard for representing PROV-DM in json format. It contains all of the components and relationships contained in PROV-DM. It ensures interoperability between applications using PROV-DM. It also allows for easy serialization and deserialization of PROV-DM mappings.JSON format is lightweight, easy to parse, and allows an easy way of manipulating data programmatically. An example of PROV-JSON format is described below:
+PROV-JSON is a W3C specification for relaying PROV-DM specification in JSON(Javascript Object Notation) format. It contains all of the components and relationships contained in PROV-DM. It ensures interoperability between applications using PROV-DM. It also allows for easy serialization and deserialization of PROV\-DM mappings.JSON is lightweight, easy to parse, and allows an easy way of manipulating data programmatically. An example of PROV-JSON format is described below:
 
 \begin{figure}[h]
 \begin{center}
@@ -243,40 +285,30 @@ PROV-JSON is a W3C standard for representing PROV-DM in json format. It contains
 
 
 
-\section{Overview of Relevant Compresion techniques}
+\section{Overview of Relevant Compression techniques}
 
 
 \subsection{Graph Compression}
 
-\subsection{Lossy Compresion}
+\subsection{Lossy Compression}
 
-Lossy compression is a form of data compression in which the original data can be reconstructed with some tolerance of loosing some information contained in the original data. This enables higher compression ration than lossless compresion techniques.Lossy Compression is mostly used in applications that does not have strict requirements as to loosing some information. An example of a lossless compression application can be seen in image compression softwares where the quality of the image is not seen by the naked eye. It is also used in speech transmission. 
+Lossy compression is a form of data compression in which the original data can be reconstructed with some tolerance of loosing some information contained in the original data. This enables higher compression ration than lossless compression techniques.Lossy Compression is mostly used in applications that does not have strict requirements as to loosing some information. An example of a lossless compression application can be seen in image compression software where the quality of the image is not seen by the naked eye. It is also used in speech transmission. 
 
-\subsection{Lossless Compresion}
-This is a data compression technique in which the original data can be reconstructed without loosing any information from. It is used by applications that requires that data be the same as the data compressed. An example of such an application that requires lossless compression is text compression.  Any for of compression that alters the structure of the original text results to a different meaning of the text. For instance, the sentence "I have a black cat" would have a different meaning if any inormation is lost from it.
+\subsection{Lossless Compression}
+Lossless compression is a data compression technique in which the original data is reconstructed without loss of any information from. It can be used by applications which requires that the data compressed and the original data be identical. An example of such an application that requires lossless compression is text compression.  Any compression that alters the structure of the original text results to a different meaning of the text. For instance, the sentence "I have a black cat" would have a different meaning if any information is lost from it.
 
 
 
 \subsubsection{Arithmetic Coding}
 
-Arithmetic coding is a form of lossless compression whch encodes a stream of characters into a variable size interval between [0,1). A probability is assigned to each characters contained in the string. A commulative probability is used to calculate the interval for the respective character.The more frequent characters are encoded with shorter codes than the less frequent characters. 
+Arithmetic coding is a form of lossless compression which encodes a stream of characters into a variable size interval between [0,1). A probability is assigned to each characters contained in the string. A cumulative probability is used to calculate the interval for the respective character.The more frequent characters are encoded with shorter codes than the less frequent characters. 
 
 \subsubsection{Dictionary Coding}
 
 
 
 \subsubsection{Pruning Technique} 
-The authors encode the provenance of the path in which a sensor provenance travels using arithmetic coding. The WSN contains a base station and a newtork of nodes. The base station is incharge of verifying the integrity of the packets sent. It is also where the arithmetic coding is decoded.The provenance is encoded at the respective nodes and forwarded to the next node in the graph and it is decoded in the base station. 
 
-The BS recovers the characters the same way thery were encoded. It also recieves the encoded interval which it uses to decode by using the probability values saved in its storage.
-
-
-
-For their applicaation,provenance are refered to as the path in which data travels. Provenance refers to where a packet is originated and how it is delievered to the basestation. Each node in the WSN is represented as a string of characters and are encoded using arithmetic coding. The base station recieves the code and decodes.
-
-Contains two kinds of provenance-Simple provenance in which data are generated from the leaf nodes and are forwarded to surrounding nodes towards the Base Station. In the other form of provenance, data is aggregated at an aggregator node and forwarded to a BS.
-
-Arithmetic coding assigns intervals to a string based  probablilities for the cummulative occurence of characters contained in the string. It assign probabilities by monitoring the activities of the WSN, this is known as the training phase. In this phase the number of times a node appears in a packet is counted.  Each node in the WSN is regarded as a symbol. This is used as input to the aritmetic coding algorithm which generates a variable interval for the combination of symbols.
 
 
 
