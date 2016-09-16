@@ -1,49 +1,31 @@
 \chapter{Introduction}\label{chapter:introduction}
 
 \section{Motivation}
-Over the years,the Internet of Things has garnered significant attention. According to a report released by Cisco, it is estimated that a total of 50 million devices will be
-connected to the internet by the year 2020. With the vast amounts of heterogeneous devices connected,
-security and privacy risks are inceased. Rapid7, an  internet security and analytics organization, released a report. In their report, they outline that vulnerabilities exist in
-baby monitors which allowed intruders unauthorized remote access to these devices
-whereby a malicious intruder can remotely view live feeds from a remote location. Having a provenance aware device will be beneficial since we have a trail of all activities performed on the device, we can backtrack and analyze operations
-performed on devices to determine who, where, and how a malicious activity
-occurred. 
-\par In an IoT system, most of the devices (things) are embedded systems which
-require lightweight and efficient solutions compared to general purpose
+In recent years,the Internet of Things(IoT) has gathered significant traction which has led to the exponential increase in the number of devices connected to the internet. According to a report released by Cisco, it is estimated that a total of 50 million devices will be
+connected to the internet by the year 2020. Data is generated in an enormous amount in real-time by sensors and actuators contained in these devices. With the vast amounts of heterogeneous devices interconnected,
+security and privacy risks are exponentially increased. Rapid7, an  internet security and analytics organization, released a report highlighting vulnerabilities that exists on select IoT devices. In their report, they outline  vulnerabilities in
+baby monitors which allowed intruders unauthorized access to devices
+whereby a malicious intruder can view live feeds from a remote location. Having a provenance aware device will be of immense benefit to the security of the device since it ensures trust between interconnected devices. With Provenance information, we can generate an activity trail which can be further analyzed to determine the who, where, and how, in the event of a malicious activity. 
+\par In an IoT system, most of the interconnected heterogeneous devices (things) are embedded systems which
+require lightweight and efficient solutions as compared to general purpose
 systems.This requirement is attributed to the constrained memory and computing power of such
 devices. A major issue arise in ensuring that data is properly secured and
-disseminated across an IoT network. The vast amount of data generated from IoT
+disseminated across an IoT architecture. The vast amount of data generated from IoT
 devices requires stronger levels of trust which can be achieved through data
-provenance. Provenance has immense benefits in IoT. The goal of data provenance is to determine causality and effect of actions or
-operations performed on a data object. Provenance ensures transparency between things
-connected in IoT systems. Data provenance ensures
+provenance. Provenance is used to determine causality and effect of 
+operations performed on a data object. Data provenance ensures
 authenticity, integrity and transparency between information disseminated across an
-IoT network. By creating data transparency, we can track data objects to
-determine where, in an event of a malicious attack. To achieve transparency, we
-propose a secure provenance aware system that provides a detailed record of all data
-transactions performed on devices connected in an IoT network and also investigate its applications in providing intrusion detection to IoT devices.Security applications such as intrusion detection, digital forensics, and
-access control can be further enhanced by incorporating data provenance to IoT devices.   \textcolor{red}{Data is generated in at a fast rate in real-time by sensors and actuators. The provenance of this data tends to be larger than the data itself.}
-
-\subsection{Data Provenance}
-
-The oxford English dictionary defines provenance as the place of origin or earliest known history of something. An example of provenance can be seen with a college transcript. A transcript can be defined as the provenance of a college degree because it outlines all of the courses satisfied in order to attain the degree.
-\par In the field of computing, data provenance also known as data lineage can be defined as the history of all transformations performed on a data object from the its creation to its current state. Data Provenance has been explored in the areas of scientific computing to track how an experiment is produced for reproducability, in buisness to determine the workflow of  a process, in field of computer security for forensic analysis and intrusion detection. Provenance denotes the who, where and why of data.An example of provenance for software systems is a web server's log file. This file contains metadata for various request and response time and ip addresses of all host systems that requests information from the server.Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities.Provenance ensures trust and integrity of data. The information in which provenance offers can be used in digital forensics to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices.  \textcolor{blue}{Most IoT devices are memory constrained devices} \textcolor{red}{TODO: Expand more on statement.}.
-
- 
-\subsection{Internet of Things(IoT)}
-The internet of things(IoT) can be defined as a network of heterogeneous devices communicating together. With the recent data explosion,information is ubiquitous and  disseminated at vast rate. \\
+IoT system.This level of transparency can be translated to various levels across the IoT architectural stack.To achieve transparency in an IoT framework, it is imperative that data provenance and IoT systems be combined to create a provenance aware system that provides detailed records of all data
+transactions performed on devices connected in an IoT network.
 
 
 
-
-Creating a provenance aware system is beneficial to IoT device because it ensures trust and  integrity of systems. Enabling IoT device provenance aware allows devices to be able to capture information such as the who, where and how transformations occur on a data object which enables  backtracking in an event of a malicious attack.
-
-  \textcolor{red}{TODO: Create transition from Data provenance to IoT...}
+Information is transmitted using various wired and wireless technologies such as Radio Frequency Identification(RFID), bluetooth, wifi, zigbee communication
 
 
 \section{Provenance-Aware IoT Device Use Case}
 
-Consider a smart home which contains interconnected devices such as a thermostat connected a wireless network that automatically detects and regulates the temperature of a room based on prior information of a user's temperature settings, a smart lock system that can be controlled remotely and informs a user via short messaging when has been a breach, a home security camera motoring system, A smart fridge which sends a reminder when food produce are low. A malicous intruder successfully attempts  to gain access to the smart lock system and security camea remotely. Provenance can be used to track the series  of events to determine where and how a malicious attack originated.It can also be used as a safeguard to alert of a possible remote or insider compromise thereby protecting future or current malicious attacks.
+Consider a smart home which contains interconnected devices such as a thermostat connected a wireless network which automatically detects and regulates the temperature of a room based on prior information of a user's temperature settings, a smart lock system which can be controlled remotely and informs a user via short messaging when a breach has occurred, a home security camera motoring system, A smart fridge which sends a reminder when food produce are low. A malicious intruder successfully attempts  to gain access to the smart lock system and security camera remotely. Provenance can be used to track the series  of events to determine where and how a malicious attack originated.It can also be used as a safeguard to alert of a possible remote or insider compromise thereby protecting future or current malicious attacks.
 
 \begin{figure}[h!]
 \begin{center}
@@ -56,21 +38,21 @@ Consider a smart home which contains interconnected devices such as a thermostat
 
 
 \section{Research Questions}
-Data provenance collection in IoT devices raises some key research issues. Some of the issues raised are outlined below:
+Data provenance and IoT are two important components that need to be unified. However, data provenance collection in IoT raises some important research issues. Some of which are as a result of preexisting provenance and IoT issues. Some of the issues raised as a result of the unification of data provenance with IoT are outlined below:
 
 \begin{itemize}
 
-\item Memory constraints on IoT Devices: The vast amounts of data generated leads high storage space utilization . Proper memory management/data pruning techniques should be employed for efficient storage of provenance data on memory contrained devices. 
+\item Memory constraints on IoT Devices: The vast amounts of data generated leads high storage space utilization . Proper memory management/data pruning techniques should be employed for efficient storage of provenance data on memory constrained devices. 
 
-\item How do we model provenance data collected for IoT devices? Do we use the OPM approach or create a specialized taxonomy for modeling provenance data.
+\item A fundamental question exists in effective modeling of provenance data. How do we model provenance data collected for IoT devices? Are there models used to represent causality between sensor and actuator readings in the IoT architecture.
 
-\item Provenance Query: How do we query provenance data in order to interprete provenance information and make anaylsis of data collected.
+\item How do we effectively collect provenance data in resource constrained device and relate this information accross various layer of the IoT architecture
 
-\item Provenance Versioning: Provenance version creates cycles. When a file is read or edited do we create a new instance of the file? Tracking all transformations that occurs on a data object in memeory constrained devices might lead to running out of storage space. A new instance of the provenance of that file should be created and included in the provenance data.
 
-\item Securing Provenance: Due to the great level of sensitivity that  provenance data entails, it is of utmost importance to ensure the confidentiality and integrity of provenance data stored on IoT devices while at rest or in transit. Proper encryption and authentication techniques need to be employed to ensure the confidentiality, integirty, and availability of provenance data.
 
-\item Provenance collection raises privacy issues.How do we ensure that the vast amount of data collected is not invasive to the privacy of the use and also is not used as a tool to perform malicious attacks.
+
+Provenance is used to validate the authenticity of data. It is important to create a system that automatically collect provenance in an IoT archtectural stack. Provenance geerated as either finegrained which involves the capture of every activity that occurs on the system or coarsegrained which involves a summarized varsiono of provenance information.
+
 \end{itemize}
 
 \section{Research Contribution}
