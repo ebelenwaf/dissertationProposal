@@ -1,0 +1,217 @@
+Screen reader users, click here to load entire article This page uses JavaScript to progressively load the article content as a user scrolls. Screen reader users, click the load entire article button to bypass dynamically loaded article content.
+Please note that Internet Explorer version 8.x will not be supported as of January 1, 2016. Please refer to this blog post for more information. Close
+ScienceDirect
+
+    Sign in
+    Sign in using your ScienceDirect credentials
+    Username
+    Password
+    Remember me
+    Forgotten username or password?
+    Sign in via your institution
+        OpenAthens login
+        Other institution login
+    Help
+
+    Journals
+    Books
+    Register
+
+    Journals
+    Books
+    Register
+
+Sign in
+Help
+close
+Sign in using your ScienceDirect credentials
+Username
+Password
+Remember me
+Forgotten username or password?
+Sign in via your institution
+
+    OpenAthens login
+    Other institution login
+
+    Purchase
+     
+    Help
+        Direct export
+         
+         
+        Export file
+          RIS (for EndNote, Reference Manager, ProCite)
+          BibTeX
+          Text
+          RefWorks Direct Export
+        Content
+          Citation Only
+          Citation and Abstract
+
+Advanced search
+
+ 
+Article outline
+Show full outline
+
+    Abstract
+    Keywords
+    1. Introduction
+    2. One paradigm, many visions
+    3. Enabling technologies
+    3.1. Identification, sensing and communication technologies
+    3.2. Middleware
+    3.2.1. Applications
+    3.2.2. Service composition
+    3.2.3. Service management
+    3.2.4. Object abstraction
+    3.2.5. Trust, privacy and security management
+    4. Applications
+    4.1. Transportation and logistics domain
+    4.1.1. Logistics
+    4.1.2. Assisted driving
+    4.1.3. Mobile ticketing
+    4.1.4. Monitoring environmental parameters
+    4.1.5. Augmented maps
+    4.2. Healthcare domain
+    4.2.1. Tracking
+    4.2.2. Identification and authentication
+    4.2.3. Data collection
+    4.2.4. Sensing
+    4.3. Smart environments domain
+    4.3.1. Comfortable homes and offices
+    4.3.2. Industrial plants
+    4.3.3. Smart museum and gym
+    4.4. Personal and social domain
+    4.4.1. Social networking
+    4.4.2. Historical queries
+    4.4.3. Losses
+    4.4.4. Thefts
+    4.5. Futuristic applications domain
+    4.5.1. Robot taxi
+    4.5.2. City information model
+    4.5.3. Enhanced game room
+    5. Open issues
+    5.1. Standardization activity
+    5.2. Addressing and networking issues
+    5.3. Security and privacy
+    5.3.1. Security
+    5.3.2. Privacy
+    6. Conclusions
+    References
+    Vitae
+
+Alert message
+JavaScript is disabled on your browser.
+Please enable JavaScript to use all the features on this page.
+Figures and tables
+
+    “Internet of Things” paradigm as a result of the convergence of different ...
+    Table 1
+    SOA-based architecture for the IoT middleware.
+    Applications domains and relevant major scenarios.
+    Table 2
+    Table 3
+    Encapsulation of RFID message into an IPv6 packet.
+    Man in the middle attack.
+
+JavaScript is disabled on your browser. Please enable JavaScript to use all the features on this page. This page uses JavaScript to progressively load the article content as a user scrolls. Click the View full text link to bypass dynamically loaded article content. View full text
+
+Computer Networks
+
+Volume 54, Issue 15 , 28 October 2010, Pages 2787–2805
+Cover image Cover image
+The Internet of Things: A survey
+
+    Luigi Atzori a , Author Vitae ,
+    Antonio Iera b , Author Vitae ,
+    Giacomo Morabito c , , Author Vitae
+
+    a DIEE, University of Cagliari, Italy
+    b University “Mediterranea” of Reggio Calabria, Italy
+    c University of Catania, Italy
+
+    Received 10 December 2009, Revised 27 April 2010, Accepted 14 May 2010, Available online 1 June 2010
+    Responsible Editor: E. Ekici
+
+  Show more   Show less
+Choose an option to locate/access this article:
+Check if you have access through your login credentials or your institution
+Check access
+Purchase $35.95
+
+    http://dx.doi.org/10.1016/j.comnet.2010.05.010 
+    Get rights and content 
+
+Abstract
+
+This paper addresses the Internet of Things. Main enabling factor of this promising paradigm is the integration of several technologies and communications solutions. Identification and tracking technologies, wired and wireless sensor and actuator networks, enhanced communication protocols (shared with the Next Generation Internet), and distributed intelligence for smart objects are just the most relevant. As one can easily imagine, any serious contribution to the advance of the Internet of Things must necessarily be the result of synergetic activities conducted in different fields of knowledge, such as telecommunications, informatics, electronics and social science. In such a complex scenario, this survey is directed to those who want to approach this complex discipline and contribute to its development. Different visions of this Internet of Things paradigm are reported and enabling technologies reviewed. What emerges is that still major issues shall be faced by the research community. The most relevant among them are addressed in details.
+Keywords
+
+    Internet of Things ;
+    Pervasive computing ;
+    RFID systems
+
+    Corresponding author. Tel.: +39 095 7382355; fax: +39 095 7382397.
+
+Copyright © 2010 Elsevier B.V. All rights reserved.
+Image
+
+Luigi Atzori is assistant professor at the University of Cagliari (Italy) since 2000. His main research topics of interest are in multimedia networking: error recovery and concealment, IP Telephony, video streaming, network QoS management. He has published more than 80 journal articles and refereed conference papers. He has been awarded a Fulbright Scholarship (11/2003–05/2004) to work on video at the University of Arizona. He is editor for the ACM/Springer Wireless Networks Journal and is involved in the organization of several International Conferences on Multimedia Networking.
+Image
+
+Antonio Iera is a Full Professor of Telecommunications at the University “Mediterranea” of Reggio Calabria, Italy. He graduated in Computer Engineering at the University of Calabria in 1991; then he received a Master Diploma in Information Technology from CEFRIEL/Politecnico di Milano and a Ph.D. degree from the University of Calabria. From 1994 to 1995 he has been with Siemens AG in Munich, Germany to participate to the RACE II ATDMA (Advanced TDMA Mobile Access) project under a CEC Fellowship Contract. Since 1997 he has been with the University Mediterranea, Reggio Calabria, where he currently holds the positions of scientific coordinator of the local Research Units of the National Group of Telecommunications and Information Theory (GTTI) and of the National Inter-University Consortium for Telecommunications (CNIT), Director of the ARTS – Laboratory for Advanced Research into Telecommunication Systems, and Head of the Department DIMET. His research interests include: new generation mobile and wireless systems, broadband satellite systems, Internet of Things. Elevated to the IEEE Senior Member status in 2007.
+Image
+
+Giacomo Morabito was born in Messina, Sicily (Italy) on March 16, 1972. He received the laurea degree in Electrical Engineering and the Ph.D. in Electrical, Computer and Telecommunications Engineering from the Istituto di Informatica e Telecomunicazioni, University of Catania, Catania (Italy), in 1996 and 2000, respectively. From November 1999 to April 2001, he was with the Broadband and Wireless Networking Laboratory of the Georgia Institute of Technology as a Research Engineer. Since April 2001 he is with the Dipartimento di Ingegneria Informatica e delleTelecomunicazioni of the University of Catania where he is currently Associate Professor. His research interests focus on analysis and solutions for wireless networks.
+Elsevier
+About ScienceDirect Remote access Shopping cart Contact and support Terms and conditions Privacy policy
+Cookies are used by this site. For more information, visit the cookies page .
+Copyright © 2016 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.
+RELX Group
+  Recommended articles
+
+        Internet of Things (IoT): A vision, architectural elements, and future directions
+        2013, Future Generation Computer Systems
+        more
+            Jayavardhana Gubbi, , Rajkumar Buyya, , Slaven Marusic, , Marimuthu Palaniswami,
+            Internet of Things (IoT): A vision, architectural elements, and future directions
+            Future Generation Computer Systems, Volume 29, Issue 7, September 2013, Pages 1645–1660
+            Original Research Article
+                PDF (2339 K)
+        Internet of things: Vision, applications and research challenges
+        2012, Ad Hoc Networks
+        more
+            Daniele Miorandi, , Sabrina Sicari, , Francesco De Pellegrini, , Imrich Chlamtac,
+            Internet of things: Vision, applications and research challenges
+            Ad Hoc Networks, Volume 10, Issue 7, September 2012, Pages 1497–1516
+                PDF (652 K)
+        Internet of Things – New security and privacy challenges
+        2010, Computer Law & Security Review
+        more
+            Rolf H. Weber,
+            Internet of Things – New security and privacy challenges
+            Computer Law & Security Review, Volume 26, Issue 1, January 2010, Pages 23–30
+            Original Research Article
+                PDF (170 K)
+    View more articles »
+
+  Citing articles ( 2335 )
+
+    This article has not been cited.
+
+  Related book content
+
+    No articles found.
+
++ Show more applications
+- Show fewer applications
+ 
+Download PDFs
+Help
+Help
+ 
+[Entitle Gadget]
+Entitle Gadget
+

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" class="js svg">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://link.springer.com/chapter/10.1007/978-3-642-30436-1_9">
+<meta name="wpd_url" content="http://link.springer.com/chapter/10.1007/978-3-642-30436-1_9">
+<meta name="wpd_date" content="2016-08-15T23:44Z">
+
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="citation_publisher" content="Springer Berlin Heidelberg">
+  <meta name="citation_title" content="Towards a Universal Data Provenance Framework Using Dynamic Instrumentation">
+  <meta name="citation_firstpage" content="103">
+  <meta name="citation_lastpage" content="114">
+  <meta name="citation_doi" content="10.1007/978-3-642-30436-1_9">
+  <meta name="citation_language" content="en">
+  <meta name="citation_abstract_html_url" content="http://link.springer.com/chapter/10.1007/978-3-642-30436-1_9">
+  <meta name="citation_pdf_url" content="http://link.springer.com/content/pdf/10.1007%2F978-3-642-30436-1_9.pdf">
+  <meta name="citation_springer_api_url" content="http://api.springer.com/metadata/pam?q=doi:SpringerId(10.1007/978-3-642-30436-1_9)&amp;api_key=">
+  <meta name="citation_author" content="Eleni Gessiou">
+  <meta name="citation_author_institution" content="Polytechnic Institute of NYU">
+  <meta name="citation_author" content="Vasilis Pappas">
+  <meta name="citation_author_institution" content="Columbia University">
+  <meta name="citation_author" content="Elias Athanasopoulos">
+  <meta name="citation_author_institution" content="Columbia University">
+  <meta name="citation_author" content="Angelos D. Keromytis">
+  <meta name="citation_author_institution" content="Columbia University">
+  <meta name="citation_author" content="Sotiris Ioannidis">
+  <meta name="citation_author_institution" content="Foundation for Research and Technology - Hellas">
+  <meta name="citation_inbook_title" content="Information Security and Privacy Research">
+  <meta name="citation_publication_date" content="2012/06/04">
+  <meta name="citation_conference_series_id" content="springer/sec">
+  <meta name="citation_conference_title" content="IFIP International Information Security Conference">
+  <meta name="citation_conference_sequence_num" content="27">
+  <meta name="citation_conference_abbrev" content="SEC">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Towards a Universal Data Provenance Framework Using Dynamic Instrument">
+  <meta name="twitter:description" content="The advantage of collecting data provenance information has driven research on how to extend or modify applications and systems in order to provide it, or the creation of architectures that are built ">
+  <meta name="twitter:image" content="http://link.springer.comhttps://static-content.springer.com/cover/book/978-3-642-30436-1.jpg">
+  <meta name="twitter:site" content="SpringerSBM">
+  <!--[if (gt IE 8) | (IEMobile)]><!-->  <!--<![endif]-->
+  <!--[if (lt IE 9) & (!IEMobile)]> <link rel="stylesheet" media="screen" href="/static/201607251336-19/css/ielt9_link.min.css"> <![endif]-->
+  
+  <link rel="apple-touch-icon-precomposed" size="144x144" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" size="114x114" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" size="72x72" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" size="57x57" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="favicon-32x32.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="/static/201607251336-19/sites/link/images/favicon.ico"/>
+  <![endif]-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/static/201607251336-19/sites/link/images/ms-tileimage.png">
+  <link rel="canonical" href="http://link.springer.com/chapter/10.1007%2F978-3-642-30436-1_9">
+  <script src="analytics.js" async=""></script><script src="gpt.js" type="text/javascript" async=""></script><script type="text/javascript">
+
+    window.suggestmeyes_loaded = true;
+  </script>
+  <script type="text/javascript">window.jsErrors = [];window.onerror = function(errorMessage) {window.jsErrors[window.jsErrors.length] = errorMessage;}</script>
+  <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');</script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+  </script>
+  <script type="text/javascript">
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+  </script>
+  <script type="text/javascript" id="googletag-push">
+
+    googletag.cmd.push(function() {
+    googletag.defineSlot('6313/casper/book/chapter', [160, 600], 'doubleclick-ad').addService(googletag.pubads());
+    googletag.pubads().setTargeting("eisbn","978-3-642-30436-1");
+    googletag.pubads().setTargeting("pisbn","978-3-642-30435-4");
+    googletag.pubads().setTargeting("eissn","1861-2288");
+    googletag.pubads().setTargeting("pissn","1868-4238");
+    googletag.pubads().setTargeting("doi","10.1007-978-3-642-30436-1_9");
+    googletag.pubads().setTargeting("sucode",["SUCO11645"]);
+    googletag.pubads().setTargeting("pmc",["I","I13022","I24067","I15033","I24040","I16021","I18040"]);
+    googletag.pubads().setTargeting("BPID",["1"]);
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+  </script>
+  <script src="jquery.min.js"></script>
+  <title>Towards a Universal Data Provenance Framework Using Dynamic Instrumentation - Springer</title>
+<script src="html2canvas.js" type="text/javascript"></script><script async="" src="pubads_impl_95.js"></script><link href="http://tpc.googlesyndication.com/safeframe/1-0-4/html/container.html" rel="prefetch"><script src="fontdata.js" type="text/javascript"></script><script src="config.js" type="text/javascript"></script><script src="mml2jax.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="978-3-642-30436-1_9.css" media="all">
+</head>
+<body class="anonymous link" data-name="link"><div style="" id="MathJax_Message">Loading [MathJax]/extensions/mml2jax.js</div>
+  
+  <div id="wrapper">
+    <div id="header" role="banner">
+  <a id="logo" href="http://link.springer.com/">
+  <img src="logo-base.png" alt="Logo Springer" title="SpringerLink">
+</a>
+
+  <div class="panel-search">
+    <form id="global-search" class="big-search" action="http://link.springer.com/search" method="get" role="search">
+      <div class="search-field">
+        <span class="ui-helper-hidden-accessible" aria-live="polite" role="status"></span><input id="query" class="text ui-autocomplete-input" name="query" autocomplete="off" value="" placeholder="Search" title="Search" type="text">
+      <ul style="display: none;" tabindex="0" id="ui-id-1" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"></ul></div>
+      <input id="search" class="search-submit" value="Submit" title="New Search" type="submit"><img class="loading js-hidden" src="loading_search.gif" alt="">
+      <div id="search-options" class="flyout">
+        <button class="pillow-btn open-search-options" title="Open search options" type="button">Search Options</button>
+        <div class="flyout-content">
+          <ul>
+            <li>
+              <a id="advanced-search-link" href="http://link.springer.com/advanced-search">Advanced Search</a>
+            </li>
+            <li>
+              <a id="search-help-link" href="http://link.springer.com/searchhelp">Search Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button class="pillow-btn open-search" title="Open search">Search</button>
+  <button class="pillow-btn open-menu" title="Open menu">Menu</button>
+  <div class="panel-menu">
+    <div id="cross-nav">
+      <div id="auth" class="flyout">
+        <a id="register-link" class="flyout-caption" href="http://link.springer.com/signup-login?previousUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-642-30436-1_9">
+
+          » Sign up / Log in
+        </a>
+      </div>
+      <div id="lang" class="flyout">
+        <button class="flyout-caption cur">English</button>
+        <div class="flyout-content">
+          <ul>
+            <li>
+              <a id="change-language-Deutsch" href="http://link.springer.com/language/Deutsch" rel="nofollow">Deutsch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="edition" class="flyout">
+  <button class="flyout-caption cur">Academic edition</button>
+  <div class="flyout-content">
+    <ul>
+      <li>
+        <a class="edition-select" href="http://link.springer.com/siteEdition/rd" rel="nofollow">Corporate edition</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+    <!-- /- giving kb-only user the option to skip to relevant content (see KeyboardNavigation.js) -->
+    <div id="skip-navigation">
+      <p class="skip-navigation--label">
+        <span>Skip to:</span>
+        <a href="#kb-nav--main">Main content</a>
+        <a href="#kb-nav--aside">Side column</a>
+      </p>
+    </div>
+    <div id="logo-company">
+    </div>
+    <ul id="global-nav" class="clearfix" role="navigation">
+      <li>
+        <a href="http://link.springer.com/">Home</a>
+      </li>
+      <li>
+        <a href="http://link.springer.com/contactus">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div id="content">
+      <input id="autoShowLookInside" value="false" type="hidden">
+      <input id="leafContentType" value="Chapter" type="hidden">
+      <div id="chapter" class="document" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle">
+        <div class="">
+      <div class="bar-dock">
+        <div class="bar-wrapper">
+          <div class="bar-actions">
+            <span class="action icon-download icon-epub">
+      <a id="action-bar-download-chapter-pdf-link" class="webtrekk-track pdf-link" doi="10.1007/978-3-642-30436-1_9" parentdoi="10.1007/978-3-642-30436-1" pagetype="rd_springer_com.book.chapter_pdf" parentcontenttype="Book" contenttype="Chapter" viewtype="Chapter pdf download" publication="10.1007/978-3-642-30436-1 | Information Security and Privacy Research" href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-30436-1_9.pdf">
+
+        Download Chapter
+        <span id="action-bar-download-pdf-size">
+
+          (488 KB)
+        </span>
+      </a>
+    </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="document-main layout-3">
+          <div id="kb-nav--main" class="col-main has-full-enumeration" role="main">
+            
+            <div xmlns="http://www.w3.org/1999/xhtml" xmlns:meta="http://www.springer.com/app/meta" xmlns:epub="http://www.idpf.org/2007/ops"><section><header id="enumeration"><strong>Chapter</strong><p class="BookTitle"><a href="http://link.springer.com/book/10.1007/978-3-642-30436-1">Information Security and Privacy Research</a></p><p><span class="vol-info">
+
+                                  Volume 376 of the series <a href="http://link.springer.com/bookseries/6102">IFIP Advances in Information and Communication Technology</a></span><span class="page-numbers-info">
+
+                            pp 103-114</span></p><div class="version version-html5"></div></header></section><div xmlns="" class="MainTitleSection"><h1 xmlns="http://www.w3.org/1999/xhtml" class="ChapterTitle" lang="en">Towards a Universal Data Provenance Framework Using Dynamic Instrumentation</h1></div><ul class="AuthorNames"><li><span class="AuthorName_container"><span class="AuthorName">Eleni&nbsp;Gessiou</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Computer Science &amp; Engineering Department, Polytechnic Institute of NYU</span></span></span></span></span></li><li><span>, </span><span class="AuthorName_container"><span class="AuthorName">Vasilis&nbsp;Pappas</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Department of Computer Science, Columbia University</span></span></span></span></span></li><li><span>, </span><span class="AuthorName_container"><span class="AuthorName">Elias&nbsp;Athanasopoulos</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Department of Computer Science, Columbia University</span></span></span></span></span></li><li><span>, </span><span class="AuthorName_container"><span class="AuthorName">Angelos&nbsp;D.&nbsp;Keromytis</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Department of Computer Science, Columbia University</span></span></span></span></span></li><li><span>, </span><span class="AuthorName_container"><span class="AuthorName">Sotiris&nbsp;Ioannidis</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Institute of Computer Science, Foundation for Research and Technology - Hellas</span></span></span></span></span></li></ul></div>
+    <div id="abstract-actions"><span class="action icon-download icon-epub">
+      <a id="abstract-actions-download-chapter-pdf-link" class="webtrekk-track pdf-link" doi="10.1007/978-3-642-30436-1_9" parentdoi="10.1007/978-3-642-30436-1" pagetype="rd_springer_com.book.chapter_pdf" parentcontenttype="Book" contenttype="Chapter" viewtype="Chapter pdf download" publication="10.1007/978-3-642-30436-1 | Information Security and Privacy Research" href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-30436-1_9.pdf">
+
+        Download Chapter
+        <span id="action-bar-download-pdf-size">
+
+          (488 KB)
+        </span>
+      </a>
+    </span>
+
+    </div>        
+            <div xmlns="http://www.w3.org/1999/xhtml" xmlns:meta="http://www.springer.com/app/meta" xmlns:epub="http://www.idpf.org/2007/ops"><section class="Abstract" id="Abs1" lang="en">
+                          <h2 class="Heading">Abstract</h2>
+                          <p class="Para">The advantage of collecting data provenance information has driven research on how to extend or modify applications and systems in order to provide it, or the creation of architectures that are built from the ground up with provenance capabilities. In this paper we propose a universal data provenance framework, using dynamic instrumentation, which gathers data provenance information for real-world applications without any code modifications. Our framework simplifies the task of finding the right points to instrument, which can be cumbersome in large and complex systems. We have built a proof-of-concept implementation of the framework on top of DTrace. Moreover, we evaluated its functionality by using it for three different scenarios: file-system operations, database transactions and web browser HTTP requests. Based on our experiences we believe that it is possible to provide data provenance, transparently, to any layer of the software stack.</p>
+                        </section></div>
+          </div>
+          <div id="kb-nav--aside" class="col-aside" role="complementary">
+            <div class="cover">
+      <div class="look-inside cover-image-animate">
+        <div id="reader-overlay">
+      <div id="reader-page-template">
+        <div id="page-%P">
+          <div class="page-number">
+
+            Page
+            %P
+          </div>
+          <div class="pdf-page" id="page-img-container-%ID">
+            <img id="pdf-page-image-%ID" class="pdf-image" src="spacer.gif" alt="Loading..." style="width:%Wpx;" data-loaded="false" width="%W">
+          </div>
+        </div>
+      </div>
+      <div class="reader-position">
+        <div id="reader">
+          <div id="reader-buttons">
+            <a href="#close" id="pdf-close" class="btn btn-close right">
+
+              Close
+            </a>
+            <a href="#close" id="toggletext" class="btn" title="Toggle plain text">
+
+              Plain text
+            </a>
+          </div>
+          <div id="viewer" class="show-pdf">
+            <div id="scroller"></div>
+          </div>
+          <div class="top-shadow"></div>
+          <div class="bottom-shadow"></div>
+        </div>
+      </div>
+    </div>
+
+        <a class="webtrekk-track lookinside-href" href="http://link.springer.com/chapter/10.1007%2F978-3-642-30436-1_9/lookinside/000.png" pagetype="rd_springer_com.book.chapter_lookinside_download" parentcontenttype="Book" contenttype="Chapter" doi="10.1007/978-3-642-30436-1_9" viewtype="LookInside download" publication="10.1007/978-3-642-30436-1 | Information Security and Privacy Research">
+          <img class="look-inside-cover" src="978-3-642-30436-1.jpg" alt="Information Security and Privacy Research" itemprop="image" width="153">
+    <img class="look-inside-page" src="000.png" alt="Information Security and Privacy Research" itemprop="image" width="153">
+
+          <span class="look-inside-badge">
+
+            Look
+            <br>
+            Inside
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="book-metrics SideBox" data-url="https://bookmetrix-proxy.live.cf.public.springer.com" data-contenttype="chapter">
+      <h2 class="SideBox_title">Chapter Metrics</h2>
+      <div class="book-metrics-items"><dl class="Meta Meta--2colBordedBackground"><dt class="book-metric-item-name Meta_name readers"><a data-analytics="Readers" href="http://www.bookmetrix.com/detail/chapter/e4567d11-f1bb-402f-a3c2-5bc587482a07#readers">Readers</a></dt><dd class="book-metric-item-value Meta_value readers"><a data-analytics="Readers" href="http://www.bookmetrix.com/detail/chapter/e4567d11-f1bb-402f-a3c2-5bc587482a07#readers">11</a></dd><dt class="book-metric-item-name Meta_name downloads"><a data-analytics="Downloads" href="http://www.bookmetrix.com/detail/chapter/e4567d11-f1bb-402f-a3c2-5bc587482a07#downloads">Downloads</a></dt><dd class="book-metric-item-value Meta_value downloads"><a data-analytics="Downloads" href="http://www.bookmetrix.com/detail/chapter/e4567d11-f1bb-402f-a3c2-5bc587482a07#downloads">936</a></dd></dl></div>
+      <div class="Sidebox_footer book-metrics-footer">
+        <a href="http://www.bookmetrix.com/">
+          <span>Provided by</span>
+          <span><strong>Book</strong><span>metrix</span></span>
+        </a>
+      </div>
+    </div>
+            <div id="copublisher-container" data-url="https://copublishers.live.cf.public.springer.com/?id=978-3-642-30436-1&amp;id=978-3-642-30435-4" on-sidebar="on-sidebar"></div>
+
+            
+            <div id="section-links">
+    </div>
+
+            <div id="reference-tools" class="SideBox">
+      <h2 class="SideBox_title">Reference tools</h2>
+      <ul>
+        <li>
+          <div id="article-export-citation" class="Collapse Collapse--button u-z-index-3" tabindex="-1">
+        <h3 class="Collapse_toggle" data-toggle="collapse" data-target="targetId">
+
+            Export citation
+            <span class="Icon Icon--triangle-down-dark"></span>
+        </h3>
+        <ul id="article-export-citation-options" class="Collapse_content">
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-642-30436-1_9?format=endnote&amp;flavour=citation">EndNote (.ENW)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-642-30436-1_9?format=bibtex&amp;flavour=citation">JabRef (.BIB)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-642-30436-1_9?format=bibtex&amp;flavour=citation">Mendeley (.BIB)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-642-30436-1_9?format=refman&amp;flavour=citation">Papers (.RIS)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-642-30436-1_9?format=refman&amp;flavour=citation">Zotero (.RIS)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-642-30436-1_9?format=bibtex&amp;flavour=citation">BibTeX (.BIB)</a></li>
+            </ul>
+    </div>
+        </li>
+        <li>
+          <a id="papers-link" class="external webtrekk-track" href="http://redirect.papersapp.com/redirect?url=http://link.springer.com/chapter/10.1007%2F978-3-642-30436-1_9" target="_top" title="It opens in new window" gacategory="Export" publication="10.1007/978-3-642-30436-1_9 | Towards a Universal Data Provenance Framework Using Dynamic Instrumentation" viewtype="Add to Papers">Add to Papers</a>
+
+        </li>
+      </ul>
+    </div>
+    <div class="SideBox other-actions">
+      <h2 class="SideBox_title">Other actions</h2>
+      <ul>
+        <li>
+          <a id="about-link" class="external" href="http://www.springer.com/978-3-642-30435-4?wt_mc=ThirdParty.SpringerLink.3.EPR653.About_eBook" target="_top" title="It opens in new window">
+
+      About this Book
+    </a>
+
+        </li>
+        <li>
+          <a id="permissions-link" class="external" href="https://s100.copyright.com/AppDispatchServlet?publisherName=Springer&amp;orderBeanReset=true&amp;orderSource=SpringerLink&amp;author=Eleni+Gessiou&amp;contentID=10.1007%2F978-3-642-30436-1_9&amp;openAccess=false&amp;endPage=114&amp;publicationDate=2012&amp;startPage=103&amp;title=Towards+a+Universal+Data+Provenance+Framework+Using+Dynamic+Instrumentation&amp;imprint=IFIP+International+Federation+for+Information+Processing&amp;publication=eBook&amp;authorAddress=USA" target="_top" title="It opens in new window">Reprints and Permissions</a>
+
+        </li>
+      </ul>
+    </div>
+
+            <div class="SideBox other-actions share">
+      <h2 class="SideBox_title">Share</h2>
+      <a id="facebook" href="javascript:void(0)" title="Share this content on Facebook">Share this content on Facebook</a>
+      <a id="twitter" href="javascript:void(0)" title="Share this content on Twitter">Share this content on Twitter</a>
+      <a id="linkedin" href="javascript:void(0)" title="Share this content on LinkedIn">Share this content on LinkedIn</a>
+    </div>
+
+          </div>
+        </div>
+        <div id="kb-nav--aside" class="document-aside" role="complementary">
+          <input id="relatedItemsSource" value="none" type="hidden">
+
+          <div id="abstract-esm" class="expander expander-empty">
+      <div class="expander-title">
+        <div class="heading">
+          <h2><button>Supplementary Material (0)</button></h2>
+        </div>
+      </div>
+      </div>
+
+          <div id="abstract-references" class="expander">
+      <div class="expander-title">
+        <div class="heading">
+           <h2><button>References (23)</button></h2>
+        </div>
+      </div>
+      <div class="expander-content">
+        <div class="expander-content-inner">
+          <div class="formatted">
+            
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:meta="http://www.springer.com/app/meta" xmlns:epub="http://www.idpf.org/2007/ops" class="FulltextWrapper"><aside class="Bibliography" id="Bib1"><h3 class="Heading">References</h3><ol class="BibliographyWrapper"><li class="Citation"><div class="CitationNumber">1.</div><div class="CitationContent" id="CR1">Sqlite, <span class="ExternalRef"><a href="http://www.sqlite.org/"><span class="RefSource">
+                          <span class="EmphasisFontCategoryNonProportional ">http://www.sqlite.org/</span>
+                        </span></a></span>
+                    </div></li><li class="Citation"><div class="CitationNumber">2.</div><div class="CitationContent" id="CR2">Aho, A.V., Kernighan, B.W., Weinberger, P.J.: The AWK Programming Language. Addison-Wesley (1988)</div></li><li class="Citation"><div class="CitationNumber">3.</div><div class="CitationContent" id="CR3">Apple. dtrace(1) Mac OS X Manual Page, <span class="ExternalRef"><a href="http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html"><span class="RefSource">
+                          <span class="EmphasisFontCategoryNonProportional ">http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html</span>
+                        </span></a></span>
+                    </div></li><li class="Citation"><div class="CitationNumber">4.</div><div class="CitationContent" id="CR4">Buneman, P., Tan, W.-C.: Provenance in databases. In: Proceedings of the 2007 ACM SIGMOD International Conference on Management of Data, SIGMOD 2007, pp. 1171–1173. ACM, New York (2007)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1145/1247480.1247646"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">5.</div><div class="CitationContent" id="CR5">Cantrill, B.M., Shapiro, M.W., Leventhal, A.H.: Dynamic instrumentation of production systems. In: Proceedings of the USENIX Annual Technical Conference (ATC), pp. 15–28 (2004)</div></li><li class="Citation"><div class="CitationNumber">6.</div><div class="CitationContent" id="CR6">Cheney, J., Chiticariu, L., Tan, W.-C.: Provenance in Databases: Why, How, and Where. Foundations and Trends in Databases&nbsp;1(4), 379–474 (2007)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1561/1900000006"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">7.</div><div class="CitationContent" id="CR7">Demsky, B.: Garm: cross application data provenance and policy enforcement. In: Proceedings of the 4th USENIX Conference on Hot Topics in Security, HotSec 2009, p. 10. USENIX Association, Berkeley (2009)</div></li><li class="Citation"><div class="CitationNumber">8.</div><div class="CitationContent" id="CR8">Dietz, M., Shekhar, S., Pisetsky, Y., Shu, A., Wallach, D.S.: Quire: Lightweight provenance for smart phone operating systems. In: Proceedings of the 20th USENIX Security Symposium, San Francisco, CA (August 2011)</div></li><li class="Citation"><div class="CitationNumber">9.</div><div class="CitationContent" id="CR9">FreeBSD. DTrace – FreeBSD Wiki, <span class="ExternalRef"><a href="http://wiki.freebsd.org/DTrace"><span class="RefSource">
+                          <span class="EmphasisFontCategoryNonProportional ">http://wiki.freebsd.org/DTrace</span>
+                        </span></a></span>
+                    </div></li><li class="Citation"><div class="CitationNumber">10.</div><div class="CitationContent" id="CR10">Jones, S., Strong, C., Long, D.D.E., Miller, E.L.: Tracking emigrant data via transient provenance. In: Proceedings of the 3rd USENIX Workshop on the Theory and Practice of Provenance (TaPP 2011), Heraklion, Greece (June 2011) </div></li><li class="Citation"><div class="CitationNumber">11.</div><div class="CitationContent" id="CR11">Kemerlis, V.P., Pappas, V., Portokalidis, G., Keromytis, A.D.: iLeak: A lightweight system for detecting inadvertent information leaks. In: Proceedings of the 6th European Conference on Computer Network Defense (EC2ND), Berlin, Germany, pp. 21–28 (October 2010)</div></li><li class="Citation"><div class="CitationNumber">12.</div><div class="CitationContent" id="CR12">Kemerlis, V.P., Portokalidis, G., Jee, K., Keromytis, A.D.: libdft: Practical dynamic data flow tracking for commodity systems. In: Proceedings of the 8th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE), London, UK (March 2012)</div></li><li class="Citation"><div class="CitationNumber">13.</div><div class="CitationContent" id="CR13">Lakshmanan, G.T., Curbera, F., Freire, J., Sheth, A.: Guest editors’ introduction: Provenance in web applications. IEEE Internet Computing&nbsp;15(1), 17–21 (2011)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1109/MIC.2011.9"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">14.</div><div class="CitationContent" id="CR14">Linux, O.: Trying out dtrace, <span class="ExternalRef"><a href="http://blogs.oracle.com/wim/entry/trying_out_dtrace"><span class="RefSource">
+                          <span class="EmphasisFontCategoryNonProportional ">http://blogs.oracle.com/wim/entry/trying_out_dtrace</span>
+                        </span></a></span>
+                    </div></li><li class="Citation"><div class="CitationNumber">15.</div><div class="CitationContent" id="CR15">Luk, C.-K., Cohn, R., Muth, R., Patil, H., Klauser, A., Lowney, G., Wallace, S., Reddi, V.J., Hazelwood, K.: Pin: building customized program analysis tools with dynamic instrumentation. In: Proceedings of the 2005 ACM SIGPLAN Conference on Programming Language Design and Implementation, PLDI 2005, pp. 190–200. ACM, New York (2005)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1145/1065010.1065034"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">16.</div><div class="CitationContent" id="CR16">Margo, D.W., Seltzer, M.: The case for browser provenance. In: Proceedings of the First Workshop on on Theory and Practice of Provenance, pp. 9:1–9:5. USENIX Association, Berkeley (2009)</div></li><li class="Citation"><div class="CitationNumber">17.</div><div class="CitationContent" id="CR17">Michaelis, J.R., McGuinness, D.L.: Towards Provenance Aware Comment Tracking for Web Applications. In: McGuinness, D.L., Michaelis, J.R., Moreau, L. (eds.) IPAW 2010. LNCS, vol.&nbsp;6378, pp. 265–273. Springer, Heidelberg (2010)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1007/978-3-642-17819-1_30"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">18.</div><div class="CitationContent" id="CR18">Muniswamy-Reddy, K.-K., Holland, D.A., Braun, U., Seltzer, M.: Provenance-aware storage systems. In: Proceedings of the Annual Conference on USENIX 2006 Annual Technical Conference, p. 4. USENIX Association, Berkeley (2006)</div></li><li class="Citation"><div class="CitationNumber">19.</div><div class="CitationContent" id="CR19">Muniswamy-Reddy, K.-K., Macko, P., Seltzer, M.: Provenance for the cloud. In: Proceedings of the 8th USENIX Conference on File and Storage Technologies, FAST 2010, pp. 14–15. USENIX Association, Berkeley (2010)</div></li><li class="Citation"><div class="CitationNumber">20.</div><div class="CitationContent" id="CR20">QNX. The community portal for qnx software developers, <span class="ExternalRef"><a href="http://community.qnx.com/sf/projects/dtrace/"><span class="RefSource">
+                          <span class="EmphasisFontCategoryNonProportional ">http://community.qnx.com/sf/projects/dtrace/</span>
+                        </span></a></span>
+                    </div></li><li class="Citation"><div class="CitationNumber">21.</div><div class="CitationContent" id="CR21">Spillane, R., Sears, R., Yalamanchili, C., Gaikwad, S., Chinni, M., Zadok, E.: Story book: an efficient extensible provenance framework. In: Proceedings of the First Workshop on Theory and Practice of Provenance, pp. 1–10. USENIX Association, Berkeley (2009)</div></li><li class="Citation"><div class="CitationNumber">22.</div><div class="CitationContent" id="CR22">Theoharis, Y., Fundulaki, I., Karvounarakis, G., Christophides, V.: On provenance of queries on semantic web data. IEEE Internet Computing&nbsp;15, 31–39 (2011)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1109/MIC.2010.127"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">23.</div><div class="CitationContent" id="CR23">Viega, J., Messier, M., Chandra, P.: Network security with OpenSSL. O’Reilly Media (2002)</div></li></ol></aside></div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+          
+          <div id="abstract-about" class="expander expander-open">
+      <div class="expander-title">
+        <div class="heading">
+          <button>
+            <h2>About this Chapter</h2>
+          </button>
+        </div>
+      </div>
+      <div class="expander-content">
+        <div class="expander-content-inner">
+          <div class="summary">
+            <dl>
+              <dt>Title</dt>
+              <dd id="abstract-about-title">Towards a Universal Data Provenance Framework Using Dynamic Instrumentation</dd>
+              
+              <dt>Book Title</dt>
+              <dd id="abstract-about-publication">
+                <a href="http://link.springer.com/book/10.1007/978-3-642-30436-1">Information Security and Privacy Research</a>
+              </dd>
+              <dt id="dt-abstract-about-book-subtitle">Book Subtitle</dt>
+    <dd id="abstract-about-book-subtitle">27th IFIP TC 11 Information Security and Privacy Conference, SEC 2012, Heraklion, Crete, Greece, June 4-6, 2012. Proceedings</dd>
+
+              
+              <dt id="dt-abstract-about-book-chapter-page-ranges">Pages</dt>
+    <dd id="abstract-about-book-chapter-page-ranges">pp 103-114</dd>
+
+              <dt id="dt-abstract-about-book-chapter-copyright-year">Copyright</dt>
+    <dd id="abstract-about-book-chapter-copyright-year">2012</dd>
+
+              <dt>DOI</dt>
+              <dd id="abstract-about-book-chapter-doi" class="doi">10.1007/978-3-642-30436-1_9</dd>
+              <dt id="dt-abstract-about-book-print-isbn">Print ISBN</dt>
+    <dd id="abstract-about-book-print-isbn">978-3-642-30435-4</dd>
+
+              <dt id="dt-abstract-about-book-online-isbn">Online ISBN</dt>
+    <dd id="abstract-about-book-online-isbn">978-3-642-30436-1</dd>
+
+              <dt id="dt-abstract-about-book-series-title">Series Title</dt>
+    <dd id="abstract-about-book-series-title">
+      <a href="http://link.springer.com/bookseries/6102">IFIP Advances in Information and Communication Technology</a>
+    </dd>
+
+              <dt id="dt-abstract-about-book-series-volume">Series Volume</dt>
+    <dd id="abstract-about-book-series-volume">376</dd>
+
+              
+              <dt id="dt-abstract-about-book-series-print-issn">Series ISSN</dt>
+    <dd id="abstract-about-book-series-print-issn">1868-4238</dd>
+
+              <dt id="dt-abstract-about-publisher">Publisher</dt>
+    <dd id="abstract-about-publisher">Springer Berlin Heidelberg</dd>
+
+              <dt id="dt-abstract-about-book-copyright-holder">Copyright Holder</dt>
+    <dd id="abstract-about-book-copyright-holder">IFIP International Federation for Information Processing</dd>
+
+              <dt>Additional Links</dt>
+              <dd id="abstract-about-additional-links">
+                <ul>
+                  <li>
+                    <a class="external" href="http://www.springer.com/978-3-642-30435-4?wt_mc=ThirdParty.SpringerLink.3.EPR653.About_eBook" target="_top" title="It opens in new window">About this Book</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+      <dt>Topics</dt>
+    <dd itemprop="genre">
+      <ul class="abstract-about-subject">
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Computer+Communication+Networks%22">Computer Communication Networks</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Management+of+Computing+and+Information+Systems%22">Management of Computing and Information Systems</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Data+Encryption%22">Data Encryption</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Computers+and+Society%22">Computers and Society</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Algorithm+Analysis+and+Problem+Complexity%22">Algorithm Analysis and Problem Complexity</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Information+Systems+Applications+%28incl.+Internet%29%22">Information Systems Applications (incl. Internet)</a>
+        </li>
+      </ul>
+    </dd>
+
+      
+      <dt>Industry Sectors</dt>
+    <dd itemprop="genre">
+      <ul class="abstract-about-industrysectors">
+        <li>
+          <a title="/industry/pharma" href="http://link.springer.com/industry/pharma">Pharma</a>
+        </li>
+        <li>
+          <a title="/industry/automotive" href="http://link.springer.com/industry/automotive">Automotive</a>
+        </li>
+        <li>
+          <a title="/industry/chemicals" href="http://link.springer.com/industry/chemicals">Chemical Manufacturing</a>
+        </li>
+        <li>
+          <a title="/industry/biotech" href="http://link.springer.com/industry/biotech">Biotechnology</a>
+        </li>
+        <li>
+          <a title="/industry/electronics" href="http://link.springer.com/industry/electronics">Electronics</a>
+        </li>
+        <li>
+          <a title="/industry/it" href="http://link.springer.com/industry/it">IT &amp; Software</a>
+        </li>
+        <li>
+          <a title="/industry/telecom" href="http://link.springer.com/industry/telecom">Telecommunications</a>
+        </li>
+        <li>
+          <a title="/industry/consumer" href="http://link.springer.com/industry/consumer">Consumer Packaged Goods</a>
+        </li>
+        <li>
+          <a title="/industry/aerospace" href="http://link.springer.com/industry/aerospace">Aerospace</a>
+        </li>
+        <li>
+          <a title="/industry/geosciences" href="http://link.springer.com/industry/geosciences">Oil, Gas &amp; Geosciences</a>
+        </li>
+        <li>
+          <a title="/industry/engineering" href="http://link.springer.com/industry/engineering">Engineering</a>
+        </li>
+      </ul>
+    </dd>
+
+    <dt>eBook Packages</dt>
+    <dd itemprop="genre">
+        <ul class="abstract-about-ebook-packages">
+        <li><a href="http://link.springer.com/search?facet-content-type=%22Book%22&amp;package=11645&amp;facet-start-year=2012&amp;facet-end-year=2012">Computer Science</a></li>
+        </ul>
+    </dd>
+    </dl>
+    <dl>
+      <dt>Editors</dt>
+    <dd>
+      <ul class="editors">
+        <li itemprop="editor" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Dimitris+Gritzalis%22" itemprop="name">Dimitris Gritzalis</a>
+          <sup title="Department of Informatics, Information Security and Critical Infrastructure Protection Research Group, Athens University of Economics and Business">(1)</sup>
+        </li>
+        <li itemprop="editor" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Steven+Furnell%22" itemprop="name">Steven Furnell</a>
+          <sup title="School of Computing Communications and Electronics, University of Plymouth">(2)</sup>
+        </li>
+        <li itemprop="editor" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Marianthi+Theoharidou%22" itemprop="name">Marianthi Theoharidou</a>
+          <sup title="Department of Informatics, Information Security and Critical Infrastructure Protection Research Group, Athens University of Economics and Business">(1)</sup>
+        </li>
+      </ul>
+    </dd>
+    <dt>Editor Affiliations</dt>
+    <dd>
+      <ul class="editor-affiliations">
+        <li>
+          <span class="position">1.</span>
+          <span class="affiliation">
+
+            Department of Informatics, Information Security and Critical Infrastructure Protection Research Group, Athens University of Economics and Business
+          </span>
+        </li>
+        <li>
+          <span class="position">2.</span>
+          <span class="affiliation">
+
+            School of Computing Communications and Electronics, University of Plymouth
+          </span>
+        </li>
+      </ul>
+    </dd>
+
+      <dt>Authors</dt>
+    <dd>
+      <ul class="authors">
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Eleni+Gessiou%22" itemprop="name">Eleni Gessiou</a>
+          <sup title="Computer Science &amp; Engineering Department, Polytechnic Institute of NYU">(3)</sup>
+        </li>
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Vasilis+Pappas%22" itemprop="name">Vasilis Pappas</a>
+          <sup title="Department of Computer Science, Columbia University">(4)</sup>
+        </li>
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Elias+Athanasopoulos%22" itemprop="name">Elias Athanasopoulos</a>
+          <sup title="Department of Computer Science, Columbia University">(4)</sup>
+        </li>
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Angelos+D.+Keromytis%22" itemprop="name">Angelos D. Keromytis</a>
+          <sup title="Department of Computer Science, Columbia University">(4)</sup>
+        </li>
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Sotiris+Ioannidis%22" itemprop="name">Sotiris Ioannidis</a>
+          <sup title="Institute of Computer Science, Foundation for Research and Technology - Hellas">(5)</sup>
+        </li>
+      </ul>
+    </dd>
+    <dt>Author Affiliations</dt>
+    <dd>
+      <ul class="author-affiliations">
+        <li>
+          <span class="position">3.</span>
+          <span class="affiliation">
+
+            Computer Science &amp; Engineering Department, Polytechnic Institute of NYU, USA
+            
+          </span>
+        </li>
+        <li>
+          <span class="position">4.</span>
+          <span class="affiliation">
+
+            Department of Computer Science, Columbia University, USA
+            
+          </span>
+        </li>
+        <li>
+          <span class="position">5.</span>
+          <span class="affiliation">
+
+            Institute of Computer Science, Foundation for Research and Technology - Hellas, Greece
+            
+          </span>
+        </li>
+      </ul>
+    </dd>
+
+    </dl>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+      </div>
+      <div id="look-inside-interrupt" class="look-inside-interrupt">
+      <h3>Continue reading...</h3>
+      <div class="col-1">
+        <p>To view the rest of this content please follow the download PDF link above.</p>
+      </div>
+    </div>
+
+    </div>
+    <div id="web-trekk-abstract" doi="10.1007/978-3-642-30436-1_9" parentcontenttype="Book" contenttype="Chapter" viewtype="Abstract" publication="10.1007/978-3-642-30436-1 | Information Security and Privacy Research" unsiloed="" embedfulltext="false" openchoice="N"></div>
+    <input id="contentType" value="Chapter" type="hidden">
+
+
+    <div id="footer">
+  <hr>
+  <div id="footer-verticals" class="section" role="navigation">
+    <span class="strapline">Over 10 million scientific documents at your fingertips</span>
+    <div class="flyout">
+      <button class="pillow-btn open-disciplines">
+
+        Browse by Discipline
+        <span class="caret"></span>
+      </button>
+      <ol class="disciplines">
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Architecture+%26+Design%22" title="follow this link to go to Architecture &amp; Design">Architecture &amp; Design</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Astronomy%22" title="follow this link to go to Astronomy">Astronomy</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Biomedical+Sciences%22" title="follow this link to go to Biomedical Sciences">Biomedical Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Business+%26+Management%22" title="follow this link to go to Business &amp; Management">Business &amp; Management</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Chemistry%22" title="follow this link to go to Chemistry">Chemistry</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Computer+Science%22" title="follow this link to go to Computer Science">Computer Science</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Earth+Sciences+%26+Geography%22" title="follow this link to go to Earth Sciences &amp; Geography">Earth Sciences &amp; Geography</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Economics%22" title="follow this link to go to Economics">Economics</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Education+%26+Language%22" title="follow this link to go to Education &amp; Language">Education &amp; Language</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Energy%22" title="follow this link to go to Energy">Energy</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Engineering%22" title="follow this link to go to Engineering">Engineering</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Environmental+Sciences%22" title="follow this link to go to Environmental Sciences">Environmental Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Food+Science+%26+Nutrition%22" title="follow this link to go to Food Science &amp; Nutrition">Food Science &amp; Nutrition</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Law%22" title="follow this link to go to Law">Law</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Life+Sciences%22" title="follow this link to go to Life Sciences">Life Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Materials%22" title="follow this link to go to Materials">Materials</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Mathematics%22" title="follow this link to go to Mathematics">Mathematics</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Medicine%22" title="follow this link to go to Medicine">Medicine</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Philosophy%22" title="follow this link to go to Philosophy">Philosophy</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Physics%22" title="follow this link to go to Physics">Physics</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Psychology%22" title="follow this link to go to Psychology">Psychology</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Public+Health%22" title="follow this link to go to Public Health">Public Health</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Social+Sciences%22" title="follow this link to go to Social Sciences">Social Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Statistics%22" title="follow this link to go to Statistics">Statistics</a>
+  </li>
+</ol>
+
+    </div>
+  </div>
+  <div id="footer-nav" class="section">
+    <div id="footer-nav-misc">
+      <div id="footer-our-content" class="block" role="navigation">
+        <h2>Our Content</h2>
+        <ul>
+          <li>
+            <a title="View Journals" href="http://link.springer.com/search?facet-content-type=%22Journal%22">Journals</a>
+          </li>
+          <li>
+            <a title="View Books" href="http://link.springer.com/search?facet-content-type=%22Book%22">Books</a>
+          </li>
+          <li>
+            <a title="View Book Series" href="http://link.springer.com/search?facet-content-type=%22BookSeries%22">Book Series</a>
+          </li>
+          <li>
+            <a title="View Protocols" href="http://link.springer.com/search?facet-content-type=%22Protocol%22">Protocols</a>
+          </li>
+          <li>
+            <a title="View Reference Works" href="http://link.springer.com/search?facet-content-type=%22ReferenceWork%22">Reference Works</a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer-other-sites" class="block" role="navigation">
+        <h2>Other Sites</h2>
+        <ul>
+          <li>
+            <a title="Visit Springer.com" href="http://www.springer.com/">Springer.com</a>
+          </li>
+          <li>
+            <a title="Visit Springer Protocols" href="http://www.springerprotocols.com/">SpringerProtocols</a>
+          </li>
+          <li>
+            <a title="Visit Springer Materials" href="http://materials.springer.com/">SpringerMaterials</a>
+          </li>
+          <li>
+            <a href="http://adis.springer.com/">AdisInsight</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block" role="navigation">
+        <h2>Help &amp; Contacts</h2>
+        <ul>
+          <li>
+            <a class="contact-us-link" title="Contact us" href="http://link.springer.com/contactus">Contact Us</a>
+          </li>
+          <li>
+            <a class="impressum-link" title="View Impressum" href="http://link.springer.com/impressum">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer-legal" class="section" role="contentinfo">
+    <div id="mobile-nav">
+      <span class="pillow-btn open-legal" title="Show Legal Information">Legal</span>
+    </div>
+    <div id="legal" role="contentinfo">
+      <span id="footer-copyright">© Springer International Publishing AG, Part of Springer Science+Business Media</span>
+      <a id="footer-privacy" title="View Terms and Conditions" href="http://link.springer.com/termsandconditions">Privacy Policy, Disclaimer, General Terms &amp; Conditions</a>
+      <div id="diagnostic-info">
+  <span id="diagnostic-login-status">Not logged in</span>
+  <span class="diagnostic-business-partners">Unaffiliated</span>
+  <span id="diagnostic-ip">98.218.107.82</span>
+</div>
+
+      
+    </div>
+  </div>
+  <div id="footer-branding" class="section">
+    <div class="block">
+      <span id="branding-logo">Springer for Research &amp; Development</span>
+    </div>
+  </div>
+  <div id="google-analytics-account" style="display: none;">UA-26408784-1</div>
+</div>
+
+
+    <div id="doubleclick-ad" class="banner-advert">
+  <script type="text/javascript">if ( window.outerWidth || document.body.clientWidth > 1100 ) { googletag.cmd.push(function() { googletag.display('doubleclick-ad'); }); };</script>
+<div style="border: 0pt none;" id="google_ads_iframe_6313/casper/book/chapter_0__container__"><iframe src="978-3-642-30436-1_9_1.html" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_6313/casper/book/chapter_0" title="3rd party ad content" id="google_ads_iframe_6313/casper/book/chapter_0" frameborder="0" height="600" width="160"></iframe></div></div>
+
+  </div>
+  <noscript>
+
+  <div id="jsnotice" class="prompt-bar">
+    <p>
+      JavaScript is currently disabled<span>, this site works much better if you enable JavaScript in your browser.</span>
+    </p>
+  </div>
+</noscript>
+
+
+<script src="webtrekk_v3.js"></script>
+  <script id="webtrekk-properties" type="text/javascript">
+
+    var webtrekkProperties = {
+      trackDomain : "springergmbh01.webtrekk.net",
+      trackId : "935649882378213",
+      pageType : "rd_springer_com.book.chapter_abstract"
+      };
+  </script>
+  <noscript>
+
+    <div id="webtrekk"><img src="http://springergmbh01.webtrekk.net/935649882378213/wt?p=315,rd_springer_com.book.chapter_abstract" height="1" width="1" alt=""/></div>
+  </noscript>
+
+<script id="google-analytics" type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-26408784-1', 'auto');
+    ga('create', 'UA-26408784-4', 'auto', {'name': 'unsiloTracker'});
+    ga('set', 'dimension2', 'N');
+    ga('require', 'linkid', 'linkid.js');
+    ga('send', 'pageview');
+  </script>
+
+<script src="jquery-ui.min.js"></script>
+<script src="jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+
+  var vgWortProperties = {
+  vgWortDomain: 'springer.met.vgwort.de'
+  };
+</script>
+<script src="all.js"></script>
+<script src="mathJaxConfig.js"></script>
+<script src="MathJax.js"></script>
+<script src="mathJaxHooks.js"></script>
+
+
+<!--[if !(IE 8)]><!-->
+            <script type="text/javascript" src="freshwidget.js"></script>
+            <script type="text/javascript">
+
+                FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=SpringerLink+Support+%26+Feedback&submitThanks=Thank+you+for+your+submission.%0D%0AYou+will+receive+confirmation+of+receipt+shortly+and+a+response+within+one+business+day.++%0D%0APlease+close+this+window+to+continue+browsing+or+use+the+%22Go+back%22+link+below+to+submit+another+request.&captcha=yes", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#087be7", "alignment": "4", "offset": "235px", "submitThanks": "Thank you for your submission.\r\nYou will receive confirmation of receipt shortly and a response within one business day.  \r\nPlease close this window to continue browsing or use the \"Go back\" link below to submit another request.", "formHeight": "600px", "offset": "-1500px", "captcha": "yes", "url": "https://springeronlineservice.freshdesk.com"} );
+            </script>
+            <!--<![endif]-->
+            <button class="StickySideButton_left StickySideButton_left--feedback" onclick="FreshWidget.show();">Support</button>
+        
+<script type="text/javascript">var _kiq = _kiq || [];</script>
+<script type="text/javascript" src="9CC.js" async="true"></script>
+
+
+
+<div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px none; margin: 0px;"><div style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px none; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-size-adjust: none; font-family: STIXSizeOneSym,sans-serif;" id="MathJax_Font_Test"></div></div></body>
+</html>

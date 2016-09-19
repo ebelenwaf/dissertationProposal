@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="js svg">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://link.springer.com/chapter/10.1007%2F978-3-319-40593-3_1#page-1">
+<meta name="wpd_url" content="http://link.springer.com/chapter/10.1007%2F978-3-319-40593-3_1#page-1">
+<meta name="wpd_date" content="2016-08-15T14:12Z">
+
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="citation_publisher" content="Springer International Publishing">
+  <meta name="citation_title" content="RecProv: Towards Provenance-Aware User Space Record and Replay">
+  <meta name="citation_firstpage" content="3">
+  <meta name="citation_lastpage" content="15">
+  <meta name="citation_doi" content="10.1007/978-3-319-40593-3_1">
+  <meta name="citation_language" content="en">
+  <meta name="citation_abstract_html_url" content="http://link.springer.com/chapter/10.1007/978-3-319-40593-3_1">
+  <meta name="citation_fulltext_html_url" content="http://link.springer.com/chapter/10.1007/978-3-319-40593-3_1/fulltext.html">
+  <meta name="citation_pdf_url" content="http://link.springer.com/content/pdf/10.1007%2F978-3-319-40593-3_1.pdf">
+  <meta name="citation_springer_api_url" content="http://api.springer.com/metadata/pam?q=doi:SpringerId(10.1007/978-3-319-40593-3_1)&amp;api_key=">
+  <meta name="citation_author" content="Yang Ji">
+  <meta name="citation_author_institution" content="Georgia Institute of Technology">
+  <meta name="citation_author_email" content="yang.ji@gatech.edu">
+  <meta name="citation_author" content="Sangho Lee">
+  <meta name="citation_author_institution" content="Georgia Institute of Technology">
+  <meta name="citation_author" content="Wenke Lee">
+  <meta name="citation_author_institution" content="Georgia Institute of Technology">
+  <meta name="citation_inbook_title" content="Provenance and Annotation of Data and Processes">
+  <meta name="citation_publication_date" content="2016/06/07">
+  <meta name="citation_conference_series_id" content="springer/ipaw">
+  <meta name="citation_conference_title" content="International Provenance and Annotation Workshop">
+  <meta name="citation_conference_sequence_num" content="6">
+  <meta name="citation_conference_abbrev" content="IPAW">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RecProv: Towards Provenance-Aware User Space Record and Replay">
+  <meta name="twitter:description" content="Deterministic record and replay systems have widely been used in software debugging, failure diagnosis, and intrusion detection. In order to detect the Advanced Persistent Threat (APT), online executi">
+  <meta name="twitter:image" content="http://link.springer.comhttps://static-content.springer.com/cover/book/978-3-319-40593-3.jpg">
+  <meta name="twitter:site" content="SpringerSBM">
+  <!--[if (gt IE 8) | (IEMobile)]><!-->  <!--<![endif]-->
+  <!--[if (lt IE 9) & (!IEMobile)]> <link rel="stylesheet" media="screen" href="/static/201607251336-19/css/ielt9_link.min.css"> <![endif]-->
+  
+  <link rel="apple-touch-icon-precomposed" size="144x144" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" size="114x114" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" size="72x72" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" size="57x57" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="http://link.springer.com/static/201607251336-19/sites/link/images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="favicon-32x32.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="/static/201607251336-19/sites/link/images/favicon.ico"/>
+  <![endif]-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/static/201607251336-19/sites/link/images/ms-tileimage.png">
+  <link rel="canonical" href="http://link.springer.com/chapter/10.1007%2F978-3-319-40593-3_1">
+  <script src="linkid.js" async="" type="text/javascript"></script><script src="analytics.js" async=""></script><script src="gpt.js" type="text/javascript" async=""></script><script type="text/javascript">
+
+    window.suggestmeyes_loaded = true;
+  </script>
+  <script type="text/javascript">window.jsErrors = [];window.onerror = function(errorMessage) {window.jsErrors[window.jsErrors.length] = errorMessage;}</script>
+  <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');</script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+  </script>
+  <script type="text/javascript">
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+  </script>
+  <script type="text/javascript" id="googletag-push">
+
+    googletag.cmd.push(function() {
+    googletag.defineSlot('6313/casper/book/chapter', [160, 600], 'doubleclick-ad').addService(googletag.pubads());
+    googletag.pubads().setTargeting("eisbn","978-3-319-40593-3");
+    googletag.pubads().setTargeting("pisbn","978-3-319-40592-6");
+    googletag.pubads().setTargeting("eissn","1611-3349");
+    googletag.pubads().setTargeting("pissn","0302-9743");
+    googletag.pubads().setTargeting("doi","10.1007-978-3-319-40593-3_1");
+    googletag.pubads().setTargeting("sucode",["SUCO11645"]);
+    googletag.pubads().setTargeting("pmc",["I","I21017","I18024","I18032","I18040","I24067","I24040"]);
+    googletag.pubads().setTargeting("BPID",["1"]);
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+  </script>
+  <script src="jquery.min.js"></script>
+  <title>RecProv: Towards Provenance-Aware User Space Record and Replay - Springer</title>
+<script async="" src="pubads_impl_95.js"></script><script src="html2canvas.js" type="text/javascript"></script><link href="http://tpc.googlesyndication.com/safeframe/1-0-4/html/container.html" rel="prefetch"><script src="fontdata.js" type="text/javascript"></script><script src="config.js" type="text/javascript"></script><script src="mml2jax.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="10.css" media="all">
+</head>
+<body class="anonymous link" data-name="link"><div style="" id="MathJax_Message">Loading [MathJax]/extensions/mml2jax.js</div>
+  
+  <div id="wrapper">
+    <div id="header" role="banner">
+  <a id="logo" href="http://link.springer.com/">
+  <img src="logo-base.png" alt="Logo Springer" title="SpringerLink">
+</a>
+
+  <div class="panel-search">
+    <form id="global-search" class="big-search" action="http://link.springer.com/search" method="get" role="search">
+      <div class="search-field">
+        <span class="ui-helper-hidden-accessible" aria-live="polite" role="status"></span><input id="query" class="text ui-autocomplete-input" name="query" autocomplete="off" value="" placeholder="Search" title="Search" type="text">
+      <ul style="display: none;" tabindex="0" id="ui-id-1" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"></ul></div>
+      <input id="search" class="search-submit" value="Submit" title="New Search" type="submit"><img class="loading js-hidden" src="loading_search.gif" alt="">
+      <div id="search-options" class="flyout">
+        <button class="pillow-btn open-search-options" title="Open search options" type="button">Search Options</button>
+        <div class="flyout-content">
+          <ul>
+            <li>
+              <a id="advanced-search-link" href="http://link.springer.com/advanced-search">Advanced Search</a>
+            </li>
+            <li>
+              <a id="search-help-link" href="http://link.springer.com/searchhelp">Search Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button class="pillow-btn open-search" title="Open search">Search</button>
+  <button class="pillow-btn open-menu" title="Open menu">Menu</button>
+  <div class="panel-menu">
+    <div id="cross-nav">
+      <div id="auth" class="flyout">
+        <a id="register-link" class="flyout-caption" href="http://link.springer.com/signup-login?previousUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%252F978-3-319-40593-3_1">
+
+          » Sign up / Log in
+        </a>
+      </div>
+      <div id="lang" class="flyout">
+        <button class="flyout-caption cur">English</button>
+        <div class="flyout-content">
+          <ul>
+            <li>
+              <a id="change-language-Deutsch" href="http://link.springer.com/language/Deutsch" rel="nofollow">Deutsch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="edition" class="flyout">
+  <button class="flyout-caption cur">Academic edition</button>
+  <div class="flyout-content">
+    <ul>
+      <li>
+        <a class="edition-select" href="http://link.springer.com/siteEdition/rd" rel="nofollow">Corporate edition</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+    <!-- /- giving kb-only user the option to skip to relevant content (see KeyboardNavigation.js) -->
+    <div id="skip-navigation">
+      <p class="skip-navigation--label">
+        <span>Skip to:</span>
+        <a href="#kb-nav--main">Main content</a>
+        <a href="#kb-nav--aside">Side column</a>
+      </p>
+    </div>
+    <div id="logo-company">
+    </div>
+    <ul id="global-nav" class="clearfix" role="navigation">
+      <li>
+        <a href="http://link.springer.com/">Home</a>
+      </li>
+      <li>
+        <a href="http://link.springer.com/contactus">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div id="content">
+      <input id="autoShowLookInside" value="false" type="hidden">
+      <input id="leafContentType" value="Chapter" type="hidden">
+      <div id="chapter" class="document no-access" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle">
+        <div class="">
+      <div class="bar-dock">
+        <div class="bar-wrapper">
+          <div class="bar-actions">
+            <span class="action icon-view">
+              <a class="lookinside-href webtrekk-track pdf-link" href="http://link.springer.com/chapter/10.1007%2F978-3-319-40593-3_1/lookinside/000.png" title="Look Inside" pagetype="rd_springer_com.book.chapter_preview" doi="10.1007/978-3-319-40593-3_1" parentdoi="10.1007/978-3-319-40593-3" parentcontenttype="Book" contenttype="Chapter" publication="10.1007/978-3-319-40593-3 | Provenance and Annotation of Data and Processes" viewtype="Preview">Look Inside</a>
+            </span>
+            <span class="action icon-unlock">
+              <a class="access-link webtrekk-track" href="http://link.springer.com/accesspage/chapter/10.1007/978-3-319-40593-3_1?coverImageUrl=https%3A%2F%2Fstatic-content.springer.com%2Fcover%2Fbook%2F978-3-319-40593-3.jpg" title="Get Access" pagetype="rd_springer_com.book.chapter_denial" doi="10.1007/978-3-319-40593-3_1" parentcontenttype="Book" contenttype="Chapter" publication="10.1007/978-3-319-40593-3 | Provenance and Annotation of Data and Processes" viewtype="Denial">Get Access</a>
+            </span>
+          </div>
+          <div class="unlock-wrapper">
+            <div style="margin-top: -24px;" class="bar-access-restr">
+              <strong class="message">Find out how to access preview-only content</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="document-main layout-3">
+          <div id="kb-nav--main" class="col-main has-full-enumeration" role="main">
+            
+            <div xmlns="http://www.w3.org/1999/xhtml" xmlns:meta="http://www.springer.com/app/meta" xmlns:epub="http://www.idpf.org/2007/ops"><section><header id="enumeration"><strong>Chapter</strong><p class="BookTitle"><a href="http://link.springer.com/book/10.1007/978-3-319-40593-3">Provenance and Annotation of Data and Processes</a></p><p><span class="vol-info">
+
+                                  Volume 9672 of the series <a href="http://link.springer.com/bookseries/558">Lecture Notes in Computer Science</a></span><span class="page-numbers-info">
+
+                            pp 3-15</span></p><div class="version version-html5"><span class="version-date">
+
+                              Date: <time>04 June 2016</time></span><span class="version-info version-info_latest"></span></div></header></section><div xmlns="" class="MainTitleSection"><h1 xmlns="http://www.w3.org/1999/xhtml" class="ChapterTitle" lang="en">RecProv: Towards Provenance-Aware User Space Record and Replay</h1></div><ul class="AuthorNames"><li><span class="AuthorName_container"><span class="AuthorName">Yang&nbsp;Ji</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Georgia Institute of Technology</span></span><a href="mailto:yang.ji@gatech.edu"><span class="ContactIcon">&nbsp;</span><span>Email author</span></a></span></span></span><a href="mailto:yang.ji@gatech.edu"><span class="ContactIcon">&nbsp;</span></a></li><li><span>, </span><span class="AuthorName_container"><span class="AuthorName">Sangho&nbsp;Lee</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Georgia Institute of Technology</span></span></span></span></span></li><li><span>, </span><span class="AuthorName_container"><span class="AuthorName">Wenke&nbsp;Lee</span><span class="AuthorNames_popup flyout"><span class="AuthorNames_details flyout-content flyout--arrowTopLeft"><span class="AuthorsName_affiliation"><strong>Affiliated with</strong><span>Georgia Institute of Technology</span></span></span></span></span></li></ul></div>
+    <div id="abstract-actions" class="panel">
+      <div class="content-pricing leaf-pricing">
+        <div class="leaf-pricing-content">
+          <div id="price-promo-message" class="hidden">
+            <div class="shout-out">
+              <p></p>
+            </div>
+          </div>
+          <div class="leaf-pricing-wrapper"></div>
+          <form id="getaccess-webshop" action="https://checkout.springer.com/checkout/add?SL=&amp;wt_mc=ThirdParty.SpringerLink.3.EPR653.AbstractPage_Chapter" method="post">
+            <input name="mac" value="390a3c43997570180a28a827b8251fd7" type="hidden">
+            <input name="returnurl" value="http://link.springer.com/chapter/10.1007/978-3-319-40593-3_1" type="hidden">
+            <input name="contenttitle" value="RecProv: Towards Provenance-Aware User Space Record and Replay" type="hidden">
+            <input name="pages" value="3-15" type="hidden">
+            <input name="copyrightyear" value="2016" type="hidden">
+            <input name="year" value="2016" type="hidden">
+            <input name="seriestitle" value="Lecture Notes in Computer Science" type="hidden">
+            <input name="authors" value="Yang Ji, Sangho Lee, Wenke Lee" type="hidden">
+            <input name="title" value="Provenance and Annotation of Data and Processes" type="hidden">
+            <input name="type" value="chapter" type="hidden">
+            <input name="doi" value="10.1007/978-3-319-40593-3_1" type="hidden">
+            <input name="volume" value="9672" type="hidden">
+            <input name="isxn" value="978-3-319-40593-3" type="hidden">
+            <input id="leaf-pricing-buy-now" class="btn btn-primary btn-action btn-monster" value="Buy chapter" type="submit">
+            <div style="display: block;" id="display-leaf-ppv"><p id="aggregate-pricing-info" class="content-prices">
+
+  $29.95 / €24.95 / £19.95 *
+</p>
+</div>
+          </form>
+        </div>
+        <div style="display: block;" class="line-divider"></div>
+        <div style="display: block;" id="display-book-ppv"><form action="http://link.springer.com/chapter/10.1007%2F978-3-319-40593-3_1" id="aggregate-pricing" class="aggregate-pricing aggregate-pricing-box">
+  <a id="aggregate-webshop-link" class="btn btn-primary btn-action" href="http://www.springer.com/addtocart/978-3-319-40593-3?wt_mc=ThirdParty.SpringerLink.3.EPR653.AbstractPage_eBook">Buy eBook</a>
+  <div class="aggregate-pricing-wrapper">
+    <h3>Buy this eBook</h3>
+    <p id="aggregate-pricing-info" class="content-prices">
+
+      $54.99 / €41.64 / £29.99*
+    </p>
+  </div>
+  <p class="price-disclaimer">* Final gross prices may vary according to local VAT.</p>
+</form></div>
+      </div>
+      <p class="price-disclaimer">* Final gross prices may vary according to local VAT.</p>
+      <span class="action icon-unlock">
+        <a id="request-access-link" class="webtrekk-track" href="http://link.springer.com/accesspage/chapter/10.1007/978-3-319-40593-3_1?coverImageUrl=https%3A%2F%2Fstatic-content.springer.com%2Fcover%2Fbook%2F978-3-319-40593-3.jpg" pagetype="rd_springer_com.book.chapter_denial" doi="10.1007/978-3-319-40593-3_1" contenttype="Chapter" parentcontenttype="Book" viewtype="Denial" publication="10.1007/978-3-319-40593-3 | Provenance and Annotation of Data and Processes">Get Access</a>
+      </span>
+    </div>
+
+            
+            <div xmlns="http://www.w3.org/1999/xhtml" xmlns:meta="http://www.springer.com/app/meta" xmlns:epub="http://www.idpf.org/2007/ops"><section class="Abstract" id="Abs1" lang="en">
+                            <h2 class="Heading">Abstract</h2>
+                            <p id="Par1" class="Para">Deterministic record and replay systems have widely been used in software debugging, failure diagnosis, and intrusion detection. In order to detect the Advanced Persistent Threat (APT), online execution needs to be recorded with acceptable runtime overhead; then, investigators can analyze the replayed execution with heavy dynamic instrumentation. While most record and replay systems rely on kernel module or OS virtualization, those running at user space are favoured for being lighter weight and more portable without any of the changes needed for OS/Kernel virtualization. On the other hand, higher level provenance data at a higher level provides dynamic analysis with system causalities and hugely increases its efficiency. Considering both benefits, we propose a provenance-aware user space record and replay system, called <span class="EmphasisTypeSmallCaps ">RecProv</span>. <span class="EmphasisTypeSmallCaps ">RecProv</span> is designed to provide high provenance fidelity; specifically, with versioning files from the recorded trace logs and integrity protection to provenance data through real-time trace isolation. The collected provenance provides the high-level system dependency that helps pinpoint suspicious activities where further analysis can be applied. We show that <span class="EmphasisTypeSmallCaps ">RecProv</span> is able to output accurate provenance in both visualized graph and W3C standardized PROV-JSON formats.</p>
+                          </section><div class="KeywordGroup" lang="en">
+                            <h3 class="Heading">Keywords</h3>
+                            <span class="Keyword">Provenance capturing</span>
+                            <span class="Keyword">Record and replay</span>
+                            <span class="Keyword">User space</span>
+                            <span class="Keyword">PROV</span>
+                          </div></div>
+          </div>
+          <div id="kb-nav--aside" class="col-aside" role="complementary">
+            <div class="cover">
+      <div class="look-inside cover-image-animate">
+        <div id="reader-overlay">
+      <div id="reader-page-template">
+        <div id="page-%P">
+          <div class="page-number">
+
+            Page
+            %P
+          </div>
+          <div class="pdf-page" id="page-img-container-%ID">
+            <img id="pdf-page-image-%ID" class="pdf-image" src="spacer.gif" alt="Loading..." style="width:%Wpx;" data-loaded="false" width="%W">
+          </div>
+        </div>
+      </div>
+      <div class="reader-position">
+        <div id="reader">
+          <div id="reader-buttons">
+            <a href="#close" id="pdf-close" class="btn btn-close right">
+
+              Close
+            </a>
+            <a href="#close" id="toggletext" class="btn" title="Toggle plain text">
+
+              Plain text
+            </a>
+          </div>
+          <div id="viewer" class="show-pdf">
+            <div id="scroller"></div>
+          </div>
+          <div class="top-shadow"></div>
+          <div class="bottom-shadow"></div>
+        </div>
+      </div>
+    </div>
+
+        <a class="webtrekk-track lookinside-href" href="http://link.springer.com/chapter/10.1007%2F978-3-319-40593-3_1/lookinside/000.png" pagetype="rd_springer_com.book.chapter_preview" parentcontenttype="Book" contenttype="Chapter" doi="10.1007/978-3-319-40593-3_1" viewtype="Preview" publication="10.1007/978-3-319-40593-3 | Provenance and Annotation of Data and Processes">
+          <img class="look-inside-cover" src="978-3-319-40593-3.jpg" alt="Provenance and Annotation of Data and Processes" itemprop="image" width="153">
+    <img class="look-inside-page" src="000.png" alt="Provenance and Annotation of Data and Processes" itemprop="image" width="153">
+
+          <span class="look-inside-badge">
+
+            Look
+            <br>
+            Inside
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="book-metrics SideBox" data-url="https://bookmetrix-proxy.live.cf.public.springer.com" data-contenttype="chapter">
+      <h2 class="SideBox_title">Chapter Metrics</h2>
+      <div class="book-metrics-items"><dl class="Meta Meta--2colBordedBackground"><dt class="book-metric-item-name Meta_name downloads"><a data-analytics="Downloads" href="http://www.bookmetrix.com/detail/chapter/4e129b76-6157-4fd3-bc49-f73724765d12#downloads">Downloads</a></dt><dd class="book-metric-item-value Meta_value downloads"><a data-analytics="Downloads" href="http://www.bookmetrix.com/detail/chapter/4e129b76-6157-4fd3-bc49-f73724765d12#downloads">247</a></dd></dl></div>
+      <div class="Sidebox_footer book-metrics-footer">
+        <a href="http://www.bookmetrix.com/">
+          <span>Provided by</span>
+          <span><strong>Book</strong><span>metrix</span></span>
+        </a>
+      </div>
+    </div>
+            <div id="copublisher-container" data-url="https://copublishers.live.cf.public.springer.com/?id=978-3-319-40593-3&amp;id=978-3-319-40592-6" on-sidebar="on-sidebar"></div>
+
+            
+            <div id="section-links">
+    </div>
+
+            <div id="reference-tools" class="SideBox">
+      <h2 class="SideBox_title">Reference tools</h2>
+      <ul>
+        <li>
+          <div id="article-export-citation" class="Collapse Collapse--button u-z-index-3" tabindex="-1">
+        <h3 class="Collapse_toggle" data-toggle="collapse" data-target="targetId">
+
+            Export citation
+            <span class="Icon Icon--triangle-down-dark"></span>
+        </h3>
+        <ul id="article-export-citation-options" class="Collapse_content">
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-319-40593-3_1?format=endnote&amp;flavour=citation">EndNote (.ENW)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-319-40593-3_1?format=bibtex&amp;flavour=citation">JabRef (.BIB)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-319-40593-3_1?format=bibtex&amp;flavour=citation">Mendeley (.BIB)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-319-40593-3_1?format=refman&amp;flavour=citation">Papers (.RIS)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-319-40593-3_1?format=refman&amp;flavour=citation">Zotero (.RIS)</a></li>
+            <li><a href="http://citation-needed.services.springer.com/v2/references/10.1007/978-3-319-40593-3_1?format=bibtex&amp;flavour=citation">BibTeX (.BIB)</a></li>
+            </ul>
+    </div>
+        </li>
+        <li>
+          <a id="papers-link" class="external webtrekk-track" href="http://redirect.papersapp.com/redirect?url=http://link.springer.com/chapter/10.1007%2F978-3-319-40593-3_1" target="_top" title="It opens in new window" gacategory="Export" publication="10.1007/978-3-319-40593-3_1 | RecProv: Towards Provenance-Aware User Space Record and Replay" viewtype="Add to Papers">Add to Papers</a>
+
+        </li>
+      </ul>
+    </div>
+    <div class="SideBox other-actions">
+      <h2 class="SideBox_title">Other actions</h2>
+      <ul>
+        <li>
+          <a id="about-link" class="external" href="http://www.springer.com/978-3-319-40592-6?wt_mc=ThirdParty.SpringerLink.3.EPR653.About_eBook" target="_top" title="It opens in new window">
+
+      About this Book
+    </a>
+
+        </li>
+        <li>
+          <a id="permissions-link" class="external" href="https://s100.copyright.com/AppDispatchServlet?publisherName=Springer&amp;orderBeanReset=true&amp;orderSource=SpringerLink&amp;author=Yang+Ji&amp;AuthorEmail=yang.ji%40gatech.edu&amp;contentID=10.1007%2F978-3-319-40593-3_1&amp;openAccess=false&amp;endPage=15&amp;publicationDate=2016&amp;startPage=3&amp;title=RecProv%3A+Towards+Provenance-Aware+User+Space+Record+and+Replay&amp;imprint=Springer+International+Publishing+Switzerland&amp;publication=eBook&amp;authorAddress=Atlanta%2C+USA" target="_top" title="It opens in new window">Reprints and Permissions</a>
+
+        </li>
+      </ul>
+    </div>
+
+            <div class="SideBox other-actions share">
+      <h2 class="SideBox_title">Share</h2>
+      <a id="facebook" href="javascript:void(0)" title="Share this content on Facebook">Share this content on Facebook</a>
+      <a id="twitter" href="javascript:void(0)" title="Share this content on Twitter">Share this content on Twitter</a>
+      <a id="linkedin" href="javascript:void(0)" title="Share this content on LinkedIn">Share this content on LinkedIn</a>
+    </div>
+
+          </div>
+        </div>
+        <div id="kb-nav--aside" class="document-aside" role="complementary">
+          <input id="relatedItemsSource" value="none" type="hidden">
+
+          <div id="abstract-esm" class="expander expander-empty">
+      <div class="expander-title">
+        <div class="heading">
+          <h2><button>Supplementary Material (0)</button></h2>
+        </div>
+      </div>
+      </div>
+
+          <div id="abstract-references" class="expander">
+      <div class="expander-title">
+        <div class="heading">
+           <h2><button>References (36)</button></h2>
+        </div>
+      </div>
+      <div class="expander-content">
+        <div class="expander-content-inner">
+          <div class="formatted">
+            
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:meta="http://www.springer.com/app/meta" xmlns:epub="http://www.idpf.org/2007/ops" class="FulltextWrapper"><aside class="Bibliography" id="Bib1"><h3 class="Heading">References</h3><ol class="BibliographyWrapper"><li class="Citation"><div class="CitationNumber">1.</div><div class="CitationContent" id="CR1">Attariyan, M., Chow, M., Flinn, J.: X-ray: automating root-cause diagnosis of performance anomalies in production software. In: Proceedings of the 10th USENIX Symposium on Operating Systems Design and Implementation (OSDI), Hollywood, CA, October 2012</div></li><li class="Citation"><div class="CitationNumber">2.</div><div class="CitationContent" id="CR2">Balakrishnan, N., Bytheway, T., Carata, L., Chick, O.R.A., Snee, J., Akoush, S., Sohan, R., Seltzer, M., Hopper, A.: Recent advances in computer architecture: the opportunities and challenges for provenance. In: Proceedings of the 7th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2015)</div></li><li class="Citation"><div class="CitationNumber">3.</div><div class="CitationContent" id="CR3">Bates, A., Tian, D.J., Butler, K.R., Moyer, T.: Trustworthy whole-system provenance for the Linux kernel. In: Proceedings of the 24th USENIX Security Symposium (Security), Washington, DC, August 2015</div></li><li class="Citation"><div class="CitationNumber">4.</div><div class="CitationContent" id="CR4">Cantrill, B., Shapiro, M., Leventhal, A.: Dynamic instrumentation of production systems. In: Proceedings of the 2004 USENIX Annual Technical Conference (ATC), Boston, MA, June–July 2004</div></li><li class="Citation"><div class="CitationNumber">5.</div><div class="CitationContent" id="CR5">Davidson, S., Freire, J.: Provenance and scientic workflows: challenges and opportunities. In: Proceedings of the 2008 ACM SIGMOD/PODS Conference, Vancouver, Canada, June 2008</div></li><li class="Citation"><div class="CitationNumber">6.</div><div class="CitationContent" id="CR6">Devecsery, D., Chow, M., Dou, X., Flinn, J., Chen, P.: Eidetic systems. In: Proceedings of the 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI), Broomfield, Colorado, October 2014</div></li><li class="Citation"><div class="CitationNumber">7.</div><div class="CitationContent" id="CR7">Dolan-Gavitt, B., Leek, T., Hodosh, J., Lee, W.: Tappan zee (north) bridge: mining memory accesses for introspection. In: Proceedings of the 20th ACM Conference on Computer and Communications Security (CCS), Berlin, Germany, October 2013</div></li><li class="Citation"><div class="CitationNumber">8.</div><div class="CitationContent" id="CR8">Dolan-Gavitt, B., Leek, T., Zhivich, M., Giffin, J., Lee, W.: Virtuoso: narrowing the semantic gap in virtual machine introspection. In: Proceedings of the 32nd IEEE Symposium on Security and Privacy (Oakland), Oakland, CA, May 2011</div></li><li class="Citation"><div class="CitationNumber">9.</div><div class="CitationContent" id="CR9">Gehani, A., Tariq, D.: SPADE: support for provenance auditing in distributed environments. In: Proceedings of the 13th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2012)</div></li><li class="Citation"><div class="CitationNumber">10.</div><div class="CitationContent" id="CR10">Guo, Z., Wang, X., Tang, J., Liu, X., Xu, Z., Wu, M., Kaashoek, M.F., Zhang, Z.: R2: an application-level kernel for record and replay. In: Proceedings of the 8th USENIX Symposium on Operating Systems Design and Implementation (OSDI), San Diego, CA, December 2008</div></li><li class="Citation"><div class="CitationNumber">11.</div><div class="CitationContent" id="CR11">Intel: Pin - a dynamic binary instrumentation tool. <span class="ExternalRef"><a href="https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool"><span class="RefSource">https://​software.​intel.​com/​en-us/​articles/​pin-a-dynamic-binary-instrumentation-tool</span></a></span>
+            </div></li><li class="Citation"><div class="CitationNumber">12.</div><div class="CitationContent" id="CR12">James, C., Laura, C., Wang-Chiew, T.: Provenance in databases: why, how, and where. Found. Trends Databases <strong class="EmphasisTypeBold ">1</strong>(4), 379–474 (2009)</div></li><li class="Citation"><div class="CitationNumber">13.</div><div class="CitationContent" id="CR13">Kemerlis, V.P., Portokalidis, G., Jee, K., Keromytis, A.D.: libdft: practical dynamic data flow tracking for commodity systems. In: Proceedings of the 8th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE) (2012)</div></li><li class="Citation"><div class="CitationNumber">14.</div><div class="CitationContent" id="CR14">Kim, T., Wang, X., Zeldovich, N., Kaashoek, M.: Intrusion recovery using selective re-execution. In: Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation (OSDI), Vancouver, Canada, October 2010</div></li><li class="Citation"><div class="CitationNumber">15.</div><div class="CitationContent" id="CR15">King, S.T., Chen, P.M.: Backtracking intrusions. In: Proceedings of the 19th ACM Symposium on Operating Systems Principles (SOSP). Bolton Landing, NY, October 2003</div></li><li class="Citation"><div class="CitationNumber">16.</div><div class="CitationContent" id="CR16">Luk, C.K., Cohn, R., Muth, R., Patil, H., Klauser, A., Lowney, G., Wallace, S., Reddi, V.J., Hazelwood, K.: Pin: building customized program analysis tools with dynamic instrumentation. In: Proceedings of the 2005 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Chicago, IL, June 2005</div></li><li class="Citation"><div class="CitationNumber">17.</div><div class="CitationContent" id="CR17">Ma, S., Zhang, X., Xu, D.: ProTracer: towards practical provenance tracing by alternating between logging and tainting. In: Proceedings of the 2016 Annual Network and Distributed System Security Symposium (NDSS), San Diego, CA, February 2016</div></li><li class="Citation"><div class="CitationNumber">18.</div><div class="CitationContent" id="CR18">McAfee: White paper: Combating advanced persistent threats, how to prevent, detect and remediate apts. <span class="ExternalRef"><a href="http://www.mcafee.com/us/resources/white-papers/wp-combat-advanced-persist-threats.pdf"><span class="RefSource">http://​www.​mcafee.​com/​us/​resources/​white-papers/​wp-combat-advanced-persist-threats.​pdf</span></a></span>
+            </div></li><li class="Citation"><div class="CitationNumber">19.</div><div class="CitationContent" id="CR19">Moreau, L.: The foundations for provenance on the web. Found. Trends Web Sci. <strong class="EmphasisTypeBold ">2</strong>(2–3), 99–241 (2010)<span class="Occurrences"><span class="Occurrence OccurrenceAMSID"><a href="http://www.ams.org/mathscinet-getitem?mr=2765953"><span><span>MathSciNet</span></span></a></span><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1561/1800000010"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">20.</div><div class="CitationContent" id="CR20">Mozilla: rr: lightweight recording &amp; deterministic debugging. <span class="ExternalRef"><a href="http://rr-project.org/"><span class="RefSource">http://​rr-project.​org</span></a></span>
+            </div></li><li class="Citation"><div class="CitationNumber">21.</div><div class="CitationContent" id="CR21">Muniswamy-Reddy, K.K., Braun, U., Holland, D.A., Macko, P., MacLean, D.L., Margo, D.W., Seltzer, M.I., Smogor, R.: Layering in provenance systems. In: Proceedings of the 2009 USENIX Annual Technical Conference (ATC), San Diego, CA, June 2009</div></li><li class="Citation"><div class="CitationNumber">22.</div><div class="CitationContent" id="CR22">Muniswamy-Reddy, K.K., Holland, D.A., Braun, U., Seltzer, M.I.: Provenance-aware storage systems. In: Proceedings of the 2006 USENIX Annual Technical Conference (ATC), Boston, MA, May–June 2006</div></li><li class="Citation"><div class="CitationNumber">23.</div><div class="CitationContent" id="CR23">Neo Technology: Neo4j: The world’s leading graph database. <span class="ExternalRef"><a href="http://www.neo4j.com/"><span class="RefSource">http://​www.​neo4j.​com</span></a></span>
+            </div></li><li class="Citation"><div class="CitationNumber">24.</div><div class="CitationContent" id="CR24">Nethercote, N., Seward, J.: Valgrind: a framework for heavyweight dynamic binary instrumentation. In: Proceedings of the 2007 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), San Diego, CA, June 2007</div></li><li class="Citation"><div class="CitationNumber">25.</div><div class="CitationContent" id="CR25">Newsome, J., Song, D.: Dynamic taint analysis for automatic detection, analysis, and signature generation of exploits on commodity software. In: Proceedings of the 12th Annual Network and Distributed System Security Symposium (NDSS), San Diego, CA, February 2005</div></li><li class="Citation"><div class="CitationNumber">26.</div><div class="CitationContent" id="CR26">NTT Laboratories: NILFS - continuous snapshotting filesystem for Linux. <span class="ExternalRef"><a href="http://www.nilfs.org/"><span class="RefSource">http://​www.​nilfs.​org</span></a></span>
+            </div></li><li class="Citation"><div class="CitationNumber">27.</div><div class="CitationContent" id="CR27">Pohly, D.J., McLaughlin, S., McDaniel, P., Butler, K.: Hi-Fi: collecting high-fidelity whole-system provenance. In: Proceedings of the Annual Computer Security Applications Conference (ACSAC) (2012)</div></li><li class="Citation"><div class="CitationNumber">28.</div><div class="CitationContent" id="CR28">Reinders, J.: Processor Trace. <span class="ExternalRef"><a href="https://software.intel.com/en-us/blogs/2013/09/18/processor-tracing"><span class="RefSource">https://​software.​intel.​com/​en-us/​blogs/​2013/​09/​18/​processor-tracing</span></a></span>
+            </div></li><li class="Citation"><div class="CitationNumber">29.</div><div class="CitationContent" id="CR29">Saito, Y.: Jockey: a user-space library for record-replay debugging. In: Proceedings of the 6th International Symposium on Automated Analysis-driven Debugging (2005)</div></li><li class="Citation"><div class="CitationNumber">30.</div><div class="CitationContent" id="CR30">Seward, J., Nethercote, N.: Using valgrind to detect undefined value errors with bit-precision. In: Proceedings of the 2005 USENIX Annual Technical Conference (ATC), Anaheim, CA, June–July 2005</div></li><li class="Citation"><div class="CitationNumber">31.</div><div class="CitationContent" id="CR31">Simmhan, Y.L., Plale, B., Gannon, D.: Karma2: provenance management for data-driven workflows. In: Web Services Research for Emerging Applications: Discoveries and Trends: Discoveries and Trends, p. 317 (2010)</div></li><li class="Citation"><div class="CitationNumber">32.</div><div class="CitationContent" id="CR32">Srinivasan, S.M., Kandula, S., Andrews, C.R., Zhou, Y.: Flashback: a lightweight extension for rollback and deterministic replay for software debugging. In: Proceedings of the 2004 USENIX Annual Technical Conference (ATC), Boston, MA June–July 2004</div></li><li class="Citation"><div class="CitationNumber">33.</div><div class="CitationContent" id="CR33">Stamatogiannakis, M., Groth, P., Bos, H.: Looking inside the black-box: capturing data provenance using dynamic instrumentation. In: Ludaescher, B., Plale, B. (eds.) IPAW 2014. LNCS, vol. 8628, pp. 155–167. Springer, Heidelberg (2015)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a href="http://dx.doi.org/10.1007/978-3-319-16462-5_12"><span><span>CrossRef</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">34.</div><div class="CitationContent" id="CR34">Stamatogiannakis, M., Groth, P., Bos, H.: Decoupling provenance capture and analysis from execution. In: Proceedings of the 7th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2015)</div></li><li class="Citation"><div class="CitationNumber">35.</div><div class="CitationContent" id="CR35">Tariq, D., Ali, M., Gehani, A.: Towards automated collection of application-level data provenance. In: Proceedings of the 4th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2015)</div></li><li class="Citation"><div class="CitationNumber">36.</div><div class="CitationContent" id="CR36">Yin, H., Song, D., Egele, M., Kruegel, C., Kirda, E.: Panorama: capturing system-wide information flow for malware detection and analysis. In: Proceedings of the 14th ACM Conference on Computer and Communications Security (CCS), Alexandria, VA, October–November 2007</div></li></ol></aside></div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+          
+          <div id="abstract-about" class="expander">
+      <div class="expander-title">
+        <div class="heading">
+          <button>
+            <h2>About this Chapter</h2>
+          </button>
+        </div>
+      </div>
+      <div style="display: none;" class="expander-content">
+        <div class="expander-content-inner">
+          <div class="summary">
+            <dl>
+              <dt>Title</dt>
+              <dd id="abstract-about-title">RecProv: Towards Provenance-Aware User Space Record and Replay</dd>
+              
+              <dt>Book Title</dt>
+              <dd id="abstract-about-publication">
+                <a href="http://link.springer.com/book/10.1007/978-3-319-40593-3">Provenance and Annotation of Data and Processes</a>
+              </dd>
+              <dt id="dt-abstract-about-book-subtitle">Book Subtitle</dt>
+    <dd id="abstract-about-book-subtitle">6th International Provenance and Annotation Workshop, IPAW 2016, McLean, VA, USA, June 7-8, 2016, Proceedings</dd>
+
+              
+              <dt id="dt-abstract-about-book-chapter-page-ranges">Pages</dt>
+    <dd id="abstract-about-book-chapter-page-ranges">pp 3-15</dd>
+
+              <dt id="dt-abstract-about-book-chapter-copyright-year">Copyright</dt>
+    <dd id="abstract-about-book-chapter-copyright-year">2016</dd>
+
+              <dt>DOI</dt>
+              <dd id="abstract-about-book-chapter-doi" class="doi">10.1007/978-3-319-40593-3_1</dd>
+              <dt id="dt-abstract-about-book-print-isbn">Print ISBN</dt>
+    <dd id="abstract-about-book-print-isbn">978-3-319-40592-6</dd>
+
+              <dt id="dt-abstract-about-book-online-isbn">Online ISBN</dt>
+    <dd id="abstract-about-book-online-isbn">978-3-319-40593-3</dd>
+
+              <dt id="dt-abstract-about-book-series-title">Series Title</dt>
+    <dd id="abstract-about-book-series-title">
+      <a href="http://link.springer.com/bookseries/558">Lecture Notes in Computer Science</a>
+    </dd>
+
+              <dt id="dt-abstract-about-book-series-volume">Series Volume</dt>
+    <dd id="abstract-about-book-series-volume">9672</dd>
+
+              
+              <dt id="dt-abstract-about-book-series-print-issn">Series ISSN</dt>
+    <dd id="abstract-about-book-series-print-issn">0302-9743</dd>
+
+              <dt id="dt-abstract-about-publisher">Publisher</dt>
+    <dd id="abstract-about-publisher">Springer International Publishing</dd>
+
+              <dt id="dt-abstract-about-book-copyright-holder">Copyright Holder</dt>
+    <dd id="abstract-about-book-copyright-holder">Springer International Publishing Switzerland</dd>
+
+              <dt>Additional Links</dt>
+              <dd id="abstract-about-additional-links">
+                <ul>
+                  <li>
+                    <a class="external" href="http://www.springer.com/978-3-319-40592-6?wt_mc=ThirdParty.SpringerLink.3.EPR653.About_eBook" target="_top" title="It opens in new window">About this Book</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+      <dt>Topics</dt>
+    <dd itemprop="genre">
+      <ul class="abstract-about-subject">
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Artificial+Intelligence+%28incl.+Robotics%29%22">Artificial Intelligence (incl. Robotics)</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Database+Management%22">Database Management</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Information+Storage+and+Retrieval%22">Information Storage and Retrieval</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Information+Systems+Applications+%28incl.+Internet%29%22">Information Systems Applications (incl. Internet)</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Management+of+Computing+and+Information+Systems%22">Management of Computing and Information Systems</a>
+        </li>
+        <li>
+          <a href="http://link.springer.com/search?facet-subject=%22Computers+and+Society%22">Computers and Society</a>
+        </li>
+      </ul>
+    </dd>
+
+      <dt>Keywords</dt>
+    <dd id="abstract-about-keywords" itemprop="keywords">
+      <ul class="abstract-keywords">
+        <li>Provenance capturing</li>
+        <li>Record and replay</li>
+        <li>User space</li>
+        <li>PROV</li>
+      </ul>
+    </dd>
+
+      <dt>Industry Sectors</dt>
+    <dd itemprop="genre">
+      <ul class="abstract-about-industrysectors">
+        <li>
+          <a title="/industry/pharma" href="http://link.springer.com/industry/pharma">Pharma</a>
+        </li>
+        <li>
+          <a title="/industry/materialsandsteel" href="http://link.springer.com/industry/materialsandsteel">Materials &amp; Steel</a>
+        </li>
+        <li>
+          <a title="/industry/automotive" href="http://link.springer.com/industry/automotive">Automotive</a>
+        </li>
+        <li>
+          <a title="/industry/chemicals" href="http://link.springer.com/industry/chemicals">Chemical Manufacturing</a>
+        </li>
+        <li>
+          <a title="/industry/biotech" href="http://link.springer.com/industry/biotech">Biotechnology</a>
+        </li>
+        <li>
+          <a title="/industry/electronics" href="http://link.springer.com/industry/electronics">Electronics</a>
+        </li>
+        <li>
+          <a title="/industry/it" href="http://link.springer.com/industry/it">IT &amp; Software</a>
+        </li>
+        <li>
+          <a title="/industry/telecom" href="http://link.springer.com/industry/telecom">Telecommunications</a>
+        </li>
+        <li>
+          <a title="/industry/consumer" href="http://link.springer.com/industry/consumer">Consumer Packaged Goods</a>
+        </li>
+        <li>
+          <a title="/industry/aerospace" href="http://link.springer.com/industry/aerospace">Aerospace</a>
+        </li>
+        <li>
+          <a title="/industry/engineering" href="http://link.springer.com/industry/engineering">Engineering</a>
+        </li>
+      </ul>
+    </dd>
+
+    <dt>eBook Packages</dt>
+    <dd itemprop="genre">
+        <ul class="abstract-about-ebook-packages">
+        <li><a href="http://link.springer.com/search?facet-content-type=%22Book%22&amp;package=11645&amp;facet-start-year=2016&amp;facet-end-year=2016">Computer Science</a></li>
+        </ul>
+    </dd>
+    </dl>
+    <dl>
+      <dt>Editors</dt>
+    <dd>
+      <ul class="editors">
+        <li itemprop="editor" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Marta+Mattoso%22" itemprop="name">Marta Mattoso</a>
+          <sup title="COPPE/UFRJ">(13)</sup>
+        </li>
+        <li itemprop="editor" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Boris+Glavic%22" itemprop="name">Boris Glavic</a>
+          <sup title="Illinois Institute of Technology">(14)</sup>
+        </li>
+      </ul>
+    </dd>
+    <dt>Editor Affiliations</dt>
+    <dd>
+      <ul class="editor-affiliations">
+        <li>
+          <span class="position">13.</span>
+          <span class="affiliation">
+
+            COPPE/UFRJ
+          </span>
+        </li>
+        <li>
+          <span class="position">14.</span>
+          <span class="affiliation">
+
+            Illinois Institute of Technology
+          </span>
+        </li>
+      </ul>
+    </dd>
+
+      <dt>Authors</dt>
+    <dd>
+      <ul class="authors">
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Yang+Ji%22" itemprop="name">Yang Ji</a>
+          <a class="envelope" href="mailto:yang.ji@gatech.edu" title="yang.ji@gatech.edu"><img src="envelope.png" alt="yang.ji@gatech.edu"></a>
+          <sup title="Georgia Institute of Technology">(15)</sup>
+        </li>
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Sangho+Lee%22" itemprop="name">Sangho Lee</a>
+          <sup title="Georgia Institute of Technology">(15)</sup>
+        </li>
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="http://link.springer.com/search?facet-creator=%22Wenke+Lee%22" itemprop="name">Wenke Lee</a>
+          <sup title="Georgia Institute of Technology">(15)</sup>
+        </li>
+      </ul>
+    </dd>
+    <dt>Author Affiliations</dt>
+    <dd>
+      <ul class="author-affiliations">
+        <li>
+          <span class="position">15.</span>
+          <span class="affiliation">
+
+            Georgia Institute of Technology, Atlanta, USA
+            
+          </span>
+        </li>
+      </ul>
+    </dd>
+
+    </dl>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+      </div>
+      <div id="look-inside-interrupt" class="look-inside-interrupt">
+      <h3>Continue reading...</h3>
+      <div class="col-1">
+        <p>To view the rest of this content please follow the download PDF link above.</p>
+      </div>
+    </div>
+
+    </div>
+    <div id="web-trekk-abstract" doi="10.1007/978-3-319-40593-3_1" parentcontenttype="Book" contenttype="Chapter" viewtype="Abstract" publication="10.1007/978-3-319-40593-3 | Provenance and Annotation of Data and Processes" unsiloed="" embedfulltext="false" openchoice="N"></div>
+    <input id="contentType" value="Chapter" type="hidden">
+
+
+    <div id="footer">
+  <hr>
+  <div id="footer-verticals" class="section" role="navigation">
+    <span class="strapline">Over 10 million scientific documents at your fingertips</span>
+    <div class="flyout">
+      <button class="pillow-btn open-disciplines">
+
+        Browse by Discipline
+        <span class="caret"></span>
+      </button>
+      <ol class="disciplines">
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Architecture+%26+Design%22" title="follow this link to go to Architecture &amp; Design">Architecture &amp; Design</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Astronomy%22" title="follow this link to go to Astronomy">Astronomy</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Biomedical+Sciences%22" title="follow this link to go to Biomedical Sciences">Biomedical Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Business+%26+Management%22" title="follow this link to go to Business &amp; Management">Business &amp; Management</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Chemistry%22" title="follow this link to go to Chemistry">Chemistry</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Computer+Science%22" title="follow this link to go to Computer Science">Computer Science</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Earth+Sciences+%26+Geography%22" title="follow this link to go to Earth Sciences &amp; Geography">Earth Sciences &amp; Geography</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Economics%22" title="follow this link to go to Economics">Economics</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Education+%26+Language%22" title="follow this link to go to Education &amp; Language">Education &amp; Language</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Energy%22" title="follow this link to go to Energy">Energy</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Engineering%22" title="follow this link to go to Engineering">Engineering</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Environmental+Sciences%22" title="follow this link to go to Environmental Sciences">Environmental Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Food+Science+%26+Nutrition%22" title="follow this link to go to Food Science &amp; Nutrition">Food Science &amp; Nutrition</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Law%22" title="follow this link to go to Law">Law</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Life+Sciences%22" title="follow this link to go to Life Sciences">Life Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Materials%22" title="follow this link to go to Materials">Materials</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Mathematics%22" title="follow this link to go to Mathematics">Mathematics</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Medicine%22" title="follow this link to go to Medicine">Medicine</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Philosophy%22" title="follow this link to go to Philosophy">Philosophy</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Physics%22" title="follow this link to go to Physics">Physics</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Psychology%22" title="follow this link to go to Psychology">Psychology</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Public+Health%22" title="follow this link to go to Public Health">Public Health</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Social+Sciences%22" title="follow this link to go to Social Sciences">Social Sciences</a>
+  </li>
+  <li>
+    <a href="http://link.springer.com/search?facet-discipline=%22Statistics%22" title="follow this link to go to Statistics">Statistics</a>
+  </li>
+</ol>
+
+    </div>
+  </div>
+  <div id="footer-nav" class="section">
+    <div id="footer-nav-misc">
+      <div id="footer-our-content" class="block" role="navigation">
+        <h2>Our Content</h2>
+        <ul>
+          <li>
+            <a title="View Journals" href="http://link.springer.com/search?facet-content-type=%22Journal%22">Journals</a>
+          </li>
+          <li>
+            <a title="View Books" href="http://link.springer.com/search?facet-content-type=%22Book%22">Books</a>
+          </li>
+          <li>
+            <a title="View Book Series" href="http://link.springer.com/search?facet-content-type=%22BookSeries%22">Book Series</a>
+          </li>
+          <li>
+            <a title="View Protocols" href="http://link.springer.com/search?facet-content-type=%22Protocol%22">Protocols</a>
+          </li>
+          <li>
+            <a title="View Reference Works" href="http://link.springer.com/search?facet-content-type=%22ReferenceWork%22">Reference Works</a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer-other-sites" class="block" role="navigation">
+        <h2>Other Sites</h2>
+        <ul>
+          <li>
+            <a title="Visit Springer.com" href="http://www.springer.com/">Springer.com</a>
+          </li>
+          <li>
+            <a title="Visit Springer Protocols" href="http://www.springerprotocols.com/">SpringerProtocols</a>
+          </li>
+          <li>
+            <a title="Visit Springer Materials" href="http://materials.springer.com/">SpringerMaterials</a>
+          </li>
+          <li>
+            <a href="http://adis.springer.com/">AdisInsight</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block" role="navigation">
+        <h2>Help &amp; Contacts</h2>
+        <ul>
+          <li>
+            <a class="contact-us-link" title="Contact us" href="http://link.springer.com/contactus">Contact Us</a>
+          </li>
+          <li>
+            <a class="impressum-link" title="View Impressum" href="http://link.springer.com/impressum">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer-legal" class="section" role="contentinfo">
+    <div id="mobile-nav">
+      <span class="pillow-btn open-legal" title="Show Legal Information">Legal</span>
+    </div>
+    <div id="legal" role="contentinfo">
+      <span id="footer-copyright">© Springer International Publishing AG, Part of Springer Science+Business Media</span>
+      <a id="footer-privacy" title="View Terms and Conditions" href="http://link.springer.com/termsandconditions">Privacy Policy, Disclaimer, General Terms &amp; Conditions</a>
+      <div id="diagnostic-info">
+  <span id="diagnostic-login-status">Not logged in</span>
+  <span class="diagnostic-business-partners">Unaffiliated</span>
+  <span id="diagnostic-ip">98.218.107.82</span>
+</div>
+
+      
+    </div>
+  </div>
+  <div id="footer-branding" class="section">
+    <div class="block">
+      <span id="branding-logo">Springer for Research &amp; Development</span>
+    </div>
+  </div>
+  <div id="google-analytics-account" style="display: none;">UA-26408784-1</div>
+</div>
+
+
+    <div id="doubleclick-ad" class="banner-advert">
+  <script type="text/javascript">if ( window.outerWidth || document.body.clientWidth > 1100 ) { googletag.cmd.push(function() { googletag.display('doubleclick-ad'); }); };</script>
+<div style="border: 0pt none;" id="google_ads_iframe_6313/casper/book/chapter_0__container__"><iframe src="10_1.html" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_6313/casper/book/chapter_0" title="3rd party ad content" id="google_ads_iframe_6313/casper/book/chapter_0" frameborder="0" height="600" width="160"></iframe></div></div>
+
+  </div>
+  <noscript>
+
+  <div id="jsnotice" class="prompt-bar">
+    <p>
+      JavaScript is currently disabled<span>, this site works much better if you enable JavaScript in your browser.</span>
+    </p>
+  </div>
+</noscript>
+
+
+<script src="webtrekk_v3.js"></script>
+  <script id="webtrekk-properties" type="text/javascript">
+
+    var webtrekkProperties = {
+      trackDomain : "springergmbh01.webtrekk.net",
+      trackId : "935649882378213",
+      pageType : "rd_springer_com.book.chapter_abstract"
+      };
+  </script>
+  <noscript>
+
+    <div id="webtrekk"><img src="http://springergmbh01.webtrekk.net/935649882378213/wt?p=315,rd_springer_com.book.chapter_abstract" height="1" width="1" alt=""/></div>
+  </noscript>
+
+<script id="google-analytics" type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-26408784-1', 'auto');
+    ga('create', 'UA-26408784-4', 'auto', {'name': 'unsiloTracker'});
+    ga('set', 'dimension2', 'N');
+    ga('require', 'linkid', 'linkid.js');
+    ga('send', 'pageview');
+  </script>
+
+<script src="jquery-ui.min.js"></script>
+<script src="jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+
+  var vgWortProperties = {
+  vgWortDomain: 'springer.met.vgwort.de'
+  };
+</script>
+<script src="all.js"></script>
+<script src="mathJaxConfig.js"></script>
+<script src="MathJax.js"></script>
+<script src="mathJaxHooks.js"></script>
+
+
+<!--[if !(IE 8)]><!-->
+            <script type="text/javascript" src="freshwidget.js"></script>
+            <script type="text/javascript">
+
+                FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=SpringerLink+Support+%26+Feedback&submitThanks=Thank+you+for+your+submission.%0D%0AYou+will+receive+confirmation+of+receipt+shortly+and+a+response+within+one+business+day.++%0D%0APlease+close+this+window+to+continue+browsing+or+use+the+%22Go+back%22+link+below+to+submit+another+request.&captcha=yes", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#087be7", "alignment": "4", "offset": "235px", "submitThanks": "Thank you for your submission.\r\nYou will receive confirmation of receipt shortly and a response within one business day.  \r\nPlease close this window to continue browsing or use the \"Go back\" link below to submit another request.", "formHeight": "600px", "offset": "-1500px", "captcha": "yes", "url": "https://springeronlineservice.freshdesk.com"} );
+            </script>
+            <!--<![endif]-->
+            <button class="StickySideButton_left StickySideButton_left--feedback" onclick="FreshWidget.show();">Support</button>
+        
+<script type="text/javascript">var _kiq = _kiq || [];</script>
+<script type="text/javascript" src="9CC.js" async="true"></script>
+
+
+
+<div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px none; margin: 0px;"><div style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px none; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-size-adjust: none; font-family: STIXSizeOneSym,sans-serif;" id="MathJax_Font_Test"></div></div></body>
+</html>

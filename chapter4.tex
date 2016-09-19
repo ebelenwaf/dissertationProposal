@@ -2,115 +2,125 @@
 
 \chapter{Storage Optimization Framework for Provenance data storage in IoT devices} \label{MostNarrowEasy}
 
-In this chapter we define our model and algorithms for storage optimization of provenance data in IoT devices. We focus on all of the proposed techniqes such as data pruning and data compresion of graphs.  We evaluate our hypothesis the proof of concept ideology.
+In this chapter we define our model and algorithms for storage optimization of provenance data in IoT devices. We focus on all of the proposed techniques such as data pruning and data compression of graphs.  We evaluate our hypothesis the proof of concept ideology.
 
-\section{Definitions}
+%\section{Definitions}
+%
+%\begin{definition}
+%{\rm We say that the number $\tilde x$ represents a number $x$ with
+%{\em absolute accuracy\/} $\Delta>0$ if $|x-\tilde x|\leq\Delta$.}
+%\end{definition}
+%
+%\begin{definition}
+%{\rm By {\em absolute half-width\/} of the interval ${\bf x}=[x^-,x^+]$, we
+%mean the smallest number $\Delta>0$ for which every number in ${\bf x}$ is
+%represented with an absolute accuracy~$\Delta$ by $\tilde x=\displaystyle{
+%\frac{x^-+x^+}{2}}$.\\[0.5pc]
+%{\bf Proposition} It can be seen that the absolute half-width of ${\bf x}$ is
+%$$
+%  \max_{x\in [x^-,x^+]} |x-\tilde x| = \frac{x^+-x^-}{2}.
+%$$}
+%\end{definition}
 
-\begin{definition}
-{\rm We say that the number $\tilde x$ represents a number $x$ with
-{\em absolute accuracy\/} $\Delta>0$ if $|x-\tilde x|\leq\Delta$.}
-\end{definition}
 
-\begin{definition}
-{\rm By {\em absolute half-width\/} of the interval ${\bf x}=[x^-,x^+]$, we
-mean the smallest number $\Delta>0$ for which every number in ${\bf x}$ is
-represented with an absolute accuracy~$\Delta$ by $\tilde x=\displaystyle{
-\frac{x^-+x^+}{2}}$.\\[0.5pc]
-{\bf Proposition} It can be seen that the absolute half-width of ${\bf x}$ is
-$$
-  \max_{x\in [x^-,x^+]} |x-\tilde x| = \frac{x^+-x^-}{2}.
-$$}
-\end{definition}
 
-\begin{definition}
-{\rm By {\em absolute width\/} $W$ of an interval ${\bf x}=[x^-,x^+]$, we mean
-twice the absolute half-width of ${\bf x}$, i.e.,
-$$
-  W([x^-,x^+])=x^+-x^-.
-$$}
-\end{definition}
+\par We envision large amounts of provenance data will be generated from our provenance collection framework. Due to the memory constraints on devices at the sensor and device layer of the IoT architecture, there is a need to create for an efficient storage of provenance data. To address this issue, we define a policy driven framework that provides a policy scheme for the enforcement of provenance storage. The policy framework contains a policy document which contains information in the provenance that are permitted  to be collected. A policy framework is used to address the  resource constraint problems encountered when storing large amounts of provenance data on low memory devices. Policy document is created by the user who serves as an administrator. An administrator is a user has the right to add, delete or modify the policy document. For implementation, there are several policy models can be utilized to integrate a policy model  with the IoT framework. To implement a policy based framework, We propose to use the eXtensible Markup Language(XACML) policy model to to generate and enforce provenance policy for our IoT framework. XACML is an access control policy based language that allows for the creation and enforcement of policies written in XML. Since it is based on XML, this framework allows for extensible and flexibility of policy documents. Compression techniques could be applied at various levels of the IoT architecture to provide further storage efficiency of provenance data. Using the use case of the smart home depicted in chapter 2, a policy framework could be implemented and incorporated into the IoT framework which allows a device administrators to specify what kinds of provenance data to collect. The policy acts an enforcement point providing an efficient storage mechanism in a resource constrained environment of the devices contained in the smart home.The contents of the implementation details for the policy framework which specifies the policy grammar and the policy architecture across the IoT stack are left as future work.
 
-\begin{definition}
-{\rm We say that an interval ${\bf x}$ is {\em $\Delta$-narrow in the sense
-of absolute accuracy\/} if $W({\bf x})\leq\Delta$.}
-\end{definition}
 
-\begin{definition}
-{\rm Let $\varepsilon>0$ be a real number, let $D\subseteq R^N$ be a closed
-and bounded set of positive $N$-dimension volume $V(D)>0$, and let
-$P(x)$ be a property that is true for some points $x\in D$.  We say that $P(x)$
-is true for {\em $(D,\varepsilon)$-almost all\/} $x$ if}
-$$
-  \frac{V(\{x\in D|\neg P(x)\})}{V(D)}\leq \varepsilon.
-$$
-\end{definition}
 
-\begin{definition}
-{\rm Let $\eta>0$ be a real number.  We say that intervals
-$$
-  [r_1-d_1,r_1+d_1],\ldots,[r_n-d_n,r_n+d_n]
-$$
-are {$\eta$-close} to intervals
-$$
-  [\tilde x_1-\Delta_1,\tilde x_1+\Delta_1],\ldots,[\tilde x_n-\Delta_n,
-   \tilde x_n+\Delta_n]
-$$
-if $|r_i-\tilde x_i|\leq\eta$ and 
-$|d_i-\Delta_i|\leq\eta$ for all $i$.}
-\end{definition}
+%\section{Proposed Research Experiment Evaluation}
+%
+%We plan to evaluate the effectiveness of our approach for the provenance collection framework and our framework for efficient provenance storage by running an intusion detection system for IoT device. An IDS is used to detect malicious attacks based on a certain policy or thresehold set by an administrator. There are two types of  IDS: Rule-based apprach, or anomaly based apporach. The rule based approach allows for intrusion monitoring based on rules specified by an adminstrator. On the other hand, anomaly based IDS which monitors intrusion based on patterns that falls out of the normal system function. Most anomaly\-based approach deals with machine learning to classify normal or anomalous behaviour.  
 
-\begin{definition}
-{\rm Let $\cal U$ be an algorithm that solves some systems of interval linear
-equations, and let $\eta>0$ be a real number.  We say that an algorithm 
-$\cal U$ is {\em $\eta$-exact\/} for the interval matrices ${\bf a}_{ij}$ and
-${\bf b}_i$ if for every interval matrix ${\bf a}_{ij}^\prime$ and 
-${\bf b}_i^\prime$ that are $\eta$-close to ${\bf a}_{ij}$ and ${\bf b}_i$,
-the algorithm $\cal U$ returns the exact solution to the system}
-$$
-  \sum_{j=1}^n {\bf a}_{ij}^\prime x_j = {\bf b}_i^\prime.
-$$
-\end{definition}
-
-\begin{definition}
-{\rm We say that an algorithm $\cal U$ is {\em almost always exact for narrow 
-input intervals\/} if for every closed and bounded set $D\subseteq R^N
-(N=n\cdot m+n)$ there exist $\varepsilon>0$, $\Delta>0$ and $\eta>0$ such
-that, for $(D,\varepsilon)$-almost all $\tilde a_{ij}$ and $\tilde b_i$, if
-all input intervals ${\bf a}_{ij}$ and ${\bf b}_i$
-(containing $\tilde a_{ij}$ and $\tilde b_i$ respectively)
-are $\Delta$-narrow (in the sense of absolute accuracy), then the
-algorithm $\cal U$ is $\eta$-exact for ${\bf a}_{ij}$ and ${\bf b}_i$.}
-\end{definition}
-
-\section{Theorem}
-
-\begin{theorem} \label{almost-all-theorem}
-There exists a feasible (polynomial-time) algorithm $\cal U$ that is almost 
-always exact for narrow input intervals.
-\end{theorem}
-
-\medskip
-
-\noindent
-This theorem was proven in 1995 by Lakeyev and Kreinovich
-(see~\cite{Lakeyev1995}).
-
-\section{Open Problem}
-Theorem \ref{almost-all-theorem} says that we can have a feasible algorithm 
-that solves {\em almost all\/} narrow-interval linear equation systems, but 
-it does not say whether we can solve {\em all\/} of them in reasonable time.  
-Thus, there still remains an open question:
-
-\begin{quote}
-{\it Can a feasible algorithm be developed for the general problem of
-solving systems of linear equations with narrow-interval coefficients?}
-\end{quote}
-
-\noindent
-The answer to this open question is the main concern of this thesis.
-
-We will show that the problem of solving all narrow-interval linear equation
-systems is NP-hard; moreover, we will show that the problem is NP-hard not
-only for intervals that are narrow in the sense of absolute accuracy, but
-also in the sense of relative accuracy.
+%\begin{definition}
+%{\rm By {\em absolute width\/} $W$ of an interval ${\bf x}=[x^-,x^+]$, we mean
+%twice the absolute half-width of ${\bf x}$, i.e.,
+%$$
+%  W([x^-,x^+])=x^+-x^-.
+%$$}
+%\end{definition}
+%
+%\begin{definition}
+%{\rm We say that an interval ${\bf x}$ is {\em $\Delta$-narrow in the sense
+%of absolute accuracy\/} if $W({\bf x})\leq\Delta$.}
+%\end{definition}
+%
+%\begin{definition}
+%{\rm Let $\varepsilon>0$ be a real number, let $D\subseteq R^N$ be a closed
+%and bounded set of positive $N$-dimension volume $V(D)>0$, and let
+%$P(x)$ be a property that is true for some points $x\in D$.  We say that $P(x)$
+%is true for {\em $(D,\varepsilon)$-almost all\/} $x$ if}
+%$$
+%  \frac{V(\{x\in D|\neg P(x)\})}{V(D)}\leq \varepsilon.
+%$$
+%\end{definition}
+%
+%\begin{definition}
+%{\rm Let $\eta>0$ be a real number.  We say that intervals
+%$$
+%  [r_1-d_1,r_1+d_1],\ldots,[r_n-d_n,r_n+d_n]
+%$$
+%are {$\eta$-close} to intervals
+%$$
+%  [\tilde x_1-\Delta_1,\tilde x_1+\Delta_1],\ldots,[\tilde x_n-\Delta_n,
+%   \tilde x_n+\Delta_n]
+%$$
+%if $|r_i-\tilde x_i|\leq\eta$ and 
+%$|d_i-\Delta_i|\leq\eta$ for all $i$.}
+%\end{definition}
+%
+%\begin{definition}
+%{\rm Let $\cal U$ be an algorithm that solves some systems of interval linear
+%equations, and let $\eta>0$ be a real number.  We say that an algorithm 
+%$\cal U$ is {\em $\eta$-exact\/} for the interval matrices ${\bf a}_{ij}$ and
+%${\bf b}_i$ if for every interval matrix ${\bf a}_{ij}^\prime$ and 
+%${\bf b}_i^\prime$ that are $\eta$-close to ${\bf a}_{ij}$ and ${\bf b}_i$,
+%the algorithm $\cal U$ returns the exact solution to the system}
+%$$
+%  \sum_{j=1}^n {\bf a}_{ij}^\prime x_j = {\bf b}_i^\prime.
+%$$
+%\end{definition}
+%
+%\begin{definition}
+%{\rm We say that an algorithm $\cal U$ is {\em almost always exact for narrow 
+%input intervals\/} if for every closed and bounded set $D\subseteq R^N
+%(N=n\cdot m+n)$ there exist $\varepsilon>0$, $\Delta>0$ and $\eta>0$ such
+%that, for $(D,\varepsilon)$-almost all $\tilde a_{ij}$ and $\tilde b_i$, if
+%all input intervals ${\bf a}_{ij}$ and ${\bf b}_i$
+%(containing $\tilde a_{ij}$ and $\tilde b_i$ respectively)
+%are $\Delta$-narrow (in the sense of absolute accuracy), then the
+%algorithm $\cal U$ is $\eta$-exact for ${\bf a}_{ij}$ and ${\bf b}_i$.}
+%\end{definition}
+%
+%\section{Theorem}
+%
+%\begin{theorem} \label{almost-all-theorem}
+%There exists a feasible (polynomial-time) algorithm $\cal U$ that is almost 
+%always exact for narrow input intervals.
+%\end{theorem}
+%
+%\medskip
+%
+%\noindent
+%This theorem was proven in 1995 by Lakeyev and Kreinovich
+%(see~\cite{Lakeyev1995}).
+%
+%\section{Open Problem}
+%Theorem \ref{almost-all-theorem} says that we can have a feasible algorithm 
+%that solves {\em almost all\/} narrow-interval linear equation systems, but 
+%it does not say whether we can solve {\em all\/} of them in reasonable time.  
+%Thus, there still remains an open question:
+%
+%\begin{quote}
+%{\it Can a feasible algorithm be developed for the general problem of
+%solving systems of linear equations with narrow-interval coefficients?}
+%\end{quote}
+%
+%\noindent
+%The answer to this open question is the main concern of this thesis.
+%
+%We will show that the problem of solving all narrow-interval linear equation
+%systems is NP-hard; moreover, we will show that the problem is NP-hard not
+%only for intervals that are narrow in the sense of absolute accuracy, but
+%also in the sense of relative accuracy.
 

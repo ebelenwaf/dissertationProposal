@@ -1,0 +1,303 @@
+Loading [MathJax]/extensions/mml2jax.js
+Logo Springer
+
+Search Options
+
+    Advanced Search
+    Search Help
+
+Search Menu
+» Sign up / Log in
+English
+
+    Deutsch
+
+Academic edition
+
+    Corporate edition
+
+Skip to: Main content Side column
+
+    Home
+    Contact Us
+
+Look Inside Get Access
+Find out how to access preview-only content
+Chapter
+
+Provenance and Annotation of Data and Processes
+
+Volume 9672 of the series Lecture Notes in Computer Science pp 3-15
+Date: 04 June 2016
+RecProv: Towards Provenance-Aware User Space Record and Replay
+
+    Yang Ji Affiliated with Georgia Institute of Technology   Email author  
+    , Sangho Lee Affiliated with Georgia Institute of Technology
+    , Wenke Lee Affiliated with Georgia Institute of Technology
+
+$29.95 / €24.95 / £19.95 *
+Buy eBook
+Buy this eBook
+
+$54.99 / €41.64 / £29.99*
+
+* Final gross prices may vary according to local VAT.
+
+* Final gross prices may vary according to local VAT.
+Get Access
+Abstract
+
+Deterministic record and replay systems have widely been used in software debugging, failure diagnosis, and intrusion detection. In order to detect the Advanced Persistent Threat (APT), online execution needs to be recorded with acceptable runtime overhead; then, investigators can analyze the replayed execution with heavy dynamic instrumentation. While most record and replay systems rely on kernel module or OS virtualization, those running at user space are favoured for being lighter weight and more portable without any of the changes needed for OS/Kernel virtualization. On the other hand, higher level provenance data at a higher level provides dynamic analysis with system causalities and hugely increases its efficiency. Considering both benefits, we propose a provenance-aware user space record and replay system, called RecProv . RecProv is designed to provide high provenance fidelity; specifically, with versioning files from the recorded trace logs and integrity protection to provenance data through real-time trace isolation. The collected provenance provides the high-level system dependency that helps pinpoint suspicious activities where further analysis can be applied. We show that RecProv is able to output accurate provenance in both visualized graph and W3C standardized PROV-JSON formats.
+Keywords
+Provenance capturing Record and replay User space PROV
+Page %P
+Loading...
+Close Plain text
+Provenance and Annotation of Data and Processes Provenance and Annotation of Data and Processes Look
+Inside
+Chapter Metrics
+
+Downloads
+    247 
+
+Provided by Book metrix
+Reference tools
+
+    Export citation
+        EndNote (.ENW)
+        JabRef (.BIB)
+        Mendeley (.BIB)
+        Papers (.RIS)
+        Zotero (.RIS)
+        BibTeX (.BIB)
+    Add to Papers
+
+Other actions
+
+    About this Book
+    Reprints and Permissions
+
+Share
+Share this content on Facebook Share this content on Twitter Share this content on LinkedIn
+Supplementary Material (0)
+References (36)
+References
+
+    1.
+    Attariyan, M., Chow, M., Flinn, J.: X-ray: automating root-cause diagnosis of performance anomalies in production software. In: Proceedings of the 10th USENIX Symposium on Operating Systems Design and Implementation (OSDI), Hollywood, CA, October 2012
+    2.
+    Balakrishnan, N., Bytheway, T., Carata, L., Chick, O.R.A., Snee, J., Akoush, S., Sohan, R., Seltzer, M., Hopper, A.: Recent advances in computer architecture: the opportunities and challenges for provenance. In: Proceedings of the 7th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2015)
+    3.
+    Bates, A., Tian, D.J., Butler, K.R., Moyer, T.: Trustworthy whole-system provenance for the Linux kernel. In: Proceedings of the 24th USENIX Security Symposium (Security), Washington, DC, August 2015
+    4.
+    Cantrill, B., Shapiro, M., Leventhal, A.: Dynamic instrumentation of production systems. In: Proceedings of the 2004 USENIX Annual Technical Conference (ATC), Boston, MA, June–July 2004
+    5.
+    Davidson, S., Freire, J.: Provenance and scientic workflows: challenges and opportunities. In: Proceedings of the 2008 ACM SIGMOD/PODS Conference, Vancouver, Canada, June 2008
+    6.
+    Devecsery, D., Chow, M., Dou, X., Flinn, J., Chen, P.: Eidetic systems. In: Proceedings of the 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI), Broomfield, Colorado, October 2014
+    7.
+    Dolan-Gavitt, B., Leek, T., Hodosh, J., Lee, W.: Tappan zee (north) bridge: mining memory accesses for introspection. In: Proceedings of the 20th ACM Conference on Computer and Communications Security (CCS), Berlin, Germany, October 2013
+    8.
+    Dolan-Gavitt, B., Leek, T., Zhivich, M., Giffin, J., Lee, W.: Virtuoso: narrowing the semantic gap in virtual machine introspection. In: Proceedings of the 32nd IEEE Symposium on Security and Privacy (Oakland), Oakland, CA, May 2011
+    9.
+    Gehani, A., Tariq, D.: SPADE: support for provenance auditing in distributed environments. In: Proceedings of the 13th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2012)
+    10.
+    Guo, Z., Wang, X., Tang, J., Liu, X., Xu, Z., Wu, M., Kaashoek, M.F., Zhang, Z.: R2: an application-level kernel for record and replay. In: Proceedings of the 8th USENIX Symposium on Operating Systems Design and Implementation (OSDI), San Diego, CA, December 2008
+    11.
+    Intel: Pin - a dynamic binary instrumentation tool. https://​software.​intel.​com/​en-us/​articles/​pin-a-dynamic-binary-instrumentation-tool
+    12.
+    James, C., Laura, C., Wang-Chiew, T.: Provenance in databases: why, how, and where. Found. Trends Databases 1 (4), 379–474 (2009)
+    13.
+    Kemerlis, V.P., Portokalidis, G., Jee, K., Keromytis, A.D.: libdft: practical dynamic data flow tracking for commodity systems. In: Proceedings of the 8th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE) (2012)
+    14.
+    Kim, T., Wang, X., Zeldovich, N., Kaashoek, M.: Intrusion recovery using selective re-execution. In: Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation (OSDI), Vancouver, Canada, October 2010
+    15.
+    King, S.T., Chen, P.M.: Backtracking intrusions. In: Proceedings of the 19th ACM Symposium on Operating Systems Principles (SOSP). Bolton Landing, NY, October 2003
+    16.
+    Luk, C.K., Cohn, R., Muth, R., Patil, H., Klauser, A., Lowney, G., Wallace, S., Reddi, V.J., Hazelwood, K.: Pin: building customized program analysis tools with dynamic instrumentation. In: Proceedings of the 2005 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Chicago, IL, June 2005
+    17.
+    Ma, S., Zhang, X., Xu, D.: ProTracer: towards practical provenance tracing by alternating between logging and tainting. In: Proceedings of the 2016 Annual Network and Distributed System Security Symposium (NDSS), San Diego, CA, February 2016
+    18.
+    McAfee: White paper: Combating advanced persistent threats, how to prevent, detect and remediate apts. http://​www.​mcafee.​com/​us/​resources/​white-papers/​wp-combat-advanced-persist-threats.​pdf
+    19.
+    Moreau, L.: The foundations for provenance on the web. Found. Trends Web Sci. 2 (2–3), 99–241 (2010) MathSciNet CrossRef
+    20.
+    Mozilla: rr: lightweight recording & deterministic debugging. http://​rr-project.​org
+    21.
+    Muniswamy-Reddy, K.K., Braun, U., Holland, D.A., Macko, P., MacLean, D.L., Margo, D.W., Seltzer, M.I., Smogor, R.: Layering in provenance systems. In: Proceedings of the 2009 USENIX Annual Technical Conference (ATC), San Diego, CA, June 2009
+    22.
+    Muniswamy-Reddy, K.K., Holland, D.A., Braun, U., Seltzer, M.I.: Provenance-aware storage systems. In: Proceedings of the 2006 USENIX Annual Technical Conference (ATC), Boston, MA, May–June 2006
+    23.
+    Neo Technology: Neo4j: The world’s leading graph database. http://​www.​neo4j.​com
+    24.
+    Nethercote, N., Seward, J.: Valgrind: a framework for heavyweight dynamic binary instrumentation. In: Proceedings of the 2007 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), San Diego, CA, June 2007
+    25.
+    Newsome, J., Song, D.: Dynamic taint analysis for automatic detection, analysis, and signature generation of exploits on commodity software. In: Proceedings of the 12th Annual Network and Distributed System Security Symposium (NDSS), San Diego, CA, February 2005
+    26.
+    NTT Laboratories: NILFS - continuous snapshotting filesystem for Linux. http://​www.​nilfs.​org
+    27.
+    Pohly, D.J., McLaughlin, S., McDaniel, P., Butler, K.: Hi-Fi: collecting high-fidelity whole-system provenance. In: Proceedings of the Annual Computer Security Applications Conference (ACSAC) (2012)
+    28.
+    Reinders, J.: Processor Trace. https://​software.​intel.​com/​en-us/​blogs/​2013/​09/​18/​processor-tracing
+    29.
+    Saito, Y.: Jockey: a user-space library for record-replay debugging. In: Proceedings of the 6th International Symposium on Automated Analysis-driven Debugging (2005)
+    30.
+    Seward, J., Nethercote, N.: Using valgrind to detect undefined value errors with bit-precision. In: Proceedings of the 2005 USENIX Annual Technical Conference (ATC), Anaheim, CA, June–July 2005
+    31.
+    Simmhan, Y.L., Plale, B., Gannon, D.: Karma2: provenance management for data-driven workflows. In: Web Services Research for Emerging Applications: Discoveries and Trends: Discoveries and Trends, p. 317 (2010)
+    32.
+    Srinivasan, S.M., Kandula, S., Andrews, C.R., Zhou, Y.: Flashback: a lightweight extension for rollback and deterministic replay for software debugging. In: Proceedings of the 2004 USENIX Annual Technical Conference (ATC), Boston, MA June–July 2004
+    33.
+    Stamatogiannakis, M., Groth, P., Bos, H.: Looking inside the black-box: capturing data provenance using dynamic instrumentation. In: Ludaescher, B., Plale, B. (eds.) IPAW 2014. LNCS, vol. 8628, pp. 155–167. Springer, Heidelberg (2015) CrossRef
+    34.
+    Stamatogiannakis, M., Groth, P., Bos, H.: Decoupling provenance capture and analysis from execution. In: Proceedings of the 7th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2015)
+    35.
+    Tariq, D., Ali, M., Gehani, A.: Towards automated collection of application-level data provenance. In: Proceedings of the 4th USENIX Workshop on the Theory and Practice of Provenance (TaPP) (2015)
+    36.
+    Yin, H., Song, D., Egele, M., Kruegel, C., Kirda, E.: Panorama: capturing system-wide information flow for malware detection and analysis. In: Proceedings of the 14th ACM Conference on Computer and Communications Security (CCS), Alexandria, VA, October–November 2007
+
+About this Chapter
+
+Title
+    RecProv: Towards Provenance-Aware User Space Record and Replay
+Book Title
+    Provenance and Annotation of Data and Processes 
+Book Subtitle
+    6th International Provenance and Annotation Workshop, IPAW 2016, McLean, VA, USA, June 7-8, 2016, Proceedings
+Pages
+    pp 3-15
+Copyright
+    2016
+DOI
+    10.1007/978-3-319-40593-3_1
+Print ISBN
+    978-3-319-40592-6
+Online ISBN
+    978-3-319-40593-3
+Series Title
+    Lecture Notes in Computer Science 
+Series Volume
+    9672
+Series ISSN
+    0302-9743
+Publisher
+    Springer International Publishing
+Copyright Holder
+    Springer International Publishing Switzerland
+Additional Links
+
+        About this Book
+
+Topics
+
+        Artificial Intelligence (incl. Robotics)
+        Database Management
+        Information Storage and Retrieval
+        Information Systems Applications (incl. Internet)
+        Management of Computing and Information Systems
+        Computers and Society
+
+Keywords
+
+        Provenance capturing
+        Record and replay
+        User space
+        PROV
+
+Industry Sectors
+
+        Pharma
+        Materials & Steel
+        Automotive
+        Chemical Manufacturing
+        Biotechnology
+        Electronics
+        IT & Software
+        Telecommunications
+        Consumer Packaged Goods
+        Aerospace
+        Engineering
+
+eBook Packages
+
+        Computer Science
+
+Editors
+
+        Marta Mattoso (13)
+        Boris Glavic (14)
+
+Editor Affiliations
+
+        13. COPPE/UFRJ
+        14. Illinois Institute of Technology
+
+Authors
+
+        Yang Ji yang.ji@gatech.edu (15)
+        Sangho Lee (15)
+        Wenke Lee (15)
+
+Author Affiliations
+
+        15. Georgia Institute of Technology, Atlanta, USA
+
+Continue reading...
+
+To view the rest of this content please follow the download PDF link above.
+Over 10 million scientific documents at your fingertips
+Browse by Discipline
+
+    Architecture & Design
+    Astronomy
+    Biomedical Sciences
+    Business & Management
+    Chemistry
+    Computer Science
+    Earth Sciences & Geography
+    Economics
+    Education & Language
+    Energy
+    Engineering
+    Environmental Sciences
+    Food Science & Nutrition
+    Law
+    Life Sciences
+    Materials
+    Mathematics
+    Medicine
+    Philosophy
+    Physics
+    Psychology
+    Public Health
+    Social Sciences
+    Statistics
+
+Our Content
+
+    Journals
+    Books
+    Book Series
+    Protocols
+    Reference Works
+
+Other Sites
+
+    Springer.com
+    SpringerProtocols
+    SpringerMaterials
+    AdisInsight
+
+Help & Contacts
+
+    Contact Us
+    Impressum
+
+Legal
+© Springer International Publishing AG, Part of Springer Science+Business Media Privacy Policy, Disclaimer, General Terms & Conditions
+Not logged in Unaffiliated 98.218.107.82
+Springer for Research & Development
+UA-26408784-1
+
+JavaScript is currently disabled , this site works much better if you enable JavaScript in your browser.
+Support

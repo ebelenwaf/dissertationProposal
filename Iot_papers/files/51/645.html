@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="yui3-js-enabled">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://docs.lib.purdue.edu/ccpubs/645/">
+<meta name="wpd_url" content="http://docs.lib.purdue.edu/ccpubs/645/">
+<meta name="wpd_date" content="2016-08-16T00:07Z">
+<script src="plusone.js" type="text/javascript"></script><script src="300lo.json" type="text/javascript"></script><script src="boost" type="text/javascript"></script><!-- inj yui3-seed: --><script type="text/javascript" src="yui-min.js"></script><script type="text/javascript" src="jquery.min.js"></script>
+
+<!-- def.1 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>
+
+"Secure Data Provenance Compression Using Arithmetic Coding in Wireless" by Syed Rafiul Hussain, Changda Wang et al.
+</title>
+
+
+<!-- FILE article_meta-tags.inc --><!-- FILE: /main/production/doc/data/assets/site/article_meta-tags.inc -->
+<meta name="robots" content="noodp, noydir">
+<meta name="description" content="Since data are originated and processed by multiple
+agents in wireless sensor networks, data provenance plays an important role for assuring data trustworthiness. However, the size of the provenance tends to increase at a higher rate as it is transmitted from the source to the base station and is processed by many intermediate nodes. Due to bandwidth and energy limitations of wireless sensor networks, such increasing of provenance size slows down the network and depletes the energy of sensor nodes. Therefore, compression of data provenance is an essential requirement. Existing lossy compression schemes based on Bloom filters or probabilistic packet marking approaches have high error rates in provenance-recovery. In this paper, we address this problem and propose a distributed and lossless arithmetic coding based compression technique which achieves a compression ratio higher than that of existing techniques and also close to Shannon’s entropy bound. Unlike other provenance schemes, the most interesting characteristic of our scheme is that the provenance size is not directly proportional to the number of hops, but to the occurrence probabilities of the nodes that are on a packet’s path. We also ensure the confidentiality, integrity, and freshness of provenance to prevent malicious nodes from compromising the security of data provenance. Finally, the simulation and testbed results provide a strong evidence for the claims in the paper.">
+<meta name="keywords" content="Wireless sensor network, provenance, compression, arithmetic coding, security">
+<meta name="bepress_citation_journal_title" content="2014 IEEE International Performance Computing and Communications Conference (IPCCC)">
+<meta name="bepress_citation_author" content="Hussain, Syed Rafiul">
+<meta name="bepress_citation_author_institution" content="Purdue University">
+<meta name="bepress_citation_author" content="Wang, Changda">
+<meta name="bepress_citation_author_institution" content="Jiangsu University of Science and Technology">
+<meta name="bepress_citation_author" content="Sultana, Salmin">
+<meta name="bepress_citation_author_institution" content="Purdue University">
+<meta name="bepress_citation_author" content="Bertino, Elisa">
+<meta name="bepress_citation_author_institution" content="Purdue University">
+<meta name="bepress_citation_title" content="Secure Data Provenance Compression Using Arithmetic Coding in Wireless Sensor Networks">
+<meta name="bepress_citation_date" content="2014">
+<meta name="bepress_citation_pdf_url" content="http://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1647&amp;context=ccpubs">
+<meta name="bepress_citation_abstract_html_url" content="http://docs.lib.purdue.edu/ccpubs/645">
+<meta name="bepress_citation_doi" content="10.1109/PCCC.2014.7017068">
+<meta name="bepress_citation_online_date" content="2015/4/6">
+<meta name="viewport" content="width=device-width">
+
+
+<!-- FILE: article_meta-tags.inc (cont) -->
+<meta name="bepress_is_article_cover_page" content="1">
+
+
+<!-- sh.1 -->
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Site Feed" href="http://docs.lib.purdue.edu/recent.rss">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="jsUtilities.js"></script>
+<script type="text/javascript" src="footnoteLinks.js"></script><script async="" src="oop-min.js" id="yui_3_16_0_1_1473984419934_2" charset="utf-8"></script><script async="" src="event-custom-base-min.js" id="yui_3_16_0_1_1473984419934_3" charset="utf-8"></script><script async="" src="event-base-min.js" id="yui_3_16_0_1_1473984419934_4" charset="utf-8"></script><script async="" src="dom-core-min.js" id="yui_3_16_0_1_1473984419934_5" charset="utf-8"></script><script async="" src="dom-base-min.js" id="yui_3_16_0_1_1473984419934_6" charset="utf-8"></script><script async="" src="selector-native-min.js" id="yui_3_16_0_1_1473984419934_7" charset="utf-8"></script><script async="" src="selector-min.js" id="yui_3_16_0_1_1473984419934_8" charset="utf-8"></script><script async="" src="node-core-min.js" id="yui_3_16_0_1_1473984419934_9" charset="utf-8"></script><script async="" src="color-base-min.js" id="yui_3_16_0_1_1473984419934_10" charset="utf-8"></script><script async="" src="dom-style-min.js" id="yui_3_16_0_1_1473984419934_11" charset="utf-8"></script><script async="" src="node-base-min.js" id="yui_3_16_0_1_1473984419934_12" charset="utf-8"></script><script async="" src="event-delegate-min.js" id="yui_3_16_0_1_1473984419934_13" charset="utf-8"></script><script async="" src="node-event-delegate-min.js" id="yui_3_16_0_1_1473984419934_14" charset="utf-8"></script><script async="" src="pluginhost-base-min.js" id="yui_3_16_0_1_1473984419934_15" charset="utf-8"></script><script async="" src="pluginhost-config-min.js" id="yui_3_16_0_1_1473984419934_16" charset="utf-8"></script><script async="" src="node-pluginhost-min.js" id="yui_3_16_0_1_1473984419934_17" charset="utf-8"></script><script async="" src="dom-screen-min.js" id="yui_3_16_0_1_1473984419934_18" charset="utf-8"></script><script async="" src="node-screen-min.js" id="yui_3_16_0_1_1473984419934_19" charset="utf-8"></script><script async="" src="node-style-min.js" id="yui_3_16_0_1_1473984419934_20" charset="utf-8"></script><script async="" src="cookie-min.js" id="yui_3_16_0_1_1473984419934_21" charset="utf-8"></script>
+<!--[if IE]>
+<link rel="stylesheet" href="/ir-ie.css" type="text/css" media="screen">
+<![endif]-->
+
+<script type="text/javascript" src="yui-init.pack.js"></script>
+<script type="text/javascript" src="bepress-init.debug.js"></script>
+<script type="text/javascript" src="JumpListYUI.pack.js"></script>
+
+<!-- end sh.1 -->
+
+
+
+
+
+<script async="" src="querystring-stringify-simple-min.js" id="yui_3_16_0_2_1473984419934_4" charset="utf-8"></script><script async="" src="io-base-min.js" id="yui_3_16_0_2_1473984419934_5" charset="utf-8"></script><script async="" src="json-parse-min.js" id="yui_3_16_0_2_1473984419934_6" charset="utf-8"></script><script async="" src="selector-css2-min.js" id="yui_3_16_0_2_1473984419934_7" charset="utf-8"></script><script async="" src="selector-css3-min.js" id="yui_3_16_0_2_1473984419934_8" charset="utf-8"></script><script src="altmetric_badges-773744dac6fed0b420b8375162a362e9.js" id="altmetric-embed-js"></script><script async="" src="event-custom-complex-min.js" id="yui_3_16_0_3_1473984419934_3" charset="utf-8"></script><script async="" src="event-synthetic-min.js" id="yui_3_16_0_3_1473984419934_4" charset="utf-8"></script><script async="" src="event-mousewheel-min.js" id="yui_3_16_0_3_1473984419934_5" charset="utf-8"></script><script async="" src="event-mouseenter-min.js" id="yui_3_16_0_3_1473984419934_6" charset="utf-8"></script><script async="" src="event-key-min.js" id="yui_3_16_0_3_1473984419934_7" charset="utf-8"></script><script async="" src="event-focus-min.js" id="yui_3_16_0_3_1473984419934_8" charset="utf-8"></script><script async="" src="event-resize-min.js" id="yui_3_16_0_3_1473984419934_9" charset="utf-8"></script><script async="" src="event-hover-min.js" id="yui_3_16_0_3_1473984419934_10" charset="utf-8"></script><script async="" src="event-outside-min.js" id="yui_3_16_0_3_1473984419934_11" charset="utf-8"></script><script async="" src="event-touch-min.js" id="yui_3_16_0_3_1473984419934_12" charset="utf-8"></script><script async="" src="event-move-min.js" id="yui_3_16_0_3_1473984419934_13" charset="utf-8"></script><script async="" src="event-flick-min.js" id="yui_3_16_0_3_1473984419934_14" charset="utf-8"></script><script async="" src="event-valuechange-min.js" id="yui_3_16_0_3_1473984419934_15" charset="utf-8"></script><script async="" src="event-tap-min.js" id="yui_3_16_0_3_1473984419934_16" charset="utf-8"></script><script async="" src="webservice-base-20131105.pack.js" id="yui_3_16_0_3_1473984419934_17" charset="utf-8"></script><script async="" src="followable-20160726.pack.js" id="yui_3_16_0_3_1473984419934_18" charset="utf-8"></script><script src="menu.550b76ddcec985383192.js" async="" charset="utf-8" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="645.css" media="all">
+</head>
+<body class="desktop yui3-skin-sam" id="geo-series">
+<!-- FILE /main/production/doc/data/docs.lib.purdue.edu/assets/header.pregen --><!-- This is the mobile navbar file. Do not delete or move from the top of header.pregen -->
+<!-- FILE: /main/production/doc/data/assets/site/mobile_nav.inc --><!--[if !IE]>-->
+<script src="dc-mobile-nav.js"></script>
+<script src="jquery.min_001.js"></script>
+<script src="mobile-scale.js"></script>
+
+<header id="mobile-nav" class="nav-down device-fixed-height" style="visibility: hidden;">
+  
+  
+  <nav class="nav-collapse">
+    <ul>
+      <li class="menu-item active device-fixed-width"><a href="http://docs.lib.purdue.edu/" title="Home" data-scroll="">Home</a></li>
+      <li class="menu-item device-fixed-width"><a href="http://docs.lib.purdue.edu/do/search/advanced/" title="Search" data-scroll=""><i class="icon-search"></i> Search</a></li>
+      <li class="menu-item device-fixed-width"><a href="http://docs.lib.purdue.edu/communities.html" title="Browse" data-scroll="">Browse Collections</a></li>
+      <li class="menu-item device-fixed-width"><a href="http://docs.lib.purdue.edu/cgi/myaccount.cgi?context=ccpubs/#" title="My Account" data-scroll="">My Account</a></li>
+      <li class="menu-item device-fixed-width"><a href="http://docs.lib.purdue.edu/about.html" title="About" data-scroll="">About</a></li>
+      <li class="menu-item device-fixed-width"><a href="http://network.bepress.com/" title="Digital Commons Network" data-scroll=""><img title="network_icon.png" alt="DC Network" style="vertical-align: top;" src="8e240588cf8cd3a028768d4294acd7d3.png" height="16" width="16"> Digital Commons Network™</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<script src="fastclick.js"></script>
+<script src="scroll.js"></script>
+<script src="fixed-responsive-nav.js"></script>
+<script src="hide-nav.js"></script>
+<!--<![endif]-->
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/header.pregen (cont) -->
+<div id="purdue"><div id="container"><a href="#main" class="skiplink" accesskey="2">Skip to main content</a>
+
+<div style="width: 980px; height: 101px; padding: 0px; margin: 0px; font-size: 12px;" id="header">
+<!-- FILE: /main/production/doc/data/assets/site/ir_logo.inc -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/header.pregen (cont) -->
+<div style="width: 690px; height: 95px; padding: 30px 0px 0px; margin: 0px 0px 0px 240px; font-size: 12px;" id="pagetitle">
+
+<h1 style="padding: 0px 0px 0px 32px; margin: 0px 0px 22px; font-size: 28px;" id="yui_3_16_0_1_1473984419934_29"><a style="padding: 0px; margin: 0px; font-size: 28px;" id="yui_3_16_0_1_1473984419934_30" href="http://docs.lib.purdue.edu/" title="Purdue e-Pubs">Purdue e-Pubs</a></h1>
+</div>
+</div><div style="width: 980px; height: 35px; padding: 0px; margin: 0px; font-size: 12px;" id="navigation"><!-- FILE: /main/production/doc/data/assets/site/ir_navigation.inc --><div style="width: 500px; height: 16px; padding: 0px; margin: 0px 0px 0px 4px; font-size: 11px;" id="tabs"><ul style="width: 500px; height: 14px; padding: 0px; margin: 0px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_31"><li style="padding: 0px; margin: 0px 0px 0px 2px; font-size: 11px;" id="tabone"><a style="width: 35.7px; height: 16px; padding: 8px 10px; margin: 0px 0px 0px 1px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_32" href="http://docs.lib.purdue.edu/" title="Home"><span style="padding: 0px; margin: 0px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_33">Home</span></a></li><li style="padding: 0px; margin: 0px 0px 0px 2px; font-size: 11px;" id="tabtwo"><a style="width: 36.6167px; height: 16px; padding: 8px 10px; margin: 0px 0px 0px 1px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_34" href="http://docs.lib.purdue.edu/about.html" title="About"><span style="padding: 0px; margin: 0px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_35">About</span></a></li><li style="padding: 0px; margin: 0px 0px 0px 2px; font-size: 11px;" id="tabthree"><a style="width: 25.0333px; height: 16px; padding: 8px 10px; margin: 0px 0px 0px 1px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_36" href="https://www.lib.purdue.edu/repositories/epubs/about" title="FAQ"><span style="padding: 0px; margin: 0px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_37">FAQ</span></a></li><li style="padding: 0px; margin: 0px 0px 0px 2px; font-size: 11px;" id="tabfour"><a style="width: 71.0667px; height: 16px; padding: 8px 10px; margin: 0px 0px 0px 1px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_38" href="http://docs.lib.purdue.edu/cgi/myaccount.cgi?context=ccpubs" title="My Account"><span style="padding: 0px; margin: 0px; font-size: 11px;" id="yui_3_16_0_1_1473984419934_39">My Account</span></a></li></ul></div>
+
+
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/header.pregen (cont) --></div>
+
+
+
+<div id="wrapper">
+<div id="content">
+<div id="main" class="text">
+<script type="text/javascript" src="floatbox.js"></script>  
+<!-- FILE: /main/production/doc/data/assets/site/article_pager.inc -->
+
+<div id="breadcrumb"><ul id="pager">
+
+                
+                 
+<li>&lt; <a href="http://docs.lib.purdue.edu/ccpubs/584" class="ignore">Previous</a></li>
+        
+        
+        
+
+                
+                 
+<li><a href="http://docs.lib.purdue.edu/ccpubs/625" class="ignore">Next</a> &gt;</li>
+        
+        
+        
+<li>&nbsp;</li></ul><div class="crumbs"><!-- FILE: /main/production/doc/data/assets/site/ir_breadcrumb.inc -->
+
+<div class="crumbs">
+	<p>
+	
+	
+			<a href="http://docs.lib.purdue.edu/" class="ignore">Home</a>
+	
+	
+	
+	
+	
+	
+	
+	
+	 &gt; 
+		<a href="http://docs.lib.purdue.edu/dp" class="ignore">
+
+			
+			DP
+		</a>
+	
+	
+	
+	
+	
+	 &gt; 
+		<a href="http://docs.lib.purdue.edu/cc" class="ignore">
+
+			
+			CC
+		</a>
+	
+	
+	
+	
+	
+	 &gt; 
+		<a href="http://docs.lib.purdue.edu/ccpubs" class="ignore">
+
+			
+			CCPUBS
+		</a>
+	
+	
+	
+	
+	
+	 &gt; 
+		<a href="http://docs.lib.purdue.edu/ccpubs/645" class="ignore">
+
+			
+			645
+		</a>
+	
+	
+	</p>
+</div>
+
+<!-- FILE: /main/production/doc/data/assets/site/article_pager.inc (cont) --></div>
+</div>
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/index.html (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/topnav.inc --><!--Not Used --><!-- FILE: /main/production/doc/data/assets/site/ir_series/article/index.html (cont) --><!-- FILE: /main/production/doc/data/assets/site/ir_series/article/article_info.inc --><!-- FILE: /main/production/doc/data/assets/site/openurl.inc -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/article_info.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/ir_download_link.inc -->
+
+
+
+
+
+
+
+
+
+	
+	
+	
+    
+    
+    
+	
+	
+	
+	
+	
+		
+		
+	
+	
+
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/article_info.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/ir_article_header.inc -->
+
+
+<div id="series-header">
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/ir_series_logo.inc -->
+
+
+
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/ir_article_header.inc (cont) --><h2 id="series-title"><a href="http://docs.lib.purdue.edu/ccpubs">Cyber Center Publications</a></h2></div>
+<div style="clear: both;">&nbsp;</div>
+
+<div id="sub">
+<div id="alpha">
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/article_info.inc (cont) --><div id="title" class="element">
+<h4>Title</h4>
+<p>Secure Data Provenance Compression Using Arithmetic Coding in Wireless Sensor Networks</p>
+</div>
+<div class="clear"></div>
+<div id="authors" class="element">
+<h4>Authors</h4>
+<p class="author"><a href="http://docs.lib.purdue.edu/do/search/?q=author_lname%3A%22Hussain%22%20author_fname%3A%22Syed%20Rafiul%22&amp;start=0&amp;context=119483"><strong>Syed Rafiul Hussain</strong>, <em>Purdue University</em></a><a rel="nofollow" href="http://network.bepress.com/api/follow/subscribe?user=NzVkOWYyZGU2NTFjNmE3ZA%3D%3D&amp;institution=MzM4ZGU4ZWRlZDAwOGEwYg%3D%3D&amp;format=html" data-follow-set="user:NzVkOWYyZGU2NTFjNmE3ZA== institution:MzM4ZGU4ZWRlZDAwOGEwYg==" title="Follow Syed Rafiul Hussain" class="btn followable">Follow</a><br>
+<a href="http://docs.lib.purdue.edu/do/search/?q=author_lname%3A%22Wang%22%20author_fname%3A%22Changda%22&amp;start=0&amp;context=119483"><strong>Changda Wang</strong>, <em>Jiangsu University of Science and Technology</em></a><a rel="nofollow" href="http://network.bepress.com/api/follow/subscribe?user=YTcxNTc4YjJhNTg4NWJlMA%3D%3D&amp;institution=MzM4ZGU4ZWRlZDAwOGEwYg%3D%3D&amp;format=html" data-follow-set="user:YTcxNTc4YjJhNTg4NWJlMA== institution:MzM4ZGU4ZWRlZDAwOGEwYg==" title="Follow Changda Wang" class="btn followable">Follow</a><br>
+<a href="http://docs.lib.purdue.edu/do/search/?q=author_lname%3A%22Sultana%22%20author_fname%3A%22Salmin%22&amp;start=0&amp;context=119483"><strong>Salmin Sultana</strong>, <em>Purdue University</em></a><a rel="nofollow" href="http://network.bepress.com/api/follow/subscribe?user=ZWQzN2ZjNjllYTFhZDUwYg%3D%3D&amp;institution=MzM4ZGU4ZWRlZDAwOGEwYg%3D%3D&amp;format=html" data-follow-set="user:ZWQzN2ZjNjllYTFhZDUwYg== institution:MzM4ZGU4ZWRlZDAwOGEwYg==" title="Follow Salmin Sultana" class="btn followable">Follow</a><br>
+<a href="http://docs.lib.purdue.edu/do/search/?q=author_lname%3A%22Bertino%22%20author_fname%3A%22Elisa%22&amp;start=0&amp;context=119483"><strong>Elisa Bertino</strong>, <em>Purdue University</em></a><a rel="nofollow" href="http://network.bepress.com/api/follow/subscribe?user=NzRjYjRmNjBiZjllMzFiOA%3D%3D&amp;institution=MzM4ZGU4ZWRlZDAwOGEwYg%3D%3D&amp;format=html" data-follow-set="user:NzRjYjRmNjBiZjllMzFiOA== institution:MzM4ZGU4ZWRlZDAwOGEwYg==" title="Follow Elisa Bertino" class="btn followable">Follow</a><br>
+</p></div>
+<div class="clear"></div>
+<div id="abstract" class="element">
+<h4>Abstract</h4>
+<p>Since data are originated and processed by multiple</p>
+<p>agents in wireless sensor networks, data provenance plays an important role for assuring data trustworthiness. However, the size of the provenance tends to increase at a higher rate as it is transmitted from the source to the base station and is processed by many intermediate nodes. Due to bandwidth and energy limitations of wireless sensor networks, such increasing of provenance size slows down the network and depletes the energy of sensor nodes. Therefore, compression of data provenance is an essential requirement. Existing lossy compression schemes based on Bloom filters or probabilistic packet marking approaches have high error rates in provenance-recovery. In this paper, we address this problem and propose a distributed and lossless arithmetic coding based compression technique which achieves a compression ratio higher than that of existing techniques and also close to Shannon’s entropy bound. Unlike other provenance schemes, the most interesting characteristic of our scheme is that the provenance size is not directly proportional to the number of hops, but to the occurrence probabilities of the nodes that are on a packet’s path. We also ensure the confidentiality, integrity, and freshness of provenance to prevent malicious nodes from compromising the security of data provenance. Finally, the simulation and testbed results provide a strong evidence for the claims in the paper.</p>
+</div>
+<div class="clear"></div>
+<div id="keywords" class="element">
+<h4>Keywords</h4>
+<p>Wireless sensor network, provenance, compression, arithmetic coding, security</p>
+</div>
+<div class="clear"></div>
+<div id="publication_date" class="element">
+<h4>Date of this Version</h4>
+<p>12-2014</p>
+</div>
+<div class="clear"></div>
+<div id="doi" class="element">
+<h4>DOI</h4>
+<p>10.1109/PCCC.2014.7017068</p>
+</div>
+<div class="clear"></div>
+</div>
+    </div>
+    <div id="beta_7-3">
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc --><!-- FILE: /main/production/doc/data/assets/site/openurl.inc -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/ir_download_link.inc -->
+
+
+
+
+
+
+
+
+
+	
+	
+	
+    
+    
+    
+	
+	
+	
+	
+	
+		
+		
+	
+	
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+
+
+	<!-- FILE: /main/production/doc/data/assets/site/info_box_download_button.inc --><div class="aside">
+    <a id="remote-link" class="btn" href="http://dx.doi.org/10.1109/PCCC.2014.7017068" title="Link opens in new window" target="_top"> 
+    	<i class="icon-external-link"></i>
+      Link to Full Text
+    </a>
+</div>
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+	<!-- FILE: /main/production/doc/data/assets/site/info_box_embargo.inc -->
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_custom_upper.inc -->
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/info_box_openurl.inc -->
+<div id="open-url" class="aside">
+	
+	
+	  	<a id="openurl" class="ignore" href="http://openurl.bepress.com/openurl/redirect/?artnum=1647&amp;atitle=Secure%20Data%20Provenance%20Compression%20Using%20Arithmetic%20Coding%20in%20Wireless%20Sensor%20Networks&amp;aulast=Hussain&amp;aufirst=Syed%20Rafiul&amp;date=2014&amp;genre=article&amp;title=2014%20IEEE%20International%20Performance%20Computing%20and%20Communications%20Conference%20%28IPCCC%29&amp;id=doi:10.1109%2FPCCC.2014.7017068" title="OpenURL" target="_top"><i class="icon-openurl"></i>Find in your library</a><br>
+	
+
+</div>
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_article_metrics.inc -->
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+
+
+
+	<!-- FILE: /main/production/doc/data/assets/site/info_box_disciplines.inc -->
+
+
+
+
+	
+		
+	
+
+
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+
+<!-- FILE: /main/production/doc/data/assets/site/bookmark_widget.inc -->
+<div id="share" class="aside">
+<h4>Share</h4>
+	
+	<p class="addthis_toolbox addthis_default_style">
+		<a href="#" title="Facebook" class="addthis_button_facebook ignore at300b"><span style="background-color: rgb(59, 89, 152); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Facebook" title="Facebook" style="width: 16px; height: 16px;" class="at-icon at-icon-facebook" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z"></path></g></svg></span></a>
+		<a href="#" title="Tweet" class="addthis_button_twitter ignore at300b"><span style="background-color: rgb(29, 161, 242); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Twitter" title="Twitter" style="width: 16px; height: 16px;" class="at-icon at-icon-twitter" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336"></path></g></svg></span></a>
+		<a href="#" title="LinkedIn" target="_top" class="addthis_button_linkedin ignore at300b"><span style="background-color: rgb(0, 119, 181); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="LinkedIn" title="LinkedIn" style="width: 16px; height: 16px;" class="at-icon at-icon-linkedin" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z"></path></g></svg></span></a>
+		<a class="addthis_button_google_plusone ignore at300b" g:plusone:count="false"><div style="width: 90px; height: 25px;" class="google_plusone_iframe_widget"><span><g:plusone callback="_at_plusonecallback" size="small" href="http://docs.lib.purdue.edu/ccpubs/645/" count="false" lang="null"></g:plusone></span></div></a>
+		<a href="#" title="Email" target="_top" class="addthis_button_email ignore at300b"><span style="background-color: rgb(132, 132, 132); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Email" title="Email" style="width: 16px; height: 16px;" class="at-icon at-icon-email" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a>
+
+
+		<a href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=bepress" class="addthis_button_compact at300m"><span style="background-color: rgb(255, 101, 80); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="More" title="More" style="width: 16px; height: 16px;" class="at-icon at-icon-addthis" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z"></path></g></svg></span></a>
+	<div class="atclear"></div></p>
+	<script type="text/javascript" src="addthis_widget.js"></script>
+
+</div>
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/info_box_geolocate.inc --><!-- FILE: /main/production/doc/data/assets/site/ir_geolocate_enabled_and_displayed.inc -->
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_geolocate.inc (cont) -->
+
+<!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+
+	<!-- FILE: /main/production/doc/data/assets/site/zotero_coins.inc -->
+
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft_id=http%3A%2F%2Fdocs.lib.purdue.edu%2Fccpubs%2F645&amp;rft.atitle=Secure%20Data%20Provenance%20Compression%20Using%20Arithmetic%20Coding%20in%20Wireless%20Sensor%20Networks&amp;rft.aufirst=Syed%20Rafiul&amp;rft.aulast=Hussain&amp;rft.au=Changda%20Wang&amp;rft.au=Salmin%20Sultana&amp;rft.au=Elisa%20Bertino&amp;rft.jtitle=2014%20IEEE%20International%20Performance%20Computing%20and%20Communications%20Conference%20%28IPCCC%29&amp;rft.date=2014-12-01&amp;rft_id=info:doi/10.1109%2FPCCC.2014.7017068">COinS</span><!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_series/info_box_custom_lower.inc -->
+
+
+<!-- BEGIN Altmetric code -->
+
+
+	<div id="doi" class="element">
+		<div class="altmetric-embed" data-doi="10.1109/PCCC.2014.7017068"></div>
+		<script type="text/javascript" src="embed.min.js"></script>
+	</div>
+	<div class="clear"></div>
+
+
+<!-- END Altmetric Code --><!-- FILE: /main/production/doc/data/assets/site/info_box_7_3.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/article_info.inc (cont) --></div>
+
+<div class="clear">&nbsp;</div>
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/ir_article_custom_fields.inc -->
+
+
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/article_info.inc (cont) -->
+
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/article/index.html (cont) -->
+<!-- FILE /main/production/doc/data/docs.lib.purdue.edu/assets/footer.pregen --></div>
+<div class="verticalalign">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+</div>
+<div id="sidebar">
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_sidebar.inc --><!-- FILE: /main/production/doc/data/assets/site/ir_sidebar_search.inc -->
+<form method="get" action="http://docs.lib.purdue.edu/do/search/" id="sidebar-search">
+<label for="search" accesskey="4">Enter search terms:</label>
+<div><span class="border"><input name="q" class="search" id="search" type="text"></span> <input value="Search" class="searchbutton" style="font-size: 11px;" type="submit"></div>
+<label for="context" style="display: none;">Select context to search:</label> 
+<div><span class="border"><select name="fq" id="context">
+<option value="virtual_ancestor_link:&quot;http://docs.lib.purdue.edu/ccpubs&quot;">in this series</option>
+
+
+<option value="virtual_ancestor_link:&quot;http://docs.lib.purdue.edu&quot;">in this repository</option>
+<option value="virtual_ancestor_link:&quot;http:/&quot;">across all repositories</option>
+</select></span></div>
+</form>
+<p class="advanced"><a href="http://docs.lib.purdue.edu/do/search/advanced/?fq=virtual_ancestor_link:%22http://docs.lib.purdue.edu/ccpubs%22">Advanced Search</a></p>
+<div style="clear: left;">&nbsp;</div><!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_sidebar.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/ir_series/ir_sidebar_notify.inc --><ul id="side-notify">
+<li class="notify"><a href="http://docs.lib.purdue.edu/ccpubs/announcements.html" title="Email or RSS Notifications">Notify me via email or <acronym title="Really Simple Syndication">RSS</acronym></a></li>
+</ul>
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_sidebar.inc (cont) -->
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_series/ir_sidebar_author.inc --><h2>Links for Authors</h2>
+<ul>
+
+
+<li class="faq"><a href="http://www.lib.purdue.edu/escholar/epubs/about.html" title="Policies and Help Documentation">Policies and Help Documentation</a></li>
+<li><a href="http://docs.lib.purdue.edu/addendum.pdf">Author Addendum</a></li>
+
+
+
+</ul><!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_sidebar.inc (cont) -->
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_series/ir_custom_sidebar_links.inc --><h2>Links</h2>
+<ul>
+
+
+<li><a href="http://www.lib.purdue.edu/">Purdue Libraries</a></li>
+<li><a href="http://docs.lib.purdue.edu/thepress">Purdue University Press Journals</a></li>
+</ul>
+
+
+
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_sidebar.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/ir_sidebar_browse.inc --><h2>Browse</h2>
+<ul id="side-browse">
+
+
+<li class="collections"><a href="http://docs.lib.purdue.edu/communities.html" title="Browse by Collections">Collections</a></li>
+<li class="discipline-browser"><a href="http://docs.lib.purdue.edu/do/discipline_browser/disciplines" title="Browse by Disciplines">Disciplines</a></li>
+<li class="author"><a href="http://docs.lib.purdue.edu/authors.html" title="Browse by Author">Authors</a></li>
+
+
+</ul>
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_sidebar.inc (cont) -->
+<!-- FILE: /main/production/doc/data/assets/site/ir_sidebar_geolocate.inc --><!-- FILE: /main/production/doc/data/assets/site/ir_geolocate_enabled_and_displayed.inc -->
+
+<!-- FILE: /main/production/doc/data/assets/site/ir_sidebar_geolocate.inc (cont) -->
+
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_sidebar.inc (cont) -->
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/footer.pregen (cont) -->
+<div class="verticalalign">&nbsp;</div>
+</div>
+</div>
+<div id="footer"><!-- FILE: /main/production/doc/data/assets/site/ir_bepress_logo.inc --><div id="bepress">
+
+
+<a href="http://digitalcommons.bepress.com/" title="Digital Commons: Powered by bepress">
+	<em>Digital Commons</em>
+</a>
+
+
+</div>
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/footer.pregen (cont) --><p><a href="http://docs.lib.purdue.edu/" title="Home page" accesskey="1">Home</a> | <a href="http://docs.lib.purdue.edu/about.html" title="About">About</a> | <a href="https://www.lib.purdue.edu/repositories/epubs/about" title="Policies and Help">Policies and Help</a> | <a href="http://docs.lib.purdue.edu/cgi/myaccount.cgi?context=ccpubs" title="My Account Page" accesskey="3">My Account</a> | <a href="http://docs.lib.purdue.edu/accessibility.html" title="Accessibility Statement" accesskey="0">Accessibility Statement</a></p>
+</div>
+</div>
+</div><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe src="645_1.html" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px none; left: 0px;" title="AddThis utility frame" id="_atssh950"></iframe></div>
+<!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/ir_analytics.inc --><script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+try {
+var pageTracker = _gat._getTracker("UA-5499681-9");
+pageTracker._trackPageview();
+} catch(err) {}</script><!-- FILE: /main/production/doc/data/docs.lib.purdue.edu/assets/footer.pregen (cont) -->
+
+<script type="text/javascript" src="bpbootstrap-20160726.pack.js"></script><script type="text/javascript">BPBootstrap.init({appendCookie:''})</script>
+</body>
+</html>

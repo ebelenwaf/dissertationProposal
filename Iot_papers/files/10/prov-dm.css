@@ -1,0 +1,154 @@
+
+/* ::::: null ::::: */
+
+.note { font-size: small; margin-left: 50px; }
+.diamond { font-weight: normal; font-style: normal; font-size: 100%; font-family: sans-serif; }
+table.thinborder { border-width: 1px; border-spacing: 0px; border-style: none; border-color: gray; border-collapse: collapse; }
+table.thinborder th { border-width: 1px; padding: 0px; border-style: solid; border-color: gray; }
+table.thinborder td { border-width: 1px; padding: 2px; border-style: solid; border-color: gray; }
+em.rfc2119 { text-transform: lowercase; font-variant: small-caps; font-style: normal; color: rgb(153, 0, 0); }
+h1 acronym, h2 acronym, h3 acronym, h4 acronym, h5 acronym, h6 acronym, a acronym, h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr { border: medium none; }
+dfn { font-weight: bold; }
+a.internalDFN { color: inherit; border-bottom: 1px solid rgb(153, 153, 204); text-decoration: none; }
+a.externalDFN { color: inherit; border-bottom: 1px dotted rgb(204, 204, 204); text-decoration: none; }
+a.bibref { text-decoration: none; }
+code { color: rgb(255, 69, 0); }
+table.simple { border-spacing: 0px; border-collapse: collapse; border-bottom: 3px solid rgb(0, 90, 156); }
+.simple th { background: rgb(0, 90, 156) none repeat scroll 0% 0%; color: rgb(255, 255, 255); padding: 3px 5px; text-align: left; }
+.simple th[scope="row"] { background: inherit; color: inherit; border-top: 1px solid rgb(221, 221, 221); }
+.simple td { padding: 3px 10px; border-top: 1px solid rgb(221, 221, 221); }
+.simple tr:nth-child(2n) { background: rgb(240, 246, 255) none repeat scroll 0% 0%; }
+@media screen {
+  p.practicedesc { position: relative; top: -2em; padding: 0px; margin: 1.5em 0.5em -1em 1em; }
+}
+pre.sh_sourceCode { background-color: white; color: black; font-style: normal; font-weight: normal; }
+
+/* ::::: null ::::: */
+
+.component1-color { background-color: rgba(255, 42, 42, 0.2); }
+.component3-color { background-color: rgba(0, 68, 170, 0.2); }
+.component2-color { background-color: rgba(0, 170, 0, 0.2); }
+.component4-color { background-color: rgba(244, 105, 14, 0.2); }
+.component6-color { background-color: rgba(11, 40, 40, 0.2); }
+.component5-color { background-color: rgba(204, 255, 0, 0.2); }
+.pending { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(255, 0, 0); background: rgb(191, 239, 255) none repeat scroll 0% 0%; }
+.pending::before { content: "Pending Review"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.resolved { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(255, 0, 0); background: rgb(155, 205, 155) none repeat scroll 0% 0%; }
+.resolved::before { content: "Resolved"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.inference { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.inference[id]::before { content: "Inference: " attr(id); width: 380px; }
+.inference::before { content: "Inference"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.syntax { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.syntax[id]::before { content: "Syntax: " attr(id); width: 380px; }
+.syntax::before { content: "Syntax"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.unamedconstraint { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.unamedconstraint::before { content: "Constraint"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.constraint { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.constraint[id]::before { content: "Constraint: " attr(id); width: 380px; }
+.constraint::before { content: "Constraint"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.interpretation { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.interpretation[id]::before { content: "Interpretation: " attr(id); width: 380px; }
+.interpretation::before { content: "Interpretation"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.definition { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(119, 119, 119); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.definition[id]::before { content: "Definition: " attr(id); width: 380px; }
+.definition::before { content: "Definition"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(0, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.deprecatedconstraint { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.deprecatedconstraint[id]::before { content: "Deprecated: " attr(id); width: 380px; }
+.deprecatedconstraint::before { content: "Deprecated"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(0, 0, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.glossary-ref { font-style: italic; }
+.dfn { font-weight: bold; }
+.attribute { font-style: italic; }
+.conditional { color: blue; }
+.grammar { margin-top: 1ex; margin-bottom: 1ex; padding: 1ex 1ex 0.6ex; border: 1px dashed rgb(47, 111, 171); font-size: 80%; }
+.nonterminal { font-weight: bold; font-family: sans-serif; font-size: 95%; }
+.name { font-family: monospace; }
+.xmpl { padding: 1em; margin: 1em 0em 0em; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.xmpl::before { content: "Example"; display: block; width: 150px; margin: -1.5em 0px 0.5em; font-weight: bold; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 3px 1em; }
+.anexample { margin-top: 1ex; margin-bottom: 1ex; padding: 1ex 1ex 0.6ex; border: 1px dashed rgb(47, 111, 171); background-color: rgb(249, 249, 249); }
+.anexample table { background-color: rgb(249, 249, 249); }
+.anexampleTitle { font-family: sans-serif; font-size: 1.6ex; font-weight: bold; }
+.anexampleTitle { font-family: sans-serif; font-size: 1.6ex; font-weight: bold; }
+.diamond { font-weight: normal; font-size: 100%; font-family: sans-serif; }
+div[class="grammar"] span[class="name"]::before { content: "\'"; }
+div[class="grammar"] span[class="name"]::after { content: "\'"; }
+div[class="grammar"] span[class="optional"]::before { font-weight: normal; font-size: 130%; font-family: monospace; content: "("; }
+div[class="grammar"] span[class="optional"]::after { font-weight: normal; font-size: 130%; font-family: monospace; content: ")?"; }
+div[class="grammar"] span[class="plus"]::before { font-weight: normal; font-size: 130%; font-family: monospace; content: "("; }
+div[class="grammar"] span[class="plus"]::after { font-weight: normal; font-size: 130%; font-family: monospace; content: ")+"; }
+div[class="grammar"] span[class="star"]::before { font-weight: normal; font-size: 130%; font-family: monospace; content: "("; }
+div[class="grammar"] span[class="star"]::after { font-weight: normal; font-size: 130%; font-family: monospace; content: ")*"; }
+div[class="grammar"] span[class="choice"]::before { font-weight: normal; font-size: 130%; font-family: monospace; content: "("; }
+div[class="grammar"] span[class="choice"]::after { font-weight: normal; font-size: 130%; font-family: monospace; content: ")"; }
+div[class="grammar"] span[class="group"]::before { font-weight: normal; font-size: 130%; font-family: monospace; content: "("; }
+div[class="grammar"] span[class="group"]::after { font-weight: normal; font-size: 130%; font-family: monospace; content: ")"; }
+table { background-color: rgb(249, 249, 249); }
+.interpretation-forward::before { content: "Interpretation: "; font-weight: bold; }
+.structural-forward::before { content: "Structural constraint: "; font-weight: bold; }
+.essential { font-weight: bold; }
+.provType::before {  }
+.pnExpression { font-weight: normal; font-size: 120%; font-family: monospace; }
+
+/* ::::: null ::::: */
+
+em.rfc2119 { text-transform: lowercase; font-variant: small-caps; font-style: normal; color: rgb(153, 0, 0); }
+h1 acronym, h2 acronym, h3 acronym, h4 acronym, h5 acronym, h6 acronym, a acronym, h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr { border: medium none; }
+dfn { font-weight: bold; }
+a.internalDFN { color: inherit; border-bottom: 1px solid rgb(153, 153, 204); text-decoration: none; }
+a.externalDFN { color: inherit; border-bottom: 1px dotted rgb(204, 204, 204); text-decoration: none; }
+a.bibref { text-decoration: none; }
+cite .bibref { font-style: normal; }
+code { color: rgb(255, 69, 0); }
+.toc a, .tof a { text-decoration: none; }
+a .secno, a .figno { color: rgb(0, 0, 0); }
+ul.tof, ol.tof { list-style: outside none none; }
+.caption { margin-top: 0.5em; font-style: italic; }
+table.simple { border-spacing: 0px; border-collapse: collapse; border-bottom: 3px solid rgb(0, 90, 156); }
+.simple th { background: rgb(0, 90, 156) none repeat scroll 0% 0%; color: rgb(255, 255, 255); padding: 3px 5px; text-align: left; }
+.simple th[scope="row"] { background: inherit; color: inherit; border-top: 1px solid rgb(221, 221, 221); }
+.simple td { padding: 3px 10px; border-top: 1px solid rgb(221, 221, 221); }
+.simple tr:nth-child(2n) { background: rgb(240, 246, 255) none repeat scroll 0% 0%; }
+.section dd > p:first-child { margin-top: 0px; }
+.section dd > p:last-child { margin-bottom: 0px; }
+.section dd { margin-bottom: 1em; }
+.section dl.attrs dd, .section dl.eldef dd { margin-bottom: 0px; }
+
+/* ::::: http://www.w3.org/StyleSheets/TR/W3C-REC ::::: */
+
+body { padding: 2em 1em 2em 70px; margin: 0px; font-family: sans-serif; color: black; background: white none no-repeat fixed left top; }
+:link { color: rgb(0, 0, 204); background: transparent none repeat scroll 0% 0%; }
+:visited { color: rgb(102, 0, 153); background: transparent none repeat scroll 0% 0%; }
+a:active { color: rgb(204, 0, 0); background: transparent none repeat scroll 0% 0%; }
+a:link img, a:visited img { border-style: none; }
+a img { color: white; }
+@media all {
+  a img { color: inherit; }
+}
+th, td { font-family: sans-serif; }
+h1, h2, h3, h4, h5, h6 { text-align: left; }
+h1, h2, h3 { color: rgb(0, 90, 156); background: white none repeat scroll 0% 0%; }
+h1 { font: 170% sans-serif; }
+h2 { font: 140% sans-serif; }
+h3 { font: 120% sans-serif; }
+h4 { font: bold 100% sans-serif; }
+h5 { font: italic 100% sans-serif; }
+h6 { font: small-caps 100% sans-serif; }
+.hide { display: none; }
+div.head { margin-bottom: 1em; }
+div.head h1 { margin-top: 2em; clear: both; }
+div.head table { margin-left: 2em; margin-top: 2em; }
+p.copyright { font-size: small; }
+p.copyright small { font-size: small; }
+@media screen {
+  a[href]:hover { background: rgb(255, 255, 170) none repeat scroll 0% 0%; }
+}
+pre { margin-left: 2em; }
+dt, dd { margin-top: 0px; margin-bottom: 0px; }
+dt { font-weight: bold; }
+ul.toc, ol.toc { list-style: outside none none; }
+@media speech {
+  h1, h2, h3 {  }
+  .hide {  }
+  p.copyright {  }
+  dt {  }
+}
+body { background-image: url('logo-REC'); }

@@ -1,0 +1,238 @@
+Screen reader users, click here to load entire article This page uses JavaScript to progressively load the article content as a user scrolls. Screen reader users, click the load entire article button to bypass dynamically loaded article content.
+Please note that Internet Explorer version 8.x will not be supported as of January 1, 2016. Please refer to this blog post for more information. Close
+ScienceDirect
+
+    Sign in
+    Sign in using your ScienceDirect credentials
+    Username
+    Password
+    Remember me
+    Forgotten username or password?
+    Sign in via your institution
+        OpenAthens login
+        Other institution login
+    Help
+
+    Journals
+    Books
+    Register
+
+    Journals
+    Books
+    Register
+
+Sign in
+Help
+close
+Sign in using your ScienceDirect credentials
+Username
+Password
+Remember me
+Forgotten username or password?
+Sign in via your institution
+
+    OpenAthens login
+    Other institution login
+
+    Download PDF Opens in a new window. Article suggestions will be shown in a dialog on return to ScienceDirect.
+     
+    Help
+        Direct export
+         
+         
+        Export file
+          RIS (for EndNote, Reference Manager, ProCite)
+          BibTeX
+          Text
+          RefWorks Direct Export
+        Content
+          Citation Only
+          Citation and Abstract
+
+Advanced search
+
+ 
+Article outline
+Show full outline
+
+    Highlights
+    Abstract
+    Keywords
+    1. Introduction
+    2. Ubiquitous computing in the next decade
+    3. Definitions, trends and elements
+    3.1. Definitions
+    3.2. Trends
+    3.3. IoT elements
+    3.3.1. Radio Frequency Identification (RFID)
+    3.3.2. Wireless Sensor Networks (WSN)
+    3.3.3. Addressing schemes
+    3.3.4. Data storage and analytics
+    3.3.5. Visualization
+    4. Applications
+    4.1. Personal and home
+    4.2. Enterprize
+    4.3. Utilities
+    4.4. Mobile
+    5. Cloud centric Internet of Things
+    5.1. Aneka cloud computing platform
+    5.2. Application scheduler and Dynamic Resource Provisioning in Aneka for IoT applications
+    6. IoT Sensor data analytics SaaS using Aneka and Microsoft Azure
+    7. Open challenges and future directions
+    7.1. Architecture
+    7.2. Energy efficient sensing
+    7.3. Secure reprogrammable networks and privacy
+    7.4. Quality of service
+    7.5. New protocols
+    7.6. Participatory sensing
+    7.7. Data mining
+    7.8. GIS based visualization
+    7.9. Cloud computing
+    7.10. International activities
+    8. Summary and conclusions
+    Acknowledgments
+    References
+    Vitae
+
+Alert message
+JavaScript is disabled on your browser.
+Please enable JavaScript to use all the features on this page.
+Figures and tables
+
+    Internet of Things schematic showing the end users and application areas based ...
+    Gartner 2012 Hype Cycle of emerging technologies.
+    Google search trends since 2004 for terms Internet of Things, Wireless Sensor ...
+    Table 1
+    Table 2
+    Conceptual IoT framework with Cloud Computing at the center.
+    A model of end-to-end interaction between various stakeholders in Cloud centric ...
+    Overview of Aneka within Internet of Things architecture.
+    Table 3
+    Schematic of Aneka/Azure Interaction for data analytics application.
+    System context diagram.
+    Roadmap of key technological developments in the context of IoT application ...
+
+JavaScript is disabled on your browser. Please enable JavaScript to use all the features on this page. This page uses JavaScript to progressively load the article content as a user scrolls. Click the View full text link to bypass dynamically loaded article content. View full text
+
+Future Generation Computer Systems
+
+Volume 29, Issue 7 , September 2013, Pages 1645–1660
+
+Including Special sections: Cyber-enabled Distributed Computing for Ubiquitous Cloud and Network Services & Cloud Computing and Scientific Applications — Big Data, Scalable Analytics, and Beyond
+
+Edited By Bin Xie, Anup Kumar, Chi-Ming Chen, Suraj Pandey and Surya Nepal
+Cover image Cover image
+Internet of Things (IoT): A vision, architectural elements, and future directions
+
+    Jayavardhana Gubbi a Author Vitae ,
+    Rajkumar Buyya b , , , , E-mail the corresponding author E-mail the corresponding author Author Vitae ,
+    Slaven Marusic a Author Vitae ,
+    Marimuthu Palaniswami a Author Vitae
+
+    a Department of Electrical and Electronic Engineering, The University of Melbourne, Vic - 3010, Australia
+    b Department of Computing and Information Systems, The University of Melbourne, Vic - 3010, Australia
+
+    Received 8 July 2012, Revised 22 December 2012, Accepted 30 January 2013, Available online 24 February 2013
+
+  Show more   Show less
+
+    http://dx.doi.org/10.1016/j.future.2013.01.010 
+    Get rights and content 
+
+Highlights
+
+•
+
+    Presents vision and motivations for Internet of Things (IoT).
+•
+
+    Application domains in the IoT with a new approach in defining them.
+•
+
+    Cloud-centric IoT realization and challenges.
+•
+
+    Open challenges and future trends in Cloud Centric Internet of Things.
+
+Abstract
+
+Ubiquitous sensing enabled by Wireless Sensor Network (WSN) technologies cuts across many areas of modern day living. This offers the ability to measure, infer and understand environmental indicators, from delicate ecologies and natural resources to urban environments. The proliferation of these devices in a communicating–actuating network creates the Internet of Things (IoT), wherein sensors and actuators blend seamlessly with the environment around us, and the information is shared across platforms in order to develop a common operating picture (COP). Fueled by the recent adaptation of a variety of enabling wireless technologies such as RFID tags and embedded sensor and actuator nodes, the IoT has stepped out of its infancy and is the next revolutionary technology in transforming the Internet into a fully integrated Future Internet. As we move from www (static pages web) to web2 (social networking web) to web3 (ubiquitous computing web), the need for data-on-demand using sophisticated intuitive queries increases significantly. This paper presents a Cloud centric vision for worldwide implementation of Internet of Things. The key enabling technologies and application domains that are likely to drive IoT research in the near future are discussed. A Cloud implementation using Aneka , which is based on interaction of private and public Clouds is presented. We conclude our IoT vision by expanding on the need for convergence of WSN, the Internet and distributed computing directed at technological research community.
+Keywords
+
+    Internet of Things ;
+    Ubiquitous sensing ;
+    Cloud computing ;
+    Wireless sensor networks ;
+    RFID ;
+    Smart environments
+
+1. Introduction
+
+The next wave in the era of computing will be outside the realm of the traditional desktop. In the Internet of Things (IoT) paradigm, many of the objects that surround us will be on the network in one form or another. Radio Frequency IDentification (RFID) and sensor network technologies will rise to meet this new challenge, in which information and communication systems are invisibly embedded in the environment around us. This results in the generation of enormous amounts of data which have to be stored, processed and presented in a seamless, efficient, and easily interpretable form. This model will consist of services that are commodities and delivered in a manner similar to traditional commodities. Cloud computing can provide the virtual infrastructure for such utility computing which integrates monitoring devices, storage devices, analytics tools, visualization platforms and client delivery. The cost based model that Cloud computing offers will enable end-to-end service provisioning for businesses and users to access applications on demand from anywhere.
+
+Smart connectivity with existing networks and context-aware computation using network resources is an indispensable part of IoT. With the growing presence of WiFi and 4G-LTE wireless Internet access, the evolution towards ubiquitous information and communication networks is already evident. However, for the Internet of Things vision to successfully emerge, the computing paradigm will need to go beyond traditional mobile computing scenarios that use smart phones and portables, and evolve into connecting everyday existing objects and embedding intelligence into our environment. For technology to disappear from the consciousness of the user, the Internet of Things demands: (1) a shared understanding of the situation of its users and their appliances, (2) software architectures and pervasive communication networks to process and convey the contextual information to where it is relevant, and (3) the analytics tools in the Internet of Things that aim for autonomous and smart behavior. With these three fundamental grounds in place, smart connectivity and context-aware computation can be accomplished.
+
+The term Internet of Things was first coined by Kevin Ashton in 1999 in the context of supply chain management  [1] . However, in the past decade, the definition has been more inclusive covering wide range of applications like healthcare, utilities, transport, etc.  [2] . Although the definition of ‘Things’ has changed as technology evolved, the main goal of making a computer sense information without the aid of human intervention remains the same. A radical evolution of the current Internet into a Network of interconnected objects that not only harvests information from the environment (sensing) and interacts with the physical world (actuation/command/control), but also uses existing Internet standards to provide services for information transfer, analytics, applications, and communications. Fueled by the prevalence of devices enabled by open wireless technology such as Bluetooth, radio frequency identification (RFID), Wi-Fi, and telephonic data services as well as embedded sensor and actuator nodes, IoT has stepped out of its infancy and is on the verge of transforming the current static Internet into a fully integrated Future Internet  [3] . The Internet revolution led to the interconnection between people at an unprecedented scale and pace. The next revolution will be the interconnection between objects to create a smart environment. Only in 2011 did the number of interconnected devices on the planet overtake the actual number of people. Currently there are 9 billion interconnected devices and it is expected to reach 24 billion devices by 2020. According to the GSMA, this amounts to $1.3 trillion revenue opportunities for mobile network operators alone spanning vertical segments such as health, automotive, utilities and consumer electronics. A schematic of the interconnection of objects is depicted in Fig. 1 , where the application domains are chosen based on the scale of the impact of the data generated. The users span from individual to national level organizations addressing wide ranging issues.
+
+Internet of Things schematic showing the end users and application areas based ... Internet of Things schematic showing the end users and application areas based ...
+    Fig. 1. 
+
+    Internet of Things schematic showing the end users and application areas based on data.
+    Figure options
+
+        Download full-size image
+        Download as PowerPoint slide
+
+This paper presents the current trends in IoT research propelled by applications and the need for convergence in several interdisciplinary technologies. Specifically, in Section  2 , we present the overall IoT vision and the technologies that will achieve it followed by some common definitions in the area along with some trends and taxonomy of IoT in Section  3 . We discuss several application domains in IoT with a new approach in defining them in Section  4 and Section  5 provides our Cloud centric IoT vision. A case study of data analytics on the Aneka/Azure cloud platform is given in Section  6 and we conclude with discussions on open challenges and future trends in Section  7 .
+Elsevier
+About ScienceDirect Remote access Shopping cart Contact and support Terms and conditions Privacy policy
+Cookies are used by this site. For more information, visit the cookies page .
+Copyright © 2016 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.
+RELX Group
+  This article belongs to a special issue
+
+    Including Special sections: Cyber-enabled Distributed Computing for Ubiquitous Cloud and Network Services & Cloud Computing and Scientific Applications — Big Data, Scalable Analytics, and Beyond
+    Edited By Bin Xie, Anup Kumar, Chi-Ming Chen, Suraj Pandey and Surya Nepal
+    Other articles from this special issue
+        Energy-aware parallel task scheduling in a cluster
+        Lizhe Wang, , Samee U. Khan, , Dan Chen, , Joanna Kołodziej, , Rajiv Ranjan, , Cheng-zhong Xu, , Albert Zomaya,
+        more
+            Lizhe Wang, , Samee U. Khan, , Dan Chen, , Joanna Kołodziej, , Rajiv Ranjan, , Cheng-zhong Xu, , Albert Zomaya,
+            Energy-aware parallel task scheduling in a cluster
+            Future Generation Computer Systems, Volume 29, Issue 7, September 2013, Pages 1661–1670
+            Original Research Article
+                PDF (1009 K)
+        Grid based sleep research — Analysis of polysomnographies using a grid infrastructure
+        Dagmar Krefting, , Sebastian Canisius, , Andreas Hoheisel, , Helena Loose, , Thomas Tolxdorff, , Thomas Penzel,
+        more
+            Dagmar Krefting, , Sebastian Canisius, , Andreas Hoheisel, , Helena Loose, , Thomas Tolxdorff, , Thomas Penzel,
+            Grid based sleep research — Analysis of polysomnographies using a grid infrastructure
+            Future Generation Computer Systems, Volume 29, Issue 7, September 2013, Pages 1671–1679
+            Original Research Article
+                PDF (1173 K)
+        Preface
+        Bin Xie, Anup Kumar, Chi-Ming Chen,
+        more
+            Bin Xie, Anup Kumar, Chi-Ming Chen,
+            Preface
+            Future Generation Computer Systems, Volume 29, Issue 7, September 2013, Pages 1680–1681
+                PDF (137 K)
+    View more articles »
+
+  Recommended articles
+
+    No articles found.
+
+  Citing articles ( 715 )
+
+    This article has not been cited.
+
+  Related book content
+
+    No articles found.
+
+ 
+Download PDFs
+Help
+Help
+ 
