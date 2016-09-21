@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 SEP 2016 10:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 SEP 2016 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -535,20 +535,20 @@ Chapter 1.
 
 
 
-] <smart_home.png, id=37, 602.25pt x 399.4122pt>
-File: smart_home.png Graphic file (type png)
- <use smart_home.png>
-Package pdftex.def Info: smart_home.png used on input line 33.
+] <smart_h.png, id=37, 602.25pt x 399.4122pt>
+File: smart_h.png Graphic file (type png)
+ <use smart_h.png>
+Package pdftex.def Info: smart_h.png used on input line 30.
 (pdftex.def)             Requested size: 326.91022pt x 216.81pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2] [3 <./smart_home.png>]) [4]
+ [2 <./smart_h.png>] [3]) [4]
 \openout2 = `background.aux'.
 
  (./background.tex
 Chapter 2.
+
+LaTeX Warning: Citation `muniswamy-reddy_provenance_2010' on page 5 undefined o
+n input line 16.
+
 [5
 
 
@@ -557,14 +557,14 @@ Chapter 2.
 File: iot_architecture.png Graphic file (type png)
 
 <use iot_architecture.png>
-Package pdftex.def Info: iot_architecture.png used on input line 58.
+Package pdftex.def Info: iot_architecture.png used on input line 62.
 (pdftex.def)             Requested size: 187.72176pt x 144.54pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (12.73018pt too wide) in paragraph at lines 66--66
+Overfull \hbox (12.73018pt too wide) in paragraph at lines 70--70
 |[]\OT1/cmr/bx/n/17.28 Comparison of Prove-nance with Log data and meta-
  []
 
@@ -572,10 +572,10 @@ Overfull \hbox (12.73018pt too wide) in paragraph at lines 66--66
 <opm_convention.PNG, id=75, 302.3295pt x 252.34274pt>
 File: opm_convention.PNG Graphic file (type png)
  <use opm_convention.PNG>
-Package pdftex.def Info: opm_convention.PNG used on input line 110.
+Package pdftex.def Info: opm_convention.PNG used on input line 114.
 (pdftex.def)             Requested size: 259.77225pt x 216.81pt.
 
-Overfull \hbox (18.55217pt too wide) in paragraph at lines 145--146
+Overfull \hbox (18.55217pt too wide) in paragraph at lines 149--150
 []\OT1/cmr/m/n/12 Activity: An ac-tiv-ity rep-re-sents some form of ac-tion tha
 t oc-curs over a time frame.Actions
  []
@@ -584,13 +584,13 @@ t oc-curs over a time frame.Actions
 File: prov_dm_1.PNG Graphic file (type png)
 
 <use prov_dm_1.PNG>
-Package pdftex.def Info: prov_dm_1.PNG used on input line 155.
+Package pdftex.def Info: prov_dm_1.PNG used on input line 159.
 (pdftex.def)             Requested size: 289.07999pt x 121.40787pt.
  [13 <./prov_dm_1.PNG>]
 <prov_json.png, id=85, 426.59375pt x 513.92pt>
 File: prov_json.png Graphic file (type png)
  <use prov_json.png>
-Package pdftex.def Info: prov_json.png used on input line 201.
+Package pdftex.def Info: prov_json.png used on input line 205.
 (pdftex.def)             Requested size: 299.9545pt x 361.34999pt.
  [14]
 [15 <./prov_json.png>]) [16]
@@ -598,31 +598,40 @@ Package pdftex.def Info: prov_json.png used on input line 201.
 
  (./chapter2.tex
 Chapter 3.
+
+LaTeX Warning: Citation `' on page 17 undefined on input line 12.
+
 [17
 
 
 
-] [18] [19] [20] [21] [22] [23] [24]) [25]
+] [18] [19] [20] [21] [22]
+Overfull \hbox (2.46373pt too wide) in paragraph at lines 75--75
+|[]\OT1/cmr/bx/n/14.4 Provenance-based trust-wor-thi-ness as-sess-ment in sen-s
+or net-
+ []
+
+[23] [24]) [25] [26]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 4.
-[26
+[27
 
 
 
-] <iot.PNG, id=128, 442.2924pt x 272.217pt>
+] <iot.PNG, id=131, 442.2924pt x 272.217pt>
 File: iot.PNG Graphic file (type png)
  <use iot.PNG>
 Package pdftex.def Info: iot.PNG used on input line 19.
 (pdftex.def)             Requested size: 216.81pt x 133.44148pt.
- [27 <./iot.PNG>]
-[28] <usecase.png, id=136, 580.0872pt x 257.763pt>
+ [28 <./iot.PNG>]
+[29] <usecase.png, id=140, 580.0872pt x 257.763pt>
 File: usecase.png Graphic file (type png)
  <use usecase.png>
 Package pdftex.def Info: usecase.png used on input line 68.
 (pdftex.def)             Requested size: 216.81pt x 96.33836pt.
- [29 <./usecase.png>] <architecture.PNG, id=142, 492.84125pt x 279.0425pt>
+ [30 <./usecase.png>] <architecture.PNG, id=145, 492.84125pt x 279.0425pt>
 File: architecture.PNG Graphic file (type png)
 
 <use architecture.PNG>
@@ -634,47 +643,61 @@ Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
- [30 <./architecture.PNG>]) [31]
+ [31 <./architecture.PNG>]) [32]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 5.
-[32
+[33
 
 
 
-]) [33]
+]) [34]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 6.
-[34
+[35
 
 
 
-]) [35] (./thesis.aux (./acknowl.aux) (./abstract.aux) (./null.aux)
-(./chapter1.aux) (./background.aux) (./chapter2.aux) (./chapter3.aux)
-(./chapter4.aux) (./chapter6.aux))
+]) [36] (./thesis.bbl
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
+Missing character: There is no ” in font cmti12!
+ [37
+
+
+]
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
+Missing character: There is no ™ in font cmti12!
+ [38] [39]) [40] (./thesis.aux (./acknowl.aux)
+(./abstract.aux) (./null.aux) (./chapter1.aux) (./background.aux)
+(./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter6.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11858 strings out of 493014
- 239944 string characters out of 6133351
- 280419 words of memory out of 5000000
- 15112 multiletter control sequences out of 15000+600000
+ 11886 strings out of 493014
+ 240373 string characters out of 6133351
+ 280502 words of memory out of 5000000
+ 15137 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,54p,2127b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,54p,2127b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (43 pages, 765599 bytes).
+Output written on thesis.pdf (48 pages, 780865 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

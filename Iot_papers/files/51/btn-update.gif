@@ -1,7 +1,0 @@
-<html>
-<head><!-- inj yui3-seed: --><script type='text/javascript' src='/assets/cgi/js/yui3/build/yui/yui-min.js'></script><script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script><title>404 Not Found</title></head>
-<body bgcolor="white">
-<center><h1>404 Not Found</h1></center>
-<hr><center>nginx/1.2.1</center>
-<script type='text/javascript' src='/assets/scripts/bpbootstrap-20160726.pack.js'></script><script type='text/javascript'>BPBootstrap.init({appendCookie:''})</script></body>
-</html>

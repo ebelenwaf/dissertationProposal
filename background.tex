@@ -3,8 +3,8 @@
 This chapter describes key concepts of data provenance, IoT characteristics, and provenance models. It outlines differences that exists between provenance and log also provenance and metadata. 
 
 \section{Data Provenance}
-The oxford English dictionary defines provenance as the place of origin or earliest known history of something. Provenance was associated with art since most art work determine the origin of an art work. An example of provenance can be seen with a college transcript. A transcript can be defined as the provenance of a college degree because it outlines all of the courses satisfied in order to attain the degree.
-\par In the field of computing, data provenance also known as  data lineage can be defined as the history of all transformations performed on a data object from the its creation to its current state. Cheney et al decribes provenance as the origin and history of data from its lifecycle. Buneman et al describes provenance from a database perspective as the origin of data and the steps in which it is derived in the database system.  We formally define provenance as follows:
+The oxford English dictionary defines provenance as the place of origin or earliest known history of something.  An example of provenance can be seen with a college transcript. A transcript can be defined as the provenance of a college degree because it outlines all of the courses satisfied in order to attain the degree.
+\par In the field of computing, data provenance also known as  data lineage can be defined as the history of all transformations performed on a data object from the its creation to its current state. Cheney et al \cite{cheney_provenance_2009} decribes provenance as the origin and history of data from its lifecycle. Buneman et al \cite{buneman_why_2001} describes provenance from a database perspective as the origin of data and the steps in which it is derived in the database system.  We formally define provenance as follows:
 
 
 \begin{definition}
@@ -12,44 +12,48 @@ The oxford English dictionary defines provenance as the place of origin or earli
 Data provenance of an object can be defined as a comprehensive history of transformations that occurs on that object from its creation to its present state.
 
 \end{definition}
-There are two types of provenance. Fine-grained provenance which involves the collection of a whole system detailed provenance data. Coarse grained provenance on the other hand involves provenance collection of a summarized version of provenance data.Data provenance has immense applications and has been explored in the areas of scientific computing to track how an experiments are produced, in business to determine the work-flow of  a process, in field of computer security for forensic analysis and intrusion detection. Provenance denotes the who, where and why of data. An example of provenance for a software systems is a web server's log file. This file contains metadata for various request and response time and ip addresses of all host systems that requests information from the server.Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. Provenance ensures trust and integrity of data. The information in which provenance offers can be used in digital forensics to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
+
+Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance data. Coarse grained provenance on the other hand is the provenance collection of a summarized version of provenance data. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, in field of computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy-reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software systems is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. Provenance ensures trust and integrity of data. The information in which provenance offers can be used in digital forensics to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
+
+
+
 
 
 \subsection{Provenance Characteristics}
 
-provenance denotes the who, where and why of data transformation. In an IoT architecture, It is imperative that we collect sensor and actuator reading that satisfies the required conditions. The characteristics of data provenance are outlined in details below.
+Since provenance denotes the who, where and why of data transformation, It is imperative that we collect sensor and actuator reading that satisfies the required conditions. The characteristics of data provenance are outlined in detail below.
 
 
 \begin{itemize}
 
-\item Who: This characteristics provides information on who made modifications to a data object. Knowing the "who" characteristics made is essential because it maps identity of modification to a particular data object. An example of who in an IoT use case is a sensor device ID.
+\item Who: This characteristics provides information on who made modifications to a data object. Knowing the ``who" characteristics made is essential because it maps identity of modification to a particular data object. An example of who in an IoT use case is a sensor device ID.
 
-\item Where: This characteristic denotes location information in which data transformation was made. This characteristic is optional since not every data modification contains location details.
+\item Where: This characteristic denotes location information in which data transformation was made. This provenance characteristic could be optional since not every data modification contains location details.
 
-\item When: This characteristic denotes the time information in which data transformation occurred. This is an essential provenance characteristic. Being able to tell the time of a data transformation allows for varied use scenarios of tracing data anomalies.
+\item When: This characteristic denotes the time information in which data transformation occurred. This is an essential provenance characteristic. Being able to tell the time of a data transformation allows for varied use scenarios of tracing data irregularities.
 
-\item How: This characteristic denotes the process in which transformation is applied on a data object. A use case for IoT can be seen in the various operations(delete, create, open) that could be performed on a file.
+\item How: This characteristic denotes the process in which transformation is applied on a data object. A use case for IoT can be seen in the various operations(delete, create, open) that could be performed on a file object.
 
 \end{itemize}
 
 
  
 \section{Internet of Things(IoT)}
-There is no standard definition for IoT, however, researchers have tried to define the concept of connected "things". The concept of IoT was proposed by Mark Weiser in the early 1990 which represents a way in which physical objects can be linked to the digital world. Gubbi et al defines the Internet of Things as  an interconnection of sensing and actuating devices that allows  for the sharing of data across platforms through a common platform.We define the internet of things(IoT) as the following:
+There is no standard definition for IoT, however, researchers have tried to define the concept of connected ``things". The concept of IoT was proposed by Mark Weiser in the early 1990 \cite{Mattern} which represents a way in which physical objects can be linked to the digital world. Gubbi et al \cite{park_provenance-based_2012} defines the Internet of Things as  an interconnection of sensing and actuating devices that allows data sharing across platforms through a centralized framework. We define the internet of things(IoT) as follows:
 
 \begin{definition}
-An IoT framework can be defined as a network of heterogeneous devices with sensing and actuating capabilities communicating with each other thereby enabling each device become smarter through data analytics. 
+The Internet of Things (IoT) can be defined as a network of heterogeneous devices with sensing and actuating capabilities communicating with each other thereby enabling each device become smarter through data analytics and computation. 
 
 \end{definition}
 
-The notion of internet of things has been attributed to smart devices. It is believed that the interconnectivity between various heterogeneous devices allows for devices to share information in a unique and new way. Analytics is the driving force for IoT. With analytics, we are able to learn user patterns  and this information in turn can be used to make smarter device decisions. This notion of smart devices can be seen in various commercial applications such as smartwatches to smart thermostats that automatically learns a user pattern and regulates the temperature based on the data collected. The ubiquitous nature of these devices make them ideal choices to be included in consumer products. 
+The notion of internet of things has been attributed to smart devices. It is believed that the interconnectivity between various heterogeneous devices allows for devices to share information in a unique. Analytics is the driving force for IoT. With analytics, we are able to learn user patterns  and this information in turn can be used to make smarter device decisions. This notion of smart devices can be seen in various commercial applications such as smartwatches to smart thermostats that automatically learns a user pattern and regulates the temperature based on patterns learned. The ubiquitous nature of these devices make them ideal choices to be included in consumer products. 
 
-\par With the recent data explosion due to the large influx in amounts of interconnected devices due to IoT, information is disseminated at vast rate and with this increase involves security and privacy issues. Creating a provenance aware system is beneficial to IoT because it ensures the trust and  integrity of device. Enabling IoT device provenance aware allows devices to capture information such as the who, where and how transformations occur on a data object which enables  backtracking in an event of a malicious attack.We take a holistic approach to provenance collection by looking at how provenance information is collected accress the IoT architectural framework from bottom(sensor layer) to the top(cloud layer).
+\par With the recent data explosion due to the large influx in amounts of interconnected devices, information is disseminated at vast rate and with this increase involves security and privacy concerns. Creating a provenance-aware system is beneficial to IoT because it ensures the trust and  integrity of interconnected devices. Enabling IoT device provenance aware allows devices to capture valuable information which enables backtracking in an event of a malicious attack. We take a holistic approach to provenance collection by looking at how provenance information is collected across an IoT architectural framework.
 
  
   \subsection{IoT Architecture}
 
-An IoT architecture represents a hierarchical view of how information is disseminated across multiple devices contained from little sensors to massive data centers(cloud storage). It consists of four distinct layers: The sensor layer, device layer, gateway layer and the cloud layer. The base of the architectural stack consist of sensors and actuators which collect information from IoT devices and interacts with the device layer. The device layer consists of devices(e.g mobile phones, laptops, smart devices) which are responsible for aggregating data collected from sensors and actuators. These device in turn forwards the aggregated data to the gateway layer.The gateway layer is concerned with the routing and forwarding of data collected. It could also serve as a medium of temporal storage and processing of information. This layer serves as the intermediary between the device and the cloud layer. The cloud layer is involved with the storage and processing of data collected from the gateway layer. This information can be further analyzed with advanced analytics to derive insights from the data received.  Figure 2 displays the IoT architecture and the interactions between the respective  layers. The resource constraints(memory , computation) decreases as you go up the architectural stack with the cloud layer having the most resource and the sensor layer having the least amount of resources
+IoT architecture represents a hierarchical view of how information is disseminated across multiple layers contained in an IoT framework; from devices which contains sensing and actuating capabilities to massive data centers(cloud storage). Knowing how information is transmitted across various layers allows a better understanding on how to model the flow of information across various actors contained in the IoT hierarchy. The IoT architecture consists of four distinct layers: The sensor layer, device layer, gateway layer and the cloud layer. The base of the architectural stack consist of sensors and actuators which collect information and interacts with the device layer. The device layer consists of devices(e.g mobile phones, laptops, smart devices) which are responsible for aggregating data collected from sensors and actuators. These device in turn forwards the aggregated data to the gateway layer. The gateway layer is concerned with the routing and forwarding of data collected from the device later. It could also serve as a medium of temporal storage and data processing. The cloud layer is involved with the storage and processing of data collected from the gateway layer. This information can be further analyzed with advanced analytics to derive insights from the provenance data received.  Figure 2 displays the IoT architecture and the interactions between the respective  layers. It is important to note that the resource constraints decreases as you go up the architectural stack with the cloud layer having the most resources(memory, computation) and the sensor layer having the least amount of resource capability.
 
 
 \begin{figure}[h]
@@ -65,22 +69,22 @@ An IoT architecture represents a hierarchical view of how information is dissemi
 
 \section{Comparison of Provenance with Log data and metadata}
 
-Provenance data, log data and metadata are key data concepts that often are used interchangeably. They are difference and similarities that exists between these concepts. We try to address the difference and similarities that might exist between provenance data, metadata and Log data.
+Provenance data, log data and metadata are key data concepts that often are used interchangeably. They are difference and similarities that exists between these concepts. We try to address the difference and similarities that might exist between provenance data, metadata and log data.
 
 \subsection{Provenance and Metadata}
-Metadata and provenance are often considered related but yet subtle exists. Metadata contains descriptive information about data. Metadata can be considered as provenance when there exists relationship between objects and explains how objects are . For example a web server can have metadata information such as the host and destination IP addresses which might not be considered as provenance information for a specific application.It could also contain timestamps with location of IP addresses which can be considered as provenance information. In summary metadata and provenance are not completely not the same, however an overlap exists. Metadata contains valuable  provenance information but not all provenance information is metadata. 
+Metadata and provenance are often considered related but yet subtle exists. Metadata contains descriptive information about data. Metadata can be considered as provenance when there exists relationship between objects and they explain the transformation that occurs. For example, a web server can have metadata information such as the host and the destination IP address which might not be considered as provenance information for a specific application. It could also contain timestamps with location of IP addresses which could be considered provenance information. In summary,  metadata and provenance are not completely not the same, however an overlap exists. Metadata contains valuable  provenance information but not all provenance information is metadata. 
 
 
 \subsection{Provenance and Log data}
-Log data contains information about the activity of an object in a operating system or process.Provenance is a specialized form of Log data. It contains information specific to an application domain. Log files might contain unrelated information such as error messages, warnings which might not be considered as provenance data. Logging is limited, lacking information that shows the internal state of an object. Provenance allows for a specified collection of information that relates to the change the internal state of an object.
+Log data contains information about the activity of an object in a operating system or process. Log data can be used as provenance. It contains data trace specific to an application domain. Log files might contain unrelated information such as error messages, warnings which might not be considered as provenance data. Provenance allows for a specified collection of information that relates to the change the internal state of an object. I summary, log data could provide insight to what provenance data to collect. 
 
 \section{Model for representing provenance for IoT}
 
-In order to ensure that we properly represent the right kind of provenance information, we need to satisfy the who, where, how, and what of data transformations. Provenance data is represented using a provenance model, PROV\-DM which is represented in serialized form as JSON object. This model displays the causal relationship of all of the data objects contained in an IoT architectural stack. In this model is contained information such as sensor readings, device name, and device information. This information is mapped into an appropriate provenance data model  to allow for interoperability and visualization. There are two models for representing provenance. These models have been applied in various literature and is considered a standard for representing provenance. Details on the provenance models are outlined below:
+In order to ensure that we properly represent the right kind of provenance information, we need to satisfy the who, where, how, and what of data transformations. Provenance data is represented using a provenance model, PROV\-DM which is represented in serialized form as JSON object. This model displays the causal relationship of data objects contained in an IoT architectural stack. In this model is contained information such as sensor readings, device name, and device information. This information is mapped into an appropriate provenance data model to allow for interoperability and visualization. There are two models for representing provenance. These models \cite{prov_dm} have been applied in various literature and is considered a standard for representing provenance. Details on the provenance models are outlined below:
 
 \subsection{Open Provenance Model(OPM)}
 
-Open Provenance Model is a specification that was derived as a result of a meeting at the International Provenance and Annotation Workshop (IPAW) workshop in May 2006. OPM was created to address the need of allowing a unified model of representing provenance data amongst various applications. It allows for interoperability between various provenance models that might exist with various applications. The goal of OPM is to develop a digital representation of provenance for entities regardless of if it is produced by a computer system or not. OPM is represented as a directed acyclic graph which denotes causal dependency between objects. The edges in the graph denotes dependencies with its source denoting effect and its destination denoting cause. The definitions of the edges and their relationships are denoted below: 
+Open Provenance Model \cite{moreau_open_2011} is a specification that was derived as a result of a meeting at the International Provenance and Annotation Workshop (IPAW) in May 2006. OPM was created to address the need of allowing a centralized model for representing provenance data amongst various applications. It allows for interoperability between various provenance applications. The goal of OPM is to represent causality and dependency and also to develop a digital representation of provenance data regardless of if it is produced by a computer system. OPM is represented as a directed acyclic graph which denotes causal dependency between objects. The edges in the graph denotes dependencies with its source denoting effect and its destination denoting cause. The definitions of the edges and their relationships are denoted below: 
 
 \begin{itemize}
 \item wasGeneratedBy: This edge denotes a  relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple entities so it is important to define the role.  
@@ -147,7 +151,7 @@ Another model for representing provenance data is the Provenance Data Model(PROV
 \item Agent: An agent is a thing that takes ownership of an entity, or performs an activity. An example of an agent is a person, a software product, a process.
 \end{itemize}
 
-Figure below shows the various types contained in PROV\-DM and their representation. Entities, activities and agents are represented by oval, rectangle and hexagonal shapes respectively.
+The figure below illustrates the various types contained in PROV\-DM and their representation. Entities, activities and agents are represented by oval, rectangle and hexagonal shapes respectively.
 
 \begin{figure}[h]
 \begin{center}
@@ -179,11 +183,11 @@ Similar to the OPM, PROV\-DM does not keep track/estimate of future events. PROV
 
 \end{itemize}
 
-Prov\-DM contains similar yet subtle differences between OPM.Some of the difference between OPM and PROV-DM are described below:
+Prov\-DM contains similar yet subtle differences between OPM. Some of the difference between OPM and PROV\-DM are described below:
 
 \begin{itemize}
 
-\item The main components Artifact, Process and Agent in the OPM model are changed to Entity, Action, and Agent. 
+\item The main components Artifact, Process and Agent in the OPM model are modified to Entity, Action, and Agent. 
 
 \item Additional causal dependencies such as wasAttributedTo and actedOnBelafOf were included to represent direct and indirect causal dependencies respectively between agents and entities.
 
@@ -193,7 +197,7 @@ Since PROV\-DM is built on OPM and contains easy to understand constructs of typ
 
 \subsection{PROV-JSON}
 
-PROV\-JSON is a component of PROV\-DM specification. It is used for representing PROV\-DM data in JSON(Javascript Object Notation) format. It contains all of the components and relationships contained in PROV\-DM. It also allows for easy serialization and deserialization of PROV\-DM mappings to JSON representation. JSON is a lightweight, easy to parse, and allows an easy way of manipulating data programmatically. An example of PROV\-JSON format is described below:
+PROV\-JSON is a component of PROV\-DM specification. It is used for representing PROV\-DM data in JSON(Javascript Object Notation) format. It contains all of the components and relationships contained in PROV\-DM. It also allows for easy serialization and deserialization of PROV\-DM to JSON representation. JSON is a lightweight data format which is human readable and easy to parse. An example of PROV\-JSON format which includes the PROV\-DM types is illustrated below:
 
 \begin{figure}[h]
 \begin{center}
@@ -210,13 +214,13 @@ PROV\-JSON is a component of PROV\-DM specification. It is used for representing
 
 \subsection{Lossy Compression}
 
-Lossy compression is a form of data compression in which the original data can be reconstructed with some tolerance of loosing some information contained in the original data. This enables higher compression ratio than lossless compression techniques. Lossy Compression is mostly used in applications that does not have strict requirements as to loosing some information. An example of a lossless compression application can be seen in image compression software where the quality of the image is not seen by the naked eye. It is also used in speech transmission. 
+Lossy compression is a form of data compression in which original data can be reconstructed with some tolerance on loosing some information contained in the original data. This enables higher compression ratio than other compression techniques. Lossy Compression is mostly used in applications that do not contain strict requirements as to loosing some information. An example of a lossless compression application can be seen in image compression software where the quality of the image is not seen by the naked eye. It is also used in speech transmission. 
 
 \subsection{Lossless Compression}
-Lossless compression is a data compression technique in which the original data is reconstructed without loss of any information from. It can be used by applications which requires that the data compressed and the original data be identical. An example of such an application that requires lossless compression is text compression.  Any compression that alters the structure of the original text results to a different meaning of the text. For instance, the sentence "I have a black cat" would have a different meaning if any information is lost from it.
+Lossless compression is a data compression technique in which the original data is reconstructed without loss of any information from. It can be used by applications which requires that the data compressed and the original data be identical. An example of such an application that requires lossless compression is text compression.  Any compression that alters the structure of the original text results to a different meaning of the text. For instance, the sentence ``I have a black cat" would have a different meaning if any information is lost from it.
 
 
 
 \subsubsection{Arithmetic Coding}
 
-Arithmetic coding is a form of lossless compression which encodes a stream of characters into a variable size interval between [0,1). A probability is assigned to each characters contained in the string. A cumulative probability is used to calculate the interval for the respective character. The more frequent characters are encoded with shorter codes than the less frequent characters. 
+Arithmetic coding is a form of lossless compression which encodes a stream of characters into a variable size interval between [0,1). A probability is assigned to each characters contained in the string. A cumulative probability is used to calculate the interval of the respective character. Frequent characters are encoded with shorter codes than less frequent characters. 

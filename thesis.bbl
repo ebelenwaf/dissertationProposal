@@ -1,0 +1,159 @@
+\begin{thebibliography}{10}
+
+\bibitem{prov_dm}
+{PROV}-{DM}: {The} {PROV} {Data} {Model}.
+
+\bibitem{_general-purpose_2012}
+A {General}-{Purpose} {Provenance} {Library}.
+\newblock 2012.
+
+\bibitem{altintas}
+Ilkay Altintas, Oscar Barney, and Efrat Jaeger-Frank.
+\newblock Provenance {Collection} {Support} in the {Kepler} {Scientific}
+  {Workflow} {System}.
+\newblock In Luc Moreau and Ian Foster, editors, {\em Provenance and
+  {Annotation} of {Data}}, number 4145 in Lecture {Notes} in {Computer}
+  {Science}, pages 118--132. Springer Berlin Heidelberg, May 2006.
+\newblock DOI: 10.1007/11890850\_14.
+
+\bibitem{bates_towards_2013}
+Adam Bates, Ben Mood, Masoud Valafar, and Kevin Butler.
+\newblock Towards {Secure} {Provenance}-based {Access} {Control} in {Cloud}
+  {Environments}.
+\newblock In {\em Proceedings of the {Third} {ACM} {Conference} on {Data} and
+  {Application} {Security} and {Privacy}}, {CODASPY} '13, pages 277--284, New
+  York, NY, USA, 2013. ACM.
+
+\bibitem{bates_trustworthy_2015}
+Adam Bates, Dave~(Jing) Tian, Kevin R.~B. Butler, and Thomas Moyer.
+\newblock Trustworthy {Whole}-{System} {Provenance} for the {Linux} {Kernel}.
+\newblock pages 319--334, 2015.
+
+\bibitem{buneman_why_2001}
+Peter Buneman, Sanjeev Khanna, and Tan Wang-Chiew.
+\newblock Why and {Where}: {A} {Characterization} of {Data} {Provenance}.
+\newblock In Jan Van~den Bussche and Victor Vianu, editors, {\em Database
+  {Theory} — {ICDT} 2001}, number 1973 in Lecture {Notes} in {Computer}
+  {Science}, pages 316--330. Springer Berlin Heidelberg, January 2001.
+\newblock DOI: 10.1007/3-540-44503-X\_20.
+
+\bibitem{cheney_provenance_2009}
+James Cheney, Laura Chiticariu, and Wang-Chiew Tan.
+\newblock Provenance in {Databases}: {Why}, {How}, and {Where}.
+\newblock {\em Found. Trends databases}, 1(4):379--474, April 2009.
+
+\bibitem{gessiou_towards_2012}
+Eleni Gessiou, Vasilis Pappas, Elias Athanasopoulos, Angelos~D. Keromytis, and
+  Sotiris Ioannidis.
+\newblock Towards a {Universal} {Data} {Provenance} {Framework} {Using}
+  {Dynamic} {Instrumentation}.
+\newblock In Dimitris Gritzalis, Steven Furnell, and Marianthi Theoharidou,
+  editors, {\em Information {Security} and {Privacy} {Research}}, number 376 in
+  {IFIP} {Advances} in {Information} and {Communication} {Technology}, pages
+  103--114. Springer Berlin Heidelberg, June 2012.
+\newblock DOI: 10.1007/978-3-642-30436-1\_9.
+
+\bibitem{ghoshal_provenance_2013}
+Devarshi Ghoshal and Beth Plale.
+\newblock Provenance from {Log} {Files}: {A} {BigData} {Problem}.
+\newblock In {\em Proceedings of the {Joint} {EDBT}/{ICDT} 2013 {Workshops}},
+  {EDBT} '13, pages 290--297, New York, NY, USA, 2013. ACM.
+
+\bibitem{glavic_case_2011}
+Boris Glavic, Kyumars~Sheykh Esmaili, Peter~M. Fischer, and Nesime Tatbul.
+\newblock The {Case} for {Fine}-{Grained} {Stream} {Provenance}.
+\newblock In {\em Proceedings of the 1st {Workshop} on {Data} {Streams} and
+  {Event} {Processing} ({DSEP}) collocated with {BTW}}. 2011.
+
+\bibitem{groth}
+Paul Groth, Simon Miles, and Luc Moreau.
+\newblock {PReServ}: {Provenance} recording for services.
+\newblock In {\em in {Proc}. {AHM}’05}.
+
+\bibitem{hussain_secure_2014}
+Syed~Rafiul Hussain, Changda Wang, Salmin Sultana, and Elisa Bertino.
+\newblock Secure {Data} {Provenance} {Compression} {Using} {Arithmetic}
+  {Coding} in {Wireless} {Sensor} {Networks}.
+\newblock {\em 2014 IEEE International Performance Computing and Communications
+  Conference (IPCCC)}, December 2014.
+
+\bibitem{rec_prov}
+Yang Ji, Sangho Lee, and Wenke Lee.
+\newblock {RecProv}: {Towards} {Provenance}-{Aware} {User} {Space} {Record} and
+  {Replay}.
+\newblock In Marta Mattoso and Boris Glavic, editors, {\em Provenance and
+  {Annotation} of {Data} and {Processes}}, number 9672 in Lecture {Notes} in
+  {Computer} {Science}, pages 3--15. Springer International Publishing, June
+  2016.
+\newblock DOI: 10.1007/978-3-319-40593-3\_1.
+
+\bibitem{lim}
+Hyo-Sang Lim, Yang-Sae Moon, and Elisa Bertino.
+\newblock Provenance-based {Trustworthiness} {Assessment} in {Sensor}
+  {Networks}.
+\newblock In {\em Proceedings of the {Seventh} {International} {Workshop} on
+  {Data} {Management} for {Sensor} {Networks}}, {DMSN} '10, pages 2--7, New
+  York, NY, USA, 2010. ACM.
+
+\bibitem{Mattern}
+Friedemann Mattern and Christian Floerkemeier.
+\newblock From {Active} {Data} {Management} to {Event}-based {Systems} and
+  {More}.
+\newblock pages 242--259. Springer-Verlag, Berlin, Heidelberg, 2010.
+
+\bibitem{moreau_open_2011}
+Luc Moreau, Ben Clifford, Juliana Freire, Joe Futrelle, Yolanda Gil, Paul
+  Groth, Natalia Kwasnikowska, Simon Miles, Paolo Missier, Jim Myers, Beth
+  Plale, Yogesh Simmhan, Eric Stephan, and Jan~Van den Bussche.
+\newblock The {Open} {Provenance} {Model} {Core} {Specification} ({V}1.1).
+\newblock {\em Future Gener. Comput. Syst.}, 27(6):743--756, June 2011.
+
+\bibitem{muniswamy_reddy}
+Kiran-Kumar Muniswamy-Reddy, David~A. Holland, Uri Braun, and Margo Seltzer.
+\newblock Provenance-aware {Storage} {Systems}.
+\newblock In {\em Proceedings of the {Annual} {Conference} on {USENIX} '06
+  {Annual} {Technical} {Conference}}, {ATEC} '06, pages 4--4, Berkeley, CA,
+  USA, 2006. USENIX Association.
+
+\bibitem{muniswamy_reddy_provenance_2010}
+Kiran-Kumar Muniswamy-Reddy, Peter Macko, and Margo Seltzer.
+\newblock Provenance for the {Cloud}.
+\newblock In {\em Proceedings of the 8th {USENIX} {Conference} on {File} and
+  {Storage} {Technologies}}, {FAST}'10, pages 15--14, Berkeley, CA, USA, 2010.
+  USENIX Association.
+
+\bibitem{park_provenance-based_2012}
+J.~Park, D.~Nguyen, and R.~Sandhu.
+\newblock A provenance-based access control model.
+\newblock In {\em 2012 {Tenth} {Annual} {International} {Conference} on
+  {Privacy}, {Security} and {Trust} ({PST})}, pages 137--144, July 2012.
+
+\bibitem{hi_fi}
+Devin~J. Pohly, Stephen McLaughlin, Patrick McDaniel, and Kevin Butler.
+\newblock Hi-{Fi}: {Collecting} {High}-fidelity {Whole}-system {Provenance}.
+\newblock In {\em Proceedings of the 28th {Annual} {Computer} {Security}
+  {Applications} {Conference}}, {ACSAC} '12, pages 259--268, New York, NY, USA,
+  2012. ACM.
+
+\bibitem{story}
+R.~Spillane, R.~Sears, C.~Yalamanchili, S.~Gaikwad, M.~Chinni, and E.~Zadok.
+\newblock Story {Book}: {An} {Efficient} {Extensible} {Provenance} {Framework}.
+\newblock In {\em First {Workshop} on on {Theory} and {Practice} of
+  {Provenance}}, {TAPP}'09, pages 11:1--11:10, Berkeley, CA, USA, 2009. USENIX
+  Association.
+
+\bibitem{rapid7}
+Mark Stanislav.
+\newblock Hacking iot: A case study on baby monitor exposures and
+  vulnerabilities.
+\newblock Technical report, Rapid7, sep 2015.
+
+\bibitem{tariq_towards_2012}
+Dawood Tariq, Maisem Ali, and Ashish Gehani.
+\newblock Towards {Automated} {Collection} of {Application}-level {Data}
+  {Provenance}.
+\newblock In {\em Proceedings of the 4th {USENIX} {Conference} on {Theory} and
+  {Practice} of {Provenance}}, {TaPP}'12, pages 16--16, Berkeley, CA, USA,
+  2012. USENIX Association.
+
+\end{thebibliography}

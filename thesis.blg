@@ -10,48 +10,57 @@ A level-1 auxiliary file: chapter2.aux
 A level-1 auxiliary file: chapter3.aux
 A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: chapter6.aux
-I found no \citation commands---while reading file thesis.aux
-I found no \bibdata command---while reading file thesis.aux
-I found no \bibstyle command---while reading file thesis.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            92 strings with 591 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+The style file: plain.bst
+Database file #1: refrences.bib
+Warning--I didn't find a database entry for "muniswamy-reddy_provenance_2010"
+Warning--I didn't find a database entry for ""
+Warning--to sort, need author or key in prov_dm
+Warning--to sort, need author or key in _general-purpose_2012
+Warning--empty author in _general-purpose_2012
+Warning--empty booktitle in _general-purpose_2012
+Warning--empty booktitle in bates_trustworthy_2015
+Warning--empty publisher in glavic_case_2011
+Warning--empty year in groth
+Warning--empty booktitle in Mattern
+You've used 23 entries,
+            2118 wiz_defined-function locations,
+            654 strings with 9411 characters,
+and the built_in function-call counts, 10272 in all, are:
+= -- 1042
+> -- 504
+< -- 19
++ -- 198
+- -- 171
+* -- 735
+:= -- 1583
+add.period$ -- 84
+call.type$ -- 23
+change.case$ -- 151
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 31
+duplicate$ -- 423
+empty$ -- 773
+format.name$ -- 171
+if$ -- 2260
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 23
+missing$ -- 21
+newline$ -- 119
+num.names$ -- 50
+pop$ -- 177
+preamble$ -- 1
+purify$ -- 127
 quote$ -- 0
-skip$ -- 0
+skip$ -- 319
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 599
+swap$ -- 148
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+type$ -- 92
+warning$ -- 8
+while$ -- 95
+width$ -- 25
+write$ -- 281
+(There were 10 warnings)
