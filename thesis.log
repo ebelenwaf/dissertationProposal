@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 SEP 2016 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 SEP 2016 10:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -510,21 +510,22 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 ] (./thesis.toc [6
 
 
-])
+] [7])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [7] (./thesis.lof)
+ [8]
+(./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
-
-[8
+ [9
 
 ]
 \openout2 = `null.aux'.
 
- (/usr/local/texlive/2016/texmf-dist/tex/generic/knuth-lib/null.tex)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/knuth-lib/null.tex)
 \openout2 = `chapter1.aux'.
 
 
@@ -535,7 +536,7 @@ Chapter 1.
 
 
 
-] <smart_h.png, id=37, 602.25pt x 399.4122pt>
+] <smart_h.png, id=40, 602.25pt x 399.4122pt>
 File: smart_h.png Graphic file (type png)
  <use smart_h.png>
 Package pdftex.def Info: smart_h.png used on input line 30.
@@ -545,20 +546,16 @@ Package pdftex.def Info: smart_h.png used on input line 30.
 
  (./background.tex
 Chapter 2.
-
-LaTeX Warning: Citation `muniswamy-reddy_provenance_2010' on page 5 undefined o
-n input line 16.
-
 [5
 
 
 
-] [6] [7] <iot_architecture.png, id=60, 519.3804pt x 399.894pt>
+] [6] [7] <iot_architecture.png, id=63, 519.3804pt x 399.894pt>
 File: iot_architecture.png Graphic file (type png)
 
 <use iot_architecture.png>
 Package pdftex.def Info: iot_architecture.png used on input line 62.
-(pdftex.def)             Requested size: 187.72176pt x 144.54pt.
+(pdftex.def)             Requested size: 281.5866pt x 216.81pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -569,38 +566,34 @@ Overfull \hbox (12.73018pt too wide) in paragraph at lines 70--70
  []
 
 [8] [9 <./iot_architecture.png>] [10] [11]
-<opm_convention.PNG, id=75, 302.3295pt x 252.34274pt>
+<opm_convention.PNG, id=78, 302.3295pt x 252.34274pt>
 File: opm_convention.PNG Graphic file (type png)
  <use opm_convention.PNG>
 Package pdftex.def Info: opm_convention.PNG used on input line 114.
 (pdftex.def)             Requested size: 259.77225pt x 216.81pt.
 
+[12 <./opm_convention.PNG>]
 Overfull \hbox (18.55217pt too wide) in paragraph at lines 149--150
 []\OT1/cmr/m/n/12 Activity: An ac-tiv-ity rep-re-sents some form of ac-tion tha
 t oc-curs over a time frame.Actions
  []
 
-[12 <./opm_convention.PNG>] <prov_dm_1.PNG, id=80, 984.67876pt x 413.545pt>
+<prov_dm_1.PNG, id=83, 984.67876pt x 413.545pt>
 File: prov_dm_1.PNG Graphic file (type png)
-
-<use prov_dm_1.PNG>
+ <use prov_dm_1.PNG>
 Package pdftex.def Info: prov_dm_1.PNG used on input line 159.
 (pdftex.def)             Requested size: 289.07999pt x 121.40787pt.
- [13 <./prov_dm_1.PNG>]
-<prov_json.png, id=85, 426.59375pt x 513.92pt>
+ [13 <./prov_dm_1.PNG>] [14] <prov_json.png, id=91, 426.59375pt x 513.92pt>
 File: prov_json.png Graphic file (type png)
- <use prov_json.png>
+
+<use prov_json.png>
 Package pdftex.def Info: prov_json.png used on input line 205.
 (pdftex.def)             Requested size: 299.9545pt x 361.34999pt.
- [14]
-[15 <./prov_json.png>]) [16]
+ [15 <./prov_json.png>]) [16]
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex
 Chapter 3.
-
-LaTeX Warning: Citation `' on page 17 undefined on input line 12.
-
 [17
 
 
@@ -616,88 +609,102 @@ or net-
 
  (./chapter3.tex
 Chapter 4.
+
+Overfull \hbox (5.35997pt too wide) in paragraph at lines 7--7
+|[]\OT1/cmr/bx/n/17.28 IoT Provenance-Collection frame-work In-for-ma-tion
+ []
+
 [27
 
 
 
-] <iot.PNG, id=131, 442.2924pt x 272.217pt>
+] <iot.PNG, id=134, 442.2924pt x 272.217pt>
 File: iot.PNG Graphic file (type png)
  <use iot.PNG>
 Package pdftex.def Info: iot.PNG used on input line 19.
 (pdftex.def)             Requested size: 216.81pt x 133.44148pt.
  [28 <./iot.PNG>]
-[29] <usecase.png, id=140, 580.0872pt x 257.763pt>
+[29] <usecase.png, id=143, 580.0872pt x 257.763pt>
 File: usecase.png Graphic file (type png)
  <use usecase.png>
 Package pdftex.def Info: usecase.png used on input line 68.
 (pdftex.def)             Requested size: 216.81pt x 96.33836pt.
- [30 <./usecase.png>] <architecture.PNG, id=145, 492.84125pt x 279.0425pt>
+ [30 <./usecase.png>] <architecture.PNG, id=148, 492.84125pt x 279.0425pt>
 File: architecture.PNG Graphic file (type png)
 
 <use architecture.PNG>
 Package pdftex.def Info: architecture.PNG used on input line 90.
 (pdftex.def)             Requested size: 216.81pt x 122.75778pt.
+ [31 <./architecture.PNG>]
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
- [31 <./architecture.PNG>]) [32]
+) [32]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 5.
+
+Overfull \hbox (4.79431pt too wide) in paragraph at lines 26--26
+|[]\OT1/cmr/bx/n/17.28 Policy Based Role-Based Ac-cess Con-trol Ap-proach| 
+ []
+
 [33
 
 
 
-]) [34]
+]
+Overfull \hbox (30.42798pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/n/12 quest con-text gen-er-ated by a user. Based on the re-quest, It
+ gen-er-ates a re-sponse(accept,deny
+ []
+
+[34]) [35]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 6.
-[35
+[36
 
 
 
-]) [36] (./thesis.bbl
+]) [37] (./thesis.bbl
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ” in font cmti12!
- [37
+ [38
 
 
 ]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [38] [39]) [40] (./thesis.aux (./acknowl.aux)
+ [39] [40]) [41] (./thesis.aux (./acknowl.aux)
 (./abstract.aux) (./null.aux) (./chapter1.aux) (./background.aux)
 (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter6.aux))
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11886 strings out of 493014
- 240373 string characters out of 6133351
- 280502 words of memory out of 5000000
- 15137 multiletter control sequences out of 15000+600000
+ 11887 strings out of 493014
+ 240375 string characters out of 6133351
+ 280515 words of memory out of 5000000
+ 15138 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,54p,2127b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,54p,1856b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (48 pages, 780865 bytes).
+Output written on thesis.pdf (50 pages, 783422 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 203 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
