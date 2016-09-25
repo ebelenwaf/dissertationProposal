@@ -13,7 +13,7 @@ Data provenance of an object can be defined as a comprehensive history of transf
 
 \end{definition}
 
-Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance data. Coarse grained provenance on the other hand is the provenance collection of a summarized version of provenance data. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, in field of computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy_reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software system is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. Provenance ensures trust and integrity of data. The information in which provenance offers can be used in digital forensics to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
+Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance data. Coarse grained provenance, on the other hand, is provenance collection of a summarized version of provenance data. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, in field of computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy_reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software system is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. Provenance ensures trust and integrity of data. The information in which provenance offers can be used in digital forensics to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
 
 
 
@@ -26,7 +26,7 @@ Since provenance denotes the who, where and why of data transformation, it is im
 
 \begin{itemize}
 
-\item Who: This characteristics provides information on who made modifications to a data object. Knowing the ``who" characteristics made is essential because it maps identity of modification to a particular data object. An example of who in an IoT use case is a sensor device ID.
+\item Who: This characteristic provides information on who made modifications to a data object. Knowing the ``who" characteristic is essential because it maps the identity of modification to a particular data object. An example of who in an IoT use case is a sensor device ID.
 
 \item Where: This characteristic denotes location information in which data transformation was made. This provenance characteristic could be optional since not every data modification contains location details.
 
@@ -39,21 +39,21 @@ Since provenance denotes the who, where and why of data transformation, it is im
 
  
 \section{Internet of Things(IoT)}
-There is no standard definition for IoT, however, researchers have tried to define the concept of connected ``things". The concept of IoT was proposed by Mark Weiser in the early 1990 \cite{Mattern} which represents a way in which physical objects can be linked to the digital world. Gubbi et al \cite{park_provenance-based_2012} defines the Internet of Things as  an interconnection of sensing and actuating devices that allows data sharing across platforms through a centralized framework. We define the internet of things(IoT) as follows:
+There is no standard definition for IoT, however, researchers have tried to define the concept of connected ``things". The concept of IoT was proposed by Mark Weiser in the early 1990 \cite{Mattern} which represents a way in which the physical objects, ``things", can be connected to the digital world. Gubbi et al \cite{park_provenance-based_2012} defines the Internet of Things as  an interconnection of sensing and actuating devices that allows data sharing across platforms through a centralized framework. We define the internet of things(IoT) as follows:
 
 \begin{definition}
-The Internet of Things (IoT) can be defined as a network of heterogeneous devices with sensing and actuating capabilities communicating with each other thereby enabling each device become smarter through data analytics and computation. 
+The Internet of Things (IoT) can be defined as a network of heterogeneous devices with sensing and actuating capabilities communicating with each other thereby enabling each devices become smarter through data analytics and computation. 
 
 \end{definition}
 
-The notion of internet of things has been attributed to smart devices. It is believed that the interconnectivity between various heterogeneous devices allows for devices to share information in a unique manner that makes these device smarter. Analytics is the driving force for IoT. With analytics, we are able to learn user patterns  and this information in turn can be used to make smarter device decisions. This notion of smart devices can be seen in various commercial applications such as smartwatches to smart thermostats that automatically learns a user pattern and regulates the temperature based on patterns learned. The ubiquitous nature of these devices make them ideal choices to be included in consumer products. 
+The notion of internet of things has been attributed to smart devices. It is believed that the interconnectivity between various heterogeneous devices allows for devices to share information in a unique manner. Analytics is the driving force for IoT. With analytics, we are able to learn user patterns  and this information in turn can be used to make smarter device decisions. This notion of smart devices can be seen in various commercial applications such as smartwatches to smart thermostats that automatically learns a user patterns. The ubiquitous nature of these devices make them ideal choices to be included in consumer products. 
 
 \par With the recent data explosion due to the large influx in amounts of interconnected devices, information is disseminated at vast rate and with this increase involves security and privacy concerns. Creating a provenance-aware system is beneficial to IoT because it ensures the trust and  integrity of interconnected devices. Enabling provenance collection in IoT device allows devices to capture valuable information which enables backtracking in an event of a malicious attack. We take a holistic approach to provenance collection by looking at how provenance information is collected across an IoT architectural framework.
 
  
   \subsection{IoT Architecture}
 
-IoT architecture represents a hierarchical view of how information is disseminated across multiple layers contained in an IoT framework; from devices which contains sensing and actuating capabilities to massive data centers(cloud storage). Knowing how information is transmitted across various layers allows a better understanding on how to model the flow of information across various actors contained in the IoT hierarchy. The IoT architecture consists of four distinct layers: The sensor layer, device layer, gateway layer and the cloud layer. The base of the architectural stack consist of sensors and actuators which collect information and interacts with the device layer. The device layer consists of devices(e.g mobile phones, laptops, smart devices) which are responsible for aggregating data collected from sensors and actuators. These device in turn forwards the aggregated data to the gateway layer. The gateway layer is concerned with the routing and forwarding of data collected from the device later. It could also serve as a medium of temporal storage and data processing. The cloud layer is involved with the storage and processing of data collected from the gateway layer. This information can be further analyzed with advanced analytics to derive insights from the provenance data received.  Figure 2 displays the IoT architecture and the interactions between the respective  layers. It is important to note that the resource constraints decreases as you go up the architectural stack with the cloud layer having the most resources(memory, computation) and the sensor layer having the least amount of resource capability. The arrows illustrates the interaction between data at various layers on the architecture.
+IoT architecture represents a hierarchical view of how information is disseminated across multiple layers contained in an IoT framework; from devices which contains sensing and actuating capabilities to massive data centers(cloud storage). Knowing how information is transmitted across various layers allows a better understanding on how to model the flow of information across various actors contained in an IoT hierarchy. The IoT architecture consists of four distinct layers: The sensor and actuator layer, device layer, gateway layer and the cloud layer. The base of the architectural stack consist of sensors and actuators which gathers provenance information and interacts with the device layer. The device layer consists of devices(e.g mobile phones, laptops, smart devices) which are responsible for aggregating data collected from sensors and actuators. These device in turn forwards the aggregated data to the gateway layer. The gateway layer is concerned with the routing and forwarding of data collected from the device later. It could also serve as a medium of temporal storage and data processing. The cloud layer is involved with the storage and processing of data collected from the gateway layer. Figure 2 displays the IoT architecture and the interactions between the respective  layers. It is important to note that the resource constraints decreases as you go up the architectural stack with the cloud layer having the most resources(memory, computation) and the sensor layer having the least amount of resource capability. The arrows illustrates the interaction between data at various layers on the architecture.
 
 
 \begin{figure}[h]
@@ -69,14 +69,14 @@ IoT architecture represents a hierarchical view of how information is disseminat
 
 \section{Comparison of Provenance with Log data and metadata}
 
-Provenance data, log data and metadata are key data concepts that often are used interchangeably. They are difference and similarities that exists between these concepts. We try to address the difference and similarities that might exist between provenance data, metadata and log data.
+Provenance data, log data and metadata are key data concepts that often are used interchangeably. We try to address the difference and similarities that might exist between provenance data, metadata and log data.
 
 \subsection{Provenance and Metadata}
 Metadata and provenance are often considered related but yet subtle exists. Metadata contains descriptive information about data. Metadata can be considered as provenance when there exists relationship between objects and they explain the transformation that occurs. For example, a web server can have metadata information such as the host and the destination IP address which might not be considered as provenance information for a specific application. It could also contain timestamps with location of IP addresses which could be considered provenance information. In summary,  metadata and provenance are not the same, however an overlap exists. Metadata contains valuable  provenance information but not all provenance information is metadata. 
 
 
 \subsection{Provenance and Log data}
-Log data contains information about the activity of an object in a operating system or process. Log data can be used as provenance. It contains data trace specific to an application domain. Log files might contain unrelated information such as error messages, warnings which might not be considered as provenance data. Provenance allows for specified collection of information that relates to the change the internal state of an object. In summary, log data could provide insight to what provenance data to collect. 
+Log data contains information about the activity of an object in an operating system or process. Log data can be used as provenance. It contains data trace specific to an application domain. Log files might contain unrelated information such as error messages, warnings which might not be considered as provenance data. Provenance allows for specified collection of information that relates to the change the internal state of an object. In summary, log data could provide insight to what provenance data to collect. 
 
 \section{Model for representing provenance for IoT}
 
@@ -101,7 +101,7 @@ Open Provenance Model \cite{moreau_open_2011} is a specification that was derive
 artifact: An artifact represents the state of an entity. An artifact is graphically represented by a circle.
 
 \item
-Process: A process is an event which is taking place at a particular time due to an agent or an artifact. A process is represented by a square object.
+Process: A process is an event which takes place at a particular time due to an agent or an artifact. A process is represented by a square object.
 
 \item 
 Agent: Agents represents actors that facilitate the execution of a process. An agent is represented by a hexagon in an OPM graph.
@@ -146,7 +146,7 @@ Another model for representing provenance data is the Provenance Data Model(PROV
 
 \item entity: An entity is a physical or digital object. An example of an entity is a file system, a process, or an motor vehicle.
 
-\item Activity: An activity represents some form of action that occurs over a time frame.Actions are acted upon by an entity. an example of an activity is a process opening a file directory, Accessing a remote server.
+\item Activity: An activity represents some form of action that occurs over a time frame.Actions are acted upon by an entity. An example of an activity is a process opening a file directory, Accessing a remote server.
 
 \item Agent: An agent is a thing that takes ownership of an entity, or performs an activity. An example of an agent is a person, a software product, a process.
 \end{itemize}
