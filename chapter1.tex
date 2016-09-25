@@ -15,7 +15,7 @@ devices requires stronger levels of trust which can be achieved through data
 provenance. Provenance is used to determine causality and effect of 
 operations performed on data objects \cite{glavic_case_2011}. Data provenance ensures
 authenticity, integrity and transparency between information disseminated across an
-IoT system. This level of transparency can be translated to various levels across the IoT architectural stack. To achieve transparency in an IoT framework, it is imperative that data provenance and IoT systems be combined to create a provenance aware system that provides detailed records of all data
+IoT system. This level of transparency can be translated to various levels across the IoT architectural stack. To achieve transparency in an IoT framework, it is imperative that data provenance and IoT systems be unified to create a provenance aware system that provides detailed records of all data
 transactions performed on devices connected in an IoT network.
 
 
@@ -33,22 +33,22 @@ transactions performed on devices connected in an IoT network.
 \end{figure}
 
 
-Consider a smart home which contains interconnected devices such as a thermostat which automatically detects and regulates the temperature of a room based on prior information of a user's temperature settings, a smart lock system which can be controlled remotely and informs a user via short messaging when a breach has occurred, a home security camera motoring system, a smart fridge which sends a reminder when food produce are low. In an event that a malicious intruder successfully attempts  to gain access to the smart lock system and security camera remotely. Provenance can be used to track the series  of events to determine where and how a malicious attack originated. It can also be used as a safeguard to alert of a possible remote or insider compromise thereby protecting future or current malicious attacks. 
+Consider a smart home which contains interconnected devices such as a thermostat which automatically detects and regulates the temperature of a room based on prior information of a user's temperature settings, a smart lock system that can be controlled remotely and informs a user via short messaging when a breach has occurred, a home security camera motoring system, a smart fridge which sends a reminder when food produce are low. In an event that a malicious intruder attempts  to gain access to the smart lock system and security camera remotely. Provenance information can be used to track the series  of events to determine where and how a malicious attack originated. It can also be used as a safeguard to alert of a possible remote or insider compromise thereby protecting future or current malicious attacks. 
 
 
 
 
 
 \section{Research Questions}
-Data provenance and IoT are two essential components that need to be unified. However, the unification of data provenance and IoT raises some important research issues. Some of which are as a result of preexisting provenance and IoT issues. Some of the issues raised as a result of the unification of data provenance with IoT are outlined below:
+Data provenance and IoT are two essential components that need to be unified. However, the unification of data provenance and IoT raises some important research issues. Some of which are as a result of pre-existing provenance and IoT related issues. Some of the issues raised as a result of the unification of data provenance with IoT are outlined below:
 
 \begin{itemize}
 
 \item Memory constraints on IoT Devices: The vast amounts of data generated leads high storage space utilization. Proper memory management/data pruning techniques should be employed for efficient storage of provenance data on memory constrained devices. 
 
-\item A fundamental question exists in effective modeling of provenance data. How do we model provenance data collected for IoT devices? Are there models used to represent causality between sensor and actuator readings in the IoT architecture.
+\item A fundamental question exists in effective modeling of provenance data. How do we model provenance data collected from sensors and actuators contained in IoT devices? Are there models used to represent causality between sensor and actuator readings in the IoT architecture.
 
-\item How do we effectively collect provenance data in resource constrained device and relate this information across various layer of the IoT architecture
+\item How do we effectively collect provenance data in resource constrained device and relate this information across various layers of the IoT architecture
 
 \end{itemize}
 
@@ -57,11 +57,11 @@ Data provenance and IoT are two essential components that need to be unified. Ho
 In this dissertation, we propose the following key contributions:
 
 \begin{itemize}
-  \item A provenance collection framework which denotes causality and dependencies between entities contained in an IoT system. This system creates the groundwork for capturing and storing provenance data  on IoT devices.
+  \item A provenance collection framework which denotes causality and dependencies between entities contained in an IoT system. This system creates groundwork for capturing and storing provenance data  across the IoT architectural stack.
   \item An efficient algorithm for storing provenance data on IoT devices. We evaluate our contributions for an efficient provenance storage by using an intrusion detection system on IoT devices.
 \end{itemize}
 
 \section{Organization of Dissertation proposal}
 
-The remaining portion of the dissertation proposal is organized as follows. Chapter 2 talks about background information on data provenance and the internet of things. It also discusses the models for representing provenance data and an overview of relevant compression techniques. Chapter 3 discusses the literature review on the state of the art on provenance collection in file systems, scientific workflows and database systems. Chapter 4 talks about our proposed provenance collection system. Chapter 5 describes our framework for efficient storage of provenance data. Chapter 6 concludes the proposal with proposed future work.
+The remaining portion of this dissertation proposal is organized as follows. Chapter 2 talks about background information on data provenance and the Internet of Things. It also discusses the models for representing provenance data and an overview of relevant compression techniques. Chapter 3 discusses the literature review on the state of the art on provenance collection in file systems, scientific workflow and database systems. Chapter 4 talks about our proposed provenance collection system. It also outlines our model construct for representing provenance data cross the IoT architecture. Chapter 5 describes our framework for efficient storage of provenance data. Chapter 6 concludes the proposal with proposed future work.
 
