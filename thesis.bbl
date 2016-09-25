@@ -2,9 +2,12 @@
 
 \bibitem{xacml}
 {eXtensible} {Access} {Control} {Markup} {Language} ({XACML}) {Version} 3.0.
+\newblock
+  \url{http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html}.
 
 \bibitem{prov_dm}
 {PROV}-{DM}: {The} {PROV} {Data} {Model}.
+\newblock \url{https://www.w3.org/TR/prov-dm/}.
 
 \bibitem{_general-purpose_2012}
 A {General}-{Purpose} {Provenance} {Library}.
@@ -96,6 +99,12 @@ Yang Ji, Sangho Lee, and Wenke Lee.
   2016.
 \newblock DOI: 10.1007/978-3-319-40593-3\_1.
 
+\bibitem{King:2003:BI:945445.945467}
+Samuel~T. King and Peter~M. Chen.
+\newblock Backtracking intrusions.
+\newblock In {\em Proceedings of the Nineteenth ACM Symposium on Operating
+  Systems Principles}, SOSP '03, pages 223--236, New York, NY, USA, 2003. ACM.
+
 \bibitem{lim}
 Hyo-Sang Lim, Yang-Sae Moon, and Elisa Bertino.
 \newblock Provenance-based {Trustworthiness} {Assessment} in {Sensor}
@@ -169,5 +178,11 @@ Dawood Tariq, Maisem Ali, and Ashish Gehani.
 \newblock In {\em Proceedings of the 4th {USENIX} {Conference} on {Theory} and
   {Practice} of {Provenance}}, {TaPP}'12, pages 16--16, Berkeley, CA, USA,
   2012. USENIX Association.
+
+\bibitem{Xie:2016:UID:2936026.2936232}
+Yulai Xie, Dan Feng, Zhipeng Tan, and Junzhe Zhou.
+\newblock Unifying intrusion detection and forensic analysis via provenance
+  awareness.
+\newblock {\em Future Gener. Comput. Syst.}, 61(C):26--36, August 2016.
 
 \end{thebibliography}
