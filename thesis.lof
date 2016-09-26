@@ -11,5 +11,6 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Provenance-model use case}}{30}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Proposed Model}}{31}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Policy based system architecture which allows for effective data storage}}{37}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Policy based system architecture which allows for effective data storage of provenance data}}{37}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Xacml Data-flow diagram}}{38}
 \addvspace {10\p@ }
