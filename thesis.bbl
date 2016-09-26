@@ -82,6 +82,19 @@ Paul Groth, Simon Miles, and Luc Moreau.
 \newblock {PReServ}: {Provenance} recording for services.
 \newblock In {\em in {Proc}. {AHM}’05}.
 
+\bibitem{Hasan:2009:CFP:1525908.1525909}
+Ragib Hasan, Radu Sion, and Marianne Winslett.
+\newblock The case of the fake picasso: Preventing history forgery with secure
+  provenance.
+\newblock In {\em Proccedings of the 7th Conference on File and Storage
+  Technologies}, FAST '09, pages 1--14, Berkeley, CA, USA, 2009. USENIX
+  Association.
+
+\bibitem{rfc2748}
+Shai Herzog.
+\newblock {The COPS (Common Open Policy Service) Protocol}.
+\newblock RFC 2748, March 2013.
+
 \bibitem{hussain_secure_2014}
 Syed~Rafiul Hussain, Changda Wang, Salmin Sultana, and Elisa Bertino.
 \newblock Secure {Data} {Provenance} {Compression} {Using} {Arithmetic}

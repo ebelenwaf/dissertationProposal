@@ -21,45 +21,45 @@ Warning--empty booktitle in bates_trustworthy_2015
 Warning--empty publisher in glavic_case_2011
 Warning--empty year in groth
 Warning--empty booktitle in Mattern
-You've used 28 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            686 strings with 10389 characters,
-and the built_in function-call counts, 11708 in all, are:
-= -- 1192
-> -- 555
-< -- 20
-+ -- 220
-- -- 187
-* -- 820
-:= -- 1813
-add.period$ -- 100
-call.type$ -- 28
-change.case$ -- 174
+            700 strings with 10765 characters,
+and the built_in function-call counts, 12352 in all, are:
+= -- 1259
+> -- 580
+< -- 21
++ -- 231
+- -- 195
+* -- 857
+:= -- 1915
+add.period$ -- 107
+call.type$ -- 30
+change.case$ -- 184
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 484
-empty$ -- 897
-format.name$ -- 187
-if$ -- 2574
+cite$ -- 39
+duplicate$ -- 510
+empty$ -- 953
+format.name$ -- 195
+if$ -- 2718
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 25
-newline$ -- 144
-num.names$ -- 58
-pop$ -- 205
+int.to.str$ -- 30
+missing$ -- 26
+newline$ -- 154
+num.names$ -- 62
+pop$ -- 219
 preamble$ -- 1
-purify$ -- 145
+purify$ -- 153
 quote$ -- 0
-skip$ -- 363
+skip$ -- 383
 stack$ -- 0
-substring$ -- 676
-swap$ -- 161
-text.length$ -- 20
+substring$ -- 706
+swap$ -- 168
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
+type$ -- 118
 warning$ -- 9
-while$ -- 108
-width$ -- 30
-write$ -- 337
+while$ -- 115
+width$ -- 32
+write$ -- 361
 (There were 9 warnings)
