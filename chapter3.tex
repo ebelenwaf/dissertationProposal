@@ -10,7 +10,8 @@ In this chapter, we define how provenance is collected and modeled along the IoT
 %\textcolor{red}{TODO: Talks about how we use PROV\-DM and what kinds of provenance we are looking to store}
 
 A provenance model is used to represent causal dependency between objects and it is usually modeled as a Directed Acyclic Graph(DAG). This enables for better graphical representation of provenance relationships and also a unified format for representing provenance data. There are two major models for representing provenance, OPM and Prov-DM. PROV-DM is a predecessor and standardized version of OPM. It allows the modeling of data objects either physical or digital. PROV-DM is chosen as the model to represent provenance for our implementation because it allows for proper representation of all of the relationships in which we envision for IoT devices. This section defines a model for relaying provenance in IoT systems which is built on top of PROV-DM. 
-From the IoT architecture as illustrated in Section 2, data is disseminated from sensors and actuators across various layers contained in the IoT architectural stack. The provenance data produced from various sensors and actuators are collectively aggregated at the gateway layer and/or the cloud layer. We allow for provenance data to be translated to PROV-DM format at the various levels of the IoT architecture. This allows offline processing of information at all layers of the IoT architecture even in the case of a network failure. Sensor readings are collected from devices as specified by a policy. Policy specifications help address the issue with memory constraint  of collecting provenance data in IoT devices. Policy specification and implementation are discussed in greater detail in chapter 4.  Figure 4.1 illustrates the provenance data aggregation that occurs at various layers of the IoT architectural stack. Data is collected from sensors and actuators and collectively aggregated and passed across the various hierarchies contained in the IoT architecture. 
+From the IoT architecture as illustrated in Section 2, data is disseminated from sensors and actuators across various layers contained in the IoT architectural stack. The provenance data produced from various sensors and actuators are collectively aggregated at the gateway layer and/or the cloud layer. We allow for provenance data to be translated to PROV-DM format at the various levels of the IoT architecture. This allows offline processing of information at all layers of the IoT architecture even in the case of a network failure. 
+ \ref{aggregation} illustrates the provenance data aggregation that occurs at various layers of the IoT architectural stack. Data is collected from sensors and actuators and collectively aggregated and passed across the various hierarchies contained in the IoT architecture. 
 
 
 \begin{figure}[h!]
@@ -19,7 +20,7 @@ From the IoT architecture as illustrated in Section 2, data is disseminated from
 \includegraphics[width=3.0in]{iot.PNG}    
 \end{center}
 \caption{IoT provenance-collection data aggregation}
-\label{autom}
+\label{aggregation}
 \end{figure}
 
 
@@ -77,7 +78,8 @@ The figure above depicts a dependency relationship between two sensors, s1 and s
 
 \section{Provenance-Collection System}
 
-In this section, we outline the components of our system and describe how provenance trace is collected across the IoT framework. Figure 1 displays the system architecture of our approach. Sensor and actuator readings in the form of Input and output(I/O) trace are recorded by the tracer component. This component intercepts system level I/O events and produces trace information in Common Trace Format (CTF). CTF represents binary trace output information containing multiple streams of binary events such as I/O activity. Trace information is converted into the PROV-DM and serialized to PROV-JSON. This represents the relationship between provenance entities contained in the system. CTF conversion to PROV-DM will be achieved using babeltrace. Babeltrace is a plugin which allows the conversion of CTF trace into various readable format. It includes plugins in which CTF trace data can be intercepted to create a custom conversion format. Our system relies heavily on data pruning to reduce and remove unimportant provenance data in order to conserve memory and address the memory constraint issues faced by low memory embedded systems. This is achieved by using a policy in which a user with administrative privilege is given permission to create or modify a policy. This policy document dictates what provenance data to collect. Pruned provenance from the device is securely transmitted to a gateway and later transmitted and stored in a private cloud backend. The backend of choice is Neo4j, a graph database for efficient storage, query and visualization of provenance data.
+In this section, we outline the components of our system and describe how provenance trace is collected across the IoT framework. Figure 1 displays the system architecture of our approach. Sensor and actuator readings in the form of Input and output(I/O) trace are recorded by the tracer component. This component intercepts system level I/O events and produces trace information in Common Trace Format (CTF). CTF represents binary trace output information containing multiple streams of binary events such as I/O activity. Trace information is converted into the PROV-DM and serialized to PROV-JSON. This represents the relationship between provenance entities contained in the system. CTF conversion to PROV-DM will be achieved using babeltrace. Babeltrace is a plugin which allows the conversion of CTF trace into various readable format. It includes plugins in which CTF trace data can be intercepted to create a custom conversion format. Trace data is securely transmitted to a gateway and later transmitted and stored in a private cloud backend. The backend of choice is Neo4j, a graph database for efficient storage, query and visualization of provenance data.
+
 
 \begin{figure}[h]
 \begin{center}
@@ -124,7 +126,11 @@ Let R = provenance information of a program and G = provenance information conta
 
 \end{itemize}
 
-I plan to compare the integration of our provenance collection framework and storage efficiency framework with PIDAS with a baseline which consists of the PIDAS system without the integration of our proposed framework. More specifically, I plan to evaluate the false negative and false positive rate for the IDS system as compared with the baseline. False positive dictates the number of times in which an intrusion has been wrongly detected. This signifies that a path contained in an applications provenance was detected and not found in the ruleDB. On the other hand, false negative rate identifies the number of times a intrusion has not been detected. I also plan to evaluate the throughput of the system with the proposed baseline.
+I plan to compare the evaluation of our proposed framework using PIDAS with a baseline which consists of an implementation of PIDAS on an embedded system.. More specifically, I plan to evaluate the false negative and false positive rate for the IDS system as compared with the baseline. False positive dictates the number of times in which an intrusion has been wrongly detected. This signifies that a path contained in an applications provenance was detected and not found in the ruleDB. On the other hand, false negative rate identifies the number of times a intrusion has not been detected. I also plan to evaluate the throughput of the system by evaluating the overhead incurred using the .
+
+
+
+
 
 
 
