@@ -13,7 +13,7 @@
 \contentsline {chapter}{\numberline {2}Background Information}{5}
 \contentsline {section}{\numberline {2.1}Data Provenance}{5}
 \contentsline {subsection}{\numberline {2.1.1}Provenance Characteristics}{6}
-\contentsline {section}{\numberline {2.2}Internet of Things(IoT)}{7}
+\contentsline {section}{\numberline {2.2}Internet of Things (IoT)}{7}
 \contentsline {subsection}{\numberline {2.2.1}IoT Architecture}{8}
 \contentsline {section}{\numberline {2.3}Comparison of Provenance with Log data and metadata}{9}
 \contentsline {subsection}{\numberline {2.3.1}Provenance and Metadata}{9}

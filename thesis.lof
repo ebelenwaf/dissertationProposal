@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Smart home use case Diagram}}{2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces IoT Architecture Diagram}}{9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces IoT Architecture Diagram.The arrows illustrates the interaction between data at various layers on the architecture.}}{9}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Edges and entities represented in OPM}}{12}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Prov-DM respresentation }}{13}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces PROV-JSON MODEL}}{15}

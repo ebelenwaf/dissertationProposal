@@ -35,6 +35,12 @@ Adam Bates, Dave~(Jing) Tian, Kevin R.~B. Butler, and Thomas Moyer.
 \newblock Trustworthy {Whole}-{System} {Provenance} for the {Linux} {Kernel}.
 \newblock pages 319--334, 2015.
 
+\bibitem{Bertino2015}
+Elisa Bertino.
+\newblock {\em Data Trustworthiness---Approaches and Research Challenges},
+  pages 17--25.
+\newblock Springer International Publishing, Cham, 2015.
+
 \bibitem{buneman_why_2001}
 Peter Buneman, Sanjeev Khanna, and Tan Wang-Chiew.
 \newblock Why and {Where}: {A} {Characterization} of {Data} {Provenance}.
@@ -112,6 +118,12 @@ Yang Ji, Sangho Lee, and Wenke Lee.
   2016.
 \newblock DOI: 10.1007/978-3-319-40593-3\_1.
 
+\bibitem{emc_bigdata}
+David~Reinsel John~Gantz.
+\newblock The digital universe in 2020: Big data, bigger digital shadow s, and
+  biggest grow th in the far east.
+\newblock Technical report, EMC Corporation, apr 2012.
+
 \bibitem{King:2003:BI:945445.945467}
 Samuel~T. King and Peter~M. Chen.
 \newblock Backtracking intrusions.
@@ -166,6 +178,11 @@ Devin~J. Pohly, Stephen McLaughlin, Patrick McDaniel, and Kevin Butler.
   {Applications} {Conference}}, {ACSAC} '12, pages 259--268, New York, NY, USA,
   2012. ACM.
 
+\bibitem{TCDP1999}
+Rationality.
+\newblock {\em {The Cambridge Dictionary of Philosophy}}.
+\newblock Cambridge University Press, 1999.
+
 \bibitem{Sayood:2000:IDC:336428}
 Khalid Sayood.
 \newblock {\em Introduction to Data Compression (2Nd Ed.)}.
@@ -197,5 +214,10 @@ Yulai Xie, Dan Feng, Zhipeng Tan, and Junzhe Zhou.
 \newblock Unifying intrusion detection and forensic analysis via provenance
   awareness.
 \newblock {\em Future Gener. Comput. Syst.}, 61(C):26--36, August 2016.
+
+\bibitem{zawoadfecloud}
+Shams Zawoad and Ragib Hasan.
+\newblock Fecloud: A trustworthy forensics-enabled cloud architecture.
+\newblock 2015.
 
 \end{thebibliography}

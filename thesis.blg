@@ -18,48 +18,50 @@ Warning--to sort, need author or key in xacml
 Warning--empty author in _general-purpose_2012
 Warning--empty booktitle in _general-purpose_2012
 Warning--empty booktitle in bates_trustworthy_2015
+Warning--can't use both author and editor fields in Bertino2015
 Warning--empty publisher in glavic_case_2011
 Warning--empty year in groth
 Warning--empty booktitle in Mattern
-You've used 30 entries,
+Warning--empty journal in zawoadfecloud
+You've used 34 entries,
             2118 wiz_defined-function locations,
-            700 strings with 10765 characters,
-and the built_in function-call counts, 12352 in all, are:
-= -- 1259
-> -- 580
-< -- 21
-+ -- 231
-- -- 195
-* -- 857
-:= -- 1915
-add.period$ -- 107
-call.type$ -- 30
-change.case$ -- 184
+            722 strings with 11729 characters,
+and the built_in function-call counts, 13378 in all, are:
+= -- 1360
+> -- 614
+< -- 22
++ -- 245
+- -- 205
+* -- 907
+:= -- 2090
+add.period$ -- 119
+call.type$ -- 34
+change.case$ -- 200
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 510
-empty$ -- 953
-format.name$ -- 195
-if$ -- 2718
+cite$ -- 45
+duplicate$ -- 560
+empty$ -- 1042
+format.name$ -- 205
+if$ -- 2937
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 26
-newline$ -- 154
-num.names$ -- 62
-pop$ -- 219
+int.to.str$ -- 34
+missing$ -- 31
+newline$ -- 174
+num.names$ -- 70
+pop$ -- 244
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 166
 quote$ -- 0
-skip$ -- 383
+skip$ -- 417
 stack$ -- 0
-substring$ -- 706
-swap$ -- 168
-text.length$ -- 21
+substring$ -- 750
+swap$ -- 178
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 118
-warning$ -- 9
-while$ -- 115
-width$ -- 32
-write$ -- 361
-(There were 9 warnings)
+type$ -- 130
+warning$ -- 11
+while$ -- 126
+width$ -- 36
+write$ -- 403
+(There were 11 warnings)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 SEP 2016 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 SEP 2016 03:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,14 +552,14 @@ Chapter 2.
 File: iot_architecture.png Graphic file (type png)
 
 <use iot_architecture.png>
-Package pdftex.def Info: iot_architecture.png used on input line 62.
+Package pdftex.def Info: iot_architecture.png used on input line 68.
 (pdftex.def)             Requested size: 281.5866pt x 216.81pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (12.73018pt too wide) in paragraph at lines 70--70
+Overfull \hbox (12.73018pt too wide) in paragraph at lines 77--77
 |[]\OT1/cmr/bx/n/17.28 Comparison of Prove-nance with Log data and meta-
  []
 
@@ -567,11 +567,11 @@ Overfull \hbox (12.73018pt too wide) in paragraph at lines 70--70
 <opm_convention.PNG, id=81, 302.3295pt x 252.34274pt>
 File: opm_convention.PNG Graphic file (type png)
  <use opm_convention.PNG>
-Package pdftex.def Info: opm_convention.PNG used on input line 114.
+Package pdftex.def Info: opm_convention.PNG used on input line 121.
 (pdftex.def)             Requested size: 259.77225pt x 216.81pt.
 
 [12 <./opm_convention.PNG>]
-Overfull \hbox (18.55217pt too wide) in paragraph at lines 149--150
+Overfull \hbox (18.55217pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/12 Activity: An ac-tiv-ity rep-re-sents some form of ac-tion tha
 t oc-curs over a time frame.Actions
  []
@@ -579,13 +579,13 @@ t oc-curs over a time frame.Actions
 <prov_dm_1.PNG, id=86, 984.67876pt x 413.545pt>
 File: prov_dm_1.PNG Graphic file (type png)
  <use prov_dm_1.PNG>
-Package pdftex.def Info: prov_dm_1.PNG used on input line 159.
+Package pdftex.def Info: prov_dm_1.PNG used on input line 166.
 (pdftex.def)             Requested size: 289.07999pt x 121.40787pt.
  [13 <./prov_dm_1.PNG>] [14] <prov_json.png, id=94, 426.59375pt x 513.92pt>
 File: prov_json.png Graphic file (type png)
 
 <use prov_json.png>
-Package pdftex.def Info: prov_json.png used on input line 205.
+Package pdftex.def Info: prov_json.png used on input line 212.
 (pdftex.def)             Requested size: 299.9545pt x 361.34999pt.
  [15 <./prov_json.png>]) [16]
 \openout2 = `chapter2.aux'.
@@ -695,18 +695,18 @@ Missing character: There is no ” in font cmti12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [43] [44]) [45] (./thesis.aux (./acknowl.aux)
-(./abstract.aux) (./null.aux) (./chapter1.aux) (./background.aux)
+ [43] [44] [45]) [46] (./thesis.aux (./acknowl.aux) (./abstract.aux) (./null.au
+x) (./chapter1.aux) (./background.aux)
 (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter6.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11978 strings out of 493014
- 241670 string characters out of 6133351
- 282658 words of memory out of 5000000
- 15222 multiletter control sequences out of 15000+600000
+ 11983 strings out of 493014
+ 241739 string characters out of 6133351
+ 282683 words of memory out of 5000000
+ 15227 multiletter control sequences out of 15000+600000
  9016 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,6n,54p,2407b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -719,10 +719,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (55 pages, 967962 bytes).
+Output written on thesis.pdf (56 pages, 968533 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 246 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
