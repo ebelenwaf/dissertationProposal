@@ -13,6 +13,10 @@
 A {General}-{Purpose} {Provenance} {Library}.
 \newblock 2012.
 
+\bibitem{prov_json}
+Prov-dm: The prov data model.
+\newblock Technical report, W3C, apr 2013.
+
 \bibitem{altintas}
 Ilkay Altintas, Oscar Barney, and Efrat Jaeger-Frank.
 \newblock Provenance {Collection} {Support} in the {Kepler} {Scientific}
@@ -40,6 +44,13 @@ Elisa Bertino.
 \newblock {\em Data Trustworthiness---Approaches and Research Challenges},
   pages 17--25.
 \newblock Springer International Publishing, Cham, 2015.
+
+\bibitem{braun2006issues}
+Uri Braun, Simson Garfinkel, David~A Holland, Kiran-Kumar Muniswamy-Reddy, and
+  Margo~I Seltzer.
+\newblock Issues in automatic provenance collection.
+\newblock In {\em International Provenance and Annotation Workshop}, pages
+  171--183. Springer, 2006.
 
 \bibitem{buneman_why_2001}
 Peter Buneman, Sanjeev Khanna, and Tan Wang-Chiew.

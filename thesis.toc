@@ -49,6 +49,7 @@
 \contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT devices}{35}
 \contentsline {section}{\numberline {5.1}A policy-based approach to efficient provenance storage}{35}
 \contentsline {subsection}{\numberline {5.1.1}eXtensible Access Control Markup Language}{37}
+\contentsline {section}{\numberline {5.2}Provenance-model Information Flow}{39}
 \contentsline {chapter}{\numberline {6}Conclusion}{40}
 \contentsline {section}{\numberline {6.1}Summary}{40}
 \contentsline {section}{\numberline {6.2}Future Work}{40}

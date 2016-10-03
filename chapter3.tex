@@ -9,15 +9,15 @@ In this chapter, we define how provenance is collected and modeled along the IoT
 %
 %\textcolor{red}{TODO: Talks about how we use PROV\-DM and what kinds of provenance we are looking to store}
 
-A provenance model is used to represent causal dependency between objects and it is usually modeled as a Directed Acyclic Graph(DAG). This enables for better graphical representation of provenance relationships and also a unified format for representing provenance data. There are two major models for representing provenance, OPM and Prov-DM. PROV-DM is a predecessor and standardized version of OPM. It allows the modeling of data objects either physical or digital. PROV-DM is chosen as the model to represent provenance for our implementation because it allows for proper representation of all of the relationships in which we envision for IoT devices. This section defines a model for relaying provenance in IoT systems which is built on top of PROV-DM. 
-From the IoT architecture as illustrated in Section 2, data is disseminated from sensors and actuators across various layers contained in the IoT architectural stack. The provenance data produced from various sensors and actuators are collectively aggregated at the gateway layer and/or the cloud layer. We allow for provenance data to be translated to PROV-DM format at the various levels of the IoT architecture. This allows offline processing of information at all layers of the IoT architecture even in the case of a network failure. 
- \ref{aggregation} illustrates the provenance data aggregation that occurs at various layers of the IoT architectural stack. Data is collected from sensors and actuators and collectively aggregated and passed across the various hierarchies contained in the IoT architecture. 
+A provenance model is used to represent causal dependency between objects and it is usually modeled as a Directed Acyclic Graph(DAG). This enables better graphical representation of provenance relationships and also a unified format for representing provenance data. There are two major models for representing provenance, OPM and Prov-DM. PROV-DM is a predecessor and standardized version of OPM. It allows the modeling of data objects either physical or digital. PROV-DM is chosen as the model to represent provenance for our implementation because it allows for the proper representation of all of the relationships in which we envision for IoT devices. This section defines a model for relaying provenance in IoT systems which is built on top of PROV-DM. 
+From the IoT architecture as illustrated in Section 2, data is disseminated from sensors and actuators across various layers contained in the IoT architectural stack. The provenance data produced from various sensors and actuators are collectively aggregated at the gateway layer and/or the cloud layer. We allow provenance data to be translated to PROV-DM format at the various levels of the IoT architecture. This allows offline processing of information at all layers of the IoT architecture even in the case of a network failure. 
+ Figure \ref{aggregation} illustrates the provenance data aggregation that occurs at various layers of the IoT architectural stack. Data is collected from sensors and actuators and is collectively aggregated and passed across the various hierarchies contained in an IoT architecture. 
 
 
 \begin{figure}[h!]
 \begin{center}
 
-\includegraphics[width=3.0in]{iot.PNG}    
+\includegraphics[width=3.0in]{iot_aggregation.PNG}    
 \end{center}
 \caption{IoT provenance-collection data aggregation}
 \label{aggregation}
@@ -30,7 +30,7 @@ Using the scenario of a smart home use case as illustrated in chapter 2, a detai
 
 \item Provenance data is collected from sensor and actuator readings of devices contained in the smart home(e.g thermostat, refrigerator, and smart doors). The provenance data is collected as specified in a policy document. Policy document contains information of which provenance data to be collected in the device and can be only be defined by the device owner who serves as an administrator. 
 
-\item Provenance data from multiple sensor and actuator readings collected from each device is aggregated and passed along to the gateway. THis information is transmitted to the cloud for storage in which further analysis could be conducted on the data to derive insights from the provenance data collected. This information is then transferred to the cloud for long term storage. Each layer in the provenance IoT architecture is independent of the and maintains provenance information that can be mapped using the PROV\-DM format which allows for the representation of dependencies that exists between objects contained in the device. This allows for provenance data to be further analyzed offline at the respective layers even in an event of network loss. 
+\item Provenance data from multiple sensor and actuator readings collected from each device is aggregated and passed along to the gateway. This information is transmitted to the cloud for storage in which further analysis could be conducted on the data to derive insights from the provenance data collected. This information is then transferred to the cloud for long term storage. Each layer in the provenance IoT architecture is independent of the and maintains provenance information that can be mapped using the PROV\-DM format which allows for the representation of dependencies that exists between objects contained in the device. This allows for provenance data to be further analyzed offline at the respective layers even in an event of network loss. 
 
 \end{itemize}
 
@@ -54,7 +54,7 @@ It is assumed that provenance data is collected from the underlying IoT device u
 \end{itemize}
 
 
-To better emphasize the provenance-collection model, an example of a use case is illustrated in the figure below.
+To better emphasize the provenance-collection model, an example of a use case is illustrated in the figure \ref{prov_model} .
 
 
 
@@ -64,21 +64,21 @@ To better emphasize the provenance-collection model, an example of a use case is
 \includegraphics[width=4.0in]{provenance_model.png}    
 \end{center}
 \caption{Provenance-model use case}
-\label{autom}
+\label{prov_model}
 \end{figure}
 
 
 
-
-
-The figure above depicts a dependency relationship between two sensors, s1 and s2. Consider the scenario of a smart home. s1 is smart thermostat contained in a smart home which regulates the temperature of the home and s2 is a sensor that detects the outside temperature. s1 constantly checks the temperature outside to regulate the temperature of the house accordingly. s1 tries to access information from s2. According to the provenance data model  definition, s1 and s2 are agents. The activity performed on s2 by s1 is read. File B is the entity in which s1 tries to read from s2 to determine the environmental temperature. The relationship between various components contained in the model is illustrated on the edges of the graph.
+The figure \ref{prov_model}  depicts a dependency relationship between two sensors, s1 and s2. Consider the scenario of a smart home. s1 is smart thermostat contained in a smart home which regulates the temperature of the home and s2 is a sensor that detects the outside temperature. s1 constantly checks the temperature outside to regulate the temperature of the house accordingly. s1 tries to access information from s2. According to the provenance data model  definition, s1 and s2 are agents. The activity performed on s2 by s1 is read. File B is an entity in which s1 tries to read from s2 to determine the environmental temperature. The relationship between various components contained in the model is illustrated on the edges of the graph.
 
 \par The relations define the relationship between types of a provenance model. We use the same instance of the relations contained in PROV-DM to represent relationships between types contained in the IoT framework.
 
 
+
+
 \section{Provenance-Collection System}
 
-In this section, we outline the components of our system and describe how provenance trace is collected across the IoT framework. Figure 1 displays the system architecture of our approach. Sensor and actuator readings in the form of Input and output(I/O) trace are recorded by the tracer component. This component intercepts system level I/O events and produces trace information in Common Trace Format (CTF). CTF represents binary trace output information containing multiple streams of binary events such as I/O activity. Trace information is converted into the PROV-DM and serialized to PROV-JSON. This represents the relationship between provenance entities contained in the system. CTF conversion to PROV-DM will be achieved using babeltrace. Babeltrace is a plugin which allows the conversion of CTF trace into various readable format. It includes plugins in which CTF trace data can be intercepted to create a custom conversion format. Trace data is securely transmitted to a gateway and later transmitted and stored in a private cloud backend. The backend of choice is Neo4j, a graph database for efficient storage, query and visualization of provenance data.
+In this section, we outline the components of our system and describe how provenance trace is collected across the IoT framework. Figure \ref{architecture} displays the system architecture of our approach. Sensor and actuator readings in the form of Input and output(I/O) trace are recorded by the tracer component. This component intercepts system level I/O events and produces trace information in Common Trace Format (CTF). CTF represents binary trace output information containing multiple streams of binary events such as I/O activity. Trace information is converted into the PROV-DM and serialized to PROV-JSON. This represents the relationship between provenance entities contained in the system. CTF conversion to PROV-DM will be achieved using babeltrace. Babeltrace is a plugin which allows the conversion of CTF trace into various readable format. It includes plugins in which CTF trace data can be intercepted to create a custom conversion format. Trace data is securely transmitted to a gateway and later transmitted and stored in a private cloud backend. The backend of choice is Neo4j, a graph database for efficient storage, query and visualization of provenance data.
 
 
 \begin{figure}[h]
@@ -104,6 +104,8 @@ The goal is to create a provenance\-aware system which records I/O operations on
 \end{itemize}
 
 
+
+
 \section{Experiment Evaluation}
 
 I plan to evaluate the effectiveness of my approach for provenance collection by using an intrusion detection system specifically developed for IoT. An IDS is used to detect malicious attacks based on certain policy or threshold specified by an administrator. There are two types of  IDS: rule-based/Signature-based approach, and anomaly-based approach. Signature-based approach allows for intrusion monitoring by specific known signatures of malicious attacks. An example of a signature-based IDS is an anti-virus software. On the other hand, anomaly-based IDS monitors intrusion by patterns that falls out of the normal system function. Most anomaly-based approach deals with the use of machine learning to classify normal or anomalous behavior. This can be useful to detect unknown malicious attacks. Provenance collection IDS system uses provenance data to provide intrusion detection capabilities in an IoT framework. It follows a Signature-based approach in which provenance data collected from the IoT framework is used for intrusion detection. 
@@ -127,12 +129,6 @@ Let R = provenance information of a program and G = provenance information conta
 \end{itemize}
 
 I plan to compare the evaluation of our proposed framework using PIDAS with a baseline which consists of an implementation of PIDAS on an embedded system.. More specifically, I plan to evaluate the false negative and false positive rate for the IDS system as compared with the baseline. False positive dictates the number of times in which an intrusion has been wrongly detected. This signifies that a path contained in an applications provenance was detected and not found in the ruleDB. On the other hand, false negative rate identifies the number of times a intrusion has not been detected. I also plan to evaluate the throughput of the system by evaluating the overhead incurred using the .
-
-
-
-
-
-
 
 
 

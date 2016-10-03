@@ -14,11 +14,7 @@ Data provenance of an object is a comprehensive history of transformations that 
 \end{definition}
 
 Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance. Coarse grained provenance, on the other hand, is a collection of a summarized version of provenance. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, and in computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy_reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software system is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities.
-
-
-
-
- \par Provenance ensures trust and integrity of data \cite{Bertino2015}. It outlines causality and dependency between all objects involved in the system. Causality and dependency are used to determine the relationship between multiple objects. This information in turn can be used in digital forensics \cite{zawoadfecloud} to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
+\par Provenance ensures trust and integrity of data \cite{Bertino2015}. It outlines causality and dependency between all objects involved in the system and allows for the verification of a data source. Causality and dependency are used to determine the relationship between multiple objects. This information in turn can be used in digital forensics \cite{zawoadfecloud} to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
  
 
 
@@ -127,7 +123,7 @@ OPM is used to represent all previous and current actions that have been perform
 \begin{center}
 \includegraphics[height=3.0in]{opm_convention.PNG}
 \end{center}
-\caption{Edges and entities represented in OPM}
+\caption{Edges and entities represented in OPM \copyright \cite{moreau_open_2011}}
 \label{autom}
 \end{figure}
 
@@ -218,7 +214,7 @@ PROV-JSON is a component of PROV-DM specification. It is used for representing P
 
 \includegraphics[height=5in]{prov_json.png}
 \end{center}
-\caption{PROV-JSON MODEL}
+\caption{PROV-JSON MODEL \copyright \cite{prov_json}}
 
 \end{figure}
 
