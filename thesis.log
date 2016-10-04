@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 OCT 2016 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 OCT 2016 02:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -601,7 +601,11 @@ Overfull \hbox (2.46373pt too wide) in paragraph at lines 75--75
 or net-
  []
 
-[23] [24] [25]) [26]
+[23] [24] [25]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [26]) [27]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
@@ -611,18 +615,18 @@ Overfull \hbox (5.35997pt too wide) in paragraph at lines 7--7
 |[]\OT1/cmr/bx/n/17.28 IoT Provenance-Collection frame-work In-for-ma-tion
  []
 
-[27
+[28
 
 
 
-] <iot_aggregation.PNG, id=138, 489.5088pt x 272.217pt>
+] <iot_aggregation.PNG, id=141, 489.5088pt x 272.217pt>
 File: iot_aggregation.PNG Graphic file (type png)
 
 <use iot_aggregation.PNG>
 Package pdftex.def Info: iot_aggregation.PNG used on input line 20.
 (pdftex.def)             Requested size: 216.81pt x 120.56918pt.
- [28 <./iot_aggregation.PNG>]
-<provenance_model.png, id=143, 983.675pt x 351.3125pt>
+ [29 <./iot_aggregation.PNG>]
+<provenance_model.png, id=146, 983.675pt x 351.3125pt>
 File: provenance_model.png Graphic file (type png)
 
 <use provenance_model.png>
@@ -632,8 +636,8 @@ Package pdftex.def Info: provenance_model.png used on input line 64.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] [30 <./provenance_model.png>]
-<architecture.PNG, id=151, 492.84125pt x 279.0425pt>
+[30] [31 <./provenance_model.png>]
+<architecture.PNG, id=154, 492.84125pt x 279.0425pt>
 File: architecture.PNG Graphic file (type png)
  <use architecture.PNG>
 Package pdftex.def Info: architecture.PNG used on input line 87.
@@ -641,16 +645,16 @@ Package pdftex.def Info: architecture.PNG used on input line 87.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
 
-[31 <./architecture.PNG>] [32] [33]) [34]
+[32 <./architecture.PNG>] [33] [34]) [35]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 5.
-[35
+[36
 
 
 
-] <policy_architecture.png, id=173, 630.6762pt x 325.6968pt>
+] <policy_architecture.png, id=176, 630.6762pt x 325.6968pt>
 File: policy_architecture.png Graphic file (type png)
 
 <use policy_architecture.png>
@@ -664,50 +668,49 @@ Overfull \hbox (27.28076pt too wide) in paragraph at lines 33--34
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36] [37 <./policy_architecture.png>]
+[37] [38 <./policy_architecture.png>]
 Overfull \hbox (30.42798pt too wide) in paragraph at lines 50--51
 \OT1/cmr/m/n/12 quest con-text gen-er-ated by a user. Based on the re-quest, It
  gen-er-ates a re-sponse(accept,deny
  []
 
-<xacml.png, id=181, 617.30624pt x 518.93875pt>
+<xacml.png, id=184, 617.30624pt x 518.93875pt>
 File: xacml.png Graphic file (type png)
  <use xacml.png>
 Package pdftex.def Info: xacml.png used on input line 61.
 (pdftex.def)             Requested size: 300.90025pt x 252.94499pt.
- [38 <./xacml.png>] <flow.PNG, id=186, 568.524pt x 280.8894pt>
+ [39 <./xacml.png>] <flow.PNG, id=190, 568.524pt x 280.8894pt>
 File: flow.PNG Graphic file (type png)
  <use flow.PNG>
 Package pdftex.def Info: flow.PNG used on input line 76.
 (pdftex.def)             Requested size: 289.07999pt x 142.82738pt.
-) [39 <./flow.PNG>]
+) [40 <./flow.PNG>]
 \openout2 = `chapter6.aux'.
 
 (./chapter6.tex
 Chapter 6.
-[40
+[41
 
 
 
-]) [41] (./thesis.bbl
-Missing character: There is no â in font cmti12!
-Missing character: There is no € in font cmti12!
-Missing character: There is no ” in font cmti12!
- [42
+]) [42] (./thesis.bbl [43
 
 
 ]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
+Missing character: There is no ” in font cmti12!
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [43] [44] [45]) [46] (./thesis.aux (./acknowl.aux) (./abstract.aux) (./null.au
+ [44] [45] [46]) [47] (./thesis.aux (./acknowl.aux) (./abstract.aux) (./null.au
 x) (./chapter1.aux) (./background.aux)
 (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter6.aux)) ) 
 Here is how much of TeX's memory you used:
- 11992 strings out of 493014
- 241970 string characters out of 6133351
- 282675 words of memory out of 5000000
- 15235 multiletter control sequences out of 15000+600000
+ 11994 strings out of 493014
+ 242025 string characters out of 6133351
+ 282682 words of memory out of 5000000
+ 15237 multiletter control sequences out of 15000+600000
  9016 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,54p,2407b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -721,10 +724,10 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (56 pages, 1014594 bytes).
+Output written on thesis.pdf (57 pages, 1017069 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
+ 251 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

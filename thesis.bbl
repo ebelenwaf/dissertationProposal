@@ -26,6 +26,14 @@ Ilkay Altintas, Oscar Barney, and Efrat Jaeger-Frank.
   {Science}, pages 118--132. Springer Berlin Heidelberg, May 2006.
 \newblock DOI: 10.1007/11890850\_14.
 
+\bibitem{Bates:2015:TOY:2814579.2814586}
+Adam Bates, Kevin R.~B. Butler, and Thomas Moyer.
+\newblock Take only what you need: Leveraging mandatory access control policy
+  to reduce provenance storage costs.
+\newblock In {\em Proceedings of the 7th USENIX Conference on Theory and
+  Practice of Provenance}, TaPP'15, pages 7--7, Berkeley, CA, USA, 2015. USENIX
+  Association.
+
 \bibitem{bates_towards_2013}
 Adam Bates, Ben Mood, Masoud Valafar, and Kevin Butler.
 \newblock Towards {Secure} {Provenance}-based {Access} {Control} in {Cloud}
@@ -219,6 +227,13 @@ Dawood Tariq, Maisem Ali, and Ashish Gehani.
 \newblock In {\em Proceedings of the 4th {USENIX} {Conference} on {Theory} and
   {Practice} of {Provenance}}, {TaPP}'12, pages 16--16, Berkeley, CA, USA,
   2012. USENIX Association.
+
+\bibitem{asiaccs12-vijayakumar}
+Hayawardh Vijayakumar, Joshua Schiffman, and Trent Jaeger.
+\newblock Integrity walls: Finding attack surfaces from mandatory access
+  control policies.
+\newblock In {\em 7th ACM Symposium on Information, Computer, and
+  Communications Security (ASIACCS)}, May 2012.
 
 \bibitem{Xie:2016:UID:2936026.2936232}
 Yulai Xie, Dan Feng, Zhipeng Tan, and Junzhe Zhou.

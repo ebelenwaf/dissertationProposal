@@ -25,45 +25,45 @@ Warning--empty publisher in glavic_case_2011
 Warning--empty year in groth
 Warning--empty booktitle in Mattern
 Warning--empty journal in zawoadfecloud
-You've used 36 entries,
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            732 strings with 12059 characters,
-and the built_in function-call counts, 14094 in all, are:
-= -- 1435
-> -- 643
-< -- 23
-+ -- 257
-- -- 215
-* -- 957
-:= -- 2195
-add.period$ -- 125
-call.type$ -- 36
-change.case$ -- 212
+            743 strings with 12602 characters,
+and the built_in function-call counts, 14822 in all, are:
+= -- 1506
+> -- 679
+< -- 24
++ -- 271
+- -- 227
+* -- 1005
+:= -- 2312
+add.period$ -- 132
+call.type$ -- 38
+change.case$ -- 224
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 591
-empty$ -- 1099
-format.name$ -- 215
-if$ -- 3097
+cite$ -- 51
+duplicate$ -- 624
+empty$ -- 1160
+format.name$ -- 227
+if$ -- 3257
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 32
-newline$ -- 183
-num.names$ -- 72
-pop$ -- 258
+int.to.str$ -- 38
+missing$ -- 34
+newline$ -- 193
+num.names$ -- 76
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 175
+purify$ -- 185
 quote$ -- 0
-skip$ -- 440
+skip$ -- 460
 stack$ -- 0
-substring$ -- 792
-swap$ -- 189
-text.length$ -- 23
+substring$ -- 818
+swap$ -- 197
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
+type$ -- 146
 warning$ -- 13
-while$ -- 131
-width$ -- 38
-write$ -- 424
+while$ -- 138
+width$ -- 40
+write$ -- 448
 (There were 13 warnings)
