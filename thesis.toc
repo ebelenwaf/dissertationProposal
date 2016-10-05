@@ -41,18 +41,19 @@
 \contentsline {subsection}{\numberline {3.1.11}Provenance Recording for Services}{25}
 \contentsline {section}{\numberline {3.2}Related Work on Policy-based provenance data storage}{26}
 \contentsline {subsection}{\numberline {3.2.1}Take Only What You Need: Leveraging Mandatory Access Control Policy to Reduce Provenance Storage Costs}{26}
+\contentsline {subsection}{\numberline {3.2.2}A Provenance-aware policy language (cProvl) and a data traceability model (cProv) for the Cloud}{27}
 \contentsline {section}{\numberline {3.3}Related Work on Data Compression}{27}
 \contentsline {subsection}{\numberline {3.3.1}Secure Data Provenance Compression Using Arithmetic Coding in Wireless Sensor Networks(WSN)}{27}
-\contentsline {chapter}{\numberline {4}Sensor Data Provenance Collection Framework for the IoT}{28}
-\contentsline {section}{\numberline {4.1}IoT Provenance-Collection framework Information flow}{28}
-\contentsline {subsection}{\numberline {4.1.1}Provenance-Collection Model Definition}{30}
-\contentsline {section}{\numberline {4.2}Provenance-Collection System}{31}
-\contentsline {section}{\numberline {4.3}Experiment Evaluation}{33}
-\contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT devices}{36}
-\contentsline {section}{\numberline {5.1}A policy-based approach to efficient provenance storage}{36}
-\contentsline {subsection}{\numberline {5.1.1}eXtensible Access Control Markup Language}{38}
-\contentsline {section}{\numberline {5.2}Provenance-model Information Flow}{40}
-\contentsline {chapter}{\numberline {6}Conclusion}{41}
-\contentsline {section}{\numberline {6.1}Summary}{41}
-\contentsline {section}{\numberline {6.2}Future Work}{41}
-\contentsline {chapter}{References}{43}
+\contentsline {chapter}{\numberline {4}Sensor Data Provenance Collection Framework for the IoT}{29}
+\contentsline {section}{\numberline {4.1}IoT Provenance-Collection framework Information flow}{29}
+\contentsline {subsection}{\numberline {4.1.1}Provenance-Collection Model Definition}{31}
+\contentsline {section}{\numberline {4.2}Provenance-Collection System}{32}
+\contentsline {section}{\numberline {4.3}Experiment Evaluation}{34}
+\contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT devices}{37}
+\contentsline {section}{\numberline {5.1}A policy-based approach to efficient provenance storage}{37}
+\contentsline {subsection}{\numberline {5.1.1}eXtensible Access Control Markup Language}{39}
+\contentsline {section}{\numberline {5.2}Provenance-model Information Flow}{41}
+\contentsline {chapter}{\numberline {6}Conclusion}{42}
+\contentsline {section}{\numberline {6.1}Summary}{42}
+\contentsline {section}{\numberline {6.2}Future Work}{42}
+\contentsline {chapter}{References}{44}

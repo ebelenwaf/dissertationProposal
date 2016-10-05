@@ -17,6 +17,14 @@ A {General}-{Purpose} {Provenance} {Library}.
 Prov-dm: The prov data model.
 \newblock Technical report, W3C, apr 2013.
 
+\bibitem{Ali:2013:PPL:2569433.2569893}
+Mufajjul Ali and Luc Moreau.
+\newblock A provenance-aware policy language (cprovl) and a data traceability
+  model (cprov) for the cloud.
+\newblock In {\em Proceedings of the 2013 International Conference on Cloud and
+  Green Computing}, CGC '13, pages 479--486, Washington, DC, USA, 2013. IEEE
+  Computer Society.
+
 \bibitem{altintas}
 Ilkay Altintas, Oscar Barney, and Efrat Jaeger-Frank.
 \newblock Provenance {Collection} {Support} in the {Kepler} {Scientific}
