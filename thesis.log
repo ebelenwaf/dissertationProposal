@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 OCT 2016 01:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 OCT 2016 07:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,27 +684,31 @@ File: flow.PNG Graphic file (type png)
  <use flow.PNG>
 Package pdftex.def Info: flow.PNG used on input line 76.
 (pdftex.def)             Requested size: 289.07999pt x 142.82738pt.
-) [41 <./flow.PNG>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [41] [42 <./flow.PNG>]
 \openout2 = `chapter6.aux'.
 
-(./chapter6.tex
+ (./chapter6.tex
 Chapter 6.
-[42
+[43
 
 
 
-]) [43] (./thesis.bbl [44
+]) [44] (./thesis.bbl [45
 
 
 ]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ” in font cmti12!
- [45]
+ [46]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [46] [47] [48]) [49] (./thesis.aux
+ [47] [48] [49]) [50] (./thesis.aux
 (./acknowl.aux) (./abstract.aux) (./null.aux) (./chapter1.aux)
 (./background.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux)
 (./chapter6.aux)) ) 
@@ -726,10 +730,10 @@ cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
 2.pfb>
-Output written on thesis.pdf (59 pages, 1019226 bytes).
+Output written on thesis.pdf (60 pages, 1019792 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
