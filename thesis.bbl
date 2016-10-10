@@ -51,9 +51,11 @@ Adam Bates, Ben Mood, Masoud Valafar, and Kevin Butler.
   York, NY, USA, 2013. ACM.
 
 \bibitem{bates_trustworthy_2015}
-Adam Bates, Dave~(Jing) Tian, Kevin R.~B. Butler, and Thomas Moyer.
-\newblock Trustworthy {Whole}-{System} {Provenance} for the {Linux} {Kernel}.
-\newblock pages 319--334, 2015.
+Adam Bates, Dave Tian, Kevin R.~B. Butler, and Thomas Moyer.
+\newblock Trustworthy whole-system provenance for the linux kernel.
+\newblock In {\em Proceedings of the 24th USENIX Conference on Security
+  Symposium}, SEC'15, pages 319--334, Berkeley, CA, USA, 2015. USENIX
+  Association.
 
 \bibitem{Bertino2015}
 Elisa Bertino.
@@ -85,7 +87,8 @@ James Cheney, Laura Chiticariu, and Wang-Chiew Tan.
 Dave Evans.
 \newblock The internet of things how the next evolution of the internet is
   changing everything.
-\newblock Technical report, CISCO, apr 2011.
+\newblock Technical report, CISCO, Apr 2011.
+\newblock Accessed: 2016-10-01.
 
 \bibitem{gessiou_towards_2012}
 Eleni Gessiou, Vasilis Pappas, Elias Athanasopoulos, Angelos~D. Keromytis, and
@@ -209,11 +212,6 @@ Devin~J. Pohly, Stephen McLaughlin, Patrick McDaniel, and Kevin Butler.
 Rationality.
 \newblock {\em {The Cambridge Dictionary of Philosophy}}.
 \newblock Cambridge University Press, 1999.
-
-\bibitem{Sayood:2000:IDC:336428}
-Khalid Sayood.
-\newblock {\em Introduction to Data Compression (2Nd Ed.)}.
-\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2000.
 
 \bibitem{story}
 R.~Spillane, R.~Sears, C.~Yalamanchili, S.~Gaikwad, M.~Chinni, and E.~Zadok.

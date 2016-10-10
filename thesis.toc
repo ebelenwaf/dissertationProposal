@@ -1,8 +1,8 @@
 \hfill {\bf Page}
 \contentsline {chapter}{Acknowledgements}{iv}
 \contentsline {chapter}{Abstract}{v}
-\contentsline {chapter}{Table of Contents}{vii}
-\contentsline {chapter}{List of Figures}{x}
+\contentsline {chapter}{Table of Contents}{vi}
+\contentsline {chapter}{List of Figures}{ix}
 \noindent {\bf Chapter}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
@@ -15,45 +15,42 @@
 \contentsline {subsection}{\numberline {2.1.1}Provenance Characteristics}{6}
 \contentsline {section}{\numberline {2.2}Internet of Things (IoT)}{7}
 \contentsline {subsection}{\numberline {2.2.1}IoT Architecture}{8}
-\contentsline {section}{\numberline {2.3}Comparison of Provenance with Log data and metadata}{9}
+\contentsline {section}{\numberline {2.3}Comparison of Provenance with Log Data and Metadata}{9}
 \contentsline {subsection}{\numberline {2.3.1}Provenance and Metadata}{9}
 \contentsline {subsection}{\numberline {2.3.2}Provenance and Log data}{10}
 \contentsline {section}{\numberline {2.4}Model for representing provenance for IoT}{10}
-\contentsline {subsection}{\numberline {2.4.1}Open Provenance Model(OPM)}{11}
-\contentsline {subsection}{\numberline {2.4.2}Provenance Data Model(Prov-DM)}{12}
+\contentsline {subsection}{\numberline {2.4.1}Open Provenance Model (OPM)}{10}
+\contentsline {subsection}{\numberline {2.4.2}Provenance Data Model (Prov-DM)}{12}
 \contentsline {subsection}{\numberline {2.4.3}PROV-JSON}{14}
-\contentsline {section}{\numberline {2.5}Overview of Relevant Compression techniques}{16}
-\contentsline {subsection}{\numberline {2.5.1}Lossy Compression}{16}
-\contentsline {subsection}{\numberline {2.5.2}Lossless Compression}{16}
-\contentsline {subsubsection}{Arithmetic Coding}{16}
-\contentsline {chapter}{\numberline {3}Related Work}{17}
-\contentsline {section}{\numberline {3.1}Related Work on Provenance Collection Systems}{17}
-\contentsline {subsection}{\numberline {3.1.1}Provenance Aware Storage System(PASS)}{17}
-\contentsline {subsection}{\numberline {3.1.2}HiFi}{18}
-\contentsline {subsection}{\numberline {3.1.3}RecProv}{19}
-\contentsline {subsection}{\numberline {3.1.4}StoryBook}{19}
-\contentsline {subsection}{\numberline {3.1.5}Trustworthy whole system provenance for Linux kernel}{20}
-\contentsline {subsection}{\numberline {3.1.6}Towards Automated Collection of Application-Level Data Provenance}{21}
-\contentsline {subsection}{\numberline {3.1.7}Provenance from Log Files: a BigData Problem}{22}
-\contentsline {subsection}{\numberline {3.1.8}Towards a Universal Data Provenance Framework using Dynamic Instrumentation}{23}
-\contentsline {subsection}{\numberline {3.1.9}Provenance-based trustworthiness assessment in sensor networks}{24}
-\contentsline {subsection}{\numberline {3.1.10}Backtracking Intrusions}{24}
-\contentsline {subsection}{\numberline {3.1.11}Provenance Recording for Services}{25}
-\contentsline {section}{\numberline {3.2}Related Work on Policy-based provenance data storage}{26}
-\contentsline {subsection}{\numberline {3.2.1}Take Only What You Need: Leveraging Mandatory Access Control Policy to Reduce Provenance Storage Costs}{26}
-\contentsline {subsection}{\numberline {3.2.2}A Provenance-aware policy language (cProvl) and a data traceability model (cProv) for the Cloud}{27}
-\contentsline {section}{\numberline {3.3}Related Work on Data Compression}{27}
-\contentsline {subsection}{\numberline {3.3.1}Secure Data Provenance Compression Using Arithmetic Coding in Wireless Sensor Networks(WSN)}{27}
-\contentsline {chapter}{\numberline {4}Sensor Data Provenance Collection Framework for the IoT}{29}
-\contentsline {section}{\numberline {4.1}IoT Provenance-Collection framework Information flow}{29}
-\contentsline {subsection}{\numberline {4.1.1}Provenance-Collection Model Definition}{31}
-\contentsline {section}{\numberline {4.2}Provenance-Collection System}{32}
-\contentsline {section}{\numberline {4.3}Experiment Evaluation}{34}
-\contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT devices}{37}
-\contentsline {section}{\numberline {5.1}A policy-based approach to efficient provenance storage}{37}
-\contentsline {subsection}{\numberline {5.1.1}eXtensible Access Control Markup Language}{39}
-\contentsline {section}{\numberline {5.2}Provenance-model Information Flow}{41}
+\contentsline {section}{\numberline {2.5}P}{16}
+\contentsline {subsection}{\numberline {2.5.1}eXtensible Access Control Markup Language}{16}
+\contentsline {chapter}{\numberline {3}Related Work}{18}
+\contentsline {section}{\numberline {3.1}Related Work on Provenance Collection Systems}{18}
+\contentsline {subsection}{\numberline {3.1.1}Provenance Aware Storage System (PASS)}{18}
+\contentsline {subsection}{\numberline {3.1.2}HiFi}{19}
+\contentsline {subsection}{\numberline {3.1.3}RecProv}{20}
+\contentsline {subsection}{\numberline {3.1.4}StoryBook}{21}
+\contentsline {subsection}{\numberline {3.1.5}Trustworthy Whole System Provenance for Linux Kernel}{21}
+\contentsline {subsection}{\numberline {3.1.6}Towards Automated Collection of Application-Level Data Provenance}{22}
+\contentsline {subsection}{\numberline {3.1.7}Provenance from Log Files: a BigData Problem}{23}
+\contentsline {subsection}{\numberline {3.1.8}Towards a Universal Data Provenance Framework using Dynamic Instrumentation}{24}
+\contentsline {subsection}{\numberline {3.1.9}Provenance-Based Trustworthiness Assessment in Sensor Networks}{25}
+\contentsline {subsection}{\numberline {3.1.10}Backtracking Intrusions}{26}
+\contentsline {subsection}{\numberline {3.1.11}Provenance Recording for Services}{27}
+\contentsline {section}{\numberline {3.2}Policy-Based Provenance Data Storage}{28}
+\contentsline {subsection}{\numberline {3.2.1}Take Only What You Need: Leveraging Mandatory Access Control Policy to Reduce Provenance Storage Costs}{28}
+\contentsline {subsection}{\numberline {3.2.2}A Provenance-aware policy language (cProvl) and a data traceability model (cProv) for the Cloud}{28}
+\contentsline {section}{\numberline {3.3}Provenance Data Compression}{29}
+\contentsline {subsection}{\numberline {3.3.1}Secure Data Provenance Compression Using Arithmetic Coding in Wireless Sensor Networks (WSN)}{29}
+\contentsline {chapter}{\numberline {4}Sensor Data Provenance Collection Framework for the IoT}{31}
+\contentsline {section}{\numberline {4.1}IoT Provenance-Collection Framework }{31}
+\contentsline {subsection}{\numberline {4.1.1}Provenance-Collection Model Definition}{32}
+\contentsline {section}{\numberline {4.2}Provenance-Collection System}{34}
+\contentsline {section}{\numberline {4.3}Experiment Evaluation}{35}
+\contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT}{38}
+\contentsline {section}{\numberline {5.1}A Policy-Based Approach for Provenance Storage}{38}
+\contentsline {section}{\numberline {5.2}Provenance Information Flow}{40}
 \contentsline {chapter}{\numberline {6}Conclusion}{43}
 \contentsline {section}{\numberline {6.1}Summary}{43}
 \contentsline {section}{\numberline {6.2}Future Work}{43}
-\contentsline {chapter}{References}{45}
+\contentsline {chapter}{References}{44}

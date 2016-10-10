@@ -3,20 +3,18 @@
 \chapter{Conclusion}
 
 \section{Summary}
-In this research, we motivate the need for integrating provenance into the IoT architecture. We propose a provenance collection system that provides provenance collection capabilities for devices contained in an IoT framework . Provenance data is believed to be beneficial in mitigating current and future malicious attacks. To address the issue of provenance storage, we also propose a framework for efficient provenance data storage.
+In this proposal, we motivate the need for integrating provenance into the IoT architecture. We propose a provenance collection framework that provides provenance collection capabilities for devices in the IoT. To address the scalability challenge of provenance storage, we also propose a  policy-based extension to our framework that provides efficient provenance data storage.
 
 \section{Future Work}
 
-Some of the proposed future work for this research is outlined bellow:
+Some of the proposed future work for this research is:
 \begin{itemize}
 
-\item Provenance collection raises privacy issues. How do we ensure that the vast amount of data collected is not invasive to the privacy it is not used as a tool to perform malicious attacks.
+\item Provenance collection raises privacy issues. How do we ensure that the vast amount of data collected is not invasive to privacy.
 
-\item Provenance Query: How do we query provenance data in order to interpret provenance information and make analysis of data collected.
+\item Provenance Versioning: Provenance version creates cycles. When a sensore-actuator data is read or edited, is a new instance of the file created? Tracking all transformations that occurs on a data object in memory constrained devices might lead to running out of storage space if each transformation creates a new copy of the object.
 
-\item Provenance Versioning: Provenance version creates cycles. When a file is read or edited, is a new instance of the file created? Tracking all transformations that occurs on a data object in memory constrained devices might lead to running out of storage space. 
-
-\item Securing Provenance: Due to the great level of sensitivity that  provenance data entails, it is of utmost importance to ensure the confidentiality and integrity of provenance data stored on IoT devices while at rest or in transit. Proper encryption and authentication techniques \cite{Hasan:2009:CFP:1525908.1525909} is need to ensure the confidentiality, integrity, and availability of provenance data.
+\item Securing Provenance: Proper encryption and authentication techniques \cite{Hasan:2009:CFP:1525908.1525909} are needed to ensure the confidentiality, and integrity of provenance data.
 
 \end{itemize}
 

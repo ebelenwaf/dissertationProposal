@@ -1,8 +1,8 @@
 % chap4.tex (Definitions and Theorem)
 
-\chapter{Storage Optimization Framework for Provenance Data Storage in IoT devices} \label{MostNarrowEasy}
+\chapter{Storage Optimization Framework for Provenance Data Storage in IoT} \label{MostNarrowEasy}
 
-In this chapter, we define our model and algorithms for storage optimization of provenance data in IoT. We focus on our proposed data pruning technique. We evaluate our hypothesis using the proof of concept ideology.
+In this chapter, we optimize storage of provenance using our IoT provenance-collection framework.
 
 %\section{Definitions}
 %
@@ -23,59 +23,54 @@ In this chapter, we define our model and algorithms for storage optimization of 
 %\end{definition}
 
 
-\section{A policy-based approach to efficient provenance storage}
-\par Provenance generates more data than the data in which provenance is being collected. Due to the large influx of real-time data generated from sensor and actuators in IoT, we envision large amounts of provenance data will generated from our provenance collection framework. The resource constraints on the sensor/actuator and the device layer of the IoT architecture makes it even more challenging. There is a need to create an efficient storage framework for storing provenance data. To address this issue, we define a policy driven framework that provides a policy scheme for the enforcement of provenance storage. Policy approach allows the flexibility of provenance selection. A policy approach makes selecting what provenance is considered important to a specific IoT architecture thereby eliminating irrelevant provenance information. Since various organizations have varied provenance requirement(s), making provenance static might not be suitable across all IoT architecture. The approach of using policy for enforcement is slightly different from the typical access control approach. In other words, Policy is used for the resource enforcement of provenance data collected. This enables efficient pruning of provenance data in which all irrelevant data discarded. The policy framework consists of a policy document. This document contains information on provenance data that is considered relevant to the IoT architecture. A policy framework is used to address resource constraints encountered when storing large amounts of provenance data on low memory devices. Policy document is created by a user who serves as an administrator.  An administrator is a user which has the right to add, delete or modify a policy document. For implementation, there are several policy models that can be utilized to integrate a policy model with the IoT framework. 
+\section{A Policy-Based Approach for Provenance Storage}
+\par Provenance easily can generate more data than the size of the entity's data about  which provenance is being collected. Due to the large influx of real-time data generated from sensors and actuators in IoT, we anticipate large amounts of provenance data will be generated from our provenance collection framework. The resource constraints on the sensor-actuator and the device layer of the IoT architecture makes storing that data even more challenging. To address this challenge, we define a policy driven framework that provides a policy scheme for the optimization of provenance storage \textcolor{red}{and addresses resource constraints encountered when storing large amounts of provenance data.} Policy allows flexibility of provenance collection and pruning for a specific IoT application thereby eliminating irrelevant provenance data. Since organizations have varied provenance requirement(s), making a static provenance policy is not suitable for the IoT. Using policy for storage optimization is slightly different from the typical use of policy in enforcing access control. 
 
-\par Our policy architecture is modeled using the Common Open Policy Service(COPS) Standard \cite{rfc2748}. COPS consists of components for policy generation, evaluation and enforcement. The Policy Enforcement Point (PEP) enforces decisions received from the Policy Decision Point (PDP). The PDP evaluates policies and generates decision based on the evaluation. The model is extended to include a secondary decision point(SDP). This allows for distributed policy evaluation, freeing up the PDP from communication bottlenecks caused by large amounts of request received by a single PDP.  The figure below illustrates the system architecture of our proposed framework. Various layers of the IoT architecture contains different components of the decision and enforcement model. The Sensor/actuator layer of the IoT architecture is omitted. This is due tot he fact that this layer has the largest amount of memory restraints. Additionally, sensors and actuators are contained in the device layer and and as such does not require that data be pruned at this layer. 
+
+
+\textcolor{red}{ For the IoT framework, the product manufacturer is considered a policy creator. This reduces the complexity of creating and managing policy documents by the IoT device consumers.} A policy creator is a user which has the right to add, delete or modify a policy document. 
+
+
+
+\textcolor{red}{ A policy document is required to specify which provenance data to collect thereby providing storage access to provenance unlike system access control which evaluates user access rights to view a resource.} 
+
+\par 
+
+\textcolor{red}{The policy framework consists of a policy engine. The policy engine contains authorization and enforcement components that provides and enforce decisions on how provenance data should be stored. }
+
+A policy document is a component of the policy framework. It identifies provenance data that is considered relevant to the IoT application. 
+
+\par Our policy architecture is modeled using the Common Open Policy Service (COPS) Standard \cite{rfc2748}. COPS consists of components for policy generation, evaluation and enforcement. The Policy Enforcement Point (PEP) enforces decisions received from the Policy Decision Point (PDP). The PDP evaluates policies and generates decision based on the evaluation. The model can be extended to include a secondary decision point (SDP) which allows for distributed policy evaluation, thus freeing up the PDP from communication bottlenecks caused by large amounts of requests received by a single PDP.  
+
+\par Figure \ref{policy_architecture} below illustrates the system architecture of our proposed policy-based storage framework. Different layers of the IoT architecture contain different decision and enforcement components. The sensor-actuator layer of the IoT architecture is omitted because it has negligible memory resources and the  sensors and actuators are usually physically part of a device in the device layer and as such does not have any data to prune. 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[height=3.5in]{policy_architecture.png}
 \caption{Policy based system architecture which allows for effective data storage of provenance data}
+\label{policy_architecture}
 \end{center}
 \end{figure}
 
 
-Policy document is generated at the device layer and evaluated at the gateway and cloud layer. The PEP which is involved with generating requests is located in the device and gateway layer. SDP is located in the gateway layer. This allows for policy evaluation without inuring additional network overhead of communicating with the PDP located in the cloud layer. To implement our policy based framework, We propose to use the eXtensible Markup Language(XACML) policy model \cite{xacml} to generate and enforce provenance policy for our IoT framework. We extend XACML to include the SDP component.
-
-\subsection{eXtensible Access Control Markup Language}
- XACML is an access control policy language that allows the creation and enforcement of policies written in XML. It is a standard specification developed by the Organization of Advancement of Structured Information Standards(OASIS). Since it is written in XML, this framework allows for extensible and flexible policy documents. XACML consists of three major components which are involved in policy generation, evaluation and enforcement. The components of XACML are described below: 
- 
- 
- \begin{itemize}
- 
- \item Policy Administration Point (PAP): This component of XACML
-is involved with the generation of policy documents. A Policy document is created by specifications and requirements set aside by an administrator.
-
- \item Policy Decision Point (PDP): The Policy Decision Point evaluates policies by the request context generated by a user. Based on the request, It generates a response(accept,deny or intermediate) This response is communicated with the Policy Enforcement Point which enforces the response sent by the PDP.
+Policy document which is generated by the policy creator serves as an input to the PDP component and is evaluated at the device, gateway and cloud layer. The PEP which is involved with generating requests is located in the device and gateway layer. SDPs can be located in the gateway layer, which allows for policy evaluation without inuring additional network overhead of communicating with the PDP located in the cloud layer. To implement our policy based framework, We plan to use the eXtensible Markup Language (XACML)  \cite{xacml} and generate an enforceable provenance storage policy for our IoT provenance-collection framework. We extend XACML to include the SDP component.
 
 
-\item Policy Enforcement Point (PEP):  The Policy Enforcement Point generates request context which is sent to the PDP for evaluation. It is also involved with the responsibility of enforcing request based on decision received by the PDP.
-
- \end{itemize}
- 
- 
- 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[height=3.5in]{xacml.png}
-\caption{Xacml Data-flow diagram}
-\end{center}
-\end{figure}
+%% you removed the XACML section from here.
 
 \par Using the use case of the smart home depicted in chapter 2, a policy framework could be implemented and incorporated into the IoT which allows a device administrators to specify what kinds of provenance data to collect. The policy acts an enforcement point providing an efficient storage mechanism in a resource constrained environment. The contents of the implementation details for the policy framework which specifies the policy grammar and the policy architecture across the IoT stack are left as future work.
 
 
-\section{Provenance-model Information Flow}
+\section{Provenance Information Flow}
 
-This section details how various components of IoT provenance collection system are combined. Figure \ref{flow_chart} depicts a flowchart which illustrates how provenance is generated and how policy is used to enforce access on provenance data. Input documents are represented in green while processes are represented by the blue. Document of various components contained in the flowchart are needed as input parameters to the processes that makes up the architecture. Policy document is generated by an administrator who decides what kinds of provenance data to collect. The administrator can be a device owner who has access and authority to the device. A yaml configuration file is passed as an input to the the tracer component. The yaml configuration is a essential portion of the tracer system.  It is used to generate application CTF trace output. It contains instructions of what trace data to collect. The policy framework takes a modular approach. Policy component can be added at various layers of the IoT architecture. The policy engine is involved with the authorization and enforcement of policies generated. This portion generates a decision based on the policy evaluation. The response from the policy allows provenance effectively pruned. Provenance data stored as CTF trace which is mapped to PROV-JSON format. The PROV-JSON serialization is used as input to our IDS system. Figure \ref{flow_chart} below illustrates the relationship between various component in the provenance aware IoT framework.
+This section unifies components of our IoT provenance collection system. Figure \ref{flow_chart} depicts a flowchart which illustrates how provenance is generated and how the storage policy is used to enforce access on provenance data. Input data are represented in green while processes are represented by the blue rectangles. Policy document determines what kinds of provenance data to collect and store. The policy creator can be a device owner who has access and authority to the device. A yaml configuration file is passed as an input to the the tracer component. This contains the barectf application that collects CTF trace from sensor-actuator readings on the device. The yaml configuration is an essential portion of the tracer system.  It is used to generate application CTF trace output. It contains instructions of what trace data to collect. The policy framework takes a modular approach: policy component can be added at various layers of the IoT architecture. The policy engine is involved with the authorization and enforcement of policies generated. This portion generates a decision based on the policy evaluation. The response from the policy allows provenance effectively pruned. Provenance data stored as CTF trace in neo4j, a graph database and is mapped to PROV-JSON format. The PROV-JSON serialization is used as input to our IDS system which serves as the provenance application. Figure \ref{flow_chart} below illustrates the relationship between various component in the provenance aware IoT framework.
 
 \begin{figure}[h]
 \begin{center}
 
-\includegraphics[width =4.5in]{flowchart.PNG}    
+\includegraphics[width =4.5in]{flow_chart_update.PNG}    
 \end{center}
-\caption{Architectural Flowchart }
+\caption{Provenance Information Flowchart }
 \label{flow_chart}
 \end{figure}
 
