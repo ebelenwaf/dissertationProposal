@@ -14,8 +14,8 @@ A {General}-{Purpose} {Provenance} {Library}.
 \newblock 2012.
 
 \bibitem{prov_json}
-Prov-dm: The prov data model.
-\newblock Technical report, W3C, apr 2013.
+Prov-json: The prov data model.
+\newblock Technical report, W3C, Apr 2013.
 
 \bibitem{Ali:2013:PPL:2569433.2569893}
 Mufajjul Ali and Luc Moreau.

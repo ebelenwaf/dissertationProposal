@@ -23,11 +23,11 @@ Warning--can't use both author and editor fields in Bertino2015
 Warning--empty publisher in glavic_case_2011
 Warning--empty year in groth
 Warning--empty booktitle in Mattern
-Warning--empty journal in zawoadfecloud
+Warning--empty booktitle in zawoadfecloud
 You've used 38 entries,
             2118 wiz_defined-function locations,
-            749 strings with 12832 characters,
-and the built_in function-call counts, 15107 in all, are:
+            749 strings with 12834 characters,
+and the built_in function-call counts, 15132 in all, are:
 = -- 1550
 > -- 685
 < -- 25
@@ -40,23 +40,23 @@ call.type$ -- 38
 change.case$ -- 226
 chr.to.int$ -- 0
 cite$ -- 50
-duplicate$ -- 636
-empty$ -- 1177
+duplicate$ -- 639
+empty$ -- 1186
 format.name$ -- 229
-if$ -- 3331
+if$ -- 3340
 int.to.chr$ -- 0
 int.to.str$ -- 38
 missing$ -- 33
 newline$ -- 194
 num.names$ -- 76
-pop$ -- 267
+pop$ -- 270
 preamble$ -- 1
 purify$ -- 186
 quote$ -- 0
 skip$ -- 473
 stack$ -- 0
 substring$ -- 851
-swap$ -- 206
+swap$ -- 207
 text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0

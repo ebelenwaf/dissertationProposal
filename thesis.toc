@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Open Provenance Model (OPM)}{10}
 \contentsline {subsection}{\numberline {2.4.2}Provenance Data Model (Prov-DM)}{12}
 \contentsline {subsection}{\numberline {2.4.3}PROV-JSON}{14}
-\contentsline {section}{\numberline {2.5}P}{16}
+\contentsline {section}{\numberline {2.5}Policy Model}{16}
 \contentsline {subsection}{\numberline {2.5.1}eXtensible Access Control Markup Language}{16}
 \contentsline {chapter}{\numberline {3}Related Work}{18}
 \contentsline {section}{\numberline {3.1}Related Work on Provenance Collection Systems}{18}
@@ -35,10 +35,10 @@
 \contentsline {subsection}{\numberline {3.1.7}Provenance from Log Files: a BigData Problem}{23}
 \contentsline {subsection}{\numberline {3.1.8}Towards a Universal Data Provenance Framework using Dynamic Instrumentation}{24}
 \contentsline {subsection}{\numberline {3.1.9}Provenance-Based Trustworthiness Assessment in Sensor Networks}{25}
-\contentsline {subsection}{\numberline {3.1.10}Backtracking Intrusions}{26}
-\contentsline {subsection}{\numberline {3.1.11}Provenance Recording for Services}{27}
-\contentsline {section}{\numberline {3.2}Policy-Based Provenance Data Storage}{28}
-\contentsline {subsection}{\numberline {3.2.1}Take Only What You Need: Leveraging Mandatory Access Control Policy to Reduce Provenance Storage Costs}{28}
+\contentsline {subsection}{\numberline {3.1.10}Backtracking Intrusions}{25}
+\contentsline {subsection}{\numberline {3.1.11}Provenance Recording for Services}{26}
+\contentsline {section}{\numberline {3.2}Policy-Based Provenance Data Storage}{27}
+\contentsline {subsection}{\numberline {3.2.1}Take Only What You Need: Leveraging Mandatory Access Control Policy to Reduce Provenance Storage Costs}{27}
 \contentsline {subsection}{\numberline {3.2.2}A Provenance-aware policy language (cProvl) and a data traceability model (cProv) for the Cloud}{28}
 \contentsline {section}{\numberline {3.3}Provenance Data Compression}{29}
 \contentsline {subsection}{\numberline {3.3.1}Secure Data Provenance Compression Using Arithmetic Coding in Wireless Sensor Networks (WSN)}{29}
@@ -50,7 +50,9 @@
 \contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT}{38}
 \contentsline {section}{\numberline {5.1}A Policy-Based Approach for Provenance Storage}{38}
 \contentsline {section}{\numberline {5.2}Provenance Information Flow}{40}
-\contentsline {chapter}{\numberline {6}Conclusion}{43}
-\contentsline {section}{\numberline {6.1}Summary}{43}
-\contentsline {section}{\numberline {6.2}Future Work}{43}
-\contentsline {chapter}{References}{44}
+\contentsline {section}{\numberline {5.3}Policy-Based System}{41}
+\contentsline {subsection}{\numberline {5.3.1}Policy Based Framework Evaluation}{42}
+\contentsline {chapter}{\numberline {6}Conclusion}{44}
+\contentsline {section}{\numberline {6.1}Summary}{44}
+\contentsline {section}{\numberline {6.2}Future Work}{44}
+\contentsline {chapter}{References}{45}
