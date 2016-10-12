@@ -13,11 +13,7 @@ Data provenance of an entity is a comprehensive history of activities that occur
 
 \end{definition}
 
-Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance. Coarse grained provenance, on the other hand, is a collection of a summarized version of provenance. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, and in computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy_reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software system is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. This log file identifies the data object(i.e Web server), transformations that occurs on this object (e.g read write connections) and the state of the data object. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. Figure 1 illustrates an example from our use case of provenance above. It outlines a graphical representation of relationships contained in a server's log file.
-
-
-%instert picture!!!
-
+Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance. Coarse grained provenance, on the other hand, is a collection of a summarized version of provenance. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, and in computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy_reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software system is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. This log file identifies the data object(i.e Web server), transformations that occurs on this object (e.g read write connections) and the state of the data object. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. 
 
 \par Provenance ensures trust and integrity of data \cite{Bertino2015}. It outlines causality and dependency between all objects involved in the system and allows for the verification of the source of data. Causality and dependency are used to determine the relationship between multiple objects. The relationship in which provenance denotes can in turn be used in digital forensics \cite{zawoadfecloud} to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
  
@@ -55,7 +51,7 @@ Since provenance denotes the who, where and why of data transformation, it is im
 There is no standard definition for IoT, however, researchers have tried to define the concept of connected ``things". The concept of IoT was proposed by Mark Weiser in the early 1990s \cite{Mattern} which represents a way in which the physical objects, ``things", can be connected to the digital world. Gubbi et al \cite{park_provenance-based_2012} defines the IoT as  an interconnection of sensing and actuating devices that allows data sharing across platforms through a centralized framework. We define (IoT) as follows:
 
 \begin{definition}
-The Internet of Things (IoT) is a network of heterogeneous devices with sensing and actuating capabilities communicating with each other. 
+The Internet of Things (IoT) is a network of heterogeneous devices with sensing and actuating capabilities communicating in an intelligent manner over a unified network. 
 
 \end{definition}
 
@@ -229,7 +225,7 @@ PROV-JSON is used for representing PROV-DM data in JSON(Javascript Object Notati
 
 \section{Policy Model}
 
-\subsection{eXtensible Access Control Markup Language}
+\subsection{eXtensible Access Control Markup Language(XACML)}
  XACML is an access control policy language that allows the creation and enforcement of policies written in XML. It is a standard specification developed by the Organization of Advancement of Structured Information Standards(OASIS). Since it is written in XML, this framework allows for extensible and flexible policy documents. XACML consists of three major components which are involved in policy generation, evaluation and enforcement. The components of XACML are described below: 
  
  

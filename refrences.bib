@@ -27,15 +27,15 @@
 	url = {https://www.w3.org/TR/prov-dm/},
 	urldate = {2016-09-15},
 	file = {PROV-DM\: The PROV Data Model:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/WPH6IJXZ/prov-dm.html:text/html},
-	howpublished = "\url{https://www.w3.org/TR/prov-dm/}"
+	howpublished = {\url{https://www.w3.org/TR/prov-dm/}}
 }
 
-@TECHREPORT {prov_json,
-    title       = "PROV-JSON: The PROV Data Model",
-    institution = "W3C",
-    year        = "2013",
-    month       = "Apr",
-    howpublished = "\url{http://www.w3.org/Submission/2013/SUBM-prov-json-20130424}"
+@misc {prov_json,
+    title       = {{PROV}-{JSON}: {The} {PROV} {Data} {Model}},
+    institution = {W3C},
+    year        = {2013},
+    month       = {Apr},
+    howpublished = {\url{http://www.w3.org/Submission/2013/SUBM-prov-json-20130424}}
 }
 
 @inproceedings{park_provenance-based_2012,
@@ -64,16 +64,6 @@
 	file = {IEEE Xplore Abstract Record:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/78NNNMZW/1647801.html:text/html}
 }
 
-@inproceedings{_general-purpose_2012,
-	title = {A {General}-{Purpose} {Provenance} {Library}},
-	url = {https://www.usenix.org/conference/tapp12/workshop-program/presentation/macko},
-	urldate = {2016-09-15},
-	year = {2012},
-	file = {Full Text PDF:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/GXEPA4VM/2012 - A General-Purpose Provenance Library.pdf:application/pdf;Snapshot:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/EDAXEQDA/macko.html:text/html},
-	
-	howpublished = "\url{https://www.usenix.org/conference/tapp12/workshop-program/presentation/macko}"
-	
-}
 
 @article{seltzer_collecting_2011,
 	title = {Collecting {Provenance} via the {Xen} {Hypervisor}},
@@ -104,6 +94,8 @@ on root volumes, especially during early boot. In this paper we describe an appr
  publisher = {USENIX Association},
  address = {Berkeley, CA, USA},
 } 
+
+
 
 @inproceedings{hi_fi,
 	address = {New York, NY, USA},
@@ -153,7 +145,7 @@ on root volumes, especially during early boot. In this paper we describe an appr
 	url = {http://dl.acm.org/citation.cfm?id=1525932.1525943},
 	abstract = {Most application provenance systems are hard coded for a particular type of system or data, while current provenance file systems maintain in-memory provenance graphs and reside in kernel space, leading to complex and constrained implementations. Story Book resides in user space, and treats provenance events as a generic event log, leading to a simple, flexible and easily optimized system. We demonstrate the flexibility of our design by adding provenance to a number of different systems, including a file system, database and a number of file types, and by implementing two separate storage backends. Although Story Book is nearly 2.5 times slower than ext3 under worst case workloads, this is mostly due to FUSE message passing overhead. Our experiments show that coupling our simple design with existing storage optimizations provides higher throughput than existing systems.},
 	urldate = {2016-09-15},
-	booktitle = {First {Workshop} on on {Theory} and {Practice} of {Provenance}},
+	booktitle = {First {Workshop} on  the {Theory} and {Practice} of {Provenance}},
 	publisher = {USENIX Association},
 	author = {Spillane, R. and Sears, R. and Yalamanchili, C. and Gaikwad, S. and Chinni, M. and Zadok, E.},
 	year = {2009},
@@ -219,9 +211,10 @@ on root volumes, especially during early boot. In this paper we describe an appr
 	title = {{PReServ}: {Provenance} recording for services},
 	shorttitle = {{PReServ}},
 	abstract = {The importance of understanding the process by which a result was generated in an experiment is fundamental to science. Without such information, other scientists cannot replicate, validate, or duplicate an experiment. We define provenance as the process that led to a result. With large scale in-silico experiments, it becomes increasingly difficult for scientists to record process documentation that can be used to retrieve the provenance of a result. Provenance Recording for Services (PReServ) is a software package that allows developers to integrate process documentation recording into their applications. PReServ has been used by several applications and its performance has been benchmarked. 1},
-	booktitle = {in {Proc}. {AHM}’05},
+	booktitle = {In, UK e-Science All Hands Meeting 2005, Nottingham, UK, EPSRC},
 	author = {Groth, Paul and Miles, Simon and Moreau, Luc},
-	file = {Citeseer - Full Text PDF:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/FE2DFP4Z/Groth et al. - PReServ Provenance recording for services.pdf:application/pdf;Citeseer - Snapshot:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/JUTMJJST/summary.html:text/html}
+	file = {Citeseer - Full Text PDF:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/FE2DFP4Z/Groth et al. - PReServ Provenance recording for services.pdf:application/pdf;Citeseer - Snapshot:/Users/ebelechukwu/Library/Application Support/Zotero/Profiles/17a8i7ac.default/zotero/storage/JUTMJJST/summary.html:text/html},	
+date ={2005}
 }
 
 @article{cheney_provenance_2009,
@@ -450,22 +443,46 @@ on root volumes, especially during early boot. In this paper we describe an appr
 	pages = {2--7}
 }
 
-@TECHREPORT {rapid7,
-    author      = "Mark Stanislav",
-    title       = "HACKING IoT: A Case Study on Baby Monitor Exposures and Vulnerabilities",
-    institution = "Rapid7",
-    year        = "2015",
-    month       = "sep"
+@inproceedings{_general-purpose_2012,
+ author = {Macko, Peter and Seltzer, Margo},
+ title = {A General-purpose Provenance Library},
+ booktitle = {Proceedings of the 4th USENIX Conference on Theory and Practice of Provenance},
+ series = {TaPP'12},
+ year = {2012},
+ location = {Boston, MA},
+ pages = {6--6},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=2342875.2342881},
+ acmid = {2342881},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+
+@misc {rapid7,
+    author      = {Mark Stanislav},
+    title       = {HACKING IoT: A Case Study on Baby Monitor Exposures and Vulnerabilities},
+    institution = {Rapid7},
+    year        = {2015},
+    month       = {Sep}, 
+    
+   howpublished = "\url{https://www.rapid7.com/docs/Hacking-IoT-A-Case-Study-on-Baby-Monitor-Exposures-and-Vulnerabilities.pdf}" 
+    
+    
 }
 
-@TECHREPORT {dave,
+@misc {dave,
     author      = "Dave Evans",
     title       = "The Internet of Things How the Next Evolution of the Internet Is Changing Everything",
     institution = "CISCO",
     year        = "2011",
     month       = "Apr",
     
-    note = {Accessed: 2016-10-01}
+    note = {Accessed: 2016-10-01},
+    
+     howpublished = "\url{https://www.cisco.com/c/dam/en_us/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf}" 
+     
+     
 }
 
 
@@ -532,21 +549,7 @@ on root volumes, especially during early boot. In this paper we describe an appr
  address = {Berkeley, CA, USA},
 } 
 
-@misc{rfc2748,
-	series =	{Request for Comments},
-	number=		2748,
-	howpublished=	{RFC 2748},
-	publisher =	{RFC Editor},
-	doi =		{10.17487/rfc2748},
-	url =		{https://rfc-editor.org/rfc/rfc2748.txt},
-	author=		{Shai Herzog},
-	title=		{{The COPS (Common Open Policy Service) Protocol}},
-	pagetotal =	38,
-	year =		2013,
-	month =		mar,
-	day =		2,
-	abstract =	{This document describes a simple client/server model for supporting policy control over QoS signaling protocols. [STANDARDS-TRACK]},
-}
+
 
 @inproceedings{Ali:2013:PPL:2569433.2569893,
  author = {Ali, Mufajjul and Moreau, Luc},
@@ -590,12 +593,13 @@ on root volumes, especially during early boot. In this paper we describe an appr
     year = {1999},
 }
 
-@TECHREPORT {emc_bigdata,
+@misc {emc_bigdata,
     author      = "John Gantz, David Reinsel",
-    title       = "THE DIGITAL UNIVERSE IN 2020: Big Data, Bigger Digital Shadow s, and Biggest Grow th in the Far East",
+    title       = "THE DIGITAL UNIVERSE IN 2020: Big Data, Bigger Digital Shadows, and Biggest Growth in the Far East",
     institution = "EMC  Corporation",
     year        = "2012",
     month       = "apr",
+    
     howpublished = "\url{https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf}"
 }
 
@@ -666,6 +670,24 @@ url="http://dx.doi.org/10.1007/978-3-319-17016-9_2"
 	Communications Security (ASIACCS)},
    month = may,
    year = {2012}
+}
+
+@misc{rfc2748,
+	series =	{Request for Comments},
+	number=		2748,
+	howpublished=	{RFC 2748},
+	publisher =	{RFC Editor},
+	doi =		{10.17487/rfc2748},
+	url =		{https://rfc-editor.org/rfc/rfc2748.txt},
+	author=		{Shai Herzog},
+	title=		{{The COPS (Common Open Policy Service) Protocol}},
+	pagetotal =	38,
+	year =		2013,
+	month =		mar,
+	day =		2,
+	abstract =	{This document describes a simple client/server model for supporting policy control over QoS signaling protocols. [STANDARDS-TRACK]},
+	
+	howpublished = "\url{https://tools.ietf.org/html/rfc2748}"	
 }
 
 

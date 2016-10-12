@@ -36,15 +36,13 @@ In this chapter, we optimize storage of provenance using our IoT provenance-coll
 
 \par 
 
-\textcolor{red}{The policy framework consists of a policy engine. The policy engine contains authorization and enforcement components that provides and enforce decisions on how provenance data should be stored. }
-
-A policy document is a component of the policy framework. It identifies provenance data that is considered relevant to the IoT application. Our policy architecture is modeled using the Common Open Policy Service (COPS) Standard \cite{rfc2748}. COPS consists of components for policy generation, evaluation and enforcement. The Policy Enforcement Point (PEP) enforces decisions received from the Policy Decision Point (PDP). The PDP evaluates policies and generates decision based on the evaluation. The model can be extended to include a secondary decision point (SDP) which allows for distributed policy evaluation, thus freeing up the PDP from communication bottlenecks caused by large amounts of requests received by a single PDP.  
+\textcolor{red}{The policy framework consists of a policy engine. The policy engine contains authorization and enforcement components that provides and enforce decisions on how provenance data should be stored. }A policy document is a component of the policy framework. It identifies provenance data that is considered relevant to the IoT application. Our policy architecture is modeled using the Common Open Policy Service (COPS) Standard \cite{rfc2748}. COPS consists of components for policy generation, evaluation and enforcement. The Policy Enforcement Point (PEP) enforces decisions received from the Policy Decision Point (PDP). The PDP evaluates policies and generates decision based on the evaluation. The model can be extended to include a secondary decision point (SDP) which allows for distributed policy evaluation, thus freeing up the PDP from communication bottlenecks caused by large amounts of requests received by a single PDP.  
 
 \par Figure \ref{policy_architecture} below illustrates the system architecture of our proposed policy-based storage framework. Different layers of the IoT architecture contain different decision and enforcement components. The sensor-actuator layer of the IoT architecture is omitted because it has negligible memory resources and the  sensors and actuators are usually physically part of a device in the device layer and as such does not have any data to prune. 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[height=3.5in]{policy_architecture.png}
+\includegraphics[height=3.5in]{policy.png}
 \caption{Policy based system architecture which allows for effective data storage of provenance data}
 \label{policy_architecture}
 \end{center}
@@ -77,16 +75,15 @@ This section unifies components of our IoT provenance collection system. Figure 
 In this section, I will explain various software tools in which I plan to use to implement a proof of concept for the policy-based storage system. Some of these tools have been illustrated in chapter 4. 
 
 
-\par To map CTF trace to PROV-DM format, I plan to use babelctf, a plugin frameowk that allows converting from on trace format to another. 
+\par To map CTF trace to PROV-DM format, I plan to use babelctf, a plugin frameowk that allows converting from on trace format to another. PROV-DM data is represented in PROV-JSON serialized format and stored in a graph database. PROV-JSON is used as input to the provenance applications which leverage provenance data as to perform some application specific functionalities. For our implementation, we choose to use a provenance-based IDS system.
 
 %ProvToolbox, a java library for creating and visualizing provenance data. It also allows the conversion of provenance data from one format to another(e.g PROV-DM to PROV-JSON).
 
- PROV-DM data is represented in PROV-JSON serialized format and stored in a graph database. PROV-JSON is used as input to the provenance applications which leverage provenance data as to perform some application specific functionalities. For our implementation, we choose to use a provenance-based IDS system.
 
 
-\subsection{Policy Based Framework Evaluation}
+\subsection{Policy-Based Framework Evaluation}
 
-For the evaluation of our framework, we implement a prototype for proof of concept. In order to collect sensor-actuator trace data, I plan to create a sample application on a microcontroller . We chose an application that simulates a smart home lock authentication system. This system uses facial recognition to recognize and grant access to a door lock. We plan to implement this using a web camera attached to the microcontroller. On the microcontroller is contained OpenCV, an open source software library developed for image processing. OpenCV allows for facial recognition on the microcontroller. Trace data generated from the smart home lock system in the form of CTF  is collected on the microcontroller using barectf. CTF trace is transcribed to PROV-JSON which is stored in Neo4j, a graph database.  Neo4j allows for querying and visualization of provenance data. PROV-JSON is used as an input to the provenance application. For our implementation, we use a provenance based IDS, PIDAS as a provenance application that evaluates the effectiveness of our application. The details of PIDAS is discussed in chapter 4. To evaluate PIDAS, we evaluate the throughput and overhead incurred in addition to false positive and false negative as described in chapter 4.
+For the evaluation of our framework, we implement a prototype for proof of concept. In order to collect sensor-actuator trace data, I plan to create a sample application on a microcontroller. We chose an application that simulates a smart home lock authentication system. This system uses facial recognition to recognize and grant access to a door lock. We plan to implement this using a web camera attached to the microcontroller. On the microcontroller is contained OpenCV, an open source software library developed for image processing. OpenCV allows for facial recognition on the microcontroller. Trace data generated from the smart home lock system in the form of CTF  is collected on the microcontroller using barectf. CTF trace is transcribed to PROV-JSON which is stored in Neo4j, a graph database.  Neo4j allows for querying and visualization of provenance data. PROV-JSON is used as an input to the provenance application. For our implementation, we use a provenance based IDS, PIDAS as a provenance application that evaluates the effectiveness of our application. The details of PIDAS is discussed in chapter 4. To evaluate PIDAS, we evaluate the throughput and overhead incurred in addition to false positive and false negative as described in chapter 4.
 
 
 

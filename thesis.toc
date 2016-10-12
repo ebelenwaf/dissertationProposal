@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Provenance Data Model (Prov-DM)}{12}
 \contentsline {subsection}{\numberline {2.4.3}PROV-JSON}{14}
 \contentsline {section}{\numberline {2.5}Policy Model}{16}
-\contentsline {subsection}{\numberline {2.5.1}eXtensible Access Control Markup Language}{16}
+\contentsline {subsection}{\numberline {2.5.1}eXtensible Access Control Markup Language(XACML)}{16}
 \contentsline {chapter}{\numberline {3}Related Work}{18}
 \contentsline {section}{\numberline {3.1}Related Work on Provenance Collection Systems}{18}
 \contentsline {subsection}{\numberline {3.1.1}Provenance Aware Storage System (PASS)}{18}
@@ -51,7 +51,7 @@
 \contentsline {section}{\numberline {5.1}A Policy-Based Approach for Provenance Storage}{38}
 \contentsline {section}{\numberline {5.2}Provenance Information Flow}{40}
 \contentsline {section}{\numberline {5.3}Policy-Based System}{41}
-\contentsline {subsection}{\numberline {5.3.1}Policy Based Framework Evaluation}{42}
+\contentsline {subsection}{\numberline {5.3.1}Policy-Based Framework Evaluation}{42}
 \contentsline {chapter}{\numberline {6}Conclusion}{44}
 \contentsline {section}{\numberline {6.1}Summary}{44}
 \contentsline {section}{\numberline {6.2}Future Work}{44}

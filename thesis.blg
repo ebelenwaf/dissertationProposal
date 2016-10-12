@@ -12,13 +12,11 @@ A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: chapter6.aux
 The style file: plain.bst
 Database file #1: refrences.bib
+Warning--I'm ignoring rfc2748's extra "howpublished" field
+--line 691 of file refrences.bib
 Warning--to sort, need author or key in prov_json
 Warning--to sort, need author or key in xacml
 Warning--to sort, need author or key in prov_dm
-Warning--to sort, need author or key in _general-purpose_2012
-Warning--empty author in _general-purpose_2012
-Warning--empty booktitle in _general-purpose_2012
-Warning--empty author in prov_json
 Warning--can't use both author and editor fields in Bertino2015
 Warning--empty publisher in glavic_case_2011
 Warning--empty year in groth
@@ -26,43 +24,43 @@ Warning--empty booktitle in Mattern
 Warning--empty booktitle in zawoadfecloud
 You've used 38 entries,
             2118 wiz_defined-function locations,
-            749 strings with 12834 characters,
-and the built_in function-call counts, 15132 in all, are:
-= -- 1550
-> -- 685
-< -- 25
-+ -- 274
-- -- 229
-* -- 1027
-:= -- 2347
-add.period$ -- 135
+            756 strings with 13151 characters,
+and the built_in function-call counts, 15379 in all, are:
+= -- 1575
+> -- 697
+< -- 26
++ -- 278
+- -- 233
+* -- 1032
+:= -- 2366
+add.period$ -- 137
 call.type$ -- 38
-change.case$ -- 226
+change.case$ -- 224
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 639
-empty$ -- 1186
-format.name$ -- 229
-if$ -- 3340
+cite$ -- 46
+duplicate$ -- 641
+empty$ -- 1220
+format.name$ -- 233
+if$ -- 3415
 int.to.chr$ -- 0
 int.to.str$ -- 38
 missing$ -- 33
-newline$ -- 194
-num.names$ -- 76
-pop$ -- 270
+newline$ -- 195
+num.names$ -- 78
+pop$ -- 287
 preamble$ -- 1
-purify$ -- 186
+purify$ -- 188
 quote$ -- 0
-skip$ -- 473
+skip$ -- 487
 stack$ -- 0
-substring$ -- 851
-swap$ -- 207
-text.length$ -- 25
+substring$ -- 867
+swap$ -- 216
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 148
-warning$ -- 12
-while$ -- 141
+warning$ -- 8
+while$ -- 146
 width$ -- 40
-write$ -- 457
-(There were 12 warnings)
+write$ -- 460
+(There were 9 warnings)

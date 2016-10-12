@@ -9,13 +9,10 @@
 {PROV}-{DM}: {The} {PROV} {Data} {Model}.
 \newblock \url{https://www.w3.org/TR/prov-dm/}.
 
-\bibitem{_general-purpose_2012}
-A {General}-{Purpose} {Provenance} {Library}.
-\newblock 2012.
-
 \bibitem{prov_json}
-Prov-json: The prov data model.
-\newblock Technical report, W3C, Apr 2013.
+{PROV}-{JSON}: {The} {PROV} {Data} {Model}.
+\newblock \url{http://www.w3.org/Submission/2013/SUBM-prov-json-20130424}, Apr
+  2013.
 
 \bibitem{Ali:2013:PPL:2569433.2569893}
 Mufajjul Ali and Luc Moreau.
@@ -87,7 +84,9 @@ James Cheney, Laura Chiticariu, and Wang-Chiew Tan.
 Dave Evans.
 \newblock The internet of things how the next evolution of the internet is
   changing everything.
-\newblock Technical report, CISCO, Apr 2011.
+\newblock
+  \url{https://www.cisco.com/c/dam/en_us/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf},
+  Apr 2011.
 \newblock Accessed: 2016-10-01.
 
 \bibitem{gessiou_towards_2012}
@@ -116,7 +115,8 @@ Boris Glavic, Kyumars~Sheykh Esmaili, Peter~M. Fischer, and Nesime Tatbul.
 \bibitem{groth}
 Paul Groth, Simon Miles, and Luc Moreau.
 \newblock {PReServ}: {Provenance} recording for services.
-\newblock In {\em in {Proc}. {AHM}’05}.
+\newblock In {\em In, UK e-Science All Hands Meeting 2005, Nottingham, UK,
+  EPSRC}.
 
 \bibitem{Hasan:2009:CFP:1525908.1525909}
 Ragib Hasan, Radu Sion, and Marianne Winslett.
@@ -150,9 +150,11 @@ Yang Ji, Sangho Lee, and Wenke Lee.
 
 \bibitem{emc_bigdata}
 David~Reinsel John~Gantz.
-\newblock The digital universe in 2020: Big data, bigger digital shadow s, and
-  biggest grow th in the far east.
-\newblock Technical report, EMC Corporation, apr 2012.
+\newblock The digital universe in 2020: Big data, bigger digital shadows, and
+  biggest growth in the far east.
+\newblock
+  \url{https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf},
+  apr 2012.
 
 \bibitem{King:2003:BI:945445.945467}
 Samuel~T. King and Peter~M. Chen.
@@ -167,6 +169,13 @@ Hyo-Sang Lim, Yang-Sae Moon, and Elisa Bertino.
 \newblock In {\em Proceedings of the {Seventh} {International} {Workshop} on
   {Data} {Management} for {Sensor} {Networks}}, {DMSN} '10, pages 2--7, New
   York, NY, USA, 2010. ACM.
+
+\bibitem{_general-purpose_2012}
+Peter Macko and Margo Seltzer.
+\newblock A general-purpose provenance library.
+\newblock In {\em Proceedings of the 4th USENIX Conference on Theory and
+  Practice of Provenance}, TaPP'12, pages 6--6, Berkeley, CA, USA, 2012. USENIX
+  Association.
 
 \bibitem{Mattern}
 Friedemann Mattern and Christian Floerkemeier.
@@ -216,7 +225,7 @@ Rationality.
 \bibitem{story}
 R.~Spillane, R.~Sears, C.~Yalamanchili, S.~Gaikwad, M.~Chinni, and E.~Zadok.
 \newblock Story {Book}: {An} {Efficient} {Extensible} {Provenance} {Framework}.
-\newblock In {\em First {Workshop} on on {Theory} and {Practice} of
+\newblock In {\em First {Workshop} on the {Theory} and {Practice} of
   {Provenance}}, {TAPP}'09, pages 11:1--11:10, Berkeley, CA, USA, 2009. USENIX
   Association.
 
@@ -224,7 +233,9 @@ R.~Spillane, R.~Sears, C.~Yalamanchili, S.~Gaikwad, M.~Chinni, and E.~Zadok.
 Mark Stanislav.
 \newblock Hacking iot: A case study on baby monitor exposures and
   vulnerabilities.
-\newblock Technical report, Rapid7, sep 2015.
+\newblock
+  \url{https://www.rapid7.com/docs/Hacking-IoT-A-Case-Study-on-Baby-Monitor-Exposures-and-Vulnerabilities.pdf},
+  Sep 2015.
 
 \bibitem{tariq_towards_2012}
 Dawood Tariq, Maisem Ali, and Ashish Gehani.
