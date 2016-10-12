@@ -3,7 +3,7 @@
 \bibitem{xacml}
 {eXtensible} {Access} {Control} {Markup} {Language} ({XACML}) {Version} 3.0.
 \newblock
-  \url{http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html}.
+  "\url{http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html}".
 
 \bibitem{prov_dm}
 {PROV}-{DM}: {The} {PROV} {Data} {Model}.
@@ -48,11 +48,10 @@ Adam Bates, Ben Mood, Masoud Valafar, and Kevin Butler.
   York, NY, USA, 2013. ACM.
 
 \bibitem{bates_trustworthy_2015}
-Adam Bates, Dave Tian, Kevin R.~B. Butler, and Thomas Moyer.
+Adam Bates, Dave~Jing Tian, Kevin~RB Butler, and Thomas Moyer.
 \newblock Trustworthy whole-system provenance for the linux kernel.
-\newblock In {\em Proceedings of the 24th USENIX Conference on Security
-  Symposium}, SEC'15, pages 319--334, Berkeley, CA, USA, 2015. USENIX
-  Association.
+\newblock In {\em 24th USENIX Security Symposium (USENIX Security 15)}, pages
+  319--334, 2015.
 
 \bibitem{Bertino2015}
 Elisa Bertino.
