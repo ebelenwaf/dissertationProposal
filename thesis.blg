@@ -12,8 +12,6 @@ A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: chapter6.aux
 The style file: plain.bst
 Database file #1: refrences.bib
-Warning--I'm ignoring rfc2748's extra "howpublished" field
---line 686 of file refrences.bib
 Warning--to sort, need author or key in prov_json
 Warning--to sort, need author or key in xacml
 Warning--to sort, need author or key in prov_dm
@@ -21,46 +19,45 @@ Warning--can't use both author and editor fields in Bertino2015
 Warning--empty publisher in glavic_case_2011
 Warning--empty year in groth
 Warning--empty booktitle in Mattern
-Warning--empty booktitle in zawoadfecloud
 You've used 38 entries,
             2118 wiz_defined-function locations,
-            755 strings with 13137 characters,
-and the built_in function-call counts, 15362 in all, are:
-= -- 1568
+            755 strings with 13195 characters,
+and the built_in function-call counts, 15424 in all, are:
+= -- 1581
 > -- 697
 < -- 26
 + -- 278
 - -- 233
-* -- 1029
-:= -- 2361
-add.period$ -- 136
+* -- 1030
+:= -- 2374
+add.period$ -- 142
 call.type$ -- 38
 change.case$ -- 224
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 641
-empty$ -- 1222
+cite$ -- 45
+duplicate$ -- 642
+empty$ -- 1224
 format.name$ -- 233
-if$ -- 3410
+if$ -- 3425
 int.to.chr$ -- 0
 int.to.str$ -- 38
 missing$ -- 33
-newline$ -- 195
+newline$ -- 201
 num.names$ -- 78
-pop$ -- 290
+pop$ -- 293
 preamble$ -- 1
 purify$ -- 188
 quote$ -- 0
-skip$ -- 488
+skip$ -- 478
 stack$ -- 0
 substring$ -- 867
-swap$ -- 217
+swap$ -- 218
 text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 148
-warning$ -- 8
+warning$ -- 7
 while$ -- 146
 width$ -- 40
-write$ -- 457
-(There were 9 warnings)
+write$ -- 470
+(There were 7 warnings)

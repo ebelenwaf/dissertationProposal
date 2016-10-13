@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 OCT 2016 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 OCT 2016 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -448,46 +448,46 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 58.
+(Font)              <12> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 58.
+(Font)              <6> on input line 59.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 
  []
 
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
  [2] [3]
 \openout2 = `acknowl.aux'.
 
@@ -667,17 +667,20 @@ Overfull \hbox (26.90657pt too wide) in paragraph at lines 45--46
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [39] [40 <./policy.png>]
-<flow_chart_update.PNG, id=190, 461.5644pt x 555.0336pt>
-File: flow_chart_update.PNG Graphic file (type png)
+<policy_flowchart.PNG, id=190, 542.025pt x 557.9244pt>
+File: policy_flowchart.PNG Graphic file (type png)
 
-<use flow_chart_update.PNG>
-Package pdftex.def Info: flow_chart_update.PNG used on input line 67.
-(pdftex.def)             Requested size: 325.215pt x 391.07007pt.
- [41]) [42] [43 <./flow_chart_update.PNG>]
+<use policy_flowchart.PNG>
+Package pdftex.def Info: policy_flowchart.PNG used on input line 67.
+(pdftex.def)             Requested size: 325.215pt x 334.76572pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41] [42 <./policy_flowchart.PNG>]) [43]
 \openout2 = `chapter6.aux'.
 
-
-(./chapter6.tex
+ (./chapter6.tex
 Chapter 6.
 
 Overfull \hbox (3.28568pt too wide) in paragraph at lines 17--18
@@ -697,18 +700,18 @@ Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ” in font cmti12!
  [46] [47] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 237--244
 []\OT1/cmr/m/n/12 Mark Stanislav.  Hack-ing iot: A case study on baby mon-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 237--244
 \OT1/cmr/m/n/12 tor ex-po-sures and vul-ner-a-bil-i-ties.  $\OT1/cmtt/m/n/12 ht
 tps : / / www . rapid7 . com / docs /
  []
 
 
-Overfull \hbox (5.05019pt too wide) in paragraph at lines 232--238
+Overfull \hbox (5.05019pt too wide) in paragraph at lines 237--244
 \OT1/cmtt/m/n/12 Hacking-[]IoT-[]A-[]Case-[]Study-[]on-[]Baby-[]Monitor-[]Expos
 ures-[]and-[]Vulnerabilities .
  []
@@ -718,8 +721,8 @@ ures-[]and-[]Vulnerabilities .
 (./chapter4.aux) (./chapter6.aux)) ) 
 Here is how much of TeX's memory you used:
  11991 strings out of 493014
- 241999 string characters out of 6133351
- 283703 words of memory out of 5000000
+ 241994 string characters out of 6133351
+ 283705 words of memory out of 5000000
  15234 multiletter control sequences out of 15000+600000
  9016 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -734,7 +737,7 @@ blic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (59 pages, 1056210 bytes).
+Output written on thesis.pdf (59 pages, 1066116 bytes).
 PDF statistics:
  257 PDF objects out of 1000 (max. 8388607)
  163 compressed objects within 2 object streams

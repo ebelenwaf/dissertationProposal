@@ -3,16 +3,19 @@
 \bibitem{xacml}
 {eXtensible} {Access} {Control} {Markup} {Language} ({XACML}) {Version} 3.0.
 \newblock
-  "\url{http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html}".
+  \url{http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html}.
+\newblock Accessed: 2016-10-01.
 
 \bibitem{prov_dm}
 {PROV}-{DM}: {The} {PROV} {Data} {Model}.
 \newblock \url{https://www.w3.org/TR/prov-dm/}.
+\newblock Accessed: 2016-10-01.
 
 \bibitem{prov_json}
 {PROV}-{JSON}: {The} {PROV} {Data} {Model}.
 \newblock \url{http://www.w3.org/Submission/2013/SUBM-prov-json-20130424}, Apr
   2013.
+\newblock Accessed: 2016-10-01.
 
 \bibitem{Ali:2013:PPL:2569433.2569893}
 Mufajjul Ali and Luc Moreau.
@@ -128,7 +131,8 @@ Ragib Hasan, Radu Sion, and Marianne Winslett.
 \bibitem{rfc2748}
 Shai Herzog.
 \newblock {The COPS (Common Open Policy Service) Protocol}.
-\newblock RFC 2748, March 2013.
+\newblock \url{https://tools.ietf.org/html/rfc2748}, March 2013.
+\newblock Accessed: 2016-10-01.
 
 \bibitem{hussain_secure_2014}
 Syed~Rafiul Hussain, Changda Wang, Salmin Sultana, and Elisa Bertino.
@@ -154,6 +158,7 @@ David~Reinsel John~Gantz.
 \newblock
   \url{https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf},
   apr 2012.
+\newblock Accessed: 2016-10-01.
 
 \bibitem{King:2003:BI:945445.945467}
 Samuel~T. King and Peter~M. Chen.
@@ -235,6 +240,7 @@ Mark Stanislav.
 \newblock
   \url{https://www.rapid7.com/docs/Hacking-IoT-A-Case-Study-on-Baby-Monitor-Exposures-and-Vulnerabilities.pdf},
   Sep 2015.
+\newblock Accessed: 2016-10-01.
 
 \bibitem{tariq_towards_2012}
 Dawood Tariq, Maisem Ali, and Ashish Gehani.
@@ -260,6 +266,7 @@ Yulai Xie, Dan Feng, Zhipeng Tan, and Junzhe Zhou.
 \bibitem{zawoadfecloud}
 Shams Zawoad and Ragib Hasan.
 \newblock Fecloud: A trustworthy forensics-enabled cloud architecture.
-\newblock 2015.
+\newblock In {\em 11th Annual IFIP WG 11 International Conference on Digital
+  Forensics}, 2015.
 
 \end{thebibliography}
