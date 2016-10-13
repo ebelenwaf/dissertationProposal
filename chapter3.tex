@@ -5,7 +5,7 @@
 In this chapter, we introduce a novel approach for how provenance is collected and modeled along the IoT architectural stack. We also propose a design and  implementation of such an IoT provenance collection framework. This section defines a model for relaying provenance in IoT systems which is built on top of PROV-DM. 
 
 \section{IoT Provenance-Collection Framework }
-%This section discusses the data model in which we represent sensor and actuator reading of provenance data collected from IoT devices . It also talks about the relationship between IoT provenance Collection and PROV\-DM; How data is process and dissemenated accross the IoT architecture.
+%This section discusses the data model in which we represent sensor and actuator reading of provenance data collected from IoT devices . It also talks about the relationship between IoT provenance Collection and PROV\-DM; How data is process and disseminated across the IoT architecture.
 %
 %\textcolor{red}{TODO: Talks about how we use PROV\-DM and what kinds of provenance we are looking to store}
 
@@ -108,6 +108,11 @@ Our goal is to create a provenance-aware system which records I/O operations on 
 %\item rasberrypi
 
 \end{itemize}
+
+
+\section{Application Use Case Implementation} \label{use_case_application}
+
+To demonstrate the effectiveness of our framework, we implement an application of the smart home use case demonstrated in chapter 1 which serves as a prototype for proof of concept. In order to collect sensor-actuator trace data, I plan to create a sample application implemented on a microcontroller. I chose an application that simulates a smart home lock authentication system. This system uses facial recognition to recognize and grant access to a door lock. I plan to implement this using a web camera attached to the microcontroller. On the microcontroller is contained OpenCV, an open source software library developed for image processing. OpenCV allows for facial recognition on the microcontroller. Trace data generated from the smart home lock system in the form of CTF is collected on the microcontroller using barectf. CTF trace is translated to PROV-JSON which is stored in Neo4j, a graph database. Neo4j allows for querying and visualization of provenance. 
 
 
 

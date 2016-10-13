@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 OCT 2016 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 OCT 2016 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,16 +644,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
-[34] [35 <./architecture.PNG>] [36]) [37]
+[34] [35 <./architecture.PNG>] [36] [37]) [38]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 5.
-[38
+[39
 
 
 
-] <policy.png, id=181, 630.1944pt x 325.6968pt>
+] <policy.png, id=184, 630.1944pt x 325.6968pt>
 File: policy.png Graphic file (type png)
  <use policy.png>
 Package pdftex.def Info: policy.png used on input line 45.
@@ -666,8 +666,8 @@ Overfull \hbox (26.90657pt too wide) in paragraph at lines 45--46
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39] [40 <./policy.png>]
-<policy_flowchart.PNG, id=190, 542.025pt x 557.9244pt>
+[40] [41 <./policy.png>]
+<policy_flowchart.PNG, id=194, 542.025pt x 557.9244pt>
 File: policy_flowchart.PNG Graphic file (type png)
 
 <use policy_flowchart.PNG>
@@ -677,7 +677,7 @@ Package pdftex.def Info: policy_flowchart.PNG used on input line 67.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41] [42 <./policy_flowchart.PNG>]) [43]
+[42]) [43 <./policy_flowchart.PNG>]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
@@ -720,10 +720,10 @@ ures-[]and-[]Vulnerabilities .
 (./chapter1.aux) (./background.aux) (./chapter2.aux) (./chapter3.aux)
 (./chapter4.aux) (./chapter6.aux)) ) 
 Here is how much of TeX's memory you used:
- 11991 strings out of 493014
- 241994 string characters out of 6133351
- 283705 words of memory out of 5000000
- 15234 multiletter control sequences out of 15000+600000
+ 11992 strings out of 493014
+ 242016 string characters out of 6133351
+ 283716 words of memory out of 5000000
+ 15235 multiletter control sequences out of 15000+600000
  9016 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,54p,2419b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -737,7 +737,7 @@ blic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (59 pages, 1066116 bytes).
+Output written on thesis.pdf (59 pages, 1066145 bytes).
 PDF statistics:
  257 PDF objects out of 1000 (max. 8388607)
  163 compressed objects within 2 object streams

@@ -46,12 +46,13 @@
 \contentsline {section}{\numberline {4.1}IoT Provenance-Collection Framework }{31}
 \contentsline {subsection}{\numberline {4.1.1}Provenance-Collection Model Definition}{32}
 \contentsline {section}{\numberline {4.2}Provenance-Collection System}{34}
-\contentsline {section}{\numberline {4.3}Experiment Evaluation}{35}
-\contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT}{38}
-\contentsline {section}{\numberline {5.1}A Policy-Based Approach for Provenance Storage}{38}
-\contentsline {section}{\numberline {5.2}Provenance Information Flow}{40}
-\contentsline {section}{\numberline {5.3}Policy-Based System}{41}
-\contentsline {subsection}{\numberline {5.3.1}Policy-Based Framework Evaluation}{42}
+\contentsline {section}{\numberline {4.3}Application Use Case Implementation}{35}
+\contentsline {section}{\numberline {4.4}Experiment Evaluation}{36}
+\contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT}{39}
+\contentsline {section}{\numberline {5.1}A Policy-Based Approach for Provenance Storage}{39}
+\contentsline {section}{\numberline {5.2}Provenance Information Flow}{41}
+\contentsline {section}{\numberline {5.3}Policy-Based System}{42}
+\contentsline {subsection}{\numberline {5.3.1}Policy-Based Framework Evaluation}{43}
 \contentsline {chapter}{\numberline {6}Conclusion}{44}
 \contentsline {section}{\numberline {6.1}Summary}{44}
 \contentsline {section}{\numberline {6.2}Future Work}{44}
