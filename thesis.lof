@@ -3,15 +3,15 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces IoT Architecture Diagram. The arrows illustrates the interaction between data at various layers on the architecture.}}{9}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Edges and entities represented in OPM \copyright \cite {moreau_open_2011}}}{12}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Prov-DM respresentation }}{13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Prov-DM respresentation showing various types contained in the model (Entity, Activity, and Agent) }}{13}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces PROV-JSON MODEL \copyright \cite {prov_json}}}{15}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Xacml Data-flow diagram \copyright \cite {xacml}}}{17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces IoT provenance-collection data aggregation}}{32}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Provenance-model use case}}{33}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Proposed model}}{35}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces IoT provenance-collection data aggregation showing how provenance data is aggregated across the various layers of the IoT architecture}}{32}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Provenance-model use case illustrating dependency relationship between two sensors, s1 and s2 }}{33}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces System Architecture for Provenance Model.}}{35}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Policy based system architecture which allows for effective data storage of provenance data}}{41}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Provenance Information Flowchart }}{43}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Policy based system architecture which allows for effective storage of provenance data}}{41}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Provenance Information Flowchart illustrating how provenance data is generated and how storage policy is used to enforce access on provenance data. }}{42}
 \addvspace {10\p@ }

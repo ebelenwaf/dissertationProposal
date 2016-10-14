@@ -3,8 +3,8 @@
 This chapter describes key concepts of data provenance, IoT characteristics, and provenance models. It outlines the tradeoffs that exists between provenance, log data and metadata. 
 
 \section{Data Provenance}
-The Oxford English dictionary defines provenance \cite{TCDP1999} as ``the place of origin or earliest known history of something."  An example of provenance can be seen with a college transcript. A transcript is the provenance of a college degree because it outlines all of the courses satisfied in order to attain the degree.
-\par In the field of computing, data provenance, also known as  data lineage, can be defined as the history of all activities performed on entities from its creation to its current state. Cheney et al. \cite{cheney_provenance_2009} decribes provenance as the origin and history of data from its lifecycle. Buneman et al \cite{buneman_why_2001} describes provenance from a database perspective as the origin of data and the steps in which it is derived in the database system.  We formally define provenance as follows:
+The Oxford English dictionary defines provenance \cite{TCDP1999} as ``the place of origin or earliest known history of something". An example of provenance can be seen with a college transcript. A transcript is the provenance of a college degree because it outlines all of the courses satisfied in order to attain the degree.
+\par In the field of computing, data provenance, also known as  data lineage, can be defined as the history of all activities performed on entities from its creation to its current state. Cheney et al. \cite{cheney_provenance_2009} decribes provenance as the origin and history of data from its lifecycle. Buneman et al \cite{buneman_why_2001} describes provenance from a database perspective as the origin of data and the steps in which it is derived in the database system. We formally define provenance as follows:
 
 
 \begin{definition}
@@ -13,7 +13,7 @@ Data provenance of an entity is a comprehensive history of activities that occur
 
 \end{definition}
 
-Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance. Coarse grained provenance, on the other hand, is a collection of a summarized version of provenance. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, and in computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy_reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software system is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. This log file identifies the data object(i.e Web server), transformations that occurs on this object (e.g read write connections) and the state of the data object. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. 
+Provenance involves two granularity levels: fine-grained provenance and coarse-grained provenance. Fine-grained provenance \cite{glavic_case_2011} entails the collection of a detailed level of provenance. Coarse grained provenance, on the other hand, is a collection of a summarized version of provenance. Data provenance has immense applications and has been explored in the areas of scientific computing \cite{groth, altintas} to track how an experiments are produced, in business to determine the work-flow of  a process, and in computer security for forensic analysis and intrusion detection \cite{bates_towards_2013, muniswamy_reddy_provenance_2010, muniswamy_reddy} . Provenance denotes the who, where and why of data \cite{cheney_provenance_2009}. An example of provenance for a software system is a web server's log file. This file contains metadata for various request and response time and the ip address of all host systems that requests information from the server. This log file identifies the data object (i.e. Web server), transformations that occurs on this object (e.g read write connections) and the state of the data object. Provenance data is represented as an acyclic graph which denotes casual relationship and dependencies between entities. 
 
 \par Provenance ensures trust and integrity of data \cite{Bertino2015}. It outlines causality and dependency between all objects involved in the system and allows for the verification of the source of data. Causality and dependency are used to determine the relationship between multiple objects. The relationship in which provenance denotes can in turn be used in digital forensics \cite{zawoadfecloud} to investigate the cause of a malicious attack and also in intrusion detection systems to further enhance the security of computing devices. 
  
@@ -51,7 +51,7 @@ Since provenance denotes the who, where and why of data transformation, it is im
 There is no standard definition for IoT, however, researchers have tried to define the concept of connected ``things". The concept of IoT was proposed by Mark Weiser in the early 1990s \cite{Mattern} which represents a way in which the physical objects, ``things", can be connected to the digital world. Gubbi et al \cite{park_provenance-based_2012} defines the IoT as  an interconnection of sensing and actuating devices that allows data sharing across platforms through a centralized framework. We define (IoT) as follows:
 
 \begin{definition}
-The Internet of Things (IoT) is a network of heterogeneous devices with sensing and actuating capabilities communicating in an intelligent manner over a unified network. 
+The Internet of Things (IoT) is a network of heterogeneous devices with sensing and actuating capabilities communicating over the internet. 
 
 \end{definition}
 
@@ -98,11 +98,11 @@ In order to represent the right kind of provenance information, we need to satis
 Open Provenance Model \cite{moreau_open_2011} is a specification that was derived as a result of a meeting at the International Provenance and Annotation Workshop (IPAW) in May 2006. OPM was created to address the need of allowing a centralized model for representing provenance data amongst various applications. It allows for interoperability between various provenance applications. The goal of OPM is to represent causality and dependency and also to develop a digital representation of provenance data regardless of if it is produced by a computer system. OPM is represented as a directed acyclic graph which denotes causal dependency between objects. The edges in the graph denotes dependencies with its source denoting effect and its destination denoting cause. The definitions of the edges and their relationships are denoted below: 
 
 \begin{itemize}
-\item wasGeneratedBy: This edge denotes a  relationship in which an entity(e,g artifact) is utilized by one or  more entities(e.g process). An entity can use multiple entities so it is important to define the role.  
+\item wasGeneratedBy: This edge denotes a  relationship in which an entity (e,g artifact) is utilized by one or  more entities (e.g process). An entity can use multiple entities so it is important to define the role.  
 \item wasControlledBy: This edge outlines a relationship in which an entity caused the creation of another entity.
 \item used(Role): This edge denotes that an entity requires the services of another entity in order to execute.
 \item wasTriggeredBy: This edge denotes a relationship represents a process that was triggered by another process
-\item wasDerrivedFrom: This edge denotes a relationship which indicates that the source needs to have been generated before the destination is generated.
+\item wasDerievedFrom: This edge denotes a relationship which indicates that the source needs to have been generated before the destination is generated.
 \end{itemize}
 
  Objects represents the nodes of the relationship graph. There are three object contained in the OPM model: artifact, process, agent. 
@@ -150,7 +150,7 @@ OPM is used to represent all previous and current actions that have been perform
 
 \subsection{Provenance Data Model (Prov-DM)}
 
-Another model for representing provenance data is the Provenance Data Model (PROV\-DM). PROV-DM is a W3C standardized extension of OPM. Prov-DM is a model that is used to depict causal relationships between entities, activities and agents (digital or physical).  It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. 
+Another model for representing provenance data is the Provenance Data Model (PROV\-DM). PROV-DM is a W3C standardized extension of OPM. Prov-DM is a model that is used to depict causal relationships between entities, activities and agents (digital or physical). It creates a common model that allows for interchange of provenance information between heterogeneous devices. It contains two major components: types and relations. 
 
 
 \begin{itemize}
@@ -169,7 +169,7 @@ The figure below illustrates the various types contained in PROV-DM and their re
 
 \includegraphics[width=4.0in]{prov_dm_1.PNG}
 \end{center}
-\caption{Prov-DM respresentation }
+\caption{Prov-DM respresentation showing various types contained in the model (Entity, Activity, and Agent) }
 \end{figure}
 
 Similar to the OPM, PROV-DM does not keep track of future events. PROV-DM relations are outlined below:
@@ -186,7 +186,7 @@ Similar to the OPM, PROV-DM does not keep track of future events. PROV-DM relati
 
 \item wasAttributedTo: This denotes relational dependency to an agent. It is used to denote relationship between entity and agent when the activity that created the agent is unknown.
 
-\item wasAssociatedWith: This relation denotes a direct association to an agent for an activity that occurs.This indicates that an agent plays a role in the creation or modification of the activity.
+\item wasAssociatedWith: This relation denotes a direct association to an agent for an activity that occurs. This indicates that an agent plays a role in the creation or modification of the activity.
 
 \item actedOnBehalfOf: This relation denotes assigning authority to perform a particular responsibility to an agent. This could be by itself or to another agent.
 
@@ -208,10 +208,9 @@ Some of the difference between OPM and PROV-DM are described below:
 
 \subsection{PROV-JSON}
 
-PROV-JSON is used for representing PROV-DM data in JSON(JavaScript Object Notation) format. It contains all of the components and relationships contained in PROV-DM and allows for easy serialization and deserialization. JSON is a lightweight data format which is human readable and easy to parse. Figure \ref{provjson} illustrates a use case for the serialization of PROV-DM to PROV-JSON. PROV-JSON contains key-value pairs and can be considered as an indexed version of PROV-DM. The example depicts the relationship in which s1 tries to access a file (FileB) which was generated by s2. PROV-JSON  contains an entity, activity and agent which is represented as a json object and is identified by their respective ids.  identifiers are optional in PROV-DM but are required for PROV-JSON since json objects contains a key-value pairs, the id's of each object has to be implicitly specified and cannot contain null values. Each object contains fields which assigns additional attributes to the relations (i.e name, type, prov:startTime).  PROV-JSON documents might also contain a prefix object which defines namspaces which are used in the document. In this object is contained a default field which is used to define all of the namespace that contains all other unprefixed namespace.
+PROV-JSON is used for representing PROV-DM data in JSON (JavaScript Object Notation) format. It contains all of the components and relationships contained in PROV-DM and allows for easy serialization and deserialization. JSON is a lightweight data format which is human readable and easy to parse. Figure \ref{provjson} illustrates a use case for the serialization of PROV-DM to PROV-JSON. PROV-JSON contains key-value pairs and can be considered as an indexed version of PROV-DM. The example illustrates the relationship in which s1 tries to access a file (FileB) which was generated by s2. PROV-JSON  contains an entity, activity and agent type which are represented as a json objects and are identified by their respective ids.  Identifiers are optional in PROV-DM but are required for PROV-JSON since json objects contains key-value pairs, the id's of each object has to be implicitly specified and cannot contain null values. 
 
-
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
 
 \includegraphics[height=5.7in]{prov_json_edit.png}
@@ -223,10 +222,16 @@ PROV-JSON is used for representing PROV-DM data in JSON(JavaScript Object Notati
 \end{figure}
 
 
+Each object contains fields which assigns additional attributes to the relations (i.e name, type, prov:startTime).  PROV-JSON documents might also contain a prefix object which defines namspaces that are used in the document. In this object is contained a default field which is used to define all of the namespace that contains all other unprefixed namespace.
+
+
+
+
+
 \section{Policy Model}
 
-\subsection{eXtensible Access Control Markup Language(XACML)}
- XACML is an access control policy language that allows the creation and enforcement of policies written in XML. It is a standard specification developed by the Organization of Advancement of Structured Information Standards(OASIS). Since it is written in XML, this framework allows for extensible and flexible policy documents. XACML consists of three major components which are involved in policy generation, evaluation and enforcement. The components of XACML are described below: 
+\subsection{eXtensible Access Control Markup Language (XACML)}
+ XACML is an access control policy language that allows the creation and enforcement of policies written in XML. It is a standard specification developed by the Organization of Advancement of Structured Information Standards (OASIS). Since it is written in XML, this framework allows for extensible and flexible policy documents. XACML consists of three major components which are involved in policy generation, evaluation and enforcement. The components of XACML are described below: 
  
  
  \begin{itemize}
@@ -234,7 +239,7 @@ PROV-JSON is used for representing PROV-DM data in JSON(JavaScript Object Notati
  \item Policy Administration Point (PAP): This component of XACML
 is involved with the generation of policy documents. A Policy document is created by specifications and requirements set aside by an administrator.
 
- \item Policy Decision Point (PDP): The Policy Decision Point evaluates policies by the request context generated by a user. Based on the request, It generates a response(accept,deny or intermediate) This response is communicated with the Policy Enforcement Point which enforces the response sent by the PDP.
+ \item Policy Decision Point (PDP): The Policy Decision Point evaluates policies by the request context generated by a user. Based on the request, It generates a response (accept,deny or intermediate) This response is communicated with the Policy Enforcement Point which enforces the response sent by the PDP.
 
 
 \item Policy Enforcement Point (PEP):  The Policy Enforcement Point generates request context which is sent to the PDP for evaluation. It is also involved with the responsibility of enforcing request based on decision received by the PDP.
@@ -243,7 +248,7 @@ is involved with the generation of policy documents. A Policy document is create
  
  
  
- \begin{figure}[h!]
+ \begin{figure}[tbh]
 \begin{center}
 \includegraphics[height=3.5in]{xacml.png}
 \caption{Xacml Data-flow diagram  \copyright \cite{xacml}}

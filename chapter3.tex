@@ -9,7 +9,7 @@ In this chapter, we introduce a novel approach for how provenance is collected a
 %
 %\textcolor{red}{TODO: Talks about how we use PROV\-DM and what kinds of provenance we are looking to store}
 
-A provenance model is used to represent causal dependency between objects and it is usually represented as a Directed Acyclic Graph(DAG). This representation facilitates visualization of provenance relationships and offers a unified format for representing provenance data. We chose PROV-DM as the model to represent provenance for our implementation because it allows for the proper representation of all of the relationships in which we envision for IoT devices. 
+A provenance model is used to represent causal dependency between objects and it is usually represented as a Directed Acyclic Graph (DAG). This representation facilitates visualization of provenance relationships and offers a unified format for representing provenance data. We chose PROV-DM as the model to represent provenance for our implementation because it allows for the proper representation of all of the relationships in which we envision for IoT devices. 
 From the IoT architecture as illustrated in Figure \ref{architecture}, data is disseminated from sensors and actuators across layers of the IoT architectural stack. The provenance data produced from various sensors and actuators are collectively aggregated at the gateway or the cloud layers. We translate provenance data to PROV-DM format at any layer of the IoT stack. This allows processing of provenance at all layers even in the case of a network failure. 
  Figure \ref{aggregation} illustrates the provenance data aggregation across the layers of the stack. Data is collected from sensors and actuators aggregated, and passed along the hierarchy. 
 
@@ -19,7 +19,7 @@ From the IoT architecture as illustrated in Figure \ref{architecture}, data is d
 
 \includegraphics[width=3.0in]{iot_aggregation.PNG}    
 \end{center}
-\caption{IoT provenance-collection data aggregation}
+\caption{IoT provenance-collection data aggregation showing how provenance data is aggregated across the various layers of the IoT architecture}
 \label{aggregation}
 \end{figure}
 
@@ -44,7 +44,7 @@ Using the scenario of a smart home as illustrated in chapter 2, a detailed examp
 
 \begin{itemize}
 
-\item Agent: An agent is any data object that is responsible for the actions of an activity. An agent could also be an entity or an activity. Examples of agents in an IoT architecture are sensors, actuators, user roles(e.g admin). A unique identifier is given to each agents contained in an IoT framework.
+\item Agent: An agent is any data object that is responsible for the actions of an activity. An agent could also be an entity or an activity. Examples of agents in an IoT architecture are sensors, actuators, user roles (e.g admin). A unique identifier is given to each agents contained in an IoT framework.
 
 \item Entity:  An entity can be defined as a data object that contains information which can be modifiable. An example entities are device files, processes, device memory contents and network packets. An Entity is identified by an id and can include additional attributes such as location and time.
 
@@ -63,7 +63,7 @@ To better explain the provenance-collection model, a use case is illustrated in 
 
 \includegraphics[width=4.0in]{prov_model_usecase.png}    
 \end{center}
-\caption{Provenance-model use case}
+\caption{Provenance-model use case illustrating dependency relationship between two sensors, s1 and s2 }
 \label{prov_model}
 \end{figure}
 
@@ -76,15 +76,15 @@ Figure \ref{prov_model}  depicts a dependency relationship between two sensors, 
 
 \section{Provenance-Collection System}
 
-In this section, we show how components of our system and describe how provenance trace is collected across the IoT framework. Figure \ref{architecture} displays the system architecture of our approach. Sensor and actuator readings in the form of input and output (I/O) events are recorded by the tracer component. This component intercepts system level I/O events and produces trace information represented in Common Trace Format (CTF). CTF encodes binary trace output information containing multiple streams of binary events such as I/O activity. Trace information is converted to provenance data in the PROV-DM IoT model and serialized to PROV-JSON. CTF conversion to PROV-DM will be achieved using babeltrace. This conversion can happen at any layer of the IoT stack.  Babeltrace is a plugin framework which allows the conversion of CTF traces into other formats. Trace or provenance data is securely transmitted to a gateway and later transmitted and stored in a cloud backend. Our backend of choice is Neo4j, a graph database for efficient storage, query and visualization of provenance data.
+In this section, we show how components of our system and describe how provenance trace is collected across the IoT framework. Figure \ref{architecture} displays the system architecture of our approach. Sensor and actuator readings in the form of input and output (I/O) events are recorded by the tracer component. This component intercepts system level I/O events and produces trace information represented in Common Trace Format (CTF). CTF encodes binary trace output information containing multiple streams of binary events such as I/O activity. Trace information is converted to provenance data in the PROV-DM IoT model and serialized to PROV-JSON. CTF conversion to PROV-DM will be achieved using babeltrace. This conversion can happen at any layer of the IoT stack. Babeltrace is a plugin framework which allows the conversion of CTF traces into other formats. Trace or provenance data is securely transmitted to a gateway and later transmitted and stored in a cloud backend. Our backend of choice is Neo4j, a graph database for efficient storage, query and visualization of provenance data.
 
 
-\begin{figure}[h]
+\begin{figure}[b]
 \begin{center}
 
 \includegraphics[width =3.0in]{architecture.PNG}    
 \end{center}
-\caption{Proposed model}
+\caption{System Architecture for Provenance Model.}
 \label{architecture}
 \end{figure}
 
@@ -120,10 +120,10 @@ To demonstrate the effectiveness of our framework, we implement an application o
 \section{Experiment Evaluation}
 
 I plan to evaluate the effectiveness of my approach for provenance collection by using an intrusion detection system specifically developed for IoT. An IDS is used to detect malicious attacks using either a rule-based or an anomaly-based approach. A rule-based approach allows for intrusion monitoring by looking for specific known signatures of malicious attacks. An example of a signature-based IDS is an anti-virus software. An anomaly-based IDS identifies an intrusion by checking for patterns that falls out of the normal system behavior. Most anomaly-based approaches make use of machine learning to classify normal or anomalous behavior. These approaches can be useful to detect previously unknown malicious attacks. 
-\par We propose a provenance-based IDS for IoT that extends Provenance-aware Intrusion Detection and Analysis System(PIDAS) \cite{Xie:2016:UID:2936026.2936232}, which uses system-level provenance data to provide real-time vulnerability intrusion detection on system behaviors. This system collects provenance from system calls. PIDAS contains three essential components: collector,detector and analyzer. The collector records provenance information of applications running in the user space. Provenance data is stored in a key-value pair database for easy query of acyclic graphs. The detector extracts dependency relationships from the provenance data and stores these relationships in a repository (BerkleyDB) for further analysis. The analyzer is responsible for identifies possible intrusion activities by making queries to view all dependencies from the suspected intrusion point. Provenance detector is made possible by using a provenance-based algorithm that matches the path contained in the graph.
+\par We propose a provenance-based IDS for IoT that extends Provenance-aware Intrusion Detection and Analysis System (PIDAS) \cite{Xie:2016:UID:2936026.2936232}, which uses system-level provenance data to provide real-time vulnerability intrusion detection on system behaviors. This system collects provenance from system calls. PIDAS contains three essential components: collector,detector and analyzer. The collector records provenance information of applications running in the user space. Provenance data is stored in a key-value pair database for easy query of acyclic graphs. The detector extracts dependency relationships from the provenance data and stores these relationships in a repository (BerkleyDB) for further analysis. The analyzer is responsible for identifies possible intrusion activities by making queries to view all dependencies from the suspected intrusion point. Provenance detector is made possible by using a provenance-based algorithm that matches the path contained in the graph.
 
 
-The detector consists of three steps. Rule-built collects normal system behavior of provenance data and stores this information in a ruleDB. A ruleDB consists of a key-value pair which has parent and child relationships in the dependency graph. The rule-built is used to match observed provenance events  to detect system intrusion. Provenance information in the form of a dependency relationship is matched with the child-parent dependency rule information contained in the ruleDB. This information is used to compute the decision value which determines if there has been an intrusion.  A description of the PIDAS rule matching and scoring algorithm is described in detail below: 
+The detector consists of three steps. Rule-built collects normal system behavior of provenance data and stores this information in a ruleDB. A ruleDB consists of a key-value pair which has parent and child relationships in the dependency graph. The rule-built is used to match observed provenance events  to detect system intrusion. Provenance information in the form of a dependency relationship is matched with the child-parent dependency rule information contained in the ruleDB. This information is used to compute the decision value which determines if there has been an intrusion. A description of the PIDAS rule matching and scoring algorithm is described in detail below: 
 
 \begin{itemize}
 
