@@ -10,7 +10,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces IoT provenance-collection data aggregation showing how provenance data is aggregated across the various layers of the IoT architecture}}{32}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Provenance-model use case illustrating dependency relationship between two sensors, s1 and s2 }}{33}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces System Architecture for Provenance Model.}}{35}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces System Architecture for Provenance Collection.}}{35}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Policy based system architecture which allows for effective storage of provenance data}}{41}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Provenance Information Flowchart illustrating how provenance data is generated and how storage policy is used to enforce access on provenance data. }}{42}

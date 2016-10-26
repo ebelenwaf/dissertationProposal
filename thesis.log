@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 OCT 2016 10:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 OCT 2016 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -624,15 +624,16 @@ File: prov_model_usecase.png Graphic file (type png)
 Package pdftex.def Info: prov_model_usecase.png used on input line 64.
 (pdftex.def)             Requested size: 289.07999pt x 136.03645pt.
  [33 <./prov_model_usecase.png>]
-<architecture.PNG, id=159, 492.84125pt x 279.0425pt>
-File: architecture.PNG Graphic file (type png)
- <use architecture.PNG>
-Package pdftex.def Info: architecture.PNG used on input line 85.
-(pdftex.def)             Requested size: 216.81pt x 122.75778pt.
+<system_architecture.PNG, id=159, 603.2136pt x 272.217pt>
+File: system_architecture.PNG Graphic file (type png)
+
+<use system_architecture.PNG>
+Package pdftex.def Info: system_architecture.PNG used on input line 85.
+(pdftex.def)             Requested size: 216.81pt x 97.8402pt.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
-
-[34] [35 <./architecture.PNG>] [36] [37]) [38]
+ [34] [35 <./system_architecture.PNG>] [36]
+[37]) [38]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
@@ -702,7 +703,7 @@ ures-[]and-[]Vulnerabilities .
 (./chapter4.aux) (./chapter6.aux)) ) 
 Here is how much of TeX's memory you used:
  11992 strings out of 493014
- 242016 string characters out of 6133351
+ 242051 string characters out of 6133351
  283716 words of memory out of 5000000
  15235 multiletter control sequences out of 15000+600000
  9016 words of font info for 32 fonts, out of 8000000 for 9000
@@ -718,7 +719,7 @@ blic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (59 pages, 1066583 bytes).
+Output written on thesis.pdf (59 pages, 853293 bytes).
 PDF statistics:
  257 PDF objects out of 1000 (max. 8388607)
  163 compressed objects within 2 object streams

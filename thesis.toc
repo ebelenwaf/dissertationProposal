@@ -46,7 +46,7 @@
 \contentsline {section}{\numberline {4.1}IoT Provenance-Collection Framework }{31}
 \contentsline {subsection}{\numberline {4.1.1}Provenance-Collection Model Definition}{32}
 \contentsline {section}{\numberline {4.2}Provenance-Collection System}{34}
-\contentsline {section}{\numberline {4.3}Application Use Case Implementation}{36}
+\contentsline {section}{\numberline {4.3}Application Use Case Implementation}{35}
 \contentsline {section}{\numberline {4.4}Experiment Evaluation}{36}
 \contentsline {chapter}{\numberline {5}Storage Optimization Framework for Provenance Data Storage in IoT}{39}
 \contentsline {section}{\numberline {5.1}A Policy-Based Approach for Provenance Storage}{39}
